@@ -278,8 +278,10 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                 if p is not None:
                     pos = p
         # ---- FLIP-BOS entry on the close of bar j
-        if "flip" in entries and P.sig_d[j] != 0 and P.sig_flip[j] \
-                and (P.awake_sig[j] or not gate):
+        take_sig = P.sig_d[j] != 0 and (P.awake_sig[j] or not gate) and (
+            ("flip" in entries and P.sig_flip[j])
+            or ("cont" in entries and not P.sig_flip[j]))
+        if take_sig:
             d0 = int(P.sig_d[j])
             slp = P.sig_sl[j]
             if tick:
@@ -291,7 +293,7 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                     d = coin(d0)
                     e = (ticks.ask[i2] + slip_entry) if d == 1 else (ticks.bid[i2] - slip_entry)
                     if dist > min_dist:
-                        p = mk(d, e, dist, "flip", j, i2)
+                        p = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j, i2)
                         if tick_exit(p):
                             pos = p
             elif pos is None:
@@ -300,7 +302,7 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                 d = coin(d0)
                 e = (C[j] + S + slip_entry) if d == 1 else (C[j] - slip_entry)
                 if dist > min_dist:
-                    pos = mk(d, e, dist, "flip", j)
+                    pos = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j)
     out.sort(key=lambda x: (x["j"], x["ti"] if x["ti"] is not None else 0))
     return out
 

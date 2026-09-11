@@ -1,0 +1,25 @@
+=== NO TOUCH, option 1: flip only (gated)
+  M1 pess                         : n  348 wr 53.7% net   +30.66 avgW +3.32 avgL -3.67 PF 1.05 maxDD  62.28 exp/tr +0.088 | flip n 348 +30.7 | touch n 0 +0.0 | h1 +33.4 h2 -2.7
+  tick 1s                         : n  349 wr 55.0% net   +49.66 avgW +3.29 avgL -3.71 PF 1.09 maxDD  58.96 exp/tr +0.142 | flip n 349 +49.7 | touch n 0 +0.0 | h1 +47.9 h2 +1.8
+=== NO TOUCH, option 2: flip + continuation on candle CLOSE (the pre-touch deployed rule, gated)
+  M1 pess (expect ~+207/520)      : n  348 wr 53.7% net   +30.66 avgW +3.32 avgL -3.67 PF 1.05 maxDD  62.28 exp/tr +0.088 | flip n 348 +30.7 | touch n 0 +0.0 | h1 +33.4 h2 -2.7
+  tick 1s                         : n  349 wr 55.0% net   +49.66 avgW +3.29 avgL -3.71 PF 1.09 maxDD  58.96 exp/tr +0.142 | flip n 349 +49.7 | touch n 0 +0.0 | h1 +47.9 h2 +1.8
+  tick poll 0ms                   : n  348 wr 53.7% net   +22.31 avgW +3.32 avgL -3.71 PF 1.04 maxDD  63.02 exp/tr +0.064 | flip n 348 +22.3 | touch n 0 +0.0 | h1 +31.1 h2 -8.8
+  tick poll 2000ms                : n  347 wr 56.2% net   +66.75 avgW +3.26 avgL -3.75 PF 1.12 maxDD  59.50 exp/tr +0.192 | flip n 347 +66.7 | touch n 0 +0.0 | h1 +59.2 h2 +7.6
+  tick + live slippage 2.5/2.5    : n  349 wr 53.3% net   +17.34 avgW +3.34 avgL -3.71 PF 1.03 maxDD  65.68 exp/tr +0.050 | flip n 349 +17.3 | touch n 0 +0.0 | h1 +29.8 h2 -12.5
+=== for comparison, LIVE config (flip+touch)
+  tick 1s                         : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0 | h1 +66.5 h2 +139.2
+=== OOS (after 2026-09-08 07:12) on the trial9 series, tick
+  OOS flip only                   : n   28 wr 64.3% net    +6.93 avgW +2.85 avgL -4.44 PF 1.16 maxDD  17.06 exp/tr +0.247 | flip n 28 +6.9 | touch n 0 +0.0
+  OOS flip+close-cont             : n   28 wr 64.3% net    +6.93 avgW +2.85 avgL -4.44 PF 1.16 maxDD  17.06 exp/tr +0.247 | flip n 28 +6.9 | touch n 0 +0.0
+  OOS live flip+touch             : n   52 wr 50.0% net   -32.60 avgW +3.33 avgL -4.58 PF 0.73 maxDD  40.53 exp/tr -0.627 | flip n 27 +4.4 | touch n 25 -37.0
+=== 1000-seed M1 control, flip+close-cont
+  real +30.66 | random mean -30.14 sd 80.81 p95 +101.27 | beats 78.0% z +0.75
+=== NO TOUCH, option 2 (corrected run): flip + continuation on candle CLOSE = the pre-touch deployed rule, gated. 'cont' trades = n - flip - touch
+  M1 pess (bt_chop4 said +206.85/520): n  520 wr 57.1% net  +206.85 avgW +3.58 avgL -3.84 PF 1.24 maxDD  85.46 exp/tr +0.398 | flip n 300 +53.9 | touch n 0 +0.0 | h1 +88.2 h2 +118.7
+  tick poll 0ms                   : n  519 wr 57.2% net  +196.55 avgW +3.58 avgL -3.90 PF 1.23 maxDD  87.73 exp/tr +0.379 | flip n 299 +54.3 | touch n 0 +0.0 | h1 +67.1 h2 +129.5
+  tick poll 1000ms                : n  524 wr 58.6% net  +236.83 avgW +3.52 avgL -3.89 PF 1.28 maxDD  83.27 exp/tr +0.452 | flip n 303 +83.1 | touch n 0 +0.0 | h1 +102.2 h2 +134.6
+  tick poll 2000ms                : n  515 wr 58.3% net  +224.67 avgW +3.57 avgL -3.93 PF 1.27 maxDD  83.06 exp/tr +0.436 | flip n 294 +93.4 | touch n 0 +0.0 | h1 +87.8 h2 +136.9
+  tick 1s + live slippage 2.5/2.5 : n  521 wr 57.0% net  +198.70 avgW +3.61 avgL -3.90 PF 1.23 maxDD  84.40 exp/tr +0.381 | flip n 303 +52.1 | touch n 0 +0.0 | h1 +76.0 h2 +122.7
+  OOS tick flip+close-cont        : n   47 wr 51.1% net   -25.61 avgW +3.60 avgL -4.87 PF 0.77 maxDD  52.95 exp/tr -0.545 | flip n 27 +4.4 | touch n 0 +0.0
+  1000-seed M1 control: real +206.85 | random mean -45.69 sd 100.76 p95 +119.43 | beats 99.3% z +2.51

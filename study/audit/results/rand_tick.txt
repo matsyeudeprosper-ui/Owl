@@ -7,3 +7,7 @@ data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 da
    FLIP+TOUCH + awake gate (LIVE): 500 seeds, mean so far -46.35  [2217s]
    FLIP+TOUCH + awake gate (LIVE): 600 seeds, mean so far -49.28  [2542s]
    FLIP+TOUCH + awake gate (LIVE): 700 seeds, mean so far -50.44  [2854s]
+   FLIP+TOUCH + awake gate (LIVE): 800 seeds, mean so far -52.21  [3182s]
+   FLIP+TOUCH + awake gate (LIVE): 900 seeds, mean so far -51.24  [3533s]
+   FLIP+TOUCH + awake gate (LIVE): 1000 seeds, mean so far -52.19  [3870s]
+FLIP+TOUCH + awake gate (LIVE)  : real  +205.65 (n 609, wr 56.8%) | random mean  -52.19 sd 105.64 p5 -224.25 p50  -56.27 p95 +121.32 max +291.23 | real beats 98.8% of controls | z +2.44

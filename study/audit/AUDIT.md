@@ -210,6 +210,25 @@ sizing, with a ±$100 noise floor per 69 days, and the first 3 untouched
 days ran below that. If the 100-trade review is negative, the touch
 entry is the first suspect (section 2, 5), not the flip.
 
+## 11. Without the touch entry (asked after the verdict; `results/no_touch.txt`)
+
+Two ways to remove touch. Tick execution, gated, min_dist 10, 0.02 lot:
+
+| variant | M1 | tick 0 s | tick 1 s | tick 2 s | tick 1 s + 2.5/2.5 slip | OOS (tick) | M1 control (1000) |
+|---|---|---|---|---|---|---|---|
+| flip only (no continuation at all) | +$31 / 348 | +$22 | +$50 | +$67 | +$17 | +$7 / 28 | 78th pct, z 0.75 |
+| flip + continuation on candle CLOSE (the pre-touch deployed rule) | +$207 / 520 | +$197 | +$237 | +$225 | +$199 | −$26 / 47 | 99.3rd pct, z 2.51 |
+| live: flip + touch | +$263 / 622 | +$201 | +$206 | +$217 | +$161 | −$33 / 52 | 99.9th pct, z 3.17 |
+
+Reading: the close-entry continuation has NO execution bias (it enters
+on closed candles, so ticks change nothing) and it loses only $8 to
+observed slippage where touch loses $45. In-sample it is as good as the
+live config on ticks (+$237 vs +$206 at 1 s), with a slightly larger
+drawdown ($83 vs $61). Out-of-sample it is still red (−$26 on 47 trades,
+continuation −$30, flip +$4): removing touch does not rescue the untouched
+3 days. Touch was never the source of the edge; it only made the M1
+backtest look better than execution could deliver.
+
 ## Files
 
 - `exec_audit.py` – engine (signal logic frozen; execution modes legacy / pess / opt / tick; random control).
