@@ -9,6 +9,9 @@ are redacted; nothing else was edited.
 Broker: Exness Pro accounts, symbol BTCUSD, fixed spread about $7 per BTC
 (so every trade pays ~$0.14 at 0.02 lot). One BTC point = $1 per 1.0 lot.
 
+**2026-09-11 decision:** continuation entries moved from touch to candle
+close, see `DECISION_2026-09-11.md`; full audit in `study/audit/AUDIT.md`.
+
 ## What is live right now
 
 | Bot | Account | Type | Since | Status |
