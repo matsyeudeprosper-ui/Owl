@@ -1,0 +1,5 @@
+{"start": "2026-09-07T15:39:00", "target": 50, "wr_pass": 0.66,
+ "ended": "2026-09-08T07:08:28", "verdict": "fail",
+ "final": {"n": 33, "w": 16, "l": 16, "net": -2.22,
+           "reason": "net breached -2.00 auto-kill",
+           "diagnosis": "13 of 16 losses died <=30s (-3.20); spread 7-18pt eats the 25pt stop at retest entries"}}

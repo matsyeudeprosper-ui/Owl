@@ -1,0 +1,1518 @@
+2026-09-06T22:55:20.995100+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-06T22:55:20.996753+00:00 WAR-CHEST mode ON: book $0.00, chest $0.00, next fighter 0.02
+2026-09-06T22:58:03.350360+00:00 KINO: peak 80093.83 official -> pending BUY on M1 close back above it
+2026-09-06T23:04:04.138237+00:00 KINO: confirmation ran 183pts past 80093.83 - NOT chasing; BUY only on a retest
+2026-09-06T23:10:02.929047+00:00 KINO: dip 80127.20 official -> pending SELL on M1 close back below it
+2026-09-06T23:18:02.127194+00:00 KINO: dip 80138.97 official -> pending SELL on M1 close back below it
+2026-09-06T23:21:02.500176+00:00 KINO: peak 80279.69 official -> pending BUY on M1 close back above it
+2026-09-06T23:25:03.567973+00:00 KINO skipped: balance < 50.0
+2026-09-06T23:27:04.229288+00:00 KINO: dip 80089.16 official -> pending SELL on M1 close back below it
+2026-09-06T23:31:02.770970+00:00 KINO: dip 80101.89 official -> pending SELL on M1 close back below it
+2026-09-06T23:39:03.977947+00:00 KINO: confirmation ran 134pts past 80279.69 - NOT chasing; BUY only on a retest
+2026-09-06T23:41:04.334407+00:00 KINO: peak 80453.39 official -> pending BUY on M1 close back above it
+2026-09-06T23:46:03.065381+00:00 KINO: dip 80356.23 official -> pending SELL on M1 close back below it
+2026-09-06T23:47:03.208960+00:00 KINO: confirmation ran 60pts past 80453.39 - NOT chasing; BUY only on a retest
+2026-09-06T23:48:03.333414+00:00 KINO: peak 80566.49 official -> pending BUY on M1 close back above it
+2026-09-06T23:50:03.636932+00:00 KINO: dip 80395.61 official -> pending SELL on M1 close back below it
+2026-09-06T23:56:02.871512+00:00 KINO: confirmation ran 49pts past 80395.61 - NOT chasing; SELL only on a retest
+2026-09-06T23:58:03.176490+00:00 KINO: dip 80289.72 official -> pending SELL on M1 close back below it
+2026-09-07T00:00:40.513992+00:00 CLOCKS ALIGNED: H4 and D1 both say UP - next BUY scalp is the runner candidate (2x0.01)
+2026-09-07T00:00:40.515067+00:00 PAPER RUNNER opened: BUY 2x0.01 @ 80314.96 (virtual, no real money)
+2026-09-07T00:01:02.628158+00:00 KINO: confirmation ran 39pts past 80289.72 - NOT chasing; SELL only on a retest
+2026-09-07T00:02:02.789343+00:00 KINO: retest of 80289.72 - entering the missed SELL properly
+2026-09-07T00:04:03.092216+00:00 KINO: retest of 80289.72 - entering the missed SELL properly
+2026-09-07T00:06:03.432044+00:00 KINO: dip 80226.26 official -> pending SELL on M1 close back below it
+2026-09-07T00:06:03.434141+00:00 SHADOW ENTRY: recipe fired -> would BUY @ ~80421.51 (setup 80338.55)
+2026-09-07T00:13:02.747912+00:00 KINO: peak 80447.51 official -> pending BUY on M1 close back above it
+2026-09-07T00:14:02.870706+00:00 KINO: dip 80310.06 official -> pending SELL on M1 close back below it
+2026-09-07T00:16:03.207718+00:00 KINO: confirmation ran 44pts past 80310.06 - NOT chasing; SELL only on a retest
+2026-09-07T00:23:02.350228+00:00 KINO: dip 80044.71 official -> pending SELL on M1 close back below it
+2026-09-07T00:24:04.519674+00:00 KINO: peak 80207.94 official -> pending BUY on M1 close back above it
+2026-09-07T00:31:03.119537+00:00 KINO: confirmation ran 43pts past 80207.94 - NOT chasing; BUY only on a retest
+2026-09-07T00:32:03.295462+00:00 KINO: retest of 80207.94 - entering the missed BUY properly
+2026-09-07T00:33:03.435143+00:00 KINO: retest of 80207.94 - entering the missed BUY properly
+2026-09-07T00:34:03.969561+00:00 KINO: peak 80274.61 official -> pending BUY on M1 close back above it
+2026-09-07T00:40:02.839215+00:00 KINO: dip 80102.42 official -> pending SELL on M1 close back below it
+2026-09-07T00:47:03.899570+00:00 KINO: peak 80172.24 official -> pending BUY on M1 close back above it
+2026-09-07T00:54:02.965123+00:00 KINO: peak 80191.40 official -> pending BUY on M1 close back above it
+2026-09-07T00:57:03.531125+00:00 KINO: peak 80175.07 official -> pending BUY on M1 close back above it
+2026-09-07T01:00:04.141315+00:00 KINO: dip 80058.25 official -> pending SELL on M1 close back below it
+2026-09-07T01:06:02.559713+00:00 KINO: peak 80237.49 official -> pending BUY on M1 close back above it
+2026-09-07T01:10:03.278147+00:00 KINO: confirmation ran 86pts past 80058.25 - NOT chasing; SELL only on a retest
+2026-09-07T01:12:03.631477+00:00 KINO: dip 79945.09 official -> pending SELL on M1 close back below it
+2026-09-07T01:13:03.782120+00:00 KINO: peak 80058.66 official -> pending BUY on M1 close back above it
+2026-09-07T01:16:04.292030+00:00 KINO: confirmation ran 48pts past 79945.09 - NOT chasing; SELL only on a retest
+2026-09-07T01:20:03.096430+00:00 KINO: peak 80011.05 official -> pending BUY on M1 close back above it
+2026-09-07T01:20:03.098077+00:00 KINO: retest of 79945.09 - entering the missed SELL properly
+2026-09-07T01:22:03.602687+00:00 KINO: retest of 79945.09 - entering the missed SELL properly
+2026-09-07T01:23:03.769517+00:00 KINO: dip 79851.55 official -> pending SELL on M1 close back below it
+2026-09-07T01:24:04.012349+00:00 KINO: peak 79963.53 official -> pending BUY on M1 close back above it
+2026-09-07T01:33:03.558277+00:00 KINO: dip 79868.17 official -> pending SELL on M1 close back below it
+2026-09-07T01:33:03.560284+00:00 SHADOW ENTRY: recipe fired -> would BUY @ ~79943.39 (setup 79934.67)
+2026-09-07T01:36:04.048037+00:00 KINO: peak 79983.24 official -> pending BUY on M1 close back above it
+2026-09-07T01:46:03.949510+00:00 KINO: dip 79816.30 official -> pending SELL on M1 close back below it
+2026-09-07T01:49:04.373933+00:00 KINO: peak 79890.30 official -> pending BUY on M1 close back above it
+2026-09-07T01:56:03.535425+00:00 KINO: confirmation ran 64pts past 79890.30 - NOT chasing; BUY only on a retest
+2026-09-07T02:00:04.166642+00:00 KINO: peak 79967.56 official -> pending BUY on M1 close back above it
+2026-09-07T02:02:04.512016+00:00 KINO: dip 79909.06 official -> pending SELL on M1 close back below it
+2026-09-07T02:03:02.629683+00:00 KINO: peak 79936.83 official -> pending BUY on M1 close back above it
+2026-09-07T02:05:02.876973+00:00 KINO: confirmation ran 27pts past 79909.06 - NOT chasing; SELL only on a retest
+2026-09-07T02:14:03.673474+00:00 KINO: peak 79841.73 official -> pending BUY on M1 close back above it
+2026-09-07T02:16:04.468298+00:00 SHADOW ENTRY: recipe fired -> would BUY @ ~79840.79 (setup 79829.62)
+2026-09-07T02:17:03.181774+00:00 KINO: dip 79774.20 official -> pending SELL on M1 close back below it
+2026-09-07T02:18:03.718213+00:00 KINO: confirmation ran 24pts past 79841.73 - NOT chasing; BUY only on a retest
+2026-09-07T02:23:03.549667+00:00 KINO: peak 79970.58 official -> pending BUY on M1 close back above it
+2026-09-07T02:25:03.820940+00:00 KINO: dip 79902.87 official -> pending SELL on M1 close back below it
+2026-09-07T02:29:02.482169+00:00 KINO: confirmation ran 44pts past 79970.58 - NOT chasing; BUY only on a retest
+2026-09-07T02:34:03.324535+00:00 KINO: peak 80046.99 official -> pending BUY on M1 close back above it
+2026-09-07T02:36:03.667544+00:00 KINO: confirmation ran 27pts past 80046.99 - NOT chasing; BUY only on a retest
+2026-09-07T02:45:03.227175+00:00 KINO: peak 80429.40 official -> pending BUY on M1 close back above it
+2026-09-07T02:47:03.526831+00:00 KINO: dip 80194.55 official -> pending SELL on M1 close back below it
+2026-09-07T02:50:04.124863+00:00 KINO: dip 80205.14 official -> pending SELL on M1 close back below it
+2026-09-07T02:53:04.570639+00:00 KINO: confirmation ran 36pts past 80205.14 - NOT chasing; SELL only on a retest
+2026-09-07T03:02:04.658599+00:00 KINO: dip 79775.37 official -> pending SELL on M1 close back below it
+2026-09-07T03:07:03.413497+00:00 KINO: peak 79971.06 official -> pending BUY on M1 close back above it
+2026-09-07T03:21:04.290585+00:00 KINO: dip 79718.38 official -> pending SELL on M1 close back below it
+2026-09-07T03:21:04.303592+00:00 SHADOW ENTRY: recipe fired -> would BUY @ ~79819.02 (setup 79798.89)
+2026-09-07T03:24:04.880697+00:00 KINO: peak 79826.02 official -> pending BUY on M1 close back above it
+2026-09-07T03:31:03.982507+00:00 KINO: dip 79707.21 official -> pending SELL on M1 close back below it
+2026-09-07T03:32:04.160746+00:00 KINO: confirmation ran 22pts past 79707.21 - NOT chasing; SELL only on a retest
+2026-09-07T03:33:04.277187+00:00 KINO: retest of 79707.21 - entering the missed SELL properly
+2026-09-07T03:36:04.678252+00:00 KINO: peak 79757.89 official -> pending BUY on M1 close back above it
+2026-09-07T03:36:04.678252+00:00 KINO: retest of 79707.21 - entering the missed SELL properly
+2026-09-07T03:37:02.798412+00:00 KINO: retest of 79707.21 - entering the missed SELL properly
+2026-09-07T03:38:02.955040+00:00 KINO: retest of 79707.21 - entering the missed SELL properly
+2026-09-07T03:50:02.638560+00:00 KINO: peak 79675.67 official -> pending BUY on M1 close back above it
+2026-09-07T03:55:03.879130+00:00 KINO: dip 79544.38 official -> pending SELL on M1 close back below it
+2026-09-07T03:59:04.752447+00:00 KINO: peak 79685.83 official -> pending BUY on M1 close back above it
+2026-09-07T04:00:04.902043+00:00 CLOCKS DIVERGED: H4 and D1 disagree again - no new runner candidates
+2026-09-07T04:00:04.904051+00:00 PAPER RUNNER broke pre-TP: -14.55 (virtual). Ledger: -14.55 over 1 attempts
+2026-09-07T04:01:03.027783+00:00 KINO: dip 79543.56 official -> pending SELL on M1 close back below it
+2026-09-07T04:08:04.034713+00:00 KINO: dip 79568.06 official -> pending SELL on M1 close back below it
+2026-09-07T04:11:04.519535+00:00 KINO: peak 79643.90 official -> pending BUY on M1 close back above it
+2026-09-07T04:13:02.860441+00:00 KINO: confirmation ran 33pts past 79568.06 - NOT chasing; SELL only on a retest
+2026-09-07T04:14:02.994370+00:00 KINO: retest of 79568.06 - entering the missed SELL properly
+2026-09-07T04:15:03.175419+00:00 KINO: dip 79526.19 official -> pending SELL on M1 close back below it
+2026-09-07T04:20:04.039716+00:00 KINO: dip 79633.33 official -> pending SELL on M1 close back below it
+2026-09-07T04:22:04.394483+00:00 KINO: peak 79686.84 official -> pending BUY on M1 close back above it
+2026-09-07T04:29:04.587464+00:00 KINO: peak 79685.31 official -> pending BUY on M1 close back above it
+2026-09-07T04:29:07.478519+00:00 KINO: confirmation ran 36pts past 79633.33 - NOT chasing; SELL only on a retest
+2026-09-07T04:30:03.301215+00:00 KINO: retest of 79633.33 - entering the missed SELL properly
+2026-09-07T04:31:03.468352+00:00 KINO: retest of 79633.33 - entering the missed SELL properly
+2026-09-07T04:34:03.888572+00:00 KINO: retest of 79633.33 - entering the missed SELL properly
+2026-09-07T04:38:04.420902+00:00 KINO: dip 79516.59 official -> pending SELL on M1 close back below it
+2026-09-07T04:50:03.993218+00:00 KINO: peak 79709.44 official -> pending BUY on M1 close back above it
+2026-09-07T04:56:02.926545+00:00 KINO: dip 79623.12 official -> pending SELL on M1 close back below it
+2026-09-07T05:02:03.900755+00:00 KINO: dip 79685.82 official -> pending SELL on M1 close back below it
+2026-09-07T05:03:04.031341+00:00 KINO: peak 79726.62 official -> pending BUY on M1 close back above it
+2026-09-07T05:05:04.369751+00:00 KINO: confirmation ran 21pts past 79726.62 - NOT chasing; BUY only on a retest
+2026-09-07T05:06:14.497765+00:00 KINO: retest of 79726.62 - entering the missed BUY properly
+2026-09-07T05:07:04.673204+00:00 KINO: peak 79767.42 official -> pending BUY on M1 close back above it
+2026-09-07T05:12:04.252110+00:00 KINO: peak 79728.71 official -> pending BUY on M1 close back above it
+2026-09-07T05:13:04.462846+00:00 KINO: confirmation ran 36pts past 79685.82 - NOT chasing; SELL only on a retest
+2026-09-07T05:14:04.633701+00:00 KINO: dip 79635.80 official -> pending SELL on M1 close back below it
+2026-09-07T05:16:04.345987+00:00 KINO: confirmation ran 84pts past 79728.71 - NOT chasing; BUY only on a retest
+2026-09-07T05:21:03.113479+00:00 KINO: peak 79858.22 official -> pending BUY on M1 close back above it
+2026-09-07T05:27:04.000739+00:00 KINO: peak 79910.33 official -> pending BUY on M1 close back above it
+2026-09-07T05:42:04.303551+00:00 KINO: dip 79817.08 official -> pending SELL on M1 close back below it
+2026-09-07T05:51:03.641949+00:00 KINO: confirmation ran 33pts past 79817.08 - NOT chasing; SELL only on a retest
+2026-09-07T05:53:03.955813+00:00 KINO: retest of 79817.08 - entering the missed SELL properly
+2026-09-07T05:54:04.137598+00:00 KINO: retest of 79817.08 - entering the missed SELL properly
+2026-09-07T05:55:04.320894+00:00 KINO: peak 79827.94 official -> pending BUY on M1 close back above it
+2026-09-07T06:05:03.832651+00:00 KINO: dip 79719.86 official -> pending SELL on M1 close back below it
+2026-09-07T06:08:04.339443+00:00 KINO: peak 79812.64 official -> pending BUY on M1 close back above it
+2026-09-07T06:10:04.709748+00:00 KINO: dip 79743.75 official -> pending SELL on M1 close back below it
+2026-09-07T06:16:03.759788+00:00 KINO: peak 79800.52 official -> pending BUY on M1 close back above it
+2026-09-07T06:19:04.266392+00:00 KINO: confirmation ran 22pts past 79743.75 - NOT chasing; SELL only on a retest
+2026-09-07T06:20:04.469802+00:00 KINO: retest of 79743.75 - entering the missed SELL properly
+2026-09-07T06:23:03.015321+00:00 KINO: dip 79672.21 official -> pending SELL on M1 close back below it
+2026-09-07T06:26:03.394823+00:00 KINO: peak 79750.36 official -> pending BUY on M1 close back above it
+2026-09-07T06:31:04.348868+00:00 KINO: dip 79693.23 official -> pending SELL on M1 close back below it
+2026-09-07T06:33:04.727317+00:00 KINO: peak 79729.98 official -> pending BUY on M1 close back above it
+2026-09-07T06:38:03.444714+00:00 KINO: peak 79722.34 official -> pending BUY on M1 close back above it
+2026-09-07T06:44:04.308915+00:00 KINO: confirmation ran 31pts past 79693.23 - NOT chasing; SELL only on a retest
+2026-09-07T06:49:04.240518+00:00 KINO: dip 79639.64 official -> pending SELL on M1 close back below it
+2026-09-07T07:05:03.101427+00:00 KINO: confirmation ran 63pts past 79639.64 - NOT chasing; SELL only on a retest
+2026-09-07T07:07:06.114234+00:00 KINO: dip 79564.32 official -> pending SELL on M1 close back below it
+2026-09-07T07:12:03.374263+00:00 KINO: peak 79683.44 official -> pending BUY on M1 close back above it
+2026-09-07T07:18:04.600306+00:00 KINO: peak 79625.39 official -> pending BUY on M1 close back above it
+2026-09-07T07:24:03.650487+00:00 KINO: confirmation ran 97pts past 79564.32 - NOT chasing; SELL only on a retest
+2026-09-07T07:26:03.936828+00:00 KINO: dip 79437.15 official -> pending SELL on M1 close back below it
+2026-09-07T07:30:05.813332+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-07T07:30:05.817290+00:00 WAR-CHEST mode ON: book $0.00, chest $0.00, next fighter 0.02
+2026-09-07T07:31:04.092481+00:00 KINO: dip 79365.02 official -> pending SELL on M1 close back below it
+2026-09-07T07:34:03.860824+00:00 KINO: peak 79517.18 official -> pending BUY on M1 close back above it
+2026-09-07T07:36:04.774177+00:00 KINO: confirmation ran 136pts past 79365.02 - NOT chasing; SELL only on a retest
+2026-09-07T07:43:03.305361+00:00 KINO: dip 78974.31 official -> pending SELL on M1 close back below it
+2026-09-07T07:51:04.785752+00:00 KINO: peak 79358.91 official -> pending BUY on M1 close back above it
+2026-09-07T07:55:05.355956+00:00 KINO: peak 79386.89 official -> pending BUY on M1 close back above it
+2026-09-07T07:56:03.537251+00:00 KINO: dip 79305.56 official -> pending SELL on M1 close back below it
+2026-09-07T08:04:04.755923+00:00 KINO: confirmation ran 45pts past 79386.89 - NOT chasing; BUY only on a retest
+2026-09-07T08:05:05.024041+00:00 KINO: peak 79444.75 official -> pending BUY on M1 close back above it
+2026-09-07T08:10:04.332882+00:00 KINO: confirmation ran 38pts past 79444.75 - NOT chasing; BUY only on a retest
+2026-09-07T08:11:04.722354+00:00 KINO: retest of 79444.75 - entering the missed BUY properly
+2026-09-07T08:12:04.928272+00:00 KINO: retest of 79444.75 - entering the missed BUY properly
+2026-09-07T08:13:03.177462+00:00 KINO: retest of 79444.75 - entering the missed BUY properly
+2026-09-07T08:14:03.457940+00:00 KINO: peak 79488.98 official -> pending BUY on M1 close back above it
+2026-09-07T08:18:04.497815+00:00 KINO: peak 79468.40 official -> pending BUY on M1 close back above it
+2026-09-07T08:20:04.942357+00:00 KINO: confirmation ran 25pts past 79468.40 - NOT chasing; BUY only on a retest
+2026-09-07T08:20:04.946730+00:00 KINO: dip 79437.85 official -> pending SELL on M1 close back below it
+2026-09-07T08:21:03.226967+00:00 KINO: retest of 79468.40 - entering the missed BUY properly
+2026-09-07T08:25:32.786306+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-07T08:25:32.796350+00:00 WAR-CHEST mode ON: book $0.00, chest $0.00, next fighter 0.02
+2026-09-07T08:27:03.252729+00:00 KINO: retest of 79468.40 - entering the missed BUY properly
+2026-09-07T08:28:08.848200+00:00 KINO: retest of 79468.40 - entering the missed BUY properly
+2026-09-07T08:29:05.353093+00:00 KINO: peak 79492.71 official -> pending BUY on M1 close back above it
+2026-09-07T08:40:03.975139+00:00 KINO: confirmation ran 32pts past 79437.85 - NOT chasing; SELL only on a retest
+2026-09-07T08:41:04.334430+00:00 KINO: dip 79405.39 official -> pending SELL on M1 close back below it
+2026-09-07T08:56:00.893615+00:00 KINO: dip 79390.07 official -> pending SELL on M1 close back below it
+2026-09-07T09:00:01.646165+00:00 KINO: peak 79440.17 official -> pending BUY on M1 close back above it
+2026-09-07T09:08:01.355760+00:00 KINO: dip 79388.80 official -> pending SELL on M1 close back below it
+2026-09-07T09:09:01.588890+00:00 KINO: confirmation ran 38pts past 79440.17 - NOT chasing; BUY only on a retest
+2026-09-07T09:13:00.505270+00:00 KINO: peak 79539.80 official -> pending BUY on M1 close back above it
+2026-09-07T09:21:02.596802+00:00 KINO: peak 79522.99 official -> pending BUY on M1 close back above it
+2026-09-07T09:28:01.940249+00:00 KINO: dip 79399.64 official -> pending SELL on M1 close back below it
+2026-09-07T09:31:02.540232+00:00 KINO: peak 79487.24 official -> pending BUY on M1 close back above it
+2026-09-07T09:38:03.082668+00:00 KINO: confirmation ran 65pts past 79399.64 - NOT chasing; SELL only on a retest
+2026-09-07T09:46:02.358756+00:00 KINO: dip 79305.54 official -> pending SELL on M1 close back below it
+2026-09-07T09:52:01.287822+00:00 KINO: peak 79438.76 official -> pending BUY on M1 close back above it
+2026-09-07T09:56:01.897786+00:00 KINO: dip 79282.42 official -> pending SELL on M1 close back below it
+2026-09-07T10:01:01.582933+00:00 KINO: dip 79284.53 official -> pending SELL on M1 close back below it
+2026-09-07T10:09:00.881430+00:00 KINO: peak 79395.87 official -> pending BUY on M1 close back above it
+2026-09-07T10:14:38.137169+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-07T10:14:38.141892+00:00 WAR-CHEST mode ON: book $0.00, chest $0.00, next fighter 0.02
+2026-09-07T10:25:02.133320+00:00 KINO: peak 79411.25 official -> pending BUY on M1 close back above it
+2026-09-07T10:27:01.157763+00:00 KINO: dip 79361.18 official -> pending SELL on M1 close back below it
+2026-09-07T10:37:02.687533+00:00 KINO: peak 79419.03 official -> pending BUY on M1 close back above it
+2026-09-07T10:38:00.848663+00:00 KINO: dip 79372.94 official -> pending SELL on M1 close back below it
+2026-09-07T10:45:02.339958+00:00 KINO: confirmation ran 24pts past 79419.03 - NOT chasing; BUY only on a retest
+2026-09-07T10:46:02.515673+00:00 KINO: retest of 79419.03 - entering the missed BUY properly
+2026-09-07T10:47:02.668521+00:00 KINO: peak 79444.90 official -> pending BUY on M1 close back above it
+2026-09-07T10:52:01.427542+00:00 KINO: dip 79382.93 official -> pending SELL on M1 close back below it
+2026-09-07T10:55:01.953645+00:00 KINO: peak 79450.11 official -> pending BUY on M1 close back above it
+2026-09-07T10:57:02.366976+00:00 KINO: confirmation ran 37pts past 79382.93 - NOT chasing; SELL only on a retest
+2026-09-07T10:59:02.739909+00:00 KINO: dip 79326.74 official -> pending SELL on M1 close back below it
+2026-09-07T11:04:00.918174+00:00 KINO: confirmation ran 38pts past 79326.74 - NOT chasing; SELL only on a retest
+2026-09-07T11:05:01.124174+00:00 KINO: retest of 79326.74 - entering the missed SELL properly
+2026-09-07T11:06:01.323217+00:00 KINO: retest of 79326.74 - entering the missed SELL properly
+2026-09-07T11:07:02.872452+00:00 KINO: retest of 79326.74 - entering the missed SELL properly
+2026-09-07T11:08:01.039429+00:00 KINO: peak 79333.34 official -> pending BUY on M1 close back above it
+2026-09-07T11:08:01.039429+00:00 KINO: retest of 79326.74 - entering the missed SELL properly
+2026-09-07T11:10:01.426192+00:00 KINO: dip 79258.50 official -> pending SELL on M1 close back below it
+2026-09-07T11:12:01.886065+00:00 KINO: confirmation ran 38pts past 79333.34 - NOT chasing; BUY only on a retest
+2026-09-07T11:26:02.620263+00:00 KINO: peak 79462.08 official -> pending BUY on M1 close back above it
+2026-09-07T11:37:05.941514+00:00 KINO: peak 79475.41 official -> pending BUY on M1 close back above it
+2026-09-07T11:44:01.461778+00:00 KINO: peak 79421.48 official -> pending BUY on M1 close back above it
+2026-09-07T11:48:02.157419+00:00 KINO: dip 79384.19 official -> pending SELL on M1 close back below it
+2026-09-07T11:51:02.665825+00:00 KINO: peak 79426.07 official -> pending BUY on M1 close back above it
+2026-09-07T11:52:00.827304+00:00 KINO: dip 79384.76 official -> pending SELL on M1 close back below it
+2026-09-07T11:59:01.913831+00:00 KINO: dip 79362.88 official -> pending SELL on M1 close back below it
+2026-09-07T12:07:01.631036+00:00 KINO: confirmation ran 34pts past 79426.07 - NOT chasing; BUY only on a retest
+2026-09-07T12:12:02.484483+00:00 KINO: peak 79497.87 official -> pending BUY on M1 close back above it
+2026-09-07T12:15:01.449582+00:00 KINO: peak 79442.61 official -> pending BUY on M1 close back above it
+2026-09-07T12:19:01.029633+00:00 KINO: dip 79393.19 official -> pending SELL on M1 close back below it
+2026-09-07T12:20:01.229641+00:00 KINO: confirmation ran 29pts past 79442.61 - NOT chasing; BUY only on a retest
+2026-09-07T12:23:01.743671+00:00 KINO: peak 79503.94 official -> pending BUY on M1 close back above it
+2026-09-07T12:26:02.250101+00:00 KINO: dip 79454.38 official -> pending SELL on M1 close back below it
+2026-09-07T12:32:03.300172+00:00 KINO: peak 79525.37 official -> pending BUY on M1 close back above it
+2026-09-07T12:47:01.859457+00:00 KINO: dip 79443.15 official -> pending SELL on M1 close back below it
+2026-09-07T12:54:01.798448+00:00 KINO: confirmation ran 62pts past 79525.37 - NOT chasing; BUY only on a retest
+2026-09-07T13:02:03.214372+00:00 KINO: peak 79624.25 official -> pending BUY on M1 close back above it
+2026-09-07T13:05:01.694751+00:00 KINO: dip 79518.02 official -> pending SELL on M1 close back below it
+2026-09-07T13:15:01.653538+00:00 KINO: dip 79543.18 official -> pending SELL on M1 close back below it
+2026-09-07T13:18:02.682868+00:00 KINO: peak 79639.59 official -> pending BUY on M1 close back above it
+2026-09-07T13:19:00.896654+00:00 KINO: dip 79557.17 official -> pending SELL on M1 close back below it
+2026-09-07T13:29:02.454719+00:00 KINO: peak 79635.13 official -> pending BUY on M1 close back above it
+2026-09-07T13:30:02.632003+00:00 KINO: dip 79588.46 official -> pending SELL on M1 close back below it
+2026-09-07T13:33:03.179780+00:00 KINO: confirmation ran 63pts past 79588.46 - NOT chasing; SELL only on a retest
+2026-09-07T13:38:02.152006+00:00 KINO: dip 79288.93 official -> pending SELL on M1 close back below it
+2026-09-07T13:42:02.960669+00:00 KINO: peak 79416.10 official -> pending BUY on M1 close back above it
+2026-09-07T13:47:01.832626+00:00 KINO: peak 79370.31 official -> pending BUY on M1 close back above it
+2026-09-07T13:50:02.291623+00:00 KINO: peak 79348.18 official -> pending BUY on M1 close back above it
+2026-09-07T13:54:02.493524+00:00 KINO: confirmation ran 35pts past 79348.18 - NOT chasing; BUY only on a retest
+2026-09-07T13:54:02.493524+00:00 KINO: dip 79303.37 official -> pending SELL on M1 close back below it
+2026-09-07T13:57:01.239447+00:00 KINO: peak 79414.57 official -> pending BUY on M1 close back above it
+2026-09-07T14:07:03.320640+00:00 KINO: confirmation ran 126pts past 79303.37 - NOT chasing; SELL only on a retest
+2026-09-07T14:11:02.109552+00:00 KINO: dip 79099.43 official -> pending SELL on M1 close back below it
+2026-09-07T14:15:02.950762+00:00 KINO: dip 79102.87 official -> pending SELL on M1 close back below it
+2026-09-07T14:22:02.190548+00:00 KINO: confirmation ran 41pts past 79102.87 - NOT chasing; SELL only on a retest
+2026-09-07T14:23:07.467558+00:00 KINO: retest of 79102.87 - entering the missed SELL properly
+2026-09-07T14:24:02.790056+00:00 KINO: retest of 79102.87 - entering the missed SELL properly
+2026-09-07T14:25:02.967453+00:00 KINO: retest of 79102.87 - entering the missed SELL properly
+2026-09-07T14:26:03.173288+00:00 KINO: retest of 79102.87 - entering the missed SELL properly
+2026-09-07T14:27:01.399350+00:00 KINO: dip 79036.85 official -> pending SELL on M1 close back below it
+2026-09-07T14:28:01.575698+00:00 KINO: peak 79123.86 official -> pending BUY on M1 close back above it
+2026-09-07T14:28:29.221790+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-07T14:28:29.224181+00:00 WAR-CHEST mode ON: book $0.00, chest $0.00, next fighter 0.02
+2026-09-07T14:36:02.576199+00:00 KINO: dip 78989.51 official -> pending SELL on M1 close back below it
+2026-09-07T14:39:03.092697+00:00 KINO: peak 79100.98 official -> pending BUY on M1 close back above it
+2026-09-07T14:43:01.740680+00:00 KINO: dip 78933.12 official -> pending SELL on M1 close back below it
+2026-09-07T14:53:03.484728+00:00 KINO: confirmation ran 87pts past 79100.98 - NOT chasing; BUY only on a retest
+2026-09-07T14:56:05.717414+00:00 KINO: peak 79264.23 official -> pending BUY on M1 close back above it
+2026-09-07T15:10:03.019659+00:00 KINO: dip 79015.38 official -> pending SELL on M1 close back below it
+2026-09-07T15:15:02.595313+00:00 KINO: peak 79074.08 official -> pending BUY on M1 close back above it
+2026-09-07T15:20:01.461973+00:00 KINO: dip 78807.05 official -> pending SELL on M1 close back below it
+2026-09-07T15:29:03.058052+00:00 KINO: peak 79111.10 official -> pending BUY on M1 close back above it
+2026-09-07T15:36:02.163432+00:00 KINO: dip 78771.61 official -> pending SELL on M1 close back below it
+2026-09-07T15:39:42.675907+00:00 WITHDRAWAL detected: -3.80 (ladder handled by assistant)
+2026-09-07T15:41:02.905020+00:00 KINO: confirmation ran 52pts past 78771.61 - NOT chasing; SELL only on a retest
+2026-09-07T15:43:03.197271+00:00 KINO: dip 78660.61 official -> pending SELL on M1 close back below it
+2026-09-07T15:54:02.873515+00:00 KINO: peak 78851.76 official -> pending BUY on M1 close back above it
+2026-09-07T15:58:02.218075+00:00 KINO: dip 78721.21 official -> pending SELL on M1 close back below it
+2026-09-07T16:03:03.182271+00:00 KINO: confirmation ran 47pts past 78851.76 - NOT chasing; BUY only on a retest
+2026-09-07T16:05:01.481705+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:06:01.708834+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:07:03.866266+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:08:02.027404+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:09:02.246726+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:10:02.411354+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:11:02.644521+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:12:02.809846+00:00 KINO: retest of 78851.76 - entering the missed BUY properly
+2026-09-07T16:13:02.980698+00:00 KINO: dip 78806.57 official -> pending SELL on M1 close back below it
+2026-09-07T16:16:03.605114+00:00 KINO: peak 78903.51 official -> pending BUY on M1 close back above it
+2026-09-07T16:19:02.104230+00:00 KINO: dip 78805.53 official -> pending SELL on M1 close back below it
+2026-09-07T16:22:03.636487+00:00 KINO: peak 78886.24 official -> pending BUY on M1 close back above it
+2026-09-07T16:27:02.990768+00:00 KINO: confirmation ran 31pts past 78805.53 - NOT chasing; SELL only on a retest
+2026-09-07T16:28:03.202224+00:00 KINO: retest of 78805.53 - entering the missed SELL properly
+2026-09-07T16:30:03.509195+00:00 KINO: retest of 78805.53 - entering the missed SELL properly
+2026-09-07T16:31:01.667850+00:00 KINO: retest of 78805.53 - entering the missed SELL properly
+2026-09-07T16:32:01.791907+00:00 KINO: dip 78773.38 official -> pending SELL on M1 close back below it
+2026-09-07T16:36:02.350578+00:00 KINO: confirmation ran 60pts past 78886.24 - NOT chasing; BUY only on a retest
+2026-09-07T16:42:03.232341+00:00 KINO: dip 78974.36 official -> pending SELL on M1 close back below it
+2026-09-07T16:45:01.679866+00:00 KINO: peak 79017.59 official -> pending BUY on M1 close back above it
+2026-09-07T16:52:01.609435+00:00 KINO: dip 78942.97 official -> pending SELL on M1 close back below it
+2026-09-07T16:59:02.625424+00:00 KINO: peak 79003.14 official -> pending BUY on M1 close back above it
+2026-09-07T17:00:02.791498+00:00 KINO: dip 78939.69 official -> pending SELL on M1 close back below it
+2026-09-07T17:07:03.186830+00:00 KINO: confirmation ran 46pts past 79003.14 - NOT chasing; BUY only on a retest
+2026-09-07T17:16:05.524167+00:00 KINO: peak 79136.22 official -> pending BUY on M1 close back above it
+2026-09-07T17:20:06.978293+00:00 ENTRY logged: BUY 0.02 @ 79140.3 ticket 1050750189
+2026-09-07T17:22:01.269424+00:00 KINO: peak 79146.01 official -> pending BUY on M1 close back above it
+2026-09-07T17:24:17.673041+00:00 EXIT logged: ticket 1050750189 sl profit -1.28 dur 4.2min
+2026-09-07T17:24:17.674475+00:00 KINO tracker reset - clean chart
+2026-09-07T17:24:17.675547+00:00 DEBT BOOK +1.28 -> $1.28 owed
+2026-09-07T17:25:31.834142+00:00 ENTRY logged: SELL 0.03 @ 79082.76 ticket 1050751200
+2026-09-07T17:29:12.300557+00:00 EXIT logged: ticket 1050751200 sl profit -2.04 dur 3.6min
+2026-09-07T17:29:12.301402+00:00 KINO tracker reset - clean chart
+2026-09-07T17:29:12.303002+00:00 DEBT BOOK +2.04 -> $3.32 owed
+2026-09-07T17:35:21.230298+00:00 ENTRY logged: SELL 0.04 @ 79061.0 ticket 1050754123
+2026-09-07T17:37:03.492532+00:00 KINO: dip 79048.73 official -> pending SELL on M1 close back below it
+2026-09-07T17:41:22.144533+00:00 EXIT logged: ticket 1050754123 sl profit -3.56 dur 6.0min
+2026-09-07T17:41:22.146066+00:00 KINO tracker reset - clean chart
+2026-09-07T17:41:22.146564+00:00 WEATHER: storm detected (3 straight real losses) - FULL SHELTER, everything goes virtual
+2026-09-07T17:41:22.151230+00:00 DEBT BOOK +3.56 -> $6.88 owed
+2026-09-07T17:42:20.286461+00:00 ENTRY logged: BUY 0.05 @ 79143.52 ticket 1050755758
+2026-09-07T17:44:02.517731+00:00 KINO: peak 79162.73 official -> pending BUY on M1 close back above it
+2026-09-07T17:47:03.460142+00:00 KINO: peak 79167.80 official -> pending BUY on M1 close back above it
+2026-09-07T17:55:02.690824+00:00 KINO: peak 79197.07 official -> pending BUY on M1 close back above it
+2026-09-07T17:59:03.397251+00:00 KINO: dip 79142.13 official -> pending SELL on M1 close back below it
+2026-09-07T18:03:02.003366+00:00 KINO: peak 79191.73 official -> pending BUY on M1 close back above it
+2026-09-07T18:07:02.570507+00:00 KINO: dip 79126.01 official -> pending SELL on M1 close back below it
+2026-09-07T18:12:03.426138+00:00 KINO: dip 79122.36 official -> pending SELL on M1 close back below it
+2026-09-07T18:18:02.933143+00:00 KINO: peak 79175.83 official -> pending BUY on M1 close back above it
+2026-09-07T18:20:02.324547+00:00 KINO: dip 79145.35 official -> pending SELL on M1 close back below it
+2026-09-07T18:23:02.708375+00:00 KINO: peak 79182.83 official -> pending BUY on M1 close back above it
+2026-09-07T18:29:03.615946+00:00 KINO: confirmation ran 22pts past 79145.35 - NOT chasing; SELL only on a retest
+2026-09-07T18:30:01.762176+00:00 KINO: dip 79112.16 official -> pending SELL on M1 close back below it
+2026-09-07T18:33:02.308397+00:00 KINO: confirmation ran 20pts past 79112.16 - NOT chasing; SELL only on a retest
+2026-09-07T18:35:02.634090+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:36:02.780788+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:37:02.927578+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:38:03.100689+00:00 KINO: peak 79125.91 official -> pending BUY on M1 close back above it
+2026-09-07T18:38:03.101432+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:40:31.458810+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:41:01.719068+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:42:03.868927+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:44:02.117509+00:00 KINO: retest of 79112.16 - entering the missed SELL properly
+2026-09-07T18:46:02.384675+00:00 KINO: confirmation ran 22pts past 79125.91 - NOT chasing; BUY only on a retest
+2026-09-07T18:47:03.479198+00:00 KINO: retest of 79125.91 - entering the missed BUY properly
+2026-09-07T18:48:01.865177+00:00 KINO: retest of 79125.91 - entering the missed BUY properly
+2026-09-07T18:49:02.007330+00:00 KINO: retest of 79125.91 - entering the missed BUY properly
+2026-09-07T18:50:02.153430+00:00 KINO: retest of 79125.91 - entering the missed BUY properly
+2026-09-07T18:56:03.085486+00:00 KINO: peak 79235.68 official -> pending BUY on M1 close back above it
+2026-09-07T19:02:01.998366+00:00 KINO: peak 79199.97 official -> pending BUY on M1 close back above it
+2026-09-07T19:08:02.880574+00:00 KINO: peak 79182.97 official -> pending BUY on M1 close back above it
+2026-09-07T19:11:01.384882+00:00 KINO: dip 79141.33 official -> pending SELL on M1 close back below it
+2026-09-07T19:22:02.879663+00:00 KINO: dip 79161.30 official -> pending SELL on M1 close back below it
+2026-09-07T19:23:29.832859+00:00 KINO: confirmation ran 28pts past 79182.97 - NOT chasing; BUY only on a retest
+2026-09-07T19:26:02.985257+00:00 KINO: peak 79235.04 official -> pending BUY on M1 close back above it
+2026-09-07T19:28:03.381662+00:00 KINO: dip 79199.73 official -> pending SELL on M1 close back below it
+2026-09-07T19:30:15.733630+00:00 EXIT logged: ticket 1050755758 tp profit 5.21 dur 107.9min
+2026-09-07T19:30:15.734580+00:00 KINO tracker reset - clean chart
+2026-09-07T19:30:15.738139+00:00 CHEST +5.21 -> $5.00 saved toward the 0.02 fighter
+2026-09-07T19:40:03.169304+00:00 KINO: peak 79413.38 official -> pending BUY on M1 close back above it
+2026-09-07T19:49:02.485504+00:00 KINO: dip 79312.12 official -> pending SELL on M1 close back below it
+2026-09-07T19:55:03.414801+00:00 KINO: peak 79368.04 official -> pending BUY on M1 close back above it
+2026-09-07T20:01:03.258445+00:00 KINO: dip 79315.76 official -> pending SELL on M1 close back below it
+2026-09-07T20:06:03.931110+00:00 KINO: confirmation ran 49pts past 79315.76 - NOT chasing; SELL only on a retest
+2026-09-07T20:16:03.369770+00:00 KINO: dip 79177.43 official -> pending SELL on M1 close back below it
+2026-09-07T20:21:04.062791+00:00 KINO: peak 79247.22 official -> pending BUY on M1 close back above it
+2026-09-07T20:28:04.011093+00:00 KINO: peak 79203.88 official -> pending BUY on M1 close back above it
+2026-09-07T20:29:02.145940+00:00 KINO: dip 79158.41 official -> pending SELL on M1 close back below it
+2026-09-07T20:51:03.246817+00:00 KINO: confirmation ran 26pts past 79203.88 - NOT chasing; BUY only on a retest
+2026-09-07T20:52:03.377978+00:00 KINO: retest of 79203.88 - entering the missed BUY properly
+2026-09-07T20:54:03.639241+00:00 KINO: peak 79247.17 official -> pending BUY on M1 close back above it
+2026-09-07T20:56:03.309260+00:00 KINO: dip 79167.60 official -> pending SELL on M1 close back below it
+2026-09-07T21:01:02.166872+00:00 KINO: dip 79202.44 official -> pending SELL on M1 close back below it
+2026-09-07T21:05:02.644819+00:00 KINO: peak 79245.88 official -> pending BUY on M1 close back above it
+2026-09-07T21:08:03.090563+00:00 KINO: confirmation ran 22pts past 79202.44 - NOT chasing; SELL only on a retest
+2026-09-07T21:11:03.490540+00:00 KINO: retest of 79202.44 - entering the missed SELL properly
+2026-09-07T21:12:09.234809+00:00 KINO: retest of 79202.44 - entering the missed SELL properly
+2026-09-07T21:13:01.942721+00:00 KINO: retest of 79202.44 - entering the missed SELL properly
+2026-09-07T21:14:02.074485+00:00 KINO: retest of 79202.44 - entering the missed SELL properly
+2026-09-07T21:15:02.193822+00:00 KINO: dip 79176.73 official -> pending SELL on M1 close back below it
+2026-09-07T21:16:04.319712+00:00 KINO: peak 79251.62 official -> pending BUY on M1 close back above it
+2026-09-07T21:20:02.827984+00:00 KINO: dip 79191.87 official -> pending SELL on M1 close back below it
+2026-09-07T21:41:02.527132+00:00 KINO: peak 79202.82 official -> pending BUY on M1 close back above it
+2026-09-07T21:44:03.146590+00:00 KINO: dip 79162.54 official -> pending SELL on M1 close back below it
+2026-09-07T21:51:04.289999+00:00 KINO: peak 79202.82 official -> pending BUY on M1 close back above it
+2026-09-07T21:52:10.452477+00:00 ENTRY logged: SELL 0.03 @ 79157.47 ticket 1050782747
+2026-09-07T21:53:02.586439+00:00 KINO: dip 79145.71 official -> pending SELL on M1 close back below it
+2026-09-07T22:00:02.203385+00:00 KINO: peak 79196.08 official -> pending BUY on M1 close back above it
+2026-09-07T22:02:03.405932+00:00 KINO: confirmation ran 61pts past 79145.71 - NOT chasing; SELL only on a retest
+2026-09-07T22:02:05.422557+00:00 EXIT logged: ticket 1050782747 tp profit 2.79 dur 9.9min
+2026-09-07T22:02:05.429299+00:00 KINO tracker reset - clean chart
+2026-09-07T22:02:05.430402+00:00 CHEST +2.79 -> $5.00 saved toward the 0.02 fighter
+2026-09-07T22:05:01.887783+00:00 MILESTONE 50.0 TOUCHED (equity 174.83) -> cutting ALL trades
+2026-09-07T22:06:02.055421+00:00 KINO: peak 79193.44 official -> pending BUY on M1 close back above it
+2026-09-07T22:12:02.944582+00:00 KINO: peak 79197.14 official -> pending BUY on M1 close back above it
+2026-09-07T22:24:02.834997+00:00 KINO: dip 79002.92 official -> pending SELL on M1 close back below it
+2026-09-07T22:29:02.977465+00:00 KINO: peak 79183.62 official -> pending BUY on M1 close back above it
+2026-09-07T22:37:42.008043+00:00 ENTRY logged: SELL 0.03 @ 78985.35 ticket 1050793076
+2026-09-07T22:38:04.075583+00:00 KINO: peak 79078.95 official -> pending BUY on M1 close back above it
+2026-09-07T22:38:04.079651+00:00 SHADOW page ENTRY: SELL 0.01 @ 78987.52 (virtual - shelter mode)
+2026-09-07T22:38:20.143783+00:00 SHADOW[page] scratch +0.08 (virtual stop) -> virtual doors arm, next 0.02
+2026-09-07T22:39:16.468701+00:00 SHADOW[page] RE-ENTRY: SELL 0.02 @ 78930.95 (virtual)
+2026-09-07T22:39:30.514937+00:00 SHADOW[page] PARTIAL 85%: +0.10 banked virtually, rest rides
+2026-09-07T22:39:34.528413+00:00 SHADOW[page] WIN +0.12 (virtual target hit)
+2026-09-07T22:39:34.529965+00:00 WEATHER CLEAR: a VIRTUAL WIN lifted the storm - real trading resumes; frozen chains re-enter on the next structure at last lot + 0.01
+2026-09-07T22:39:36.537803+00:00 WEATHER: balance back above the floor - normal mode
+2026-09-07T22:40:08.676771+00:00 EXIT logged: ticket 1050793076 tp profit 4.74 dur 2.5min
+2026-09-07T22:40:08.679169+00:00 KINO tracker reset - clean chart
+2026-09-07T22:40:08.680976+00:00 CHEST +4.74 -> $5.00 saved toward the 0.02 fighter
+2026-09-07T22:54:02.920452+00:00 KINO: peak 78948.73 official -> pending BUY on M1 close back above it
+2026-09-07T22:59:03.846745+00:00 KINO: dip 78863.21 official -> pending SELL on M1 close back below it
+2026-09-07T23:02:02.512642+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-07T23:02:02.512642+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-07T23:03:02.717742+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-07T23:04:02.896357+00:00 KINO: confirmation ran 32pts past 78948.73 - NOT chasing; BUY only on a retest
+2026-09-07T23:04:06.912569+00:00 ENTRY logged: BUY 0.03 @ 79005.0 ticket 1050798568
+2026-09-07T23:05:03.057618+00:00 KINO: peak 79001.09 official -> pending BUY on M1 close back above it
+2026-09-07T23:06:52.022937+00:00 EXIT logged: ticket 1050798568 tp profit 0.51 dur 2.7min
+2026-09-07T23:06:52.024613+00:00 KINO tracker reset - clean chart
+2026-09-07T23:06:52.036291+00:00 CHEST +0.51 -> $5.00 saved toward the 0.02 fighter
+2026-09-07T23:16:03.332899+00:00 KINO: peak 79150.81 official -> pending BUY on M1 close back above it
+2026-09-07T23:30:03.840094+00:00 KINO: peak 79021.38 official -> pending BUY on M1 close back above it
+2026-09-07T23:33:02.471413+00:00 KINO: dip 78938.51 official -> pending SELL on M1 close back below it
+2026-09-07T23:41:04.354346+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-07T23:41:04.355178+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-07T23:42:02.510204+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-07T23:43:04.651710+00:00 KINO: confirmation ran 30pts past 79021.38 - NOT chasing; BUY only on a retest
+2026-09-07T23:51:02.166350+00:00 KINO: peak 79191.00 official -> pending BUY on M1 close back above it
+2026-09-08T00:00:04.069377+00:00 KINO: peak 79119.90 official -> pending BUY on M1 close back above it
+2026-09-08T00:01:03.848524+00:00 D1 FLIP: daily trend is now DOWN - if a runner leg is riding, this is its harvest signal
+2026-09-08T00:01:03.850039+00:00 CLOCKS ALIGNED: H4 and D1 both say DOWN - next SELL scalp is the runner candidate (2x0.01)
+2026-09-08T00:01:03.854211+00:00 PAPER RUNNER opened: SELL 2x0.01 @ 79093.21 (virtual, no real money)
+2026-09-08T00:04:04.643006+00:00 KINO: dip 78982.22 official -> pending SELL on M1 close back below it
+2026-09-08T00:05:02.886434+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~79027.10 (setup 79042.46)
+2026-09-08T00:13:02.663083+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T00:13:02.675065+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:14:02.852872+00:00 KINO: dip 78960.03 official -> pending SELL on M1 close back below it
+2026-09-08T00:23:04.696198+00:00 KINO: peak 79125.86 official -> pending BUY on M1 close back above it
+2026-09-08T00:24:10.916178+00:00 PAPER RUNNER banked $1.50 (leg A TP), leg B now risk-free with BE stop @ 79088.21 (virtual)
+2026-09-08T00:25:03.080752+00:00 KINO: dip 78943.20 official -> pending SELL on M1 close back below it
+2026-09-08T00:29:03.862929+00:00 KINO: peak 79063.66 official -> pending BUY on M1 close back above it
+2026-09-08T00:32:04.561520+00:00 KINO: dip 78958.73 official -> pending SELL on M1 close back below it
+2026-09-08T00:33:02.738372+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T00:33:02.739306+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:34:02.922787+00:00 KINO: confirmation ran 58pts past 79063.66 - NOT chasing; BUY only on a retest
+2026-09-08T00:34:12.990374+00:00 PAPER RUNNER BE-stopped: total +1.55 (virtual). Ledger: -13.00 over 2 attempts
+2026-09-08T00:44:03.590648+00:00 KINO: peak 79262.92 official -> pending BUY on M1 close back above it
+2026-09-08T00:47:04.204006+00:00 KINO: dip 79167.62 official -> pending SELL on M1 close back below it
+2026-09-08T00:56:04.215981+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T00:56:04.215981+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:56:04.215981+00:00 KINO: dip 79226.21 official -> pending SELL on M1 close back below it
+2026-09-08T00:57:04.420767+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:58:02.626268+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:59:04.867006+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T00:59:08.894297+00:00 ENTRY logged: BUY 0.06 @ 79279.77 ticket 1050834630
+2026-09-08T01:00:03.173115+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:01:03.589151+00:00 KINO: confirmation ran 38pts past 79262.92 - NOT chasing; BUY only on a retest
+2026-09-08T01:02:04.055103+00:00 KINO: retest of 79262.92 - entering the missed BUY properly
+2026-09-08T01:02:04.055975+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:03:02.478436+00:00 KINO: retest of 79262.92 - entering the missed BUY properly
+2026-09-08T01:03:02.479949+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:05:02.927517+00:00 KINO: retest of 79262.92 - entering the missed BUY properly
+2026-09-08T01:05:02.928841+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:06:03.169921+00:00 KINO: dip 79260.08 official -> pending SELL on M1 close back below it
+2026-09-08T01:07:03.383284+00:00 KINO: peak 79325.59 official -> pending BUY on M1 close back above it
+2026-09-08T01:07:03.383284+00:00 KINO: confirmation ran 30pts past 79260.08 - NOT chasing; SELL only on a retest
+2026-09-08T01:07:03.384851+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~79230.24 (setup 79260.08)
+2026-09-08T01:09:03.869611+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T01:09:03.870109+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:11:02.405466+00:00 KINO: peak 79337.19 official -> pending BUY on M1 close back above it
+2026-09-08T01:12:02.718993+00:00 KINO: dip 79284.75 official -> pending SELL on M1 close back below it
+2026-09-08T01:15:04.161772+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:16:04.468457+00:00 KINO: dip 79264.30 official -> pending SELL on M1 close back below it
+2026-09-08T01:17:04.714527+00:00 FUNDED FIGHTER entry FAILED retcode=None
+2026-09-08T01:22:40.134401+00:00 EXIT logged: ticket 1050834630 tp profit 4.63 dur 23.5min
+2026-09-08T01:22:40.136408+00:00 KINO tracker reset - clean chart
+2026-09-08T01:22:40.138416+00:00 CHEST +4.63 -> $5.00 saved toward the 0.02 fighter
+2026-09-08T01:25:02.645428+00:00 KINO: peak 79446.24 official -> pending BUY on M1 close back above it
+2026-09-08T01:29:03.396614+00:00 KINO: peak 79419.38 official -> pending BUY on M1 close back above it
+2026-09-08T01:43:03.983123+00:00 KINO: dip 79276.29 official -> pending SELL on M1 close back below it
+2026-09-08T01:44:41.150518+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-08T01:44:41.154549+00:00 WAR-CHEST mode ON: book $2.25, chest $5.00, next fighter 0.02
+2026-09-08T01:45:03.243051+00:00 KINO: peak 79313.67 official -> pending BUY on M1 close back above it
+2026-09-08T01:50:02.444541+00:00 KINO: confirmation ran 28pts past 79313.67 - NOT chasing; BUY only on a retest
+2026-09-08T01:52:02.909605+00:00 KINO: retest of 79313.67 - entering the missed BUY properly
+2026-09-08T01:52:02.910667+00:00 collecting: chest $5.00 of $1.02 needed for the 0.02 fighter - small page instead
+2026-09-08T01:52:02.911267+00:00 KINO skipped: wall 79271.76 too close (51.0pts)
+2026-09-08T01:53:03.119177+00:00 KINO: retest of 79313.67 - entering the missed BUY properly
+2026-09-08T01:53:03.119944+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T01:54:03.349297+00:00 KINO: retest of 79313.67 - entering the missed BUY properly
+2026-09-08T01:55:03.528389+00:00 KINO: retest of 79313.67 - entering the missed BUY properly
+2026-09-08T02:06:04.016641+00:00 KINO: peak 79431.52 official -> pending BUY on M1 close back above it
+2026-09-08T02:06:04.018179+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~79343.67 (setup 79362.74)
+2026-09-08T02:12:03.128626+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T02:14:04.405116+00:00 KINO: dip 79226.46 official -> pending SELL on M1 close back below it
+2026-09-08T02:18:03.208984+00:00 KINO: peak 79330.56 official -> pending BUY on M1 close back above it
+2026-09-08T02:21:03.827698+00:00 KINO: dip 79254.81 official -> pending SELL on M1 close back below it
+2026-09-08T02:23:04.313856+00:00 KINO: confirmation ran 34pts past 79330.56 - NOT chasing; BUY only on a retest
+2026-09-08T02:26:03.042800+00:00 KINO: peak 79467.77 official -> pending BUY on M1 close back above it
+2026-09-08T02:29:03.691479+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T02:31:04.174510+00:00 collecting: chest $5.00 of $5.02 needed for the 0.02 fighter - small page instead
+2026-09-08T02:31:04.174510+00:00 KINO skipped: wall 251pts would risk $2.51 > $2.50 max
+2026-09-08T02:33:02.563952+00:00 collecting: chest $5.00 of $5.51 needed for the 0.02 fighter - small page instead
+2026-09-08T02:33:02.563952+00:00 KINO skipped: wall 275pts would risk $2.75 > $2.50 max
+2026-09-08T02:34:02.716635+00:00 collecting: chest $5.00 of $5.32 needed for the 0.02 fighter - small page instead
+2026-09-08T02:34:02.716635+00:00 KINO skipped: wall 266pts would risk $2.66 > $2.50 max
+2026-09-08T02:35:02.882539+00:00 collecting: chest $5.00 of $5.40 needed for the 0.02 fighter - small page instead
+2026-09-08T02:35:02.882539+00:00 KINO skipped: wall 270pts would risk $2.70 > $2.50 max
+2026-09-08T02:36:03.083030+00:00 KINO: confirmation ran 86pts past 79254.81 - NOT chasing; SELL only on a retest
+2026-09-08T02:39:03.722442+00:00 KINO: dip 79137.09 official -> pending SELL on M1 close back below it
+2026-09-08T02:40:03.107298+00:00 KINO: peak 79192.95 official -> pending BUY on M1 close back above it
+2026-09-08T02:42:04.561854+00:00 collecting: chest $5.00 of $1.14 needed for the 0.02 fighter - small page instead
+2026-09-08T02:42:04.562325+00:00 KINO skipped: wall 79192.95 too close (57.2pts)
+2026-09-08T02:43:02.730902+00:00 KINO: confirmation ran 29pts past 79137.09 - NOT chasing; SELL only on a retest
+2026-09-08T02:45:03.090760+00:00 KINO: retest of 79137.09 - entering the missed SELL properly
+2026-09-08T02:45:03.092417+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T02:46:03.751612+00:00 KINO: retest of 79137.09 - entering the missed SELL properly
+2026-09-08T02:47:03.918393+00:00 KINO: retest of 79137.09 - entering the missed SELL properly
+2026-09-08T02:49:04.352052+00:00 KINO: dip 79065.57 official -> pending SELL on M1 close back below it
+2026-09-08T02:51:02.794888+00:00 KINO: peak 79132.13 official -> pending BUY on M1 close back above it
+2026-09-08T02:53:03.154091+00:00 KINO: confirmation ran 62pts past 79065.57 - NOT chasing; SELL only on a retest
+2026-09-08T03:02:03.441070+00:00 KINO: dip 78902.40 official -> pending SELL on M1 close back below it
+2026-09-08T03:05:04.030967+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T03:05:04.033487+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78900.57 (setup 78902.40)
+2026-09-08T03:09:03.452506+00:00 KINO: dip 78853.29 official -> pending SELL on M1 close back below it
+2026-09-08T03:11:03.785649+00:00 KINO: peak 78979.22 official -> pending BUY on M1 close back above it
+2026-09-08T03:17:04.064330+00:00 KINO: dip 78873.16 official -> pending SELL on M1 close back below it
+2026-09-08T03:19:04.514597+00:00 collecting: chest $5.00 of $1.16 needed for the 0.02 fighter - small page instead
+2026-09-08T03:19:04.514597+00:00 KINO skipped: wall 78929.60 too close (57.9pts)
+2026-09-08T03:20:02.774487+00:00 KINO: confirmation ran 37pts past 78873.16 - NOT chasing; SELL only on a retest
+2026-09-08T03:21:05.132425+00:00 KINO: retest of 78873.16 - entering the missed SELL properly
+2026-09-08T03:21:05.134434+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T03:28:04.559703+00:00 KINO: peak 78849.08 official -> pending BUY on M1 close back above it
+2026-09-08T03:30:02.925978+00:00 KINO: dip 78713.90 official -> pending SELL on M1 close back below it
+2026-09-08T03:32:03.543469+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T03:33:03.726433+00:00 KINO: confirmation ran 55pts past 78849.08 - NOT chasing; BUY only on a retest
+2026-09-08T03:35:04.063536+00:00 KINO: peak 78953.40 official -> pending BUY on M1 close back above it
+2026-09-08T03:44:03.461691+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T03:44:03.461691+00:00 KINO: dip 78869.57 official -> pending SELL on M1 close back below it
+2026-09-08T03:47:04.026724+00:00 KINO: peak 78959.86 official -> pending BUY on M1 close back above it
+2026-09-08T03:51:02.874047+00:00 KINO: dip 78836.65 official -> pending SELL on M1 close back below it
+2026-09-08T03:59:02.967435+00:00 KINO: peak 78932.44 official -> pending BUY on M1 close back above it
+2026-09-08T04:08:04.680454+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T04:08:04.682465+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78834.79 (setup 78851.42)
+2026-09-08T04:13:03.745105+00:00 KINO: confirmation ran 53pts past 78836.65 - NOT chasing; SELL only on a retest
+2026-09-08T04:14:03.920010+00:00 KINO: retest of 78836.65 - entering the missed SELL properly
+2026-09-08T04:15:04.127179+00:00 KINO: retest of 78836.65 - entering the missed SELL properly
+2026-09-08T04:18:02.766640+00:00 KINO: dip 78740.52 official -> pending SELL on M1 close back below it
+2026-09-08T04:23:03.763699+00:00 KINO: peak 78836.21 official -> pending BUY on M1 close back above it
+2026-09-08T04:26:20.139225+00:00 KINO: dip 78720.99 official -> pending SELL on M1 close back below it
+2026-09-08T04:30:03.651761+00:00 KINO: peak 78823.20 official -> pending BUY on M1 close back above it
+2026-09-08T04:33:04.115863+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T04:35:04.505864+00:00 KINO: peak 78850.72 official -> pending BUY on M1 close back above it
+2026-09-08T04:41:03.526919+00:00 KINO: peak 78814.81 official -> pending BUY on M1 close back above it
+2026-09-08T04:48:04.732365+00:00 KINO: dip 78699.03 official -> pending SELL on M1 close back below it
+2026-09-08T04:51:03.271629+00:00 KINO: dip 78763.00 official -> pending SELL on M1 close back below it
+2026-09-08T04:54:03.934784+00:00 KINO: peak 78794.54 official -> pending BUY on M1 close back above it
+2026-09-08T04:54:03.935164+00:00 KINO: confirmation ran 56pts past 78763.00 - NOT chasing; SELL only on a retest
+2026-09-08T05:02:04.151396+00:00 KINO: dip 78501.85 official -> pending SELL on M1 close back below it
+2026-09-08T05:05:04.740096+00:00 KINO: peak 78784.98 official -> pending BUY on M1 close back above it
+2026-09-08T05:07:03.102656+00:00 KINO: dip 78603.27 official -> pending SELL on M1 close back below it
+2026-09-08T05:13:04.817720+00:00 KINO: dip 78587.55 official -> pending SELL on M1 close back below it
+2026-09-08T05:15:05.215512+00:00 KINO: peak 78746.65 official -> pending BUY on M1 close back above it
+2026-09-08T05:19:04.111219+00:00 KINO: confirmation ran 49pts past 78746.65 - NOT chasing; BUY only on a retest
+2026-09-08T05:23:04.664284+00:00 KINO: peak 78854.61 official -> pending BUY on M1 close back above it
+2026-09-08T05:39:04.692047+00:00 KINO: dip 78605.77 official -> pending SELL on M1 close back below it
+2026-09-08T05:41:03.159029+00:00 KINO: peak 78738.71 official -> pending BUY on M1 close back above it
+2026-09-08T05:44:03.813458+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78656.05 (setup 78664.19)
+2026-09-08T05:45:04.055535+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T05:50:03.303278+00:00 KINO: dip 78595.42 official -> pending SELL on M1 close back below it
+2026-09-08T05:53:04.688501+00:00 KINO: peak 78696.95 official -> pending BUY on M1 close back above it
+2026-09-08T05:55:05.013275+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T05:58:04.860917+00:00 KINO: confirmation ran 37pts past 78595.42 - NOT chasing; SELL only on a retest
+2026-09-08T06:01:03.573099+00:00 KINO: dip 78470.70 official -> pending SELL on M1 close back below it
+2026-09-08T06:04:04.392561+00:00 KINO: dip 78429.49 official -> pending SELL on M1 close back below it
+2026-09-08T06:06:05.055491+00:00 KINO: peak 78582.14 official -> pending BUY on M1 close back above it
+2026-09-08T06:08:03.704096+00:00 KINO: dip 78395.50 official -> pending SELL on M1 close back below it
+2026-09-08T06:11:04.592757+00:00 KINO: peak 78608.21 official -> pending BUY on M1 close back above it
+2026-09-08T06:14:03.395858+00:00 KINO: dip 78463.76 official -> pending SELL on M1 close back below it
+2026-09-08T06:18:04.645484+00:00 KINO: peak 78611.28 official -> pending BUY on M1 close back above it
+2026-09-08T06:20:04.860142+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T06:24:04.636199+00:00 KINO: confirmation ran 54pts past 78463.76 - NOT chasing; SELL only on a retest
+2026-09-08T06:24:04.644638+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78410.15 (setup 78425.21)
+2026-09-08T06:26:03.204558+00:00 KINO: retest of 78463.76 - entering the missed SELL properly
+2026-09-08T06:32:00.745010+00:00 ENTRY logged: SELL 0.04 @ 78377.03 ticket 1050954868
+2026-09-08T06:33:04.950898+00:00 KINO: dip 78331.42 official -> pending SELL on M1 close back below it
+2026-09-08T06:39:04.263047+00:00 KINO: dip 78326.19 official -> pending SELL on M1 close back below it
+2026-09-08T06:45:03.720444+00:00 KINO: dip 78335.54 official -> pending SELL on M1 close back below it
+2026-09-08T06:49:04.888427+00:00 KINO: peak 78467.48 official -> pending BUY on M1 close back above it
+2026-09-08T06:50:04.161092+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T06:54:03.269287+00:00 KINO: confirmation ran 70pts past 78335.54 - NOT chasing; SELL only on a retest
+2026-09-08T06:56:03.834333+00:00 KINO: dip 78226.44 official -> pending SELL on M1 close back below it
+2026-09-08T07:03:03.942924+00:00 KINO: peak 78358.23 official -> pending BUY on M1 close back above it
+2026-09-08T07:06:04.863912+00:00 KINO: dip 78270.45 official -> pending SELL on M1 close back below it
+2026-09-08T07:07:03.123317+00:00 KINO: confirmation ran 33pts past 78358.23 - NOT chasing; BUY only on a retest
+2026-09-08T07:08:03.326470+00:00 KINO: retest of 78358.23 - entering the missed BUY properly
+2026-09-08T07:08:03.327920+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T07:09:03.795715+00:00 KINO: retest of 78358.23 - entering the missed BUY properly
+2026-09-08T07:10:04.242048+00:00 KINO: retest of 78358.23 - entering the missed BUY properly
+2026-09-08T07:15:04.041842+00:00 KINO: peak 78419.92 official -> pending BUY on M1 close back above it
+2026-09-08T07:16:04.415982+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78361.71 (setup 78377.52)
+2026-09-08T07:17:04.757254+00:00 KINO: dip 78347.60 official -> pending SELL on M1 close back below it
+2026-09-08T07:21:05.519463+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T07:26:03.224675+00:00 KINO: confirmation ran 71pts past 78419.92 - NOT chasing; BUY only on a retest
+2026-09-08T07:30:04.107105+00:00 KINO: peak 78497.65 official -> pending BUY on M1 close back above it
+2026-09-08T07:36:03.874447+00:00 KINO: dip 78405.74 official -> pending SELL on M1 close back below it
+2026-09-08T07:37:04.119721+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T07:39:04.664525+00:00 KINO: peak 78519.49 official -> pending BUY on M1 close back above it
+2026-09-08T07:41:05.242894+00:00 KINO: confirmation ran 22pts past 78519.49 - NOT chasing; BUY only on a retest
+2026-09-08T07:42:03.596209+00:00 KINO: peak 78572.03 official -> pending BUY on M1 close back above it
+2026-09-08T07:46:04.603848+00:00 KINO: confirmation ran 61pts past 78405.74 - NOT chasing; SELL only on a retest
+2026-09-08T07:51:46.835016+00:00 EXIT logged: ticket 1050954868 tp profit 7.66 dur 79.8min
+2026-09-08T07:51:46.836647+00:00 KINO tracker reset - clean chart
+2026-09-08T07:51:46.843047+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T07:51:46.844172+00:00 OWNER WIN +7.66: fund full, 7.66 pays the book -> $0.00 owed
+2026-09-08T08:01:04.504343+00:00 KINO: peak 78450.45 official -> pending BUY on M1 close back above it
+2026-09-08T08:06:04.528961+00:00 KINO: dip 78248.74 official -> pending SELL on M1 close back below it
+2026-09-08T08:09:03.690038+00:00 KINO: peak 78414.05 official -> pending BUY on M1 close back above it
+2026-09-08T08:10:06.072539+00:00 ENTRY logged: SELL 0.02 @ 78309.47 ticket 1051018455
+2026-09-08T08:16:03.986452+00:00 KINO: peak 78389.79 official -> pending BUY on M1 close back above it
+2026-09-08T08:24:03.859281+00:00 KINO: dip 78276.41 official -> pending SELL on M1 close back below it
+2026-09-08T08:27:04.883818+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T08:27:04.884147+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:28:05.216456+00:00 KINO: confirmation ran 54pts past 78389.79 - NOT chasing; BUY only on a retest
+2026-09-08T08:31:04.437862+00:00 KINO: peak 78479.29 official -> pending BUY on M1 close back above it
+2026-09-08T08:32:04.877782+00:00 KINO: dip 78411.24 official -> pending SELL on M1 close back below it
+2026-09-08T08:34:03.468987+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:36:04.288160+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:37:04.561392+00:00 KINO: confirmation ran 34pts past 78479.29 - NOT chasing; BUY only on a retest
+2026-09-08T08:38:04.878758+00:00 KINO: retest of 78479.29 - entering the missed BUY properly
+2026-09-08T08:38:04.879406+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T08:38:04.879406+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:43:01.614205+00:00 KINO: retest of 78479.29 - entering the missed BUY properly
+2026-09-08T08:43:01.622973+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:44:02.129328+00:00 KINO: retest of 78479.29 - entering the missed BUY properly
+2026-09-08T08:44:02.130845+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:45:00.643128+00:00 KINO: retest of 78479.29 - entering the missed BUY properly
+2026-09-08T08:45:00.652976+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:46:01.134279+00:00 KINO: retest of 78479.29 - entering the missed BUY properly
+2026-09-08T08:46:01.144478+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:47:02.045100+00:00 KINO: dip 78471.26 official -> pending SELL on M1 close back below it
+2026-09-08T08:48:02.925755+00:00 KINO: peak 78559.80 official -> pending BUY on M1 close back above it
+2026-09-08T08:49:01.380722+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T08:49:01.381284+00:00 KINO entry FAILED retcode=None
+2026-09-08T08:49:01.394770+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78466.18 (setup 78485.35)
+2026-09-08T08:51:00.277012+00:00 KINO: confirmation ran 47pts past 78471.26 - NOT chasing; SELL only on a retest
+2026-09-08T08:57:01.306552+00:00 KINO: dip 78337.75 official -> pending SELL on M1 close back below it
+2026-09-08T08:59:02.372754+00:00 KINO: peak 78425.51 official -> pending BUY on M1 close back above it
+2026-09-08T09:06:01.232434+00:00 KINO: peak 78416.54 official -> pending BUY on M1 close back above it
+2026-09-08T09:09:26.723307+00:00 KINO skipped: burst confirmation (58pts >= ATR 47) - calm entries only
+2026-09-08T09:11:02.740803+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T09:11:02.740803+00:00 KINO entry FAILED retcode=None
+2026-09-08T09:13:01.353689+00:00 KINO: dip 78300.72 official -> pending SELL on M1 close back below it
+2026-09-08T09:14:01.706277+00:00 KINO skipped: burst confirmation (51pts >= ATR 49) - calm entries only
+2026-09-08T09:15:02.031500+00:00 KINO entry FAILED retcode=None
+2026-09-08T09:16:00.263498+00:00 KINO: confirmation ran 41pts past 78416.54 - NOT chasing; BUY only on a retest
+2026-09-08T09:17:02.494500+00:00 KINO: peak 78477.53 official -> pending BUY on M1 close back above it
+2026-09-08T09:20:01.255350+00:00 KINO: peak 78461.08 official -> pending BUY on M1 close back above it
+2026-09-08T09:33:02.413530+00:00 KINO: confirmation ran 56pts past 78461.08 - NOT chasing; BUY only on a retest
+2026-09-08T09:34:10.664378+00:00 EXIT logged: ticket 1051018455 sl profit -5.45 dur 84.1min
+2026-09-08T09:34:10.666260+00:00 KINO tracker reset - clean chart
+2026-09-08T09:34:10.672980+00:00 DEBT BOOK +5.45 -> $5.45 owed
+2026-09-08T09:52:02.020522+00:00 KINO: peak 78772.81 official -> pending BUY on M1 close back above it
+2026-09-08T09:56:02.880396+00:00 KINO: dip 78700.55 official -> pending SELL on M1 close back below it
+2026-09-08T10:01:01.999861+00:00 KINO: peak 78750.30 official -> pending BUY on M1 close back above it
+2026-09-08T10:02:02.292965+00:00 KINO: confirmation ran 44pts past 78700.55 - NOT chasing; SELL only on a retest
+2026-09-08T10:03:02.519904+00:00 KINO: dip 78639.78 official -> pending SELL on M1 close back below it
+2026-09-08T10:09:11.400638+00:00 KINO: peak 78734.64 official -> pending BUY on M1 close back above it
+2026-09-08T10:19:01.184662+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T10:20:01.476706+00:00 KINO: confirmation ran 54pts past 78734.64 - NOT chasing; BUY only on a retest
+2026-09-08T10:27:01.536400+00:00 KINO: peak 78975.07 official -> pending BUY on M1 close back above it
+2026-09-08T10:27:01.538408+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78799.24 (setup 78836.94)
+2026-09-08T10:28:49.972867+00:00 ENTRY logged: BUY 0.04 @ 78810.78 ticket 1051096248
+2026-09-08T10:41:37.172634+00:00 EXIT logged: ticket 1051096248 sl profit -7.12 dur 12.8min
+2026-09-08T10:41:37.173719+00:00 KINO tracker reset - clean chart
+2026-09-08T10:41:37.174643+00:00 DEBT BOOK +7.12 -> $12.57 owed
+2026-09-08T10:44:00.827294+00:00 KINO: peak 78671.59 official -> pending BUY on M1 close back above it
+2026-09-08T10:52:08.990455+00:00 ENTRY logged: SELL 0.05 @ 78612.79000000001 ticket 1051108362
+2026-09-08T10:58:34.805108+00:00 EXIT logged: ticket 1051108362 tp profit 2.16 dur 6.5min
+2026-09-08T10:58:34.807119+00:00 KINO tracker reset - clean chart
+2026-09-08T10:58:34.809126+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T10:58:34.809637+00:00 OWNER WIN +2.16: fund full, 2.16 pays the book -> $10.41 owed
+2026-09-08T11:04:02.530656+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78473.04 (setup 78515.63)
+2026-09-08T11:17:01.764989+00:00 KINO: dip 78260.49 official -> pending SELL on M1 close back below it
+2026-09-08T11:18:51.240631+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-08T11:18:51.243789+00:00 WAR-CHEST mode ON: book $10.41, chest $5.00, next fighter 0.02
+2026-09-08T11:22:02.219358+00:00 KINO: peak 78408.13 official -> pending BUY on M1 close back above it
+2026-09-08T11:27:01.484540+00:00 KINO: peak 78457.33 official -> pending BUY on M1 close back above it
+2026-09-08T11:30:02.241859+00:00 KINO: peak 78446.93 official -> pending BUY on M1 close back above it
+2026-09-08T11:31:02.595650+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78396.91 (setup 78398.52)
+2026-09-08T11:32:00.836013+00:00 KINO: dip 78363.65 official -> pending SELL on M1 close back below it
+2026-09-08T11:39:03.012671+00:00 KINO: peak 78469.64 official -> pending BUY on M1 close back above it
+2026-09-08T11:42:01.354138+00:00 KINO: dip 78386.98 official -> pending SELL on M1 close back below it
+2026-09-08T11:47:01.987775+00:00 KINO: confirmation ran 28pts past 78386.98 - NOT chasing; SELL only on a retest
+2026-09-08T11:48:02.190615+00:00 KINO: retest of 78386.98 - entering the missed SELL properly
+2026-09-08T11:50:02.705828+00:00 KINO: dip 78351.13 official -> pending SELL on M1 close back below it
+2026-09-08T11:55:02.558060+00:00 KINO: peak 78424.10 official -> pending BUY on M1 close back above it
+2026-09-08T12:01:01.561631+00:00 KINO: peak 78437.67 official -> pending BUY on M1 close back above it
+2026-09-08T12:04:03.826564+00:00 ENTRY logged: SELL 0.06 @ 78245.31 ticket 1051150138
+2026-09-08T12:06:02.620269+00:00 KINO: dip 78194.20 official -> pending SELL on M1 close back below it
+2026-09-08T12:16:01.944759+00:00 KINO: dip 78181.15 official -> pending SELL on M1 close back below it
+2026-09-08T12:21:01.583003+00:00 KINO: dip 78189.15 official -> pending SELL on M1 close back below it
+2026-09-08T12:29:01.403362+00:00 KINO: peak 78319.32 official -> pending BUY on M1 close back above it
+2026-09-08T12:30:01.767987+00:00 KINO: confirmation ran 22pts past 78319.32 - NOT chasing; BUY only on a retest
+2026-09-08T12:31:02.098372+00:00 KINO: retest of 78319.32 - entering the missed BUY properly
+2026-09-08T12:35:01.427226+00:00 KINO: peak 78423.62 official -> pending BUY on M1 close back above it
+2026-09-08T13:00:02.795882+00:00 KINO: dip 78366.88 official -> pending SELL on M1 close back below it
+2026-09-08T13:02:29.960682+00:00 EXIT logged: ticket 1051150138 sl profit -14.37 dur 58.4min
+2026-09-08T13:02:29.964209+00:00 KINO tracker reset - clean chart
+2026-09-08T13:02:29.967078+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T13:02:29.973446+00:00 OWNER SHOT lost -14.37: ammo pays 5.00, debt +9.37 -> $19.78 owed, chest $0.00
+2026-09-08T13:06:11.521688+00:00 ENTRY logged: BUY 0.07 @ 78517.94 ticket 1051208157
+2026-09-08T13:09:02.698872+00:00 KINO: peak 78512.36 official -> pending BUY on M1 close back above it
+2026-09-08T13:12:01.712666+00:00 KINO: dip 78408.93 official -> pending SELL on M1 close back below it
+2026-09-08T13:14:02.467804+00:00 KINO: peak 78482.80 official -> pending BUY on M1 close back above it
+2026-09-08T13:14:02.469416+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78417.58 (setup 78418.42)
+2026-09-08T13:27:02.647465+00:00 KINO: dip 78268.70 official -> pending SELL on M1 close back below it
+2026-09-08T13:31:20.283623+00:00 EXIT logged: ticket 1051208157 sl profit -18.65 dur 25.2min
+2026-09-08T13:31:20.285058+00:00 KINO tracker reset - clean chart
+2026-09-08T13:31:20.285629+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T13:31:20.287638+00:00 OWNER SHOT lost -18.65: ammo pays 0.00, debt +18.65 -> $38.43 owed, chest $0.00
+2026-09-08T13:32:42.876333+00:00 ENTRY logged: SELL 0.05 @ 78138.31 ticket 1051229609
+2026-09-08T13:39:04.206807+00:00 EXIT logged: ticket 1051229609 tp profit 11.82 dur 6.4min
+2026-09-08T13:39:04.208846+00:00 KINO tracker reset - clean chart
+2026-09-08T13:39:04.210806+00:00 OWNER SHOT WON +11.82: book -> $26.61, chest $0.00
+2026-09-08T13:45:02.709302+00:00 KINO: dip 77647.19 official -> pending SELL on M1 close back below it
+2026-09-08T13:51:01.370765+00:00 KINO: peak 77914.28 official -> pending BUY on M1 close back above it
+2026-09-08T13:52:19.969526+00:00 ENTRY logged: SELL 0.02 @ 77687.07 ticket 1051249556
+2026-09-08T13:54:02.660409+00:00 KINO: dip 77589.81 official -> pending SELL on M1 close back below it
+2026-09-08T13:55:45.849364+00:00 EXIT logged: ticket 1051249556 sl profit -5.05 dur 3.4min
+2026-09-08T13:55:45.849871+00:00 KINO tracker reset - clean chart
+2026-09-08T13:55:45.854754+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T13:55:45.856771+00:00 DEBT BOOK +5.05 -> $31.66 owed
+2026-09-08T13:59:01.490741+00:00 KINO: peak 78059.60 official -> pending BUY on M1 close back above it
+2026-09-08T14:02:02.838453+00:00 KINO: peak 78005.80 official -> pending BUY on M1 close back above it
+2026-09-08T14:10:55.563669+00:00 ENTRY logged: BUY 0.01 @ 78081.13 ticket 1051264631
+2026-09-08T14:18:59.475934+00:00 EXIT logged: ticket 1051264631 tp profit 1.87 dur 8.1min
+2026-09-08T14:18:59.477032+00:00 KINO tracker reset - clean chart
+2026-09-08T14:18:59.477943+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T14:18:59.477943+00:00 CHEST +1.87 -> $1.87 saved toward the 0.02 fighter
+2026-09-08T14:36:02.223921+00:00 KINO: peak 78390.83 official -> pending BUY on M1 close back above it
+2026-09-08T14:40:01.822463+00:00 KINO: peak 78376.61 official -> pending BUY on M1 close back above it
+2026-09-08T14:42:02.685992+00:00 KINO: dip 78241.66 official -> pending SELL on M1 close back below it
+2026-09-08T14:52:02.400615+00:00 KINO: peak 78604.44 official -> pending BUY on M1 close back above it
+2026-09-08T14:58:01.601327+00:00 KINO: dip 78421.30 official -> pending SELL on M1 close back below it
+2026-09-08T15:05:34.365251+00:00 KINO: peak 78643.45 official -> pending BUY on M1 close back above it
+2026-09-08T15:05:44.357152+00:00 ENTRY logged: BUY 0.02 @ 78505.01 ticket 1051297997
+2026-09-08T15:08:01.485104+00:00 KINO: dip 78443.94 official -> pending SELL on M1 close back below it
+2026-09-08T15:19:03.388366+00:00 KINO: peak 78694.36 official -> pending BUY on M1 close back above it
+2026-09-08T15:25:02.511038+00:00 KINO: dip 78446.33 official -> pending SELL on M1 close back below it
+2026-09-08T15:30:02.290794+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78437.09 (setup 78442.02)
+2026-09-08T15:32:03.113549+00:00 KINO: dip 78427.65 official -> pending SELL on M1 close back below it
+2026-09-08T15:43:03.254369+00:00 KINO: dip 78564.27 official -> pending SELL on M1 close back below it
+2026-09-08T15:44:27.603100+00:00 ENTRY logged: BUY 0.02 @ 78715.82 ticket 1051320015
+2026-09-08T15:44:53.769595+00:00 EXIT logged: ticket 1051297997 manual profit 3.88 dur 39.8min
+2026-09-08T15:44:53.776099+00:00 KINO tracker reset - clean chart
+2026-09-08T15:44:53.782466+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T15:44:53.783620+00:00 OWNER WIN +3.88: fund full, 0.75 pays the book -> $30.91 owed
+2026-09-08T15:55:02.262262+00:00 KINO: dip 78731.82 official -> pending SELL on M1 close back below it
+2026-09-08T16:00:19.964281+00:00 CLOCKS DIVERGED: H4 and D1 disagree again - no new runner candidates
+2026-09-08T16:01:02.149402+00:00 KINO: peak 78893.26 official -> pending BUY on M1 close back above it
+2026-09-08T16:05:01.672167+00:00 KINO: dip 78725.44 official -> pending SELL on M1 close back below it
+2026-09-08T16:10:01.531712+00:00 KINO: peak 78822.74 official -> pending BUY on M1 close back above it
+2026-09-08T16:16:01.797375+00:00 KINO: peak 78650.05 official -> pending BUY on M1 close back above it
+2026-09-08T16:19:02.700969+00:00 KINO: dip 78559.66 official -> pending SELL on M1 close back below it
+2026-09-08T16:21:02.641424+00:00 KINO: peak 78667.78 official -> pending BUY on M1 close back above it
+2026-09-08T16:22:02.941154+00:00 KINO: dip 78559.08 official -> pending SELL on M1 close back below it
+2026-09-08T16:30:02.322691+00:00 KINO: peak 78677.03 official -> pending BUY on M1 close back above it
+2026-09-08T16:32:03.021337+00:00 KINO: dip 78601.38 official -> pending SELL on M1 close back below it
+2026-09-08T16:35:01.806032+00:00 KINO: peak 78701.07 official -> pending BUY on M1 close back above it
+2026-09-08T16:38:02.647670+00:00 KINO: confirmation ran 82pts past 78701.07 - NOT chasing; BUY only on a retest
+2026-09-08T16:40:27.399014+00:00 EXIT logged: ticket 1051320015 tp profit 4.2 dur 56.0min
+2026-09-08T16:40:27.401147+00:00 KINO tracker reset - clean chart
+2026-09-08T16:40:27.408580+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T16:40:27.408580+00:00 OWNER WIN +4.20: fund full, 4.20 pays the book -> $26.71 owed
+2026-09-08T16:41:59.888375+00:00 ENTRY logged: BUY 0.02 @ 78885.82 ticket 1051349000
+2026-09-08T16:43:02.231952+00:00 KINO: peak 78965.14 official -> pending BUY on M1 close back above it
+2026-09-08T16:51:01.433714+00:00 KINO: dip 78754.53 official -> pending SELL on M1 close back below it
+2026-09-08T16:53:01.953298+00:00 KINO: peak 78868.91 official -> pending BUY on M1 close back above it
+2026-09-08T17:01:02.273186+00:00 KINO: dip 78634.90 official -> pending SELL on M1 close back below it
+2026-09-08T17:06:02.110332+00:00 KINO: peak 78850.32 official -> pending BUY on M1 close back above it
+2026-09-08T17:12:02.084784+00:00 KINO: dip 78649.30 official -> pending SELL on M1 close back below it
+2026-09-08T17:19:03.166238+00:00 KINO: confirmation ran 26pts past 78649.30 - NOT chasing; SELL only on a retest
+2026-09-08T17:20:01.394854+00:00 KINO: retest of 78649.30 - entering the missed SELL properly
+2026-09-08T17:25:32.906193+00:00 EXIT logged: ticket 1051349000 sl profit -6.82 dur 43.5min
+2026-09-08T17:25:32.907294+00:00 KINO tracker reset - clean chart
+2026-09-08T17:25:32.918196+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T17:25:32.918817+00:00 DEBT BOOK +6.82 -> $33.53 owed
+2026-09-08T17:32:02.729312+00:00 KINO: peak 78610.77 official -> pending BUY on M1 close back above it
+2026-09-08T17:34:03.243105+00:00 KINO: dip 78532.89 official -> pending SELL on M1 close back below it
+2026-09-08T17:40:02.782154+00:00 KINO: peak 78652.81 official -> pending BUY on M1 close back above it
+2026-09-08T17:46:55.042898+00:00 ENTRY logged: SELL 0.02 @ 78560.95 ticket 1051375580
+2026-09-08T17:47:03.110691+00:00 KINO: dip 78502.88 official -> pending SELL on M1 close back below it
+2026-09-08T17:49:03.334671+00:00 KINO: peak 78566.43 official -> pending BUY on M1 close back above it
+2026-09-08T17:52:02.213178+00:00 KINO: dip 78479.49 official -> pending SELL on M1 close back below it
+2026-09-08T17:57:03.454047+00:00 KINO: peak 78631.38 official -> pending BUY on M1 close back above it
+2026-09-08T18:01:02.516190+00:00 KINO: dip 78474.50 official -> pending SELL on M1 close back below it
+2026-09-08T18:04:03.980418+00:00 KINO: peak 78559.56 official -> pending BUY on M1 close back above it
+2026-09-08T18:06:02.266109+00:00 KINO: dip 78494.49 official -> pending SELL on M1 close back below it
+2026-09-08T18:07:22.801534+00:00 EXIT logged: ticket 1051375580 sl profit -1.96 dur 20.4min
+2026-09-08T18:07:22.801534+00:00 KINO tracker reset - clean chart
+2026-09-08T18:07:22.802971+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T18:07:22.802971+00:00 DEBT BOOK +1.96 -> $35.49 owed
+2026-09-08T18:12:02.955457+00:00 KINO: peak 78712.41 official -> pending BUY on M1 close back above it
+2026-09-08T18:15:03.869005+00:00 KINO: dip 78622.51 official -> pending SELL on M1 close back below it
+2026-09-08T18:25:16.797448+00:00 ENTRY logged: BUY 0.02 @ 78774.52 ticket 1051386671
+2026-09-08T18:26:03.154600+00:00 KINO: peak 78807.16 official -> pending BUY on M1 close back above it
+2026-09-08T18:31:02.501268+00:00 KINO: dip 78689.38 official -> pending SELL on M1 close back below it
+2026-09-08T18:35:03.870102+00:00 KINO: peak 78757.14 official -> pending BUY on M1 close back above it
+2026-09-08T18:36:02.325326+00:00 KINO: confirmation ran 43pts past 78689.38 - NOT chasing; SELL only on a retest
+2026-09-08T18:37:20.731753+00:00 EXIT logged: ticket 1051386671 sl profit -3.12 dur 12.1min
+2026-09-08T18:37:20.731753+00:00 KINO tracker reset - clean chart
+2026-09-08T18:37:20.733049+00:00 WEATHER: storm detected (3 straight real losses) - FULL SHELTER, everything goes virtual
+2026-09-08T18:37:20.736100+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T18:37:20.736100+00:00 DEBT BOOK +3.12 -> $38.61 owed
+2026-09-08T18:46:02.801531+00:00 KINO: dip 78553.68 official -> pending SELL on M1 close back below it
+2026-09-08T18:48:03.454093+00:00 KINO: peak 78639.17 official -> pending BUY on M1 close back above it
+2026-09-08T18:48:03.455432+00:00 KINO: confirmation ran 37pts past 78553.68 - NOT chasing; SELL only on a retest
+2026-09-08T18:48:51.807942+00:00 ENTRY logged: SELL 0.02 @ 78407.71 ticket 1051395485
+2026-09-08T18:50:24.666948+00:00 EXIT logged: ticket 1051395485 sl profit -0.03 dur 1.6min
+2026-09-08T18:50:24.667782+00:00 KINO tracker reset - clean chart
+2026-09-08T18:50:24.669803+00:00 TRADING PAUSED by the account owner (app switch) - no new positions
+2026-09-08T18:50:24.671820+00:00 DEBT BOOK +0.03 -> $38.64 owed
+2026-09-08T18:54:02.018784+00:00 KINO: dip 78253.92 official -> pending SELL on M1 close back below it
+2026-09-08T19:06:02.257496+00:00 KINO: peak 78509.44 official -> pending BUY on M1 close back above it
+2026-09-08T19:13:03.743648+00:00 KINO: dip 78402.80 official -> pending SELL on M1 close back below it
+2026-09-08T19:18:04.142897+00:00 KINO: peak 78516.33 official -> pending BUY on M1 close back above it
+2026-09-08T19:26:35.659250+00:00 WITHDRAWAL detected: -3.00 (ladder handled by assistant)
+2026-09-08T19:28:02.516554+00:00 KINO: dip 78322.42 official -> pending SELL on M1 close back below it
+2026-09-08T19:34:03.024332+00:00 KINO: peak 78507.64 official -> pending BUY on M1 close back above it
+2026-09-08T19:35:03.392015+00:00 KINO: dip 78322.98 official -> pending SELL on M1 close back below it
+2026-09-08T19:38:02.619375+00:00 KINO: dip 78394.42 official -> pending SELL on M1 close back below it
+2026-09-08T19:42:03.260427+00:00 KINO: peak 78508.84 official -> pending BUY on M1 close back above it
+2026-09-08T19:49:03.479355+00:00 KINO: dip 78313.51 official -> pending SELL on M1 close back below it
+2026-09-08T19:51:02.141366+00:00 KINO: peak 78402.92 official -> pending BUY on M1 close back above it
+2026-09-08T20:16:03.321571+00:00 KINO: peak 78609.26 official -> pending BUY on M1 close back above it
+2026-09-08T20:28:01.900536+00:00 KINO: dip 78437.25 official -> pending SELL on M1 close back below it
+2026-09-08T20:31:02.537634+00:00 KINO: peak 78601.71 official -> pending BUY on M1 close back above it
+2026-09-08T20:37:03.575131+00:00 KINO: dip 78407.50 official -> pending SELL on M1 close back below it
+2026-09-08T20:41:02.176996+00:00 KINO: peak 78544.75 official -> pending BUY on M1 close back above it
+2026-09-08T20:43:03.196729+00:00 KINO: dip 78469.89 official -> pending SELL on M1 close back below it
+2026-09-08T20:50:03.704728+00:00 KINO: peak 78550.73 official -> pending BUY on M1 close back above it
+2026-09-08T20:53:02.996705+00:00 KINO: dip 78479.47 official -> pending SELL on M1 close back below it
+2026-09-08T20:55:11.444214+00:00 KINO: peak 78558.78 official -> pending BUY on M1 close back above it
+2026-09-08T21:00:03.857546+00:00 KINO: peak 78513.64 official -> pending BUY on M1 close back above it
+2026-09-08T21:03:02.286792+00:00 KINO: confirmation ran 49pts past 78513.64 - NOT chasing; BUY only on a retest
+2026-09-08T21:04:02.423820+00:00 KINO: retest of 78513.64 - entering the missed BUY properly
+2026-09-08T21:14:03.011798+00:00 KINO: peak 78554.10 official -> pending BUY on M1 close back above it
+2026-09-08T21:18:03.567589+00:00 KINO: peak 78563.36 official -> pending BUY on M1 close back above it
+2026-09-08T21:29:03.026987+00:00 KINO: peak 78616.42 official -> pending BUY on M1 close back above it
+2026-09-08T21:40:02.044133+00:00 KINO: dip 78457.89 official -> pending SELL on M1 close back below it
+2026-09-08T21:46:02.946114+00:00 KINO: peak 78556.27 official -> pending BUY on M1 close back above it
+2026-09-08T21:51:03.860155+00:00 KINO: peak 78526.73 official -> pending BUY on M1 close back above it
+2026-09-08T21:56:02.612340+00:00 KINO: dip 78382.46 official -> pending SELL on M1 close back below it
+2026-09-08T21:58:02.849967+00:00 KINO: peak 78453.20 official -> pending BUY on M1 close back above it
+2026-09-08T22:07:04.168762+00:00 KINO: peak 78659.98 official -> pending BUY on M1 close back above it
+2026-09-08T22:14:03.379198+00:00 KINO: dip 78435.55 official -> pending SELL on M1 close back below it
+2026-09-08T22:20:02.392444+00:00 KINO: peak 78515.31 official -> pending BUY on M1 close back above it
+2026-09-08T22:21:02.544040+00:00 KINO: dip 78448.60 official -> pending SELL on M1 close back below it
+2026-09-08T22:22:04.702232+00:00 KINO: confirmation ran 31pts past 78515.31 - NOT chasing; BUY only on a retest
+2026-09-08T22:23:40.548569+00:00 KINO: retest of 78515.31 - entering the missed BUY properly
+2026-09-08T22:26:04.102127+00:00 KINO: peak 78563.91 official -> pending BUY on M1 close back above it
+2026-09-08T22:38:04.069873+00:00 KINO: dip 78448.17 official -> pending SELL on M1 close back below it
+2026-09-08T22:39:04.205186+00:00 KINO: peak 78499.12 official -> pending BUY on M1 close back above it
+2026-09-08T22:47:02.258933+00:00 KINO: dip 78469.58 official -> pending SELL on M1 close back below it
+2026-09-08T22:57:03.835804+00:00 KINO: peak 78566.23 official -> pending BUY on M1 close back above it
+2026-09-08T23:04:02.876469+00:00 KINO: peak 78562.32 official -> pending BUY on M1 close back above it
+2026-09-08T23:13:04.122191+00:00 KINO: dip 78448.82 official -> pending SELL on M1 close back below it
+2026-09-08T23:23:04.047921+00:00 KINO: dip 78427.24 official -> pending SELL on M1 close back below it
+2026-09-08T23:29:03.190887+00:00 KINO: dip 78409.37 official -> pending SELL on M1 close back below it
+2026-09-08T23:32:03.817337+00:00 KINO: dip 78436.08 official -> pending SELL on M1 close back below it
+2026-09-08T23:37:02.606074+00:00 KINO: peak 78456.19 official -> pending BUY on M1 close back above it
+2026-09-08T23:53:11.671104+00:00 KINO: dip 78409.80 official -> pending SELL on M1 close back below it
+2026-09-08T23:58:04.704999+00:00 KINO: dip 78390.76 official -> pending SELL on M1 close back below it
+2026-09-09T00:16:02.744882+00:00 KINO: peak 78723.81 official -> pending BUY on M1 close back above it
+2026-09-09T00:18:03.295117+00:00 KINO: dip 78618.77 official -> pending SELL on M1 close back below it
+2026-09-09T00:22:02.137596+00:00 KINO: peak 78740.65 official -> pending BUY on M1 close back above it
+2026-09-09T00:29:02.925231+00:00 KINO: dip 78584.70 official -> pending SELL on M1 close back below it
+2026-09-09T00:32:04.098946+00:00 KINO: peak 78629.84 official -> pending BUY on M1 close back above it
+2026-09-09T00:35:02.842244+00:00 KINO: dip 78567.82 official -> pending SELL on M1 close back below it
+2026-09-09T00:36:03.137139+00:00 KINO: peak 78621.72 official -> pending BUY on M1 close back above it
+2026-09-09T00:38:03.559509+00:00 KINO: dip 78553.13 official -> pending SELL on M1 close back below it
+2026-09-09T00:41:04.248315+00:00 KINO: peak 78653.88 official -> pending BUY on M1 close back above it
+2026-09-09T00:43:14.387733+00:00 KINO: dip 78594.75 official -> pending SELL on M1 close back below it
+2026-09-09T00:49:03.013144+00:00 KINO: peak 78748.93 official -> pending BUY on M1 close back above it
+2026-09-09T00:53:03.869807+00:00 KINO: peak 78773.95 official -> pending BUY on M1 close back above it
+2026-09-09T00:54:04.096375+00:00 KINO: dip 78708.38 official -> pending SELL on M1 close back below it
+2026-09-09T01:01:03.952142+00:00 KINO: peak 78788.38 official -> pending BUY on M1 close back above it
+2026-09-09T01:06:03.591362+00:00 KINO: dip 78686.42 official -> pending SELL on M1 close back below it
+2026-09-09T01:14:03.074591+00:00 KINO: peak 78861.80 official -> pending BUY on M1 close back above it
+2026-09-09T01:21:04.875393+00:00 KINO: dip 78620.32 official -> pending SELL on M1 close back below it
+2026-09-09T01:33:04.824288+00:00 KINO: dip 78687.02 official -> pending SELL on M1 close back below it
+2026-09-09T01:42:02.530121+00:00 KINO: peak 78870.72 official -> pending BUY on M1 close back above it
+2026-09-09T01:44:02.912074+00:00 KINO: dip 78788.06 official -> pending SELL on M1 close back below it
+2026-09-09T01:53:04.414304+00:00 KINO: peak 78872.85 official -> pending BUY on M1 close back above it
+2026-09-09T01:54:04.629407+00:00 KINO: dip 78804.13 official -> pending SELL on M1 close back below it
+2026-09-09T01:57:02.531869+00:00 KINO: dip 78833.85 official -> pending SELL on M1 close back below it
+2026-09-09T01:59:02.972132+00:00 KINO: peak 78887.52 official -> pending BUY on M1 close back above it
+2026-09-09T02:04:04.201048+00:00 KINO: peak 78910.62 official -> pending BUY on M1 close back above it
+2026-09-09T02:07:02.935061+00:00 KINO: dip 78826.26 official -> pending SELL on M1 close back below it
+2026-09-09T02:19:02.505429+00:00 KINO: dip 78674.88 official -> pending SELL on M1 close back below it
+2026-09-09T02:23:03.578125+00:00 KINO: dip 78691.97 official -> pending SELL on M1 close back below it
+2026-09-09T02:26:04.154664+00:00 KINO: peak 78825.80 official -> pending BUY on M1 close back above it
+2026-09-09T02:34:03.308083+00:00 KINO: peak 78833.70 official -> pending BUY on M1 close back above it
+2026-09-09T02:38:04.161705+00:00 KINO: dip 78737.17 official -> pending SELL on M1 close back below it
+2026-09-09T02:50:03.265335+00:00 KINO: peak 78798.53 official -> pending BUY on M1 close back above it
+2026-09-09T02:53:03.943161+00:00 KINO: dip 78750.66 official -> pending SELL on M1 close back below it
+2026-09-09T02:56:04.148808+00:00 KINO: peak 78798.97 official -> pending BUY on M1 close back above it
+2026-09-09T03:07:04.920338+00:00 KINO: dip 78657.77 official -> pending SELL on M1 close back below it
+2026-09-09T03:08:05.132808+00:00 KINO: peak 78702.12 official -> pending BUY on M1 close back above it
+2026-09-09T03:18:03.069796+00:00 KINO: dip 78565.72 official -> pending SELL on M1 close back below it
+2026-09-09T03:20:03.533852+00:00 KINO: peak 78619.83 official -> pending BUY on M1 close back above it
+2026-09-09T03:27:03.177250+00:00 KINO: confirmation ran 36pts past 78565.72 - NOT chasing; SELL only on a retest
+2026-09-09T03:28:03.446356+00:00 KINO: retest of 78565.72 - entering the missed SELL properly
+2026-09-09T03:31:03.137988+00:00 KINO: dip 78527.50 official -> pending SELL on M1 close back below it
+2026-09-09T03:49:03.495506+00:00 KINO: peak 78672.37 official -> pending BUY on M1 close back above it
+2026-09-09T03:53:04.681779+00:00 KINO: dip 78583.30 official -> pending SELL on M1 close back below it
+2026-09-09T03:57:03.402895+00:00 KINO: peak 78642.35 official -> pending BUY on M1 close back above it
+2026-09-09T03:58:03.572187+00:00 KINO: dip 78592.21 official -> pending SELL on M1 close back below it
+2026-09-09T04:01:04.452212+00:00 KINO: confirmation ran 124pts past 78642.35 - NOT chasing; BUY only on a retest
+2026-09-09T04:08:04.854045+00:00 KINO: peak 78930.21 official -> pending BUY on M1 close back above it
+2026-09-09T04:12:03.201616+00:00 KINO: dip 78729.41 official -> pending SELL on M1 close back below it
+2026-09-09T04:17:04.574577+00:00 KINO: peak 78823.59 official -> pending BUY on M1 close back above it
+2026-09-09T04:19:02.886827+00:00 KINO: dip 78757.83 official -> pending SELL on M1 close back below it
+2026-09-09T04:22:21.047495+00:00 KINO: dip 78785.06 official -> pending SELL on M1 close back below it
+2026-09-09T04:23:03.891050+00:00 KINO: confirmation ran 33pts past 78823.59 - NOT chasing; BUY only on a retest
+2026-09-09T04:29:04.979692+00:00 KINO: dip 78863.98 official -> pending SELL on M1 close back below it
+2026-09-09T04:30:04.305070+00:00 KINO: peak 78930.72 official -> pending BUY on M1 close back above it
+2026-09-09T04:36:21.808002+00:00 KINO: dip 78849.96 official -> pending SELL on M1 close back below it
+2026-09-09T04:44:04.192242+00:00 KINO: confirmation ran 232pts past 78930.72 - NOT chasing; BUY only on a retest
+2026-09-09T04:47:04.723947+00:00 KINO: peak 79196.56 official -> pending BUY on M1 close back above it
+2026-09-09T05:01:03.619287+00:00 KINO: peak 79183.69 official -> pending BUY on M1 close back above it
+2026-09-09T05:05:02.834513+00:00 KINO: dip 79031.47 official -> pending SELL on M1 close back below it
+2026-09-09T05:15:03.992947+00:00 KINO: confirmation ran 68pts past 79183.69 - NOT chasing; BUY only on a retest
+2026-09-09T05:19:05.297186+00:00 KINO: peak 79354.08 official -> pending BUY on M1 close back above it
+2026-09-09T05:36:03.543241+00:00 KINO: peak 79019.15 official -> pending BUY on M1 close back above it
+2026-09-09T05:37:03.905126+00:00 KINO: dip 78931.39 official -> pending SELL on M1 close back below it
+2026-09-09T05:53:04.952899+00:00 KINO: dip 78823.82 official -> pending SELL on M1 close back below it
+2026-09-09T05:58:04.131925+00:00 KINO: peak 78949.55 official -> pending BUY on M1 close back above it
+2026-09-09T06:06:02.789265+00:00 KINO: dip 78837.06 official -> pending SELL on M1 close back below it
+2026-09-09T06:25:03.091690+00:00 KINO: peak 79271.92 official -> pending BUY on M1 close back above it
+2026-09-09T06:31:04.133315+00:00 KINO: dip 79131.29 official -> pending SELL on M1 close back below it
+2026-09-09T06:35:04.304305+00:00 KINO: dip 79113.62 official -> pending SELL on M1 close back below it
+2026-09-09T06:40:03.939211+00:00 KINO: peak 79221.62 official -> pending BUY on M1 close back above it
+2026-09-09T06:47:03.870775+00:00 KINO: peak 79184.57 official -> pending BUY on M1 close back above it
+2026-09-09T06:51:03.967875+00:00 KINO: dip 79108.69 official -> pending SELL on M1 close back below it
+2026-09-09T07:14:02.865610+00:00 KINO: peak 79387.43 official -> pending BUY on M1 close back above it
+2026-09-09T07:22:03.521269+00:00 KINO: dip 79206.80 official -> pending SELL on M1 close back below it
+2026-09-09T07:27:05.159751+00:00 KINO: peak 79285.20 official -> pending BUY on M1 close back above it
+2026-09-09T07:39:03.794196+00:00 KINO: dip 79199.95 official -> pending SELL on M1 close back below it
+2026-09-09T07:44:04.809667+00:00 KINO: peak 79248.43 official -> pending BUY on M1 close back above it
+2026-09-09T07:44:04.810175+00:00 KINO: confirmation ran 22pts past 79199.95 - NOT chasing; SELL only on a retest
+2026-09-09T07:45:04.972443+00:00 KINO: retest of 79199.95 - entering the missed SELL properly
+2026-09-09T07:47:03.484183+00:00 KINO: dip 79153.99 official -> pending SELL on M1 close back below it
+2026-09-09T07:50:04.192220+00:00 KINO: peak 79244.67 official -> pending BUY on M1 close back above it
+2026-09-09T07:51:04.543995+00:00 KINO: dip 79174.42 official -> pending SELL on M1 close back below it
+2026-09-09T07:55:03.930721+00:00 KINO: peak 79264.50 official -> pending BUY on M1 close back above it
+2026-09-09T08:01:05.079912+00:00 KINO: peak 79286.20 official -> pending BUY on M1 close back above it
+2026-09-09T08:02:03.319185+00:00 KINO: confirmation ran 30pts past 79286.20 - NOT chasing; BUY only on a retest
+2026-09-09T08:09:04.931097+00:00 KINO: dip 79356.27 official -> pending SELL on M1 close back below it
+2026-09-09T08:14:04.430292+00:00 KINO: peak 79542.71 official -> pending BUY on M1 close back above it
+2026-09-09T08:16:03.046696+00:00 KINO: dip 79379.45 official -> pending SELL on M1 close back below it
+2026-09-09T08:25:04.162675+00:00 KINO: peak 79611.36 official -> pending BUY on M1 close back above it
+2026-09-09T08:29:04.730351+00:00 KINO: confirmation ran 41pts past 79611.36 - NOT chasing; BUY only on a retest
+2026-09-09T08:30:03.007007+00:00 KINO: retest of 79611.36 - entering the missed BUY properly
+2026-09-09T08:37:05.130587+00:00 KINO: peak 79753.34 official -> pending BUY on M1 close back above it
+2026-09-09T08:41:04.324005+00:00 KINO: dip 79546.58 official -> pending SELL on M1 close back below it
+2026-09-09T08:52:00.594021+00:00 KINO: dip 79576.27 official -> pending SELL on M1 close back below it
+2026-09-09T08:59:01.634121+00:00 KINO: dip 79644.35 official -> pending SELL on M1 close back below it
+2026-09-09T09:01:05.454706+00:00 KINO: peak 79705.42 official -> pending BUY on M1 close back above it
+2026-09-09T09:02:01.940354+00:00 KINO: confirmation ran 21pts past 79644.35 - NOT chasing; SELL only on a retest
+2026-09-09T09:03:02.255342+00:00 KINO: retest of 79644.35 - entering the missed SELL properly
+2026-09-09T09:04:02.618257+00:00 KINO: dip 79601.42 official -> pending SELL on M1 close back below it
+2026-09-09T09:16:01.360041+00:00 KINO: peak 79542.74 official -> pending BUY on M1 close back above it
+2026-09-09T09:27:02.946070+00:00 KINO: dip 79428.96 official -> pending SELL on M1 close back below it
+2026-09-09T09:45:02.101497+00:00 KINO: peak 79157.37 official -> pending BUY on M1 close back above it
+2026-09-09T09:59:02.325956+00:00 KINO: dip 78876.28 official -> pending SELL on M1 close back below it
+2026-09-09T10:06:00.387621+00:00 KINO: peak 79044.37 official -> pending BUY on M1 close back above it
+2026-09-09T10:11:02.233414+00:00 KINO: dip 78918.14 official -> pending SELL on M1 close back below it
+2026-09-09T10:20:01.808882+00:00 KINO: dip 78908.00 official -> pending SELL on M1 close back below it
+2026-09-09T10:23:02.108103+00:00 KINO: peak 79118.42 official -> pending BUY on M1 close back above it
+2026-09-09T10:37:25.499690+00:00 KINO: peak 79139.72 official -> pending BUY on M1 close back above it
+2026-09-09T10:38:01.659433+00:00 KINO: dip 79050.04 official -> pending SELL on M1 close back below it
+2026-09-09T10:41:00.894918+00:00 KINO: peak 79173.81 official -> pending BUY on M1 close back above it
+2026-09-09T10:49:00.741752+00:00 KINO: dip 78977.82 official -> pending SELL on M1 close back below it
+2026-09-09T10:57:01.744225+00:00 KINO: dip 78851.77 official -> pending SELL on M1 close back below it
+2026-09-09T11:01:01.335270+00:00 KINO: peak 78949.72 official -> pending BUY on M1 close back above it
+2026-09-09T11:09:02.310685+00:00 KINO: dip 78711.66 official -> pending SELL on M1 close back below it
+2026-09-09T11:15:02.179409+00:00 KINO: peak 78903.27 official -> pending BUY on M1 close back above it
+2026-09-09T11:24:02.790291+00:00 KINO: dip 78779.40 official -> pending SELL on M1 close back below it
+2026-09-09T11:36:01.006828+00:00 KINO: peak 79087.70 official -> pending BUY on M1 close back above it
+2026-09-09T11:44:02.278438+00:00 KINO: dip 78963.69 official -> pending SELL on M1 close back below it
+2026-09-09T11:55:02.514835+00:00 KINO: peak 79362.76 official -> pending BUY on M1 close back above it
+2026-09-09T11:57:01.325796+00:00 KINO: dip 79240.45 official -> pending SELL on M1 close back below it
+2026-09-09T12:06:02.214814+00:00 KINO: dip 79247.00 official -> pending SELL on M1 close back below it
+2026-09-09T12:12:02.530190+00:00 KINO: peak 79421.33 official -> pending BUY on M1 close back above it
+2026-09-09T12:16:02.008051+00:00 KINO: dip 79344.84 official -> pending SELL on M1 close back below it
+2026-09-09T12:18:12.502456+00:00 KINO: peak 79428.22 official -> pending BUY on M1 close back above it
+2026-09-09T12:19:02.776545+00:00 KINO: confirmation ran 31pts past 79344.84 - NOT chasing; SELL only on a retest
+2026-09-09T12:20:01.055543+00:00 KINO: retest of 79344.84 - entering the missed SELL properly
+2026-09-09T12:21:01.605514+00:00 KINO: dip 79283.94 official -> pending SELL on M1 close back below it
+2026-09-09T12:25:01.906642+00:00 KINO: peak 79415.52 official -> pending BUY on M1 close back above it
+2026-09-09T12:30:02.057683+00:00 KINO: dip 79333.44 official -> pending SELL on M1 close back below it
+2026-09-09T12:32:01.247318+00:00 KINO: confirmation ran 39pts past 79415.52 - NOT chasing; BUY only on a retest
+2026-09-09T12:38:01.680400+00:00 KINO: peak 79554.99 official -> pending BUY on M1 close back above it
+2026-09-09T12:40:02.471821+00:00 KINO: dip 79431.30 official -> pending SELL on M1 close back below it
+2026-09-09T12:46:02.738559+00:00 KINO: dip 79475.26 official -> pending SELL on M1 close back below it
+2026-09-09T12:50:03.069644+00:00 KINO: dip 79497.84 official -> pending SELL on M1 close back below it
+2026-09-09T12:59:01.688275+00:00 KINO: peak 79613.28 official -> pending BUY on M1 close back above it
+2026-09-09T13:05:02.447466+00:00 KINO: dip 79480.62 official -> pending SELL on M1 close back below it
+2026-09-09T13:16:02.945597+00:00 KINO: peak 79514.13 official -> pending BUY on M1 close back above it
+2026-09-09T13:20:02.706418+00:00 KINO: dip 79432.65 official -> pending SELL on M1 close back below it
+2026-09-09T13:31:02.112398+00:00 KINO: peak 79629.42 official -> pending BUY on M1 close back above it
+2026-09-09T13:33:01.387356+00:00 KINO: dip 79477.58 official -> pending SELL on M1 close back below it
+2026-09-09T13:36:03.012833+00:00 KINO: peak 79668.69 official -> pending BUY on M1 close back above it
+2026-09-09T13:41:03.191871+00:00 KINO: dip 79255.07 official -> pending SELL on M1 close back below it
+2026-09-09T13:42:02.969758+00:00 KINO: peak 79446.21 official -> pending BUY on M1 close back above it
+2026-09-09T13:43:01.468564+00:00 KINO: confirmation ran 79pts past 79255.07 - NOT chasing; SELL only on a retest
+2026-09-09T13:45:01.097332+00:00 KINO: dip 79087.53 official -> pending SELL on M1 close back below it
+2026-09-09T13:59:02.003457+00:00 KINO: peak 79275.08 official -> pending BUY on M1 close back above it
+2026-09-09T14:05:02.995420+00:00 KINO: dip 78870.87 official -> pending SELL on M1 close back below it
+2026-09-09T14:07:01.983892+00:00 KINO: peak 79190.77 official -> pending BUY on M1 close back above it
+2026-09-09T14:09:30.520536+00:00 KINO: dip 78942.51 official -> pending SELL on M1 close back below it
+2026-09-09T14:11:01.340902+00:00 KINO: confirmation ran 38pts past 78942.51 - NOT chasing; SELL only on a retest
+2026-09-09T14:12:01.862935+00:00 KINO: retest of 78942.51 - entering the missed SELL properly
+2026-09-09T14:14:02.694042+00:00 KINO: dip 78870.25 official -> pending SELL on M1 close back below it
+2026-09-09T14:17:03.080849+00:00 KINO: peak 79074.46 official -> pending BUY on M1 close back above it
+2026-09-09T14:22:03.248647+00:00 KINO: dip 78843.57 official -> pending SELL on M1 close back below it
+2026-09-09T14:38:02.535390+00:00 KINO: peak 79394.30 official -> pending BUY on M1 close back above it
+2026-09-09T14:50:02.656708+00:00 KINO: dip 78971.49 official -> pending SELL on M1 close back below it
+2026-09-09T14:53:01.897772+00:00 KINO: peak 79122.73 official -> pending BUY on M1 close back above it
+2026-09-09T14:59:02.815316+00:00 KINO: dip 78874.62 official -> pending SELL on M1 close back below it
+2026-09-09T15:01:01.802506+00:00 KINO: confirmation ran 248pts past 79122.73 - NOT chasing; BUY only on a retest
+2026-09-09T15:02:02.240543+00:00 KINO: peak 79370.51 official -> pending BUY on M1 close back above it
+2026-09-09T15:16:01.095369+00:00 KINO: dip 78224.46 official -> pending SELL on M1 close back below it
+2026-09-09T15:19:02.640697+00:00 KINO: peak 78610.53 official -> pending BUY on M1 close back above it
+2026-09-09T15:26:01.678470+00:00 KINO: dip 78035.17 official -> pending SELL on M1 close back below it
+2026-09-09T15:40:02.306313+00:00 KINO: dip 78528.72 official -> pending SELL on M1 close back below it
+2026-09-09T15:43:01.977025+00:00 KINO: peak 78725.49 official -> pending BUY on M1 close back above it
+2026-09-09T15:47:02.046374+00:00 KINO: dip 78560.37 official -> pending SELL on M1 close back below it
+2026-09-09T15:54:02.617965+00:00 KINO: dip 78521.22 official -> pending SELL on M1 close back below it
+2026-09-09T15:56:01.665756+00:00 KINO: peak 78671.38 official -> pending BUY on M1 close back above it
+2026-09-09T16:00:02.388495+00:00 KINO: peak 78645.50 official -> pending BUY on M1 close back above it
+2026-09-09T16:00:14.579249+00:00 CLOCKS ALIGNED: H4 and D1 both say DOWN - next SELL scalp is the runner candidate (2x0.01)
+2026-09-09T16:00:14.586783+00:00 PAPER RUNNER opened: SELL 2x0.01 @ 78549.77 (virtual, no real money)
+2026-09-09T16:03:01.937304+00:00 KINO: confirmation ran 41pts past 78645.50 - NOT chasing; BUY only on a retest
+2026-09-09T16:07:01.914377+00:00 KINO: peak 78772.54 official -> pending BUY on M1 close back above it
+2026-09-09T16:13:02.847379+00:00 KINO: dip 78463.72 official -> pending SELL on M1 close back below it
+2026-09-09T16:16:02.177221+00:00 KINO: peak 78651.76 official -> pending BUY on M1 close back above it
+2026-09-09T16:21:01.666044+00:00 KINO: dip 78472.80 official -> pending SELL on M1 close back below it
+2026-09-09T16:23:02.587340+00:00 KINO: peak 78629.93 official -> pending BUY on M1 close back above it
+2026-09-09T16:23:02.589352+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78464.46 (setup 78472.80)
+2026-09-09T16:25:03.349771+00:00 KINO: dip 78424.94 official -> pending SELL on M1 close back below it
+2026-09-09T16:38:02.501836+00:00 KINO: peak 78938.18 official -> pending BUY on M1 close back above it
+2026-09-09T16:45:03.238185+00:00 KINO: dip 78729.65 official -> pending SELL on M1 close back below it
+2026-09-09T16:57:01.876852+00:00 KINO: dip 78705.12 official -> pending SELL on M1 close back below it
+2026-09-09T17:01:01.439004+00:00 KINO: peak 78796.41 official -> pending BUY on M1 close back above it
+2026-09-09T17:03:02.296696+00:00 KINO: dip 78706.88 official -> pending SELL on M1 close back below it
+2026-09-09T17:06:01.467245+00:00 KINO: dip 78690.74 official -> pending SELL on M1 close back below it
+2026-09-09T17:08:02.389982+00:00 KINO: peak 78798.44 official -> pending BUY on M1 close back above it
+2026-09-09T17:12:02.383576+00:00 KINO: confirmation ran 34pts past 78798.44 - NOT chasing; BUY only on a retest
+2026-09-09T17:13:03.641614+00:00 KINO: retest of 78798.44 - entering the missed BUY properly
+2026-09-09T17:18:02.725233+00:00 KINO: peak 78897.89 official -> pending BUY on M1 close back above it
+2026-09-09T17:25:01.513826+00:00 KINO: dip 78760.93 official -> pending SELL on M1 close back below it
+2026-09-09T17:30:03.498977+00:00 KINO: peak 78914.81 official -> pending BUY on M1 close back above it
+2026-09-09T17:35:03.609100+00:00 KINO: dip 78741.97 official -> pending SELL on M1 close back below it
+2026-09-09T17:38:02.428874+00:00 KINO: peak 78849.15 official -> pending BUY on M1 close back above it
+2026-09-09T17:39:02.858466+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78739.85 (setup 78747.13)
+2026-09-09T17:48:02.947416+00:00 KINO: dip 78636.52 official -> pending SELL on M1 close back below it
+2026-09-09T17:54:03.083385+00:00 KINO: dip 78678.71 official -> pending SELL on M1 close back below it
+2026-09-09T18:00:02.852636+00:00 KINO: peak 78799.64 official -> pending BUY on M1 close back above it
+2026-09-09T18:04:02.603856+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78725.41 (setup 78729.04)
+2026-09-09T18:06:03.363210+00:00 KINO: dip 78706.26 official -> pending SELL on M1 close back below it
+2026-09-09T18:18:03.867275+00:00 KINO: dip 78565.02 official -> pending SELL on M1 close back below it
+2026-09-09T18:20:02.373910+00:00 KINO: peak 78614.03 official -> pending BUY on M1 close back above it
+2026-09-09T18:22:03.101581+00:00 KINO: dip 78548.60 official -> pending SELL on M1 close back below it
+2026-09-09T18:24:03.709612+00:00 KINO: peak 78628.72 official -> pending BUY on M1 close back above it
+2026-09-09T18:28:03.010487+00:00 KINO: dip 78541.40 official -> pending SELL on M1 close back below it
+2026-09-09T18:33:02.626700+00:00 KINO: peak 78611.29 official -> pending BUY on M1 close back above it
+2026-09-09T18:39:02.714482+00:00 KINO: dip 78503.54 official -> pending SELL on M1 close back below it
+2026-09-09T18:45:02.964995+00:00 KINO: dip 78469.00 official -> pending SELL on M1 close back below it
+2026-09-09T18:52:03.050478+00:00 KINO: peak 78544.25 official -> pending BUY on M1 close back above it
+2026-09-09T18:55:27.834638+00:00 PAPER RUNNER banked $1.50 (leg A TP), leg B now risk-free with BE stop @ 78544.77 (virtual)
+2026-09-09T19:02:01.615584+00:00 KINO: dip 78356.60 official -> pending SELL on M1 close back below it
+2026-09-09T19:03:01.846073+00:00 KINO: peak 78466.04 official -> pending BUY on M1 close back above it
+2026-09-09T19:12:03.979121+00:00 KINO: dip 78310.20 official -> pending SELL on M1 close back below it
+2026-09-09T19:20:01.572742+00:00 KINO: dip 78447.51 official -> pending SELL on M1 close back below it
+2026-09-09T19:24:28.427566+00:00 PAPER RUNNER BE-stopped: total +1.55 (virtual). Ledger: -11.45 over 3 attempts
+2026-09-09T19:28:03.483236+00:00 KINO: peak 78571.15 official -> pending BUY on M1 close back above it
+2026-09-09T19:33:02.807419+00:00 KINO: dip 78476.05 official -> pending SELL on M1 close back below it
+2026-09-09T19:34:02.960788+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78492.95 (setup 78503.27)
+2026-09-09T19:37:01.504248+00:00 KINO: confirmation ran 44pts past 78476.05 - NOT chasing; SELL only on a retest
+2026-09-09T19:50:02.037981+00:00 KINO: dip 78266.89 official -> pending SELL on M1 close back below it
+2026-09-09T19:51:02.268028+00:00 KINO: peak 78323.40 official -> pending BUY on M1 close back above it
+2026-09-09T19:51:02.268028+00:00 KINO: confirmation ran 33pts past 78266.89 - NOT chasing; SELL only on a retest
+2026-09-09T19:53:02.970365+00:00 KINO: retest of 78266.89 - entering the missed SELL properly
+2026-09-09T19:55:03.443137+00:00 KINO: dip 78128.23 official -> pending SELL on M1 close back below it
+2026-09-09T20:05:02.010463+00:00 KINO: peak 78263.52 official -> pending BUY on M1 close back above it
+2026-09-09T20:06:02.164802+00:00 KINO: dip 78163.03 official -> pending SELL on M1 close back below it
+2026-09-09T20:10:02.839307+00:00 KINO: dip 78185.70 official -> pending SELL on M1 close back below it
+2026-09-09T20:14:03.470403+00:00 KINO: peak 78281.75 official -> pending BUY on M1 close back above it
+2026-09-09T20:16:03.835837+00:00 KINO: dip 78209.59 official -> pending SELL on M1 close back below it
+2026-09-09T20:23:15.169216+00:00 KINO: peak 78324.90 official -> pending BUY on M1 close back above it
+2026-09-09T20:23:15.191695+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78214.89 (setup 78240.72)
+2026-09-09T20:28:03.412881+00:00 KINO: dip 78104.38 official -> pending SELL on M1 close back below it
+2026-09-09T20:30:03.721220+00:00 KINO: peak 78224.80 official -> pending BUY on M1 close back above it
+2026-09-09T20:40:03.253258+00:00 KINO: peak 78303.40 official -> pending BUY on M1 close back above it
+2026-09-09T20:47:01.968819+00:00 KINO: peak 78272.61 official -> pending BUY on M1 close back above it
+2026-09-09T20:51:02.596400+00:00 KINO: dip 78078.72 official -> pending SELL on M1 close back below it
+2026-09-09T20:54:03.045989+00:00 KINO: peak 78237.97 official -> pending BUY on M1 close back above it
+2026-09-09T21:01:08.213650+00:00 KINO: peak 78312.58 official -> pending BUY on M1 close back above it
+2026-09-09T21:07:03.083779+00:00 KINO: peak 78329.69 official -> pending BUY on M1 close back above it
+2026-09-09T21:11:03.656573+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78232.90 (setup 78237.98)
+2026-09-09T21:17:02.473799+00:00 KINO: peak 78231.82 official -> pending BUY on M1 close back above it
+2026-09-09T21:20:02.857602+00:00 KINO: dip 78114.25 official -> pending SELL on M1 close back below it
+2026-09-09T21:29:02.297092+00:00 KINO: peak 78278.19 official -> pending BUY on M1 close back above it
+2026-09-09T21:38:03.541206+00:00 KINO: dip 78119.83 official -> pending SELL on M1 close back below it
+2026-09-09T21:46:02.693698+00:00 KINO: peak 78257.39 official -> pending BUY on M1 close back above it
+2026-09-09T21:54:03.252368+00:00 KINO: dip 77973.53 official -> pending SELL on M1 close back below it
+2026-09-09T21:58:03.823507+00:00 KINO: peak 78119.38 official -> pending BUY on M1 close back above it
+2026-09-09T22:03:02.679072+00:00 KINO: peak 78178.14 official -> pending BUY on M1 close back above it
+2026-09-09T22:07:03.345149+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77991.12 (setup 78017.72)
+2026-09-09T22:15:03.550786+00:00 KINO: peak 77964.38 official -> pending BUY on M1 close back above it
+2026-09-09T22:17:04.088304+00:00 KINO: dip 77750.31 official -> pending SELL on M1 close back below it
+2026-09-09T22:23:04.061133+00:00 KINO: peak 78013.18 official -> pending BUY on M1 close back above it
+2026-09-09T22:31:02.156446+00:00 KINO: peak 78042.18 official -> pending BUY on M1 close back above it
+2026-09-09T22:38:03.194382+00:00 KINO: dip 77909.27 official -> pending SELL on M1 close back below it
+2026-09-09T22:42:03.860236+00:00 KINO: peak 78043.69 official -> pending BUY on M1 close back above it
+2026-09-09T22:50:03.691579+00:00 KINO: peak 78030.15 official -> pending BUY on M1 close back above it
+2026-09-09T22:51:01.854247+00:00 KINO: dip 77973.78 official -> pending SELL on M1 close back below it
+2026-09-09T23:01:03.492312+00:00 KINO: dip 77885.11 official -> pending SELL on M1 close back below it
+2026-09-09T23:14:03.962546+00:00 KINO: peak 78182.80 official -> pending BUY on M1 close back above it
+2026-09-09T23:15:04.096718+00:00 KINO: dip 78098.43 official -> pending SELL on M1 close back below it
+2026-09-09T23:16:02.232422+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78091.14 (setup 78098.43)
+2026-09-09T23:18:04.563469+00:00 KINO: dip 78066.43 official -> pending SELL on M1 close back below it
+2026-09-09T23:38:03.697869+00:00 KINO: peak 78238.44 official -> pending BUY on M1 close back above it
+2026-09-09T23:40:04.076461+00:00 KINO: dip 78187.98 official -> pending SELL on M1 close back below it
+2026-09-09T23:45:02.902060+00:00 KINO: dip 78184.84 official -> pending SELL on M1 close back below it
+2026-09-09T23:56:03.648304+00:00 KINO: peak 78272.58 official -> pending BUY on M1 close back above it
+2026-09-10T00:08:03.092659+00:00 KINO: peak 78363.41 official -> pending BUY on M1 close back above it
+2026-09-10T00:11:03.738073+00:00 KINO: dip 78270.49 official -> pending SELL on M1 close back below it
+2026-09-10T00:13:04.225900+00:00 KINO: peak 78353.95 official -> pending BUY on M1 close back above it
+2026-09-10T00:14:04.476068+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78260.87 (setup 78283.80)
+2026-09-10T00:22:03.286987+00:00 KINO: dip 78191.88 official -> pending SELL on M1 close back below it
+2026-09-10T00:28:03.023934+00:00 KINO: dip 78216.08 official -> pending SELL on M1 close back below it
+2026-09-10T00:31:03.766992+00:00 KINO: peak 78314.36 official -> pending BUY on M1 close back above it
+2026-09-10T00:34:02.431197+00:00 KINO: dip 78143.52 official -> pending SELL on M1 close back below it
+2026-09-10T00:41:03.773421+00:00 KINO: peak 78292.82 official -> pending BUY on M1 close back above it
+2026-09-10T00:47:02.981520+00:00 KINO: dip 78108.90 official -> pending SELL on M1 close back below it
+2026-09-10T00:49:03.396992+00:00 KINO: peak 78239.23 official -> pending BUY on M1 close back above it
+2026-09-10T00:52:04.213664+00:00 KINO: dip 78104.86 official -> pending SELL on M1 close back below it
+2026-09-10T01:11:02.285277+00:00 KINO: peak 78486.60 official -> pending BUY on M1 close back above it
+2026-09-10T01:17:03.909990+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78255.93 (setup 78265.91)
+2026-09-10T01:20:02.771398+00:00 KINO: dip 78130.44 official -> pending SELL on M1 close back below it
+2026-09-10T01:41:04.060280+00:00 KINO: dip 77921.09 official -> pending SELL on M1 close back below it
+2026-09-10T01:46:03.446934+00:00 KINO: peak 78230.01 official -> pending BUY on M1 close back above it
+2026-09-10T01:48:02.222494+00:00 KINO: dip 78026.65 official -> pending SELL on M1 close back below it
+2026-09-10T01:56:03.163382+00:00 KINO: dip 77956.28 official -> pending SELL on M1 close back below it
+2026-09-10T02:00:04.446850+00:00 KINO: peak 78112.27 official -> pending BUY on M1 close back above it
+2026-09-10T02:08:04.244157+00:00 KINO: dip 77978.26 official -> pending SELL on M1 close back below it
+2026-09-10T02:09:02.473251+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78006.85 (setup 78017.40)
+2026-09-10T02:17:04.255663+00:00 KINO: peak 78035.19 official -> pending BUY on M1 close back above it
+2026-09-10T02:25:03.969885+00:00 KINO: peak 78044.10 official -> pending BUY on M1 close back above it
+2026-09-10T02:31:03.225942+00:00 KINO: dip 77944.55 official -> pending SELL on M1 close back below it
+2026-09-10T02:51:02.695442+00:00 KINO: peak 78289.90 official -> pending BUY on M1 close back above it
+2026-09-10T03:07:04.472975+00:00 KINO: peak 78534.84 official -> pending BUY on M1 close back above it
+2026-09-10T03:13:02.815267+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78369.65 (setup 78372.37)
+2026-09-10T03:19:04.084676+00:00 KINO: dip 78297.54 official -> pending SELL on M1 close back below it
+2026-09-10T03:20:04.330846+00:00 KINO: peak 78358.12 official -> pending BUY on M1 close back above it
+2026-09-10T03:24:03.025198+00:00 KINO: peak 78369.75 official -> pending BUY on M1 close back above it
+2026-09-10T03:29:03.908812+00:00 KINO: dip 78263.06 official -> pending SELL on M1 close back below it
+2026-09-10T03:33:03.744261+00:00 KINO: dip 78323.51 official -> pending SELL on M1 close back below it
+2026-09-10T03:35:04.064011+00:00 KINO: peak 78426.65 official -> pending BUY on M1 close back above it
+2026-09-10T03:39:03.612442+00:00 KINO: peak 78349.92 official -> pending BUY on M1 close back above it
+2026-09-10T03:43:04.334982+00:00 KINO: dip 78291.20 official -> pending SELL on M1 close back below it
+2026-09-10T03:51:03.747307+00:00 KINO: peak 78419.68 official -> pending BUY on M1 close back above it
+2026-09-10T04:00:03.287585+00:00 KINO: dip 78233.71 official -> pending SELL on M1 close back below it
+2026-09-10T04:09:03.874626+00:00 KINO: peak 78375.76 official -> pending BUY on M1 close back above it
+2026-09-10T04:16:04.436428+00:00 KINO: dip 78301.40 official -> pending SELL on M1 close back below it
+2026-09-10T04:25:03.865167+00:00 KINO: peak 78402.50 official -> pending BUY on M1 close back above it
+2026-09-10T04:36:03.719630+00:00 KINO: peak 78383.57 official -> pending BUY on M1 close back above it
+2026-09-10T04:41:32.544415+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78314.30 (setup 78322.55)
+2026-09-10T04:47:04.193947+00:00 KINO: dip 78296.62 official -> pending SELL on M1 close back below it
+2026-09-10T04:51:04.920449+00:00 KINO: peak 78343.23 official -> pending BUY on M1 close back above it
+2026-09-10T04:53:03.262768+00:00 KINO: confirmation ran 21pts past 78296.62 - NOT chasing; SELL only on a retest
+2026-09-10T04:54:03.463599+00:00 KINO: dip 78266.13 official -> pending SELL on M1 close back below it
+2026-09-10T05:01:02.807805+00:00 KINO: peak 78407.90 official -> pending BUY on M1 close back above it
+2026-09-10T05:11:36.420191+00:00 KINO: dip 78234.11 official -> pending SELL on M1 close back below it
+2026-09-10T05:19:04.432640+00:00 KINO: peak 78464.09 official -> pending BUY on M1 close back above it
+2026-09-10T05:21:02.832512+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78334.17 (setup 78341.96)
+2026-09-10T05:24:03.407351+00:00 KINO: dip 78321.64 official -> pending SELL on M1 close back below it
+2026-09-10T05:29:04.395638+00:00 KINO: dip 78316.37 official -> pending SELL on M1 close back below it
+2026-09-10T05:36:04.123431+00:00 KINO: dip 78437.31 official -> pending SELL on M1 close back below it
+2026-09-10T05:47:05.233053+00:00 KINO: dip 78370.61 official -> pending SELL on M1 close back below it
+2026-09-10T05:49:03.598272+00:00 KINO: peak 78410.81 official -> pending BUY on M1 close back above it
+2026-09-10T05:53:04.499062+00:00 KINO: confirmation ran 32pts past 78410.81 - NOT chasing; BUY only on a retest
+2026-09-10T06:01:02.720221+00:00 KINO: peak 78534.19 official -> pending BUY on M1 close back above it
+2026-09-10T06:11:03.526304+00:00 KINO: confirmation ran 67pts past 78370.61 - NOT chasing; SELL only on a retest
+2026-09-10T06:11:03.528345+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78303.40 (setup 78388.81)
+2026-09-10T06:23:04.194903+00:00 KINO: peak 78208.64 official -> pending BUY on M1 close back above it
+2026-09-10T06:25:02.680487+00:00 KINO: dip 78146.30 official -> pending SELL on M1 close back below it
+2026-09-10T06:29:03.481831+00:00 KINO: peak 78210.23 official -> pending BUY on M1 close back above it
+2026-09-10T06:40:17.436109+00:00 KINO: dip 78124.04 official -> pending SELL on M1 close back below it
+2026-09-10T06:54:04.525871+00:00 KINO: peak 78498.79 official -> pending BUY on M1 close back above it
+2026-09-10T06:56:04.290419+00:00 KINO: dip 78378.88 official -> pending SELL on M1 close back below it
+2026-09-10T06:58:05.129766+00:00 KINO: peak 78445.20 official -> pending BUY on M1 close back above it
+2026-09-10T07:01:04.200263+00:00 KINO: confirmation ran 31pts past 78378.88 - NOT chasing; SELL only on a retest
+2026-09-10T07:09:04.672321+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78128.28 (setup 78145.92)
+2026-09-10T07:11:03.299197+00:00 KINO: dip 78123.07 official -> pending SELL on M1 close back below it
+2026-09-10T07:21:04.272748+00:00 KINO: peak 78212.39 official -> pending BUY on M1 close back above it
+2026-09-10T07:36:03.931551+00:00 KINO: dip 77876.45 official -> pending SELL on M1 close back below it
+2026-09-10T08:01:03.537341+00:00 KINO: dip 78054.82 official -> pending SELL on M1 close back below it
+2026-09-10T08:04:04.373159+00:00 KINO: peak 78132.98 official -> pending BUY on M1 close back above it
+2026-09-10T08:13:03.584164+00:00 KINO: peak 78138.56 official -> pending BUY on M1 close back above it
+2026-09-10T08:17:04.437021+00:00 KINO: dip 78003.34 official -> pending SELL on M1 close back below it
+2026-09-10T08:19:04.955104+00:00 KINO: peak 78069.89 official -> pending BUY on M1 close back above it
+2026-09-10T08:22:03.976794+00:00 KINO: confirmation ran 34pts past 78069.89 - NOT chasing; BUY only on a retest
+2026-09-10T08:26:05.058399+00:00 KINO: peak 78144.74 official -> pending BUY on M1 close back above it
+2026-09-10T08:28:03.674220+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78077.14 (setup 78078.44)
+2026-09-10T08:29:51.163160+00:00 KINO: dip 78054.30 official -> pending SELL on M1 close back below it
+2026-09-10T08:35:03.112975+00:00 KINO: dip 77993.47 official -> pending SELL on M1 close back below it
+2026-09-10T08:39:04.198017+00:00 KINO: peak 78129.39 official -> pending BUY on M1 close back above it
+2026-09-10T08:45:04.086101+00:00 KINO: dip 78030.77 official -> pending SELL on M1 close back below it
+2026-09-10T08:49:01.415786+00:00 KINO: peak 78093.60 official -> pending BUY on M1 close back above it
+2026-09-10T08:52:00.673487+00:00 KINO: dip 78053.88 official -> pending SELL on M1 close back below it
+2026-09-10T08:56:02.134315+00:00 KINO: peak 78148.85 official -> pending BUY on M1 close back above it
+2026-09-10T09:01:01.360777+00:00 KINO: dip 78070.85 official -> pending SELL on M1 close back below it
+2026-09-10T09:07:01.259883+00:00 KINO: dip 78103.49 official -> pending SELL on M1 close back below it
+2026-09-10T09:09:15.445301+00:00 KINO: peak 78182.31 official -> pending BUY on M1 close back above it
+2026-09-10T09:09:15.455926+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~78121.27 (setup 78123.22)
+2026-09-10T09:16:37.961313+00:00 KINO: dip 78072.10 official -> pending SELL on M1 close back below it
+2026-09-10T09:25:38.747383+00:00 KINO: peak 78173.21 official -> pending BUY on M1 close back above it
+2026-09-10T09:28:29.433202+00:00 KINO: dip 78112.86 official -> pending SELL on M1 close back below it
+2026-09-10T09:31:02.448059+00:00 KINO: peak 78202.62 official -> pending BUY on M1 close back above it
+2026-09-10T09:32:00.678015+00:00 KINO: confirmation ran 43pts past 78112.86 - NOT chasing; SELL only on a retest
+2026-09-10T09:35:01.423822+00:00 KINO: dip 78038.70 official -> pending SELL on M1 close back below it
+2026-09-10T09:44:02.436317+00:00 KINO: dip 77888.17 official -> pending SELL on M1 close back below it
+2026-09-10T09:55:00.950094+00:00 KINO: peak 77995.75 official -> pending BUY on M1 close back above it
+2026-09-10T10:03:01.528022+00:00 KINO: dip 77909.66 official -> pending SELL on M1 close back below it
+2026-09-10T10:05:02.012297+00:00 KINO: peak 78011.69 official -> pending BUY on M1 close back above it
+2026-09-10T10:08:02.853980+00:00 KINO: peak 78008.67 official -> pending BUY on M1 close back above it
+2026-09-10T10:18:01.445203+00:00 KINO: peak 77989.00 official -> pending BUY on M1 close back above it
+2026-09-10T10:22:02.345304+00:00 KINO: dip 77942.23 official -> pending SELL on M1 close back below it
+2026-09-10T10:25:17.335205+00:00 KINO: confirmation ran 25pts past 77942.23 - NOT chasing; SELL only on a retest
+2026-09-10T10:25:17.558432+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77916.84 (setup 77942.23)
+2026-09-10T10:26:04.442425+00:00 KINO: dip 77890.68 official -> pending SELL on M1 close back below it
+2026-09-10T10:31:01.601272+00:00 KINO: peak 77957.13 official -> pending BUY on M1 close back above it
+2026-09-10T10:37:01.173749+00:00 KINO: dip 77784.73 official -> pending SELL on M1 close back below it
+2026-09-10T10:44:03.264813+00:00 KINO: peak 78019.79 official -> pending BUY on M1 close back above it
+2026-09-10T10:57:02.178158+00:00 KINO: dip 77847.57 official -> pending SELL on M1 close back below it
+2026-09-10T11:04:01.859715+00:00 KINO: dip 77736.26 official -> pending SELL on M1 close back below it
+2026-09-10T11:05:02.287617+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77713.11 (setup 77736.26)
+2026-09-10T11:10:02.187559+00:00 KINO: peak 77832.05 official -> pending BUY on M1 close back above it
+2026-09-10T11:14:02.035255+00:00 KINO: confirmation ran 22pts past 77832.05 - NOT chasing; BUY only on a retest
+2026-09-10T11:15:02.373716+00:00 KINO: retest of 77832.05 - entering the missed BUY properly
+2026-09-10T11:21:00.885783+00:00 KINO: dip 77908.85 official -> pending SELL on M1 close back below it
+2026-09-10T11:27:12.532961+00:00 KINO: peak 77993.52 official -> pending BUY on M1 close back above it
+2026-09-10T11:31:02.029257+00:00 KINO: dip 77931.56 official -> pending SELL on M1 close back below it
+2026-09-10T11:33:02.650248+00:00 KINO: confirmation ran 31pts past 77993.52 - NOT chasing; BUY only on a retest
+2026-09-10T11:34:00.936220+00:00 KINO: retest of 77993.52 - entering the missed BUY properly
+2026-09-10T11:37:01.751506+00:00 KINO: peak 78026.78 official -> pending BUY on M1 close back above it
+2026-09-10T11:39:02.226735+00:00 KINO: dip 77947.55 official -> pending SELL on M1 close back below it
+2026-09-10T11:44:01.814431+00:00 KINO: peak 78022.53 official -> pending BUY on M1 close back above it
+2026-09-10T11:51:02.013637+00:00 KINO: peak 77941.65 official -> pending BUY on M1 close back above it
+2026-09-10T11:54:02.942463+00:00 KINO: dip 77831.22 official -> pending SELL on M1 close back below it
+2026-09-10T11:56:01.679657+00:00 KINO: peak 77950.13 official -> pending BUY on M1 close back above it
+2026-09-10T12:00:02.456044+00:00 KINO: peak 77880.40 official -> pending BUY on M1 close back above it
+2026-09-10T12:08:02.793537+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77711.58 (setup 77732.21)
+2026-09-10T12:14:03.216822+00:00 KINO: dip 77682.41 official -> pending SELL on M1 close back below it
+2026-09-10T12:19:03.093629+00:00 KINO: dip 77698.95 official -> pending SELL on M1 close back below it
+2026-09-10T12:20:01.461858+00:00 KINO: peak 77773.80 official -> pending BUY on M1 close back above it
+2026-09-10T12:24:03.402223+00:00 KINO: dip 77632.48 official -> pending SELL on M1 close back below it
+2026-09-10T12:28:01.146006+00:00 KINO: peak 77733.89 official -> pending BUY on M1 close back above it
+2026-09-10T12:30:01.941177+00:00 KINO: confirmation ran 69pts past 77733.89 - NOT chasing; BUY only on a retest
+2026-09-10T12:30:01.941177+00:00 KINO: dip 77672.07 official -> pending SELL on M1 close back below it
+2026-09-10T12:31:02.515373+00:00 KINO: peak 77938.77 official -> pending BUY on M1 close back above it
+2026-09-10T12:32:00.935371+00:00 KINO: confirmation ran 118pts past 77672.07 - NOT chasing; SELL only on a retest
+2026-09-10T12:51:02.007570+00:00 KINO: dip 76629.28 official -> pending SELL on M1 close back below it
+2026-09-10T12:52:02.411016+00:00 KINO: peak 77092.43 official -> pending BUY on M1 close back above it
+2026-09-10T12:58:02.848491+00:00 KINO: dip 76648.33 official -> pending SELL on M1 close back below it
+2026-09-10T13:08:02.976719+00:00 KINO: peak 77072.85 official -> pending BUY on M1 close back above it
+2026-09-10T13:09:01.511249+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76926.50 (setup 76961.33)
+2026-09-10T13:16:00.925807+00:00 KINO: dip 76738.28 official -> pending SELL on M1 close back below it
+2026-09-10T13:20:02.719332+00:00 KINO: peak 76877.64 official -> pending BUY on M1 close back above it
+2026-09-10T13:22:03.369421+00:00 KINO: dip 76706.03 official -> pending SELL on M1 close back below it
+2026-09-10T13:25:02.464740+00:00 KINO: peak 76943.49 official -> pending BUY on M1 close back above it
+2026-09-10T13:28:02.666825+00:00 KINO: dip 76811.72 official -> pending SELL on M1 close back below it
+2026-09-10T13:31:00.966768+00:00 KINO: peak 76952.28 official -> pending BUY on M1 close back above it
+2026-09-10T13:36:01.162343+00:00 KINO: dip 76734.13 official -> pending SELL on M1 close back below it
+2026-09-10T13:37:01.586778+00:00 KINO: confirmation ran 100pts past 76952.28 - NOT chasing; BUY only on a retest
+2026-09-10T13:38:02.023211+00:00 KINO: retest of 76952.28 - entering the missed BUY properly
+2026-09-10T13:43:02.324100+00:00 KINO: peak 77076.90 official -> pending BUY on M1 close back above it
+2026-09-10T13:51:02.655122+00:00 KINO: peak 77083.73 official -> pending BUY on M1 close back above it
+2026-09-10T13:53:03.487790+00:00 KINO: dip 76887.58 official -> pending SELL on M1 close back below it
+2026-09-10T14:00:01.423266+00:00 KINO: peak 77200.70 official -> pending BUY on M1 close back above it
+2026-09-10T14:01:01.890610+00:00 KINO: confirmation ran 35pts past 77200.70 - NOT chasing; BUY only on a retest
+2026-09-10T14:02:02.324356+00:00 KINO: retest of 77200.70 - entering the missed BUY properly
+2026-09-10T14:06:02.204989+00:00 KINO: peak 77314.47 official -> pending BUY on M1 close back above it
+2026-09-10T14:12:02.780350+00:00 KINO: dip 76932.83 official -> pending SELL on M1 close back below it
+2026-09-10T14:16:02.588732+00:00 KINO: peak 77125.26 official -> pending BUY on M1 close back above it
+2026-09-10T14:20:01.679160+00:00 KINO: dip 76920.85 official -> pending SELL on M1 close back below it
+2026-09-10T14:30:02.262323+00:00 KINO: peak 77345.93 official -> pending BUY on M1 close back above it
+2026-09-10T14:33:03.331589+00:00 KINO: dip 77196.22 official -> pending SELL on M1 close back below it
+2026-09-10T14:39:02.190462+00:00 KINO: peak 77328.59 official -> pending BUY on M1 close back above it
+2026-09-10T14:41:01.178833+00:00 KINO: dip 77199.61 official -> pending SELL on M1 close back below it
+2026-09-10T14:43:02.094687+00:00 KINO: peak 77316.33 official -> pending BUY on M1 close back above it
+2026-09-10T14:47:03.297788+00:00 KINO: confirmation ran 44pts past 77316.33 - NOT chasing; BUY only on a retest
+2026-09-10T14:48:01.724503+00:00 KINO: retest of 77316.33 - entering the missed BUY properly
+2026-09-10T14:51:01.316622+00:00 KINO: peak 77376.87 official -> pending BUY on M1 close back above it
+2026-09-10T14:53:02.123665+00:00 KINO: dip 77229.17 official -> pending SELL on M1 close back below it
+2026-09-10T15:01:01.657990+00:00 KINO: peak 77399.30 official -> pending BUY on M1 close back above it
+2026-09-10T15:04:03.144294+00:00 KINO: dip 77208.64 official -> pending SELL on M1 close back below it
+2026-09-10T15:17:01.816566+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77295.49 (setup 77295.73)
+2026-09-10T15:28:01.129258+00:00 KINO: dip 77064.31 official -> pending SELL on M1 close back below it
+2026-09-10T15:34:01.628335+00:00 KINO: dip 77051.04 official -> pending SELL on M1 close back below it
+2026-09-10T15:41:02.198743+00:00 KINO: peak 77309.81 official -> pending BUY on M1 close back above it
+2026-09-10T15:50:01.530771+00:00 KINO: dip 77075.97 official -> pending SELL on M1 close back below it
+2026-09-10T15:53:02.916041+00:00 KINO: dip 77108.20 official -> pending SELL on M1 close back below it
+2026-09-10T15:55:01.703861+00:00 KINO: peak 77191.99 official -> pending BUY on M1 close back above it
+2026-09-10T15:57:02.541236+00:00 KINO: dip 77081.07 official -> pending SELL on M1 close back below it
+2026-09-10T16:03:02.966062+00:00 KINO: peak 77281.54 official -> pending BUY on M1 close back above it
+2026-09-10T16:13:02.119599+00:00 KINO: dip 76865.52 official -> pending SELL on M1 close back below it
+2026-09-10T16:17:01.537294+00:00 KINO: peak 76971.19 official -> pending BUY on M1 close back above it
+2026-09-10T16:18:01.912966+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76879.06 (setup 76884.23)
+2026-09-10T16:21:03.143621+00:00 KINO: dip 76833.97 official -> pending SELL on M1 close back below it
+2026-09-10T16:23:01.978117+00:00 KINO: peak 77045.49 official -> pending BUY on M1 close back above it
+2026-09-10T16:37:01.687393+00:00 KINO: dip 76751.02 official -> pending SELL on M1 close back below it
+2026-09-10T16:43:01.717692+00:00 KINO: peak 77026.54 official -> pending BUY on M1 close back above it
+2026-09-10T16:45:02.428040+00:00 KINO: dip 76926.68 official -> pending SELL on M1 close back below it
+2026-09-10T16:49:04.065810+00:00 KINO: peak 77195.28 official -> pending BUY on M1 close back above it
+2026-09-10T16:56:02.450139+00:00 KINO: dip 77030.36 official -> pending SELL on M1 close back below it
+2026-09-10T17:02:03.144353+00:00 KINO: peak 77169.33 official -> pending BUY on M1 close back above it
+2026-09-10T17:04:14.827015+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77083.08 (setup 77095.42)
+2026-09-10T17:11:03.338474+00:00 KINO: dip 77094.42 official -> pending SELL on M1 close back below it
+2026-09-10T17:21:03.378217+00:00 KINO: dip 77084.15 official -> pending SELL on M1 close back below it
+2026-09-10T17:38:01.996755+00:00 KINO: peak 77510.10 official -> pending BUY on M1 close back above it
+2026-09-10T17:43:02.007618+00:00 KINO: peak 77368.96 official -> pending BUY on M1 close back above it
+2026-09-10T17:47:03.587090+00:00 KINO: peak 77350.51 official -> pending BUY on M1 close back above it
+2026-09-10T17:49:02.305207+00:00 KINO: dip 77276.97 official -> pending SELL on M1 close back below it
+2026-09-10T17:52:03.634954+00:00 KINO: confirmation ran 27pts past 77350.51 - NOT chasing; BUY only on a retest
+2026-09-10T17:53:01.950415+00:00 KINO: retest of 77350.51 - entering the missed BUY properly
+2026-09-10T17:56:02.822282+00:00 KINO: peak 77398.51 official -> pending BUY on M1 close back above it
+2026-09-10T18:02:03.055815+00:00 KINO: confirmation ran 55pts past 77276.97 - NOT chasing; SELL only on a retest
+2026-09-10T18:16:03.787831+00:00 KINO: dip 76937.98 official -> pending SELL on M1 close back below it
+2026-09-10T18:18:02.602820+00:00 KINO: peak 77056.52 official -> pending BUY on M1 close back above it
+2026-09-10T18:27:02.652646+00:00 KINO: peak 77124.98 official -> pending BUY on M1 close back above it
+2026-09-10T18:30:02.465267+00:00 KINO: peak 77100.13 official -> pending BUY on M1 close back above it
+2026-09-10T18:32:02.179713+00:00 KINO: dip 77011.92 official -> pending SELL on M1 close back below it
+2026-09-10T18:34:03.017770+00:00 KINO: peak 77058.21 official -> pending BUY on M1 close back above it
+2026-09-10T18:34:03.023647+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77009.25 (setup 77011.92)
+2026-09-10T18:37:01.888806+00:00 KINO: confirmation ran 31pts past 77058.21 - NOT chasing; BUY only on a retest
+2026-09-10T18:41:03.249395+00:00 KINO: peak 77126.58 official -> pending BUY on M1 close back above it
+2026-09-10T18:50:03.215284+00:00 KINO: dip 77051.18 official -> pending SELL on M1 close back below it
+2026-09-10T18:52:02.751975+00:00 KINO: confirmation ran 59pts past 77126.58 - NOT chasing; BUY only on a retest
+2026-09-10T18:57:02.565424+00:00 KINO: peak 77268.45 official -> pending BUY on M1 close back above it
+2026-09-10T19:00:03.567225+00:00 KINO: dip 77154.14 official -> pending SELL on M1 close back below it
+2026-09-10T19:01:01.947119+00:00 KINO: peak 77222.89 official -> pending BUY on M1 close back above it
+2026-09-10T19:06:03.613291+00:00 KINO: peak 77199.34 official -> pending BUY on M1 close back above it
+2026-09-10T19:06:03.617407+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77126.27 (setup 77138.37)
+2026-09-10T19:10:02.715668+00:00 KINO: dip 77116.54 official -> pending SELL on M1 close back below it
+2026-09-10T19:15:03.610954+00:00 KINO: dip 77084.32 official -> pending SELL on M1 close back below it
+2026-09-10T19:18:02.897067+00:00 KINO: peak 77165.35 official -> pending BUY on M1 close back above it
+2026-09-10T19:24:02.766965+00:00 KINO: peak 77127.55 official -> pending BUY on M1 close back above it
+2026-09-10T19:25:03.081306+00:00 KINO: confirmation ran 30pts past 77127.55 - NOT chasing; BUY only on a retest
+2026-09-10T19:25:03.083318+00:00 KINO: dip 77071.56 official -> pending SELL on M1 close back below it
+2026-09-10T19:30:02.750758+00:00 KINO: retest of 77127.55 - entering the missed BUY properly
+2026-09-10T19:31:03.070394+00:00 KINO: peak 77203.20 official -> pending BUY on M1 close back above it
+2026-09-10T19:35:02.159143+00:00 KINO: dip 77066.02 official -> pending SELL on M1 close back below it
+2026-09-10T19:38:03.075615+00:00 KINO: peak 77171.30 official -> pending BUY on M1 close back above it
+2026-09-10T19:46:03.939494+00:00 KINO: peak 77265.26 official -> pending BUY on M1 close back above it
+2026-09-10T19:58:03.395298+00:00 KINO: dip 77040.33 official -> pending SELL on M1 close back below it
+2026-09-10T20:03:02.894903+00:00 KINO: peak 77159.93 official -> pending BUY on M1 close back above it
+2026-09-10T20:25:02.699114+00:00 KINO: peak 77321.66 official -> pending BUY on M1 close back above it
+2026-09-10T20:28:01.506483+00:00 KINO: dip 77220.26 official -> pending SELL on M1 close back below it
+2026-09-10T20:29:03.694375+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77240.82 (setup 77243.12)
+2026-09-10T20:36:02.587513+00:00 KINO: peak 77250.69 official -> pending BUY on M1 close back above it
+2026-09-10T20:38:03.007013+00:00 KINO: dip 77196.52 official -> pending SELL on M1 close back below it
+2026-09-10T20:48:03.186517+00:00 KINO: peak 77277.56 official -> pending BUY on M1 close back above it
+2026-09-10T20:50:22.380010+00:00 KINO: dip 77190.47 official -> pending SELL on M1 close back below it
+2026-09-10T20:55:03.842038+00:00 KINO: dip 77222.02 official -> pending SELL on M1 close back below it
+2026-09-10T21:01:03.165992+00:00 KINO: dip 77234.95 official -> pending SELL on M1 close back below it
+2026-09-10T21:06:03.315102+00:00 KINO: dip 77197.53 official -> pending SELL on M1 close back below it
+2026-09-10T21:08:03.625733+00:00 KINO: peak 77244.11 official -> pending BUY on M1 close back above it
+2026-09-10T21:08:03.629216+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77192.88 (setup 77203.83)
+2026-09-10T21:14:02.583108+00:00 KINO: peak 77273.40 official -> pending BUY on M1 close back above it
+2026-09-10T21:24:04.246865+00:00 KINO: dip 77163.60 official -> pending SELL on M1 close back below it
+2026-09-10T21:35:04.219781+00:00 KINO: dip 77166.43 official -> pending SELL on M1 close back below it
+2026-09-10T21:47:01.981706+00:00 KINO: dip 77061.55 official -> pending SELL on M1 close back below it
+2026-09-10T22:00:04.637231+00:00 KINO: dip 77098.11 official -> pending SELL on M1 close back below it
+2026-09-10T22:01:02.994138+00:00 KINO: confirmation ran 25pts past 77098.11 - NOT chasing; SELL only on a retest
+2026-09-10T22:02:03.280728+00:00 KINO: retest of 77098.11 - entering the missed SELL properly
+2026-09-10T22:06:04.122932+00:00 KINO: peak 77145.53 official -> pending BUY on M1 close back above it
+2026-09-10T22:13:03.481872+00:00 KINO: peak 77167.84 official -> pending BUY on M1 close back above it
+2026-09-10T22:15:03.919504+00:00 KINO: dip 77064.55 official -> pending SELL on M1 close back below it
+2026-09-10T22:23:03.118374+00:00 KINO: peak 77197.15 official -> pending BUY on M1 close back above it
+2026-09-10T22:30:03.726995+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77047.24 (setup 77106.70)
+2026-09-10T22:46:02.579366+00:00 KINO: dip 76798.29 official -> pending SELL on M1 close back below it
+2026-09-10T22:52:04.157800+00:00 KINO: peak 76949.69 official -> pending BUY on M1 close back above it
+2026-09-10T23:01:04.459396+00:00 KINO: dip 76778.19 official -> pending SELL on M1 close back below it
+2026-09-10T23:06:03.646345+00:00 KINO: dip 76672.43 official -> pending SELL on M1 close back below it
+2026-09-10T23:13:02.792628+00:00 KINO: dip 76533.89 official -> pending SELL on M1 close back below it
+2026-09-10T23:15:03.328330+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76485.16 (setup 76533.89)
+2026-09-10T23:18:03.995269+00:00 KINO: dip 76427.57 official -> pending SELL on M1 close back below it
+2026-09-10T23:25:03.444963+00:00 KINO: peak 76752.60 official -> pending BUY on M1 close back above it
+2026-09-10T23:27:02.878260+00:00 KINO: dip 76656.74 official -> pending SELL on M1 close back below it
+2026-09-10T23:30:04.193941+00:00 KINO: peak 76764.81 official -> pending BUY on M1 close back above it
+2026-09-10T23:34:03.012275+00:00 KINO: dip 76680.38 official -> pending SELL on M1 close back below it
+2026-09-11T00:01:05.112974+00:00 KINO: dip 76502.89 official -> pending SELL on M1 close back below it
+2026-09-11T00:06:02.730986+00:00 KINO: peak 76677.26 official -> pending BUY on M1 close back above it
+2026-09-11T00:08:03.274912+00:00 KINO: confirmation ran 53pts past 76677.26 - NOT chasing; BUY only on a retest
+2026-09-11T00:15:32.826225+00:00 OWL starting (TP+recovery manager, trade scribe)
+2026-09-11T00:15:32.864493+00:00 WAR-CHEST mode ON: book $38.64, chest $5.00, next fighter 0.02
+2026-09-11T00:21:34.630372+00:00 KINO: peak 76812.32 official -> pending BUY on M1 close back above it
+2026-09-11T00:26:02.679269+00:00 KINO: peak 76840.70 official -> pending BUY on M1 close back above it
+2026-09-11T00:28:02.686401+00:00 KINO: dip 76773.64 official -> pending SELL on M1 close back below it
+2026-09-11T00:31:09.635380+00:00 KINO: confirmation ran 28pts past 76773.64 - NOT chasing; SELL only on a retest
+2026-09-11T00:31:09.695498+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76745.96 (setup 76773.64)
+2026-09-11T00:35:02.233536+00:00 KINO: dip 76651.08 official -> pending SELL on M1 close back below it
+2026-09-11T00:38:02.789662+00:00 KINO: peak 76803.64 official -> pending BUY on M1 close back above it
+2026-09-11T00:49:03.825806+00:00 KINO: dip 76708.10 official -> pending SELL on M1 close back below it
+2026-09-11T00:59:03.105861+00:00 KINO: peak 76909.97 official -> pending BUY on M1 close back above it
+2026-09-11T01:00:03.340968+00:00 KINO: dip 76843.99 official -> pending SELL on M1 close back below it
+2026-09-11T01:06:03.521585+00:00 KINO: peak 76977.98 official -> pending BUY on M1 close back above it
+2026-09-11T01:14:03.270667+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76893.94 (setup 76910.87)
+2026-09-11T01:20:02.375763+00:00 KINO: dip 76803.31 official -> pending SELL on M1 close back below it
+2026-09-11T01:22:17.281731+00:00 KINO: peak 76926.63 official -> pending BUY on M1 close back above it
+2026-09-11T01:25:03.722295+00:00 KINO: dip 76753.98 official -> pending SELL on M1 close back below it
+2026-09-11T01:27:02.156853+00:00 KINO: peak 76881.38 official -> pending BUY on M1 close back above it
+2026-09-11T01:36:02.747686+00:00 KINO: dip 76637.30 official -> pending SELL on M1 close back below it
+2026-09-11T01:41:02.951405+00:00 KINO: peak 76894.43 official -> pending BUY on M1 close back above it
+2026-09-11T01:43:03.403586+00:00 KINO: dip 76665.43 official -> pending SELL on M1 close back below it
+2026-09-11T01:49:03.888582+00:00 KINO: dip 76762.04 official -> pending SELL on M1 close back below it
+2026-09-11T02:01:03.295216+00:00 KINO: peak 76963.29 official -> pending BUY on M1 close back above it
+2026-09-11T02:05:03.904773+00:00 KINO: dip 76883.81 official -> pending SELL on M1 close back below it
+2026-09-11T02:09:02.660668+00:00 KINO: dip 76857.68 official -> pending SELL on M1 close back below it
+2026-09-11T02:16:02.469342+00:00 KINO: peak 76959.19 official -> pending BUY on M1 close back above it
+2026-09-11T02:18:02.814978+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76863.42 (setup 76866.73)
+2026-09-11T02:23:03.657714+00:00 KINO: dip 76832.86 official -> pending SELL on M1 close back below it
+2026-09-11T02:36:02.065555+00:00 KINO: dip 76736.72 official -> pending SELL on M1 close back below it
+2026-09-11T02:44:02.373494+00:00 KINO: peak 76897.11 official -> pending BUY on M1 close back above it
+2026-09-11T02:54:02.306226+00:00 KINO: peak 76900.90 official -> pending BUY on M1 close back above it
+2026-09-11T02:56:02.766735+00:00 KINO: dip 76767.77 official -> pending SELL on M1 close back below it
+2026-09-11T03:01:07.780873+00:00 KINO: dip 76789.91 official -> pending SELL on M1 close back below it
+2026-09-11T03:05:03.315820+00:00 KINO: confirmation ran 22pts past 76789.91 - NOT chasing; SELL only on a retest
+2026-09-11T03:11:02.381589+00:00 KINO: dip 76666.43 official -> pending SELL on M1 close back below it
+2026-09-11T03:16:03.370832+00:00 KINO: peak 76857.34 official -> pending BUY on M1 close back above it
+2026-09-11T03:19:01.848075+00:00 KINO: dip 76728.91 official -> pending SELL on M1 close back below it
+2026-09-11T03:31:03.967639+00:00 KINO: peak 76800.86 official -> pending BUY on M1 close back above it
+2026-09-11T03:32:02.219687+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~76726.42 (setup 76728.91)
+2026-09-11T03:35:02.833584+00:00 KINO: dip 76664.94 official -> pending SELL on M1 close back below it
+2026-09-11T03:44:03.431891+00:00 KINO: peak 76865.90 official -> pending BUY on M1 close back above it
+2026-09-11T03:53:01.821954+00:00 KINO: peak 76780.89 official -> pending BUY on M1 close back above it
+2026-09-11T03:54:16.971748+00:00 KINO: dip 76737.15 official -> pending SELL on M1 close back below it
+2026-09-11T04:12:15.353777+00:00 KINO: peak 76968.61 official -> pending BUY on M1 close back above it
+2026-09-11T04:14:31.773324+00:00 KINO: dip 76863.11 official -> pending SELL on M1 close back below it
+2026-09-11T04:33:02.413379+00:00 KINO: peak 77164.84 official -> pending BUY on M1 close back above it
+2026-09-11T04:36:02.875564+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77093.77 (setup 77106.90)
+2026-09-11T04:37:03.004871+00:00 KINO: dip 77080.09 official -> pending SELL on M1 close back below it
+2026-09-11T04:40:03.468147+00:00 KINO: dip 77062.90 official -> pending SELL on M1 close back below it
+2026-09-11T04:44:04.138440+00:00 KINO: peak 77103.45 official -> pending BUY on M1 close back above it
+2026-09-11T04:59:04.495358+00:00 KINO: peak 77118.66 official -> pending BUY on M1 close back above it
+2026-09-11T05:07:03.842316+00:00 KINO: dip 77026.21 official -> pending SELL on M1 close back below it
+2026-09-11T05:13:03.158410+00:00 KINO: peak 77134.51 official -> pending BUY on M1 close back above it
+2026-09-11T05:15:43.365028+00:00 KINO: dip 77044.33 official -> pending SELL on M1 close back below it
+2026-09-11T05:31:02.569268+00:00 KINO: dip 77054.47 official -> pending SELL on M1 close back below it
+2026-09-11T05:33:03.119618+00:00 KINO: peak 77107.92 official -> pending BUY on M1 close back above it
+2026-09-11T05:33:03.119618+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77050.45 (setup 77057.96)
+2026-09-11T05:39:04.641003+00:00 KINO: peak 77137.41 official -> pending BUY on M1 close back above it
+2026-09-11T05:46:03.029462+00:00 KINO: peak 77170.73 official -> pending BUY on M1 close back above it
+2026-09-11T05:53:02.695339+00:00 KINO: peak 77174.02 official -> pending BUY on M1 close back above it
+2026-09-11T05:56:03.391368+00:00 KINO: confirmation ran 25pts past 77174.02 - NOT chasing; BUY only on a retest
+2026-09-11T05:56:03.391368+00:00 KINO: dip 77145.84 official -> pending SELL on M1 close back below it
+2026-09-11T05:57:03.550605+00:00 KINO: retest of 77174.02 - entering the missed BUY properly
+2026-09-11T06:01:19.508860+00:00 KINO: peak 77224.00 official -> pending BUY on M1 close back above it
+2026-09-11T06:06:03.766899+00:00 KINO: peak 77238.08 official -> pending BUY on M1 close back above it
+2026-09-11T06:18:04.343747+00:00 KINO: peak 77401.72 official -> pending BUY on M1 close back above it
+2026-09-11T06:29:03.364199+00:00 KINO: dip 77215.61 official -> pending SELL on M1 close back below it
+2026-09-11T06:29:03.366210+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77248.20 (setup 77259.60)
+2026-09-11T06:33:04.231678+00:00 KINO: peak 77250.59 official -> pending BUY on M1 close back above it
+2026-09-11T06:33:04.231678+00:00 KINO: confirmation ran 35pts past 77215.61 - NOT chasing; SELL only on a retest
+2026-09-11T06:36:02.870697+00:00 KINO: dip 77135.65 official -> pending SELL on M1 close back below it
+2026-09-11T06:41:03.872347+00:00 KINO: peak 77222.74 official -> pending BUY on M1 close back above it
+2026-09-11T06:45:02.550826+00:00 KINO: dip 77179.95 official -> pending SELL on M1 close back below it
+2026-09-11T06:57:03.219374+00:00 KINO: dip 77233.59 official -> pending SELL on M1 close back below it
+2026-09-11T06:59:03.506437+00:00 KINO: peak 77265.15 official -> pending BUY on M1 close back above it
+2026-09-11T07:05:02.874769+00:00 KINO: dip 77249.94 official -> pending SELL on M1 close back below it
+2026-09-11T07:12:03.563280+00:00 KINO: peak 77360.68 official -> pending BUY on M1 close back above it
+2026-09-11T07:17:15.731776+00:00 KINO: dip 77273.59 official -> pending SELL on M1 close back below it
+2026-09-11T07:23:02.823545+00:00 KINO: peak 77342.40 official -> pending BUY on M1 close back above it
+2026-09-11T07:26:03.337786+00:00 SHADOW ENTRY: recipe fired -> would SELL @ ~77260.81 (setup 77273.59)
+2026-09-11T07:32:04.458653+00:00 KINO: peak 77310.51 official -> pending BUY on M1 close back above it
+2026-09-11T07:51:03.120271+00:00 KINO: dip 77200.89 official -> pending SELL on M1 close back below it
+2026-09-11T07:52:03.298406+00:00 KINO: peak 77226.18 official -> pending BUY on M1 close back above it
+2026-09-11T07:57:03.878787+00:00 KINO: dip 77164.42 official -> pending SELL on M1 close back below it
+2026-09-11T08:00:31.751799+00:00 CLOCKS DIVERGED: H4 and D1 disagree again - no new runner candidates
+2026-09-11T08:02:04.076105+00:00 KINO: dip 77189.39 official -> pending SELL on M1 close back below it
+2026-09-11T08:04:04.420009+00:00 KINO: peak 77241.18 official -> pending BUY on M1 close back above it
+2026-09-11T08:15:02.776711+00:00 KINO: dip 77102.02 official -> pending SELL on M1 close back below it
+2026-09-11T08:21:12.573629+00:00 KINO: dip 77195.71 official -> pending SELL on M1 close back below it
+2026-09-11T08:29:03.273567+00:00 KINO: dip 77294.27 official -> pending SELL on M1 close back below it
+2026-09-11T08:33:02.474874+00:00 KINO: peak 77472.81 official -> pending BUY on M1 close back above it
+2026-09-11T08:39:03.709176+00:00 KINO: dip 77316.26 official -> pending SELL on M1 close back below it
+2026-09-11T08:47:03.468897+00:00 KINO: peak 77389.36 official -> pending BUY on M1 close back above it
+2026-09-11T08:52:03.989707+00:00 KINO: dip 77288.69 official -> pending SELL on M1 close back below it
+2026-09-11T08:55:02.717122+00:00 KINO: peak 77352.85 official -> pending BUY on M1 close back above it
+2026-09-11T09:01:03.948995+00:00 KINO: dip 77323.83 official -> pending SELL on M1 close back below it
+2026-09-11T09:03:04.352053+00:00 KINO: peak 77343.99 official -> pending BUY on M1 close back above it
+2026-09-11T09:08:03.409846+00:00 KINO: dip 77285.37 official -> pending SELL on M1 close back below it
+2026-09-11T09:09:03.572904+00:00 KINO: confirmation ran 30pts past 77285.37 - NOT chasing; SELL only on a retest
+2026-09-11T09:14:04.661360+00:00 KINO: dip 77231.86 official -> pending SELL on M1 close back below it
+2026-09-11T09:33:04.799253+00:00 KINO: dip 77103.02 official -> pending SELL on M1 close back below it
+2026-09-11T09:35:03.192110+00:00 KINO: peak 77142.74 official -> pending BUY on M1 close back above it
+2026-09-11T09:35:03.192110+00:00 KINO: confirmation ran 42pts past 77103.02 - NOT chasing; SELL only on a retest
+2026-09-11T09:43:02.885660+00:00 KINO: dip 76829.61 official -> pending SELL on M1 close back below it
+2026-09-11T09:51:02.604925+00:00 KINO: peak 77005.40 official -> pending BUY on M1 close back above it
+2026-09-11T09:55:03.402459+00:00 KINO: peak 77024.81 official -> pending BUY on M1 close back above it
+2026-09-11T09:59:12.958288+00:00 KINO: dip 76978.59 official -> pending SELL on M1 close back below it
+2026-09-11T10:06:03.856715+00:00 KINO: peak 77128.72 official -> pending BUY on M1 close back above it
+2026-09-11T10:10:02.781083+00:00 KINO: peak 77109.33 official -> pending BUY on M1 close back above it
+2026-09-11T10:15:04.025218+00:00 KINO: dip 76992.41 official -> pending SELL on M1 close back below it
+2026-09-11T10:21:30.038559+00:00 KINO: peak 77108.07 official -> pending BUY on M1 close back above it
+2026-09-11T10:35:01.458917+00:00 KINO: dip 76920.57 official -> pending SELL on M1 close back below it
+2026-09-11T10:37:01.998363+00:00 KINO: peak 77028.23 official -> pending BUY on M1 close back above it
+2026-09-11T10:48:02.945342+00:00 KINO: peak 77008.83 official -> pending BUY on M1 close back above it
+2026-09-11T10:59:01.363515+00:00 KINO: peak 77015.35 official -> pending BUY on M1 close back above it
+2026-09-11T11:11:12.943332+00:00 KINO: dip 76724.97 official -> pending SELL on M1 close back below it
+2026-09-11T11:21:02.517968+00:00 KINO: peak 76814.29 official -> pending BUY on M1 close back above it
+2026-09-11T11:26:01.514518+00:00 KINO: confirmation ran 45pts past 76814.29 - NOT chasing; BUY only on a retest
+2026-09-11T11:29:02.090628+00:00 KINO: retest of 76814.29 - entering the missed BUY properly
+2026-09-11T11:38:01.060989+00:00 KINO: dip 76747.03 official -> pending SELL on M1 close back below it
+2026-09-11T11:41:01.632071+00:00 KINO: dip 76797.53 official -> pending SELL on M1 close back below it
+2026-09-11T11:44:01.222837+00:00 KINO: peak 76875.95 official -> pending BUY on M1 close back above it
+2026-09-11T11:45:01.495295+00:00 KINO: dip 76843.90 official -> pending SELL on M1 close back below it
+2026-09-11T11:50:01.192942+00:00 KINO: peak 76966.46 official -> pending BUY on M1 close back above it
+2026-09-11T11:52:01.693076+00:00 KINO: dip 76850.31 official -> pending SELL on M1 close back below it
+2026-09-11T11:57:26.875916+00:00 KINO: dip 76908.87 official -> pending SELL on M1 close back below it

@@ -1,0 +1,34 @@
+2026-09-08T11:16:02.688778+00:00 FRESH-H1 starting on 476954287 balance 1000.00 symbol ETHUSD brick 1.9 gate 5.7 kill -60.0
+2026-09-08T11:16:03.719243+00:00 seeded 46035 H1 bars; trade dir -1 gate dir 1 since 1
+2026-09-08T15:00:05.202600+00:00 flip UP skipped (fresh=False early=True)
+2026-09-08T15:07:23.945904+00:00 FRESH-H1 starting on 476954287 balance 1000.00 symbol ETHUSD brick 1.9 gate 5.7 kill -60.0
+2026-09-08T15:07:26.006857+00:00 seeded 46039 H1 bars; trade dir 1 gate dir 1 since 2
+2026-09-08T18:00:26.907314+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-09T01:00:09.408857+00:00 flip UP skipped (fresh=False early=True)
+2026-09-09T04:00:10.290490+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-09T05:00:10.539125+00:00 flip UP skipped (fresh=False early=True)
+2026-09-09T06:00:10.905192+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-09T08:00:11.580617+00:00 flip UP skipped (fresh=False early=True)
+2026-09-09T10:00:27.564157+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-09T12:00:16.454161+00:00 flip UP skipped (fresh=False early=True)
+2026-09-09T14:00:17.579558+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-10T00:00:37.100565+00:00 flip UP skipped (fresh=False early=True)
+2026-09-10T08:00:09.411381+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-10T14:00:10.825821+00:00 ENTRY FAILED retcode=10014
+2026-09-10T14:04:13.377438+00:00 lot raised to broker minimum 0.1; kill scaled to -600.0
+2026-09-10T14:04:13.377945+00:00 FRESH-H1 starting on 476954287 balance 1000.00 symbol ETHUSD brick 1.9 gate 5.6 kill -600.0
+2026-09-10T14:04:15.617400+00:00 seeded 46086 H1 bars; trade dir 1 gate dir -1 since 9
+2026-09-10T14:09:10.130750+00:00 lot raised to broker minimum 0.1; kill scaled to -600.0
+2026-09-10T14:09:10.131363+00:00 FRESH-H1 starting on 476954287 balance 1000.00 symbol ETHUSD brick 1.9 gate 5.6 kill -600.0
+2026-09-10T14:09:11.699456+00:00 seeded 46086 H1 bars; trade dir 1 gate dir -1 since 9
+2026-09-10T22:00:18.796102+00:00 flip DOWN skipped (fresh=False early=True)
+2026-09-11T00:24:17.679808+00:00 lot raised to broker minimum 0.1; kill scaled to -600.0
+2026-09-11T00:24:17.681357+00:00 FRESH-H1 starting on 476954287 balance 1000.00 symbol ETHUSD brick 1.9 gate 5.7 kill -600.0
+2026-09-11T00:25:22.070636+00:00 seeded 46096 H1 bars; trade dir -1 gate dir -1 since 3
+2026-09-11T01:00:23.005745+00:00 CYCLE 1/2: BUY 0.1 TP 2465.30 (fresh gate, gate-since 1)
+2026-09-11T02:00:23.255443+00:00 RECOVERY: 10pts against 3213521590 - same-direction adds armed
+2026-09-11T05:00:05.425635+00:00 BASKET CLOSED (cycle back to zero) ok=True
+2026-09-11T05:00:08.443739+00:00 CYCLE OVER at zero +0.23 - bot net +0.23
+2026-09-11T05:00:09.079619+00:00 CYCLE 2/2: BUY 0.1 TP 2468.32 (fresh gate, gate-since 1)
+2026-09-11T07:00:09.563718+00:00 CYCLE OVER via targets +1.18 - bot net +1.41
+2026-09-11T10:00:10.285365+00:00 flip DOWN skipped (fresh=False early=False)
