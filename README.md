@@ -35,9 +35,11 @@ Chart engine (`bots/owl_chart_feed.py` = the same brain as the bot):
 Entries (one trade at a time, base 0.02 lot):
 - Flip-BOS: when a CHoCH is followed by a BOS in the new direction, enter
   on the close of that BOS candle.
-- Continuation BOS ("touch"): in an established trend, enter the moment
-  price touches the reference high/low (1-second tick check). Close-entry is
-  the fallback after gaps/downtime.
+- Continuation BOS: SINCE 2026-09-11 17:26 UTC entered on the candle CLOSE
+  (the execution audit in `study/audit/` showed the touch variant had
+  tick-level optimistic bias). Before that: "touch" = enter the moment price
+  touches the reference high/low. The touch rule keeps running as a paper
+  twin (`bots/bos_paper_touch.py`) for a side-by-side record.
 - Awake gate: no entry unless there was at least one trend flip in the
   last 2 hours (backtest shows sleepy markets are the bleed).
 - SL at the glowing dot (the last confirmed swing). TP = 0.8 × risk.

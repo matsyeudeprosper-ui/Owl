@@ -36,3 +36,17 @@ TOUCH only, gated               : real    +7.55 (n 493, wr 53.5%) | random mean 
    FLIP only, gated: 700 seeds, mean so far -16.99  [1766s]
    FLIP only, gated: 800 seeds, mean so far -18.70  [2008s]
    FLIP only, gated: 900 seeds, mean so far -18.69  [2308s]
+   FLIP only, gated: 1000 seeds, mean so far -19.40  [2639s]
+FLIP only, gated                : real   +49.66 (n 349, wr 55.0%) | random mean  -19.40 sd  82.85 p5 -156.02 p50  -18.98 p95 +118.83 max +247.05 | real beats 80.4% of controls | z +0.83
+   FLIP+TOUCH, NO gate: 100 seeds, mean so far -80.27  [315s]
+   FLIP+TOUCH, NO gate: 200 seeds, mean so far -66.50  [652s]
+   FLIP+TOUCH, NO gate: 300 seeds, mean so far -73.98  [947s]
+   FLIP+TOUCH, NO gate: 400 seeds, mean so far -75.51  [1248s]
+   FLIP+TOUCH, NO gate: 500 seeds, mean so far -77.38  [1565s]
+   FLIP+TOUCH, NO gate: 600 seeds, mean so far -79.66  [1904s]
+   FLIP+TOUCH, NO gate: 700 seeds, mean so far -76.58  [2218s]
+   FLIP+TOUCH, NO gate: 800 seeds, mean so far -79.29  [2526s]
+   FLIP+TOUCH, NO gate: 900 seeds, mean so far -79.58  [2847s]
+   FLIP+TOUCH, NO gate: 1000 seeds, mean so far -81.32  [3187s]
+FLIP+TOUCH, NO gate             : real   +60.16 (n 688, wr 54.9%) | random mean  -81.32 sd 132.74 p5 -311.61 p50  -79.31 p95 +133.32 max +274.76 | real beats 85.0% of controls | z +1.07
+done rand_tick

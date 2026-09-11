@@ -229,6 +229,17 @@ continuation −$30, flip +$4): removing touch does not rescue the untouched
 3 days. Touch was never the source of the edge; it only made the M1
 backtest look better than execution could deliver.
 
+## 12. Deployed 2026-09-11 17:26 UTC (user decision)
+
+Live bot: `TOUCH_ENTRIES = False` in `bots/structure_bos_bot.py` -
+continuation entries on the candle close again; flips, awake gate,
+war-chest and adds unchanged. Paper twin `bots/bos_paper_touch.py`
+keeps trading the flip+touch rule virtually on the same Pro feed (flat
+0.02, tick-judged fills, log `bos_paper_touch.log`, state
+`bos_paper_touch_state.json`). Comparison starts from this timestamp;
+compare the twin's trade list with the live bot's BASE trades normalised
+to 0.02. Demo variants (sniper, halfdebt) still use touch.
+
 ## Files
 
 - `exec_audit.py` – engine (signal logic frozen; execution modes legacy / pess / opt / tick; random control).
