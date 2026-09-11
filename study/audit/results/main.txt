@@ -1,0 +1,115 @@
+data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 days)
+ticks: 7996961 from 2026-07-01 00:00:00.744000 to 2026-09-11 13:39:53.093000; spread mean 7.000
+
+=== 1. ENTRY TYPES x EXECUTION MODE (S=7, min_dist=7 as in research) ===
+
+--- FLIP only, gated
+legacy  FULL                      : n  348 wr 53.7% net   +30.66 avgW +3.32 avgL -3.67 PF 1.05 maxDD  62.28 exp/tr +0.088 | flip n 348 +30.7 | touch n 0 +0.0
+legacy    h1                      : n  161 wr 56.5% net   +33.37 avgW +3.05 avgL -3.49 PF 1.14 maxDD  62.28 exp/tr +0.207 | flip n 161 +33.4 | touch n 0 +0.0
+legacy    h2                      : n  187 wr 51.3% net    -2.71 avgW +3.58 avgL -3.81 PF 0.99 maxDD  60.72 exp/tr -0.015 | flip n 187 -2.7 | touch n 0 +0.0
+pess    FULL                      : n  348 wr 53.7% net   +30.66 avgW +3.32 avgL -3.67 PF 1.05 maxDD  62.28 exp/tr +0.088 | flip n 348 +30.7 | touch n 0 +0.0
+pess      h1                      : n  161 wr 56.5% net   +33.37 avgW +3.05 avgL -3.49 PF 1.14 maxDD  62.28 exp/tr +0.207 | flip n 161 +33.4 | touch n 0 +0.0
+pess      h2                      : n  187 wr 51.3% net    -2.71 avgW +3.58 avgL -3.81 PF 0.99 maxDD  60.72 exp/tr -0.015 | flip n 187 -2.7 | touch n 0 +0.0
+opt     FULL                      : n  348 wr 53.7% net   +30.66 avgW +3.32 avgL -3.67 PF 1.05 maxDD  62.28 exp/tr +0.088 | flip n 348 +30.7 | touch n 0 +0.0
+opt       h1                      : n  161 wr 56.5% net   +33.37 avgW +3.05 avgL -3.49 PF 1.14 maxDD  62.28 exp/tr +0.207 | flip n 161 +33.4 | touch n 0 +0.0
+opt       h2                      : n  187 wr 51.3% net    -2.71 avgW +3.58 avgL -3.81 PF 0.99 maxDD  60.72 exp/tr -0.015 | flip n 187 -2.7 | touch n 0 +0.0
+tick1s  FULL                      : n  349 wr 55.0% net   +49.66 avgW +3.29 avgL -3.71 PF 1.09 maxDD  58.96 exp/tr +0.142 | flip n 349 +49.7 | touch n 0 +0.0
+tick1s    h1                      : n  161 wr 58.4% net   +47.85 avgW +3.02 avgL -3.52 PF 1.20 maxDD  54.73 exp/tr +0.297 | flip n 161 +47.9 | touch n 0 +0.0
+tick1s    h2                      : n  188 wr 52.1% net    +1.81 avgW +3.55 avgL -3.84 PF 1.01 maxDD  58.96 exp/tr +0.010 | flip n 188 +1.8 | touch n 0 +0.0
+
+--- TOUCH only, gated
+legacy  FULL                      : n  511 wr 56.4% net  +116.74 avgW +2.46 avgL -2.66 PF 1.20 maxDD  66.57 exp/tr +0.228 | flip n 0 +0.0 | touch n 511 +116.7
+legacy    h1                      : n  230 wr 57.0% net   +61.90 avgW +2.30 avgL -2.42 PF 1.26 maxDD  40.28 exp/tr +0.269 | flip n 0 +0.0 | touch n 230 +61.9
+legacy    h2                      : n  281 wr 55.9% net   +54.84 avgW +2.60 avgL -2.85 PF 1.16 maxDD  66.57 exp/tr +0.195 | flip n 0 +0.0 | touch n 281 +54.8
+pess    FULL                      : n  513 wr 54.6% net  +108.51 avgW +2.52 avgL -2.57 PF 1.18 maxDD  55.08 exp/tr +0.212 | flip n 0 +0.0 | touch n 513 +108.5
+pess      h1                      : n  232 wr 54.7% net   +54.86 avgW +2.36 avgL -2.33 PF 1.22 maxDD  42.06 exp/tr +0.236 | flip n 0 +0.0 | touch n 232 +54.9
+pess      h2                      : n  281 wr 54.4% net   +53.66 avgW +2.66 avgL -2.76 PF 1.15 maxDD  55.08 exp/tr +0.191 | flip n 0 +0.0 | touch n 281 +53.7
+opt     FULL                      : n  513 wr 54.8% net  +110.08 avgW +2.52 avgL -2.57 PF 1.18 maxDD  55.08 exp/tr +0.215 | flip n 0 +0.0 | touch n 513 +110.1
+opt       h1                      : n  232 wr 55.2% net   +56.43 avgW +2.34 avgL -2.34 PF 1.23 maxDD  40.49 exp/tr +0.243 | flip n 0 +0.0 | touch n 232 +56.4
+opt       h2                      : n  281 wr 54.4% net   +53.66 avgW +2.66 avgL -2.76 PF 1.15 maxDD  55.08 exp/tr +0.191 | flip n 0 +0.0 | touch n 281 +53.7
+tick1s  FULL                      : n  493 wr 53.5% net    +7.55 avgW +2.60 avgL -2.96 PF 1.01 maxDD 112.11 exp/tr +0.015 | flip n 0 +0.0 | touch n 493 +7.6
+tick1s    h1                      : n  224 wr 55.8% net   +37.09 avgW +2.39 avgL -2.65 PF 1.14 maxDD  49.01 exp/tr +0.166 | flip n 0 +0.0 | touch n 224 +37.1
+tick1s    h2                      : n  269 wr 51.7% net   -29.54 avgW +2.78 avgL -3.20 PF 0.93 maxDD 100.96 exp/tr -0.110 | flip n 0 +0.0 | touch n 269 -29.5
+
+--- FLIP+TOUCH, NO gate
+legacy  FULL                      : n  722 wr 56.5% net  +136.27 avgW +3.63 avgL -4.29 PF 1.10 maxDD 151.22 exp/tr +0.189 | flip n 277 +22.5 | touch n 445 +113.7
+legacy    h1                      : n  372 wr 54.6% net   -16.05 avgW +3.31 avgL -4.07 PF 0.98 maxDD 119.42 exp/tr -0.043 | flip n 140 +2.9 | touch n 232 -19.0
+legacy    h2                      : n  350 wr 58.6% net  +152.32 avgW +3.95 avgL -4.54 PF 1.23 maxDD  41.47 exp/tr +0.435 | flip n 137 +19.6 | touch n 213 +132.7
+pess    FULL                      : n  722 wr 56.6% net  +157.58 avgW +3.65 avgL -4.26 PF 1.12 maxDD 149.25 exp/tr +0.218 | flip n 277 +22.5 | touch n 445 +135.0
+pess      h1                      : n  372 wr 54.3% net   -14.75 avgW +3.33 avgL -4.04 PF 0.98 maxDD 117.45 exp/tr -0.040 | flip n 140 +2.9 | touch n 232 -17.7
+pess      h2                      : n  350 wr 59.1% net  +172.33 avgW +3.96 avgL -4.53 PF 1.27 maxDD  41.18 exp/tr +0.492 | flip n 137 +19.6 | touch n 213 +152.7
+opt     FULL                      : n  722 wr 57.1% net  +175.19 avgW +3.64 avgL -4.27 PF 1.13 maxDD 145.48 exp/tr +0.243 | flip n 277 +22.5 | touch n 445 +152.6
+opt       h1                      : n  372 wr 54.3% net   -14.75 avgW +3.33 avgL -4.04 PF 0.98 maxDD 117.45 exp/tr -0.040 | flip n 140 +2.9 | touch n 232 -17.7
+opt       h2                      : n  350 wr 60.0% net  +189.94 avgW +3.94 avgL -4.55 PF 1.30 maxDD  41.18 exp/tr +0.543 | flip n 137 +19.6 | touch n 213 +170.3
+tick1s  FULL                      : n  688 wr 54.9% net   +60.16 avgW +3.83 avgL -4.48 PF 1.04 maxDD 185.21 exp/tr +0.087 | flip n 272 +51.7 | touch n 416 +8.4
+tick1s    h1                      : n  352 wr 52.6% net   -72.64 avgW +3.48 avgL -4.29 PF 0.90 maxDD 153.77 exp/tr -0.206 | flip n 134 +15.2 | touch n 218 -87.9
+tick1s    h2                      : n  336 wr 57.4% net  +132.80 avgW +4.17 avgL -4.70 PF 1.20 maxDD  51.75 exp/tr +0.395 | flip n 138 +36.5 | touch n 198 +96.3
+
+--- FLIP+TOUCH + awake gate (LIVE)
+legacy  FULL                      : n  622 wr 58.4% net  +255.12 avgW +3.14 avgL -3.42 PF 1.29 maxDD  66.03 exp/tr +0.410 | flip n 326 +47.2 | touch n 296 +207.9
+legacy    h1                      : n  298 wr 57.7% net   +85.87 avgW +2.90 avgL -3.27 PF 1.21 maxDD  66.03 exp/tr +0.288 | flip n 155 +36.9 | touch n 143 +49.0
+legacy    h2                      : n  324 wr 59.0% net  +169.25 avgW +3.37 avgL -3.56 PF 1.36 maxDD  29.93 exp/tr +0.522 | flip n 171 +10.3 | touch n 153 +158.9
+pess    FULL                      : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+pess      h1                      : n  298 wr 57.4% net   +86.72 avgW +2.92 avgL -3.24 PF 1.21 maxDD  67.35 exp/tr +0.291 | flip n 155 +36.9 | touch n 143 +49.9
+pess      h2                      : n  324 wr 59.3% net  +176.42 avgW +3.36 avgL -3.56 PF 1.38 maxDD  29.93 exp/tr +0.544 | flip n 171 +10.3 | touch n 153 +166.1
+opt     FULL                      : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+opt       h1                      : n  298 wr 57.4% net   +86.72 avgW +2.92 avgL -3.24 PF 1.21 maxDD  67.35 exp/tr +0.291 | flip n 155 +36.9 | touch n 143 +49.9
+opt       h2                      : n  324 wr 59.3% net  +176.42 avgW +3.36 avgL -3.56 PF 1.38 maxDD  29.93 exp/tr +0.544 | flip n 171 +10.3 | touch n 153 +166.1
+tick1s  FULL                      : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+tick1s    h1                      : n  290 wr 56.6% net   +66.49 avgW +3.02 avgL -3.41 PF 1.15 maxDD  61.00 exp/tr +0.229 | flip n 152 +46.5 | touch n 138 +20.0
+tick1s    h2                      : n  319 wr 57.1% net  +139.16 avgW +3.53 avgL -3.68 PF 1.28 maxDD  31.57 exp/tr +0.436 | flip n 174 +23.1 | touch n 145 +116.0
+
+=== 2. SAME-BAR AMBIGUITY COUNT (bars where SL and TP are both inside the bar) ===
+legacy run: 1 of 622 trades exit on a bar that also touches the other level
+pess run: 38 touch trades resolved inside their entry bar (14 losses, 24 wins)
+
+=== 3. TICK POLL DELAY SENSITIVITY (live config) ===
+tick poll 0ms                     : n  617 wr 57.5% net  +201.35 avgW +3.22 avgL -3.59 PF 1.21 maxDD  67.34 exp/tr +0.326 | flip n 326 +38.9 | touch n 291 +162.5
+tick poll 500ms                   : n  614 wr 56.4% net  +168.53 avgW +3.28 avgL -3.60 PF 1.17 maxDD  65.96 exp/tr +0.274 | flip n 326 +68.9 | touch n 288 +99.6
+tick poll 1000ms                  : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+tick poll 2000ms                  : n  613 wr 57.3% net  +216.58 avgW +3.27 avgL -3.56 PF 1.23 maxDD  60.00 exp/tr +0.353 | flip n 326 +84.3 | touch n 287 +132.3
+tick poll 3000ms                  : n  599 wr 56.3% net  +166.40 avgW +3.29 avgL -3.59 PF 1.18 maxDD  73.26 exp/tr +0.278 | flip n 320 +46.6 | touch n 279 +119.8
+tick poll 5000ms                  : n  594 wr 55.7% net  +138.58 avgW +3.34 avgL -3.67 PF 1.14 maxDD  81.07 exp/tr +0.233 | flip n 317 +89.1 | touch n 277 +49.5
+
+=== 4. MIN-DISTANCE: research (7) vs production S_MIN_DIST (10) ===
+pess  min_dist 7                  : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+tick1s min_dist 7                 : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+pess  min_dist 10                 : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+tick1s min_dist 10                : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+pess  min_dist 15                 : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+tick1s min_dist 15                : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+pess  min_dist 20                 : n  620 wr 58.4% net  +263.24 avgW +3.16 avgL -3.42 PF 1.30 maxDD  67.35 exp/tr +0.425 | flip n 326 +47.2 | touch n 294 +216.0
+tick1s min_dist 20                : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+
+=== 5. SLIPPAGE STRESS on ticks (live config, min_dist 10, poll 1s) ===
+(observed live: entry slip median 0 / mean +2.5 pts, SL slip mean -2.3 pts, one 155-pt entry outlier)
+slip entry    0 sl    0           : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+slip entry    0 sl  2.5           : n  609 wr 56.8% net  +192.50 avgW +3.29 avgL -3.60 PF 1.20 maxDD  61.95 exp/tr +0.316 | flip n 326 +62.5 | touch n 283 +130.0
+slip entry    0 sl    5           : n  609 wr 56.8% net  +179.35 avgW +3.29 avgL -3.65 PF 1.19 maxDD  62.90 exp/tr +0.294 | flip n 326 +55.4 | touch n 283 +124.0
+slip entry    0 sl   10           : n  609 wr 56.8% net  +153.05 avgW +3.29 avgL -3.75 PF 1.16 maxDD  64.80 exp/tr +0.251 | flip n 326 +41.1 | touch n 283 +112.0
+slip entry  2.5 sl    0           : n  606 wr 55.3% net  +174.96 avgW +3.36 avgL -3.51 PF 1.18 maxDD  62.77 exp/tr +0.289 | flip n 326 +45.7 | touch n 280 +129.3
+slip entry  2.5 sl  2.5           : n  606 wr 55.3% net  +161.41 avgW +3.36 avgL -3.56 PF 1.17 maxDD  63.77 exp/tr +0.266 | flip n 326 +38.2 | touch n 280 +123.2
+slip entry  2.5 sl    5           : n  606 wr 55.3% net  +147.86 avgW +3.36 avgL -3.61 PF 1.15 maxDD  64.77 exp/tr +0.244 | flip n 326 +30.8 | touch n 280 +117.1
+slip entry  2.5 sl   10           : n  606 wr 55.3% net  +120.76 avgW +3.36 avgL -3.71 PF 1.12 maxDD  66.77 exp/tr +0.199 | flip n 326 +15.9 | touch n 280 +104.9
+slip entry    5 sl    0           : n  603 wr 53.6% net  +130.55 avgW +3.43 avgL -3.49 PF 1.13 maxDD  75.36 exp/tr +0.217 | flip n 327 +10.6 | touch n 276 +119.9
+slip entry    5 sl  2.5           : n  603 wr 53.6% net  +116.55 avgW +3.43 avgL -3.54 PF 1.12 maxDD  76.66 exp/tr +0.193 | flip n 327 +2.8 | touch n 276 +113.7
+slip entry    5 sl    5           : n  603 wr 53.6% net  +102.55 avgW +3.43 avgL -3.59 PF 1.10 maxDD  82.46 exp/tr +0.170 | flip n 327 -5.0 | touch n 276 +107.5
+slip entry    5 sl   10           : n  603 wr 53.6% net   +74.55 avgW +3.43 avgL -3.69 PF 1.07 maxDD 100.56 exp/tr +0.124 | flip n 327 -20.6 | touch n 276 +95.1
+slip entry   10 sl    0           : n  599 wr 51.9% net   +87.43 avgW +3.51 avgL -3.48 PF 1.09 maxDD  85.02 exp/tr +0.146 | flip n 325 -13.0 | touch n 274 +100.5
+slip entry   10 sl  2.5           : n  599 wr 51.9% net   +73.03 avgW +3.51 avgL -3.53 PF 1.07 maxDD  94.22 exp/tr +0.122 | flip n 325 -21.0 | touch n 274 +94.1
+slip entry   10 sl    5           : n  599 wr 51.9% net   +58.63 avgW +3.51 avgL -3.58 PF 1.06 maxDD 103.42 exp/tr +0.098 | flip n 325 -29.0 | touch n 274 +87.7
+slip entry   10 sl   10           : n  599 wr 51.9% net   +29.83 avgW +3.51 avgL -3.68 PF 1.03 maxDD 121.82 exp/tr +0.050 | flip n 325 -45.0 | touch n 274 +74.9
+slip entry   20 sl    0           : n  612 wr 45.4% net   -98.97 avgW +3.63 avgL -3.32 PF 0.91 maxDD 217.89 exp/tr -0.162 | flip n 327 -127.0 | touch n 285 +28.0
+slip entry   20 sl  2.5           : n  612 wr 45.4% net  -115.67 avgW +3.63 avgL -3.37 PF 0.90 maxDD 228.99 exp/tr -0.189 | flip n 327 -136.2 | touch n 285 +20.5
+slip entry   20 sl    5           : n  612 wr 45.4% net  -132.37 avgW +3.63 avgL -3.42 PF 0.88 maxDD 240.09 exp/tr -0.216 | flip n 327 -145.4 | touch n 285 +13.0
+slip entry   20 sl   10           : n  612 wr 45.4% net  -165.77 avgW +3.63 avgL -3.52 PF 0.86 maxDD 262.29 exp/tr -0.271 | flip n 327 -163.8 | touch n 285 -2.0
+
+=== 6. SPREAD STRESS on M1 pess (spread S also = entry cost and sell-side exits) ===
+pess S=7 min_dist 10              : n  622 wr 58.4% net  +263.14 avgW +3.15 avgL -3.40 PF 1.30 maxDD  67.35 exp/tr +0.423 | flip n 326 +47.2 | touch n 296 +215.9
+pess S=10 min_dist 10             : n  618 wr 57.8% net  +248.68 avgW +3.21 avgL -3.44 PF 1.28 maxDD  67.52 exp/tr +0.402 | flip n 327 +22.0 | touch n 291 +226.7
+pess S=14 min_dist 10             : n  605 wr 55.2% net  +194.63 avgW +3.35 avgL -3.41 PF 1.21 maxDD  81.89 exp/tr +0.322 | flip n 325 -4.5 | touch n 280 +199.1
+pess S=20 min_dist 10             : n  598 wr 51.2% net   +73.13 avgW +3.53 avgL -3.45 PF 1.07 maxDD  96.42 exp/tr +0.122 | flip n 329 -53.9 | touch n 269 +127.0
+
+=== 7. PER-TRADE DUMP of the tick run (live config, min_dist 10, poll 1s) -> results/trades_tick_live_config.csv ===
+tick1s min_dist 10 (LIVE CONFIG)  : n  609 wr 56.8% net  +205.65 avgW +3.29 avgL -3.55 PF 1.22 maxDD  61.00 exp/tr +0.338 | flip n 326 +69.7 | touch n 283 +136.0
+done main

@@ -1,0 +1,7 @@
+data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 days)
+=== RANDOM-DIRECTION CONTROL, M1 pess, 1000 seeds per config ===
+FLIP only, gated                : real   +30.66 (n 348, wr 53.7%) | random mean  -26.76 sd  79.77 p5 -154.54 p50  -31.13 p95 +111.34 max +224.02 | real beats 77.0% of controls | z +0.72  [240s]
+TOUCH only, gated               : real  +108.51 (n 513, wr 54.6%) | random mean  -62.75 sd  70.15 p5 -176.52 p50  -62.79 p95  +50.78 max +205.24 | real beats 99.4% of controls | z +2.44  [543s]
+FLIP+TOUCH, NO gate             : real  +157.58 (n 722, wr 56.6%) | random mean  -71.67 sd 134.22 p5 -294.81 p50  -71.19 p95 +150.39 max +431.41 | real beats 95.2% of controls | z +1.71  [1021s]
+FLIP+TOUCH + awake gate (LIVE)  : real  +263.14 (n 622, wr 58.4%) | random mean  -47.86 sd  98.22 p5 -215.18 p50  -47.43 p95 +116.17 max +287.33 | real beats 99.9% of controls | z +3.17  [502s]
+done rand_m1

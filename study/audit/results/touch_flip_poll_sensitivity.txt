@@ -1,0 +1,12 @@
+TOUCH-only gated, tick, poll sensitivity:
+  poll 0ms FULL                   : n  504 wr 55.0% net   +73.28 avgW +2.56 avgL -2.81 PF 1.12 maxDD  71.28 exp/tr +0.145 | flip n 0 +0.0 | touch n 504 +73.3 | h1 +41.4 h2 +31.8
+  poll 500ms FULL                 : n  495 wr 53.1% net    +7.03 avgW +2.60 avgL -2.92 PF 1.01 maxDD 103.43 exp/tr +0.014 | flip n 0 +0.0 | touch n 495 +7.0 | h1 +34.5 h2 -27.5
+  poll 1000ms FULL                : n  493 wr 53.5% net    +7.55 avgW +2.60 avgL -2.96 PF 1.01 maxDD 112.11 exp/tr +0.015 | flip n 0 +0.0 | touch n 493 +7.6 | h1 +37.1 h2 -29.5
+  poll 2000ms FULL                : n  497 wr 54.5% net   +39.93 avgW +2.58 avgL -2.92 PF 1.06 maxDD  96.18 exp/tr +0.080 | flip n 0 +0.0 | touch n 497 +39.9 | h1 +40.6 h2 -0.7
+  poll 3000ms FULL                : n  489 wr 54.4% net   +26.93 avgW +2.56 avgL -2.93 PF 1.04 maxDD  96.44 exp/tr +0.055 | flip n 0 +0.0 | touch n 489 +26.9 | h1 +48.8 h2 -21.9
+FLIP-only gated, tick, poll sensitivity:
+  poll 0ms FULL                   : n  348 wr 53.7% net   +22.31 avgW +3.32 avgL -3.71 PF 1.04 maxDD  63.02 exp/tr +0.064 | flip n 348 +22.3 | touch n 0 +0.0 | h1 +31.1 h2 -8.8
+  poll 1000ms FULL                : n  349 wr 55.0% net   +49.66 avgW +3.29 avgL -3.71 PF 1.09 maxDD  58.96 exp/tr +0.142 | flip n 349 +49.7 | touch n 0 +0.0 | h1 +47.9 h2 +1.8
+  poll 2000ms FULL                : n  347 wr 56.2% net   +66.75 avgW +3.26 avgL -3.75 PF 1.12 maxDD  59.50 exp/tr +0.192 | flip n 347 +66.7 | touch n 0 +0.0 | h1 +59.2 h2 +7.6
+LIVE config, tick, observed slippage 2.5/2.5, halves:
+  FULL                            : n  606 wr 55.3% net  +161.41 avgW +3.36 avgL -3.56 PF 1.17 maxDD  63.77 exp/tr +0.266 | flip n 326 +38.2 | touch n 280 +123.2 | h1 +38.4 h2 +123.0

@@ -1,0 +1,14 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 days)
+=== RANDOM-DIRECTION CONTROL, TICK execution (poll 1s, min_dist 10), 1000 seeds ===
+   FLIP+TOUCH + awake gate (LIVE): 100 seeds, mean so far -52.05  [468s]
+   FLIP+TOUCH + awake gate (LIVE): 200 seeds, mean so far -51.74  [921s]
+   FLIP+TOUCH + awake gate (LIVE): 300 seeds, mean so far -46.26  [1368s]
+   FLIP+TOUCH + awake gate (LIVE): 400 seeds, mean so far -46.45  [1785s]
+   FLIP+TOUCH + awake gate (LIVE): 500 seeds, mean so far -46.35  [2217s]
+   FLIP+TOUCH + awake gate (LIVE): 600 seeds, mean so far -49.28  [2542s]
+   FLIP+TOUCH + awake gate (LIVE): 700 seeds, mean so far -50.44  [2854s]

@@ -1,0 +1,21 @@
+data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 days)
+data m1_trial9_all.npz: 100000 bars 2026-07-04 02:19:00 -> 2026-09-11 13:39:00
+OOS = bars after 2026-09-08 07:12:00 (never used in any research)
+pess  FLIP only, gated           OOS : n   28 wr 64.3% net    +7.50 avgW +2.87 avgL -4.41 PF 1.17 maxDD  16.90 exp/tr +0.268 | flip n 28 +7.5 | touch n 0 +0.0
+pess  TOUCH only, gated          OOS : n   38 wr 42.1% net   -41.69 avgW +3.16 avgL -4.19 PF 0.55 maxDD  64.06 exp/tr -1.097 | flip n 0 +0.0 | touch n 38 -41.7
+pess  FLIP+TOUCH, NO gate        OOS : n   59 wr 49.2% net   -45.49 avgW +3.24 avgL -4.65 PF 0.67 maxDD  73.29 exp/tr -0.771 | flip n 27 +5.0 | touch n 32 -50.5
+pess  FLIP+TOUCH + awake gate (L OOS : n   52 wr 50.0% net   -40.61 avgW +3.02 avgL -4.58 PF 0.66 maxDD  68.51 exp/tr -0.781 | flip n 27 +5.0 | touch n 25 -45.6
+
+tick  FLIP only, gated           OOS : n   28 wr 64.3% net    +6.93 avgW +2.85 avgL -4.44 PF 1.16 maxDD  17.06 exp/tr +0.247 | flip n 28 +6.9 | touch n 0 +0.0
+tick  TOUCH only, gated          OOS : n   38 wr 42.1% net   -30.30 avgW +3.78 avgL -4.13 PF 0.67 maxDD  41.21 exp/tr -0.797 | flip n 0 +0.0 | touch n 38 -30.3
+tick  FLIP+TOUCH, NO gate        OOS : n   59 wr 47.5% net   -47.16 avgW +3.54 avgL -4.72 PF 0.68 maxDD  54.20 exp/tr -0.799 | flip n 27 +4.4 | touch n 32 -51.6
+tick  FLIP+TOUCH + awake gate (L OOS : n   52 wr 50.0% net   -32.60 avgW +3.33 avgL -4.58 PF 0.73 maxDD  40.53 exp/tr -0.627 | flip n 27 +4.4 | touch n 25 -37.0
+
+--- in-sample overlap on the SECOND data source (anchor-noise check: same rules, series starts 2026-07-04 instead of 07-01) ---
+pro_m1 (Jul-01 start) overlap     : n  605 wr 57.9% net  +234.34 avgW +3.15 avgL -3.41 PF 1.27 maxDD  67.35 exp/tr +0.387 | flip n 320 +51.9 | touch n 285 +182.5
+trial9 (Jul-04 start) overlap     : n  605 wr 58.3% net  +251.06 avgW +3.14 avgL -3.40 PF 1.29 maxDD  67.35 exp/tr +0.415 | flip n 320 +62.3 | touch n 285 +188.8
+
+--- the LIVE window (2026-09-08 19:30 -> end): backtest of the deployed config on ticks vs the real account ---
+tick backtest, live window        : n   42 wr 50.0% net   -27.04 avgW +3.49 avgL -4.78 PF 0.73 maxDD  35.12 exp/tr -0.644 | flip n 21 +1.8 | touch n 21 -28.8
+per-trade list -> results/trades_tick_live_window.csv (compare with results/bos/trades_live_canonical.csv)
+done oos
