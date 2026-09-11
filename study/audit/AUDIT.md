@@ -132,13 +132,17 @@ Tick execution (`results/rand_tick.txt`, 1 s poll, min_dist 10):
 | config | real | random mean | sd | p95 | max | beats controls | z |
 |---|---|---|---|---|---|---|---|
 | both + gate (live) | +$206 | −$52 | 106 | +$121 | +$291 | **98.8%** | +2.44 |
-| touch only / flip only / no gate | running at commit time; appended when done | | | | | | |
+| touch only, gated | +$8 | −$89 | 78 | +$41 | +$165 | 88.6% | +1.24 |
+| flip only, gated | +$50 | −$19 | 83 | +$119 | +$247 | 80.4% | +0.83 |
+| both, no gate | +$60 | −$81 | 133 | +$133 | +$275 | 85.0% | +1.07 |
 
-Reading: on real ticks the live config sits at the 98.8th percentile of
+Reading (all four now complete): on real ticks the live config sits at the 98.8th percentile of
 1000 coin-flip controls (12 random direction assignments did better).
 That is evidence, but weaker than the M1 number (99.9%), and the random
 sd of $106 says a 69-day sample of this rule set has a ±$100 noise
-floor. The real result is 2.4 sd above chance.
+floor. The real result is 2.4 sd above chance. Each entry type alone, and the
+ungated pair, sit at the 80th-89th percentile: none of them is
+distinguishable from chance on its own at this sample size.
 
 ## 9. Out-of-sample and the live window
 
