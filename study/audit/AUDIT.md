@@ -127,10 +127,18 @@ M1 pessimistic execution (`results/rand_m1.txt`):
 | both, no gate | +$158 | −$72 | 134 | +$150 | 95.2% | +1.71 |
 | both + gate (live) | +$263 | −$48 | 98 | +$116 | 99.9% | +3.17 |
 
-Tick execution (`results/rand_tick.txt`): RUNNING at the time of this
-commit (1000 seeds × 4 configs, ~4 s per seed). Interim after 400 seeds
-for the live config: random mean −$46; the real tick result is +$206.
-This file will be updated when the run completes.
+Tick execution (`results/rand_tick.txt`, 1 s poll, min_dist 10):
+
+| config | real | random mean | sd | p95 | max | beats controls | z |
+|---|---|---|---|---|---|---|---|
+| both + gate (live) | +$206 | −$52 | 106 | +$121 | +$291 | **98.8%** | +2.44 |
+| touch only / flip only / no gate | running at commit time; appended when done | | | | | | |
+
+Reading: on real ticks the live config sits at the 98.8th percentile of
+1000 coin-flip controls (12 random direction assignments did better).
+That is evidence, but weaker than the M1 number (99.9%), and the random
+sd of $106 says a 69-day sample of this rule set has a ±$100 noise
+floor. The real result is 2.4 sd above chance.
 
 ## 9. Out-of-sample and the live window
 
@@ -159,33 +167,48 @@ floor.
 
 ## 10. Verdict
 
-INTERIM (tick controls still running). What is already established:
+**B, with a warning:** TOUCH was causing optimistic backtest bias, and
+the remaining gated flip+touch system still shows an in-sample edge, but
+that edge is thin and the only untouched data (3.3 days, 52 trades)
+does not confirm it.
 
-1. The same-minute bias exists in the replica scripts but is worth ~$0
-   on M1. The real optimistic bias is at TICK level: the reported touch
-   part (+$208 to +$216) is +$136 on ticks at a 1 s poll, and it swings
+The evidence, point by point:
+
+1. Same-minute bias: present in every replica script since 2026-09-09
+   (`bt_invert`, `bt_multi`, `bt_pbentry*`, `bt_choch`) but NOT in the
+   original `bt_touch.py`. On M1 it is worth ~$0 (pessimistic +263 vs
+   legacy +255). The optimistic part is invisible on M1 and only shows
+   on ticks.
+2. Corrected TOUCH: +$208 reported → +$136 on ticks at 1 s poll, and
    between +$50 and +$163 depending on the poll phase. Touch ALONE on
-   ticks is +$7 to +$73 (PF 1.01-1.12), second half negative in 4 of 5
-   poll settings.
-2. Flip-BOS has no execution bias (+$47 M1 → +$70 tick) but alone it is
-   not distinguishable from random (77th percentile).
-3. The live config on ticks is +$161 to +$217 in-sample (PF 1.17-1.23)
-   and beats 99.9% of M1 random controls. Most of that profit comes from
-   the INTERACTION of the two entry types under the one-position rule
-   (parts alone: ~+$50 and ~+$8; together +$206), which is the kind of
-   structure that does not travel well.
-4. Out-of-sample (3.3 days, 52 trades, never used in research): −$33,
-   touch −$37, flip +$4. The tick replica reproduces the real account
-   trade for trade (37/39 matched, 35/37 same outcome), so the live
-   drawdown is the strategy in this regime, plus ~$0.40/trade execution
-   drag, not a bot defect.
+   ticks: +$7 to +$73 (PF 1.01–1.12), second half negative in 4 of 5
+   poll settings. As a stand-alone entry it has no edge.
+3. FLIP-BOS: no execution bias (+$47 M1 → +$70 tick), but alone it is at
+   the 77th percentile of random on M1: not an edge by itself either.
+4. Live config on ticks: +$206 in-sample (PF 1.22, +$0.34/trade), +$161
+   with the observed live slippage (+$0.27/trade), 98.8th percentile of
+   1000 tick controls, 99.9th of 1000 M1 controls. Most of the profit
+   comes from the interaction of the two entry types under the
+   one-position rule (parts alone ≈ +$50 and ≈ +$8; together +$206). An
+   edge that lives in the interleaving of trades rather than in either
+   signal is fragile by construction.
+5. Out-of-sample (2026-09-08 07:12 → 09-11, never used in research):
+   −$33 on 52 trades; touch −$37 on 25, flip +$4 on 27. The tick replica
+   reproduces the real account trade for trade (37/39 matched, 35/37
+   same outcome, live −$45.5 vs sim −$30.2), so the live drawdown is the
+   strategy in this regime plus ~$0.40/trade of execution drag, not a
+   bot defect.
+6. `S_MIN_DIST` 10 vs 7: zero effect. Spread $7 confirmed flat on 8.0M
+   ticks. Slippage stress keeps every in-sample cell positive but PF
+   falls to 1.07 at 5/10 pt.
 
-Provisional reading: B leaning C — the touch backtest WAS optimistic
-(tick execution removes roughly a third of its in-sample profit and all
-of its stand-alone edge); the remaining gated flip+touch system keeps a
-statistically real in-sample edge but a thin one (+$0.27 to +$0.34 per
-trade at 0.02 lots, i.e. under $3/day) that the first untouched 3 days
-did not confirm. Final call after the tick controls.
+What this means for the account: the 100-trade review stays the
+decision point; nothing in this audit justifies changing the bot before
+it, and nothing justifies adding size. The honest expectation for the
+frozen config is about +$0.27/trade at 0.02 lot before the war-chest
+sizing, with a ±$100 noise floor per 69 days, and the first 3 untouched
+days ran below that. If the 100-trade review is negative, the touch
+entry is the first suspect (section 2, 5), not the flip.
 
 ## Files
 

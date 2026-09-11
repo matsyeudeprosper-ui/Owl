@@ -1,0 +1,9 @@
+data pro_m1.npz: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00  (68.8 days)
+=== RANDOM-DIRECTION CONTROL, TICK execution (poll 1s, min_dist 10), 1000 seeds ===
+   FLIP+TOUCH + awake gate (LIVE): 100 seeds, mean so far -52.05  [468s]
+   FLIP+TOUCH + awake gate (LIVE): 200 seeds, mean so far -51.74  [921s]
+   FLIP+TOUCH + awake gate (LIVE): 300 seeds, mean so far -46.26  [1368s]
+   FLIP+TOUCH + awake gate (LIVE): 400 seeds, mean so far -46.45  [1785s]
+   FLIP+TOUCH + awake gate (LIVE): 500 seeds, mean so far -46.35  [2217s]
+   FLIP+TOUCH + awake gate (LIVE): 600 seeds, mean so far -49.28  [2542s]
+   FLIP+TOUCH + awake gate (LIVE): 700 seeds, mean so far -50.44  [2854s]
