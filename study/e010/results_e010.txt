@@ -1,0 +1,276 @@
+base: TRAIN 259 trades +102.22 | TEST 265 +134.61 | V1 47 -25.61
+
+=== PART 1. NORMAL DRAWDOWNS (fixed 0.02, chronological) ===
+--- TRAIN: n 259, net +102.22, maxDD 73.44, avgDD 14.69, final DD 12.71
+    worst rolling $  5/10/20/30/40: -38.24 / -34.37 / -54.49 / -60.75 / -68.75
+    worst rolling R  5/10/20/30/40: -5.02 / -4.74 / -7.55 / -10.37 / -11.47
+    longest losing streak 5 trades | longest run of negative rolling-20 expectancy 33 trades | largest loss -13.59 | largest win +11.11
+    drawdown episodes: 19 (recovered 18); depth quantiles p50 5.75 p90 14.97 max 73.44
+      depth  73.44: peak->trough  35 trades, trough->recovery            53, duration 9.9 d, starts 07-07 13:36
+      depth  24.03: peak->trough  54 trades, trough->recovery            14, duration 9.3 d, starts 07-17 17:47
+      depth  12.71: peak->trough   4 trades, trough->recovery not recovered, duration 0.4 d, starts 08-04 02:36
+      depth   9.17: peak->trough   9 trades, trough->recovery             3, duration 1.4 d, starts 07-28 16:50
+      depth   8.41: peak->trough   2 trades, trough->recovery             2, duration 0.1 d, starts 08-03 11:08
+--- TEST: n 265, net +134.61, maxDD 83.27, avgDD 26.83, final DD 7.58
+    worst rolling $  5/10/20/30/40: -46.23 / -33.41 / -49.69 / -59.80 / -68.65
+    worst rolling R  5/10/20/30/40: -5.05 / -6.52 / -7.58 / -8.64 / -6.08
+    longest losing streak 5 trades | longest run of negative rolling-20 expectancy 25 trades | largest loss -29.29 | largest win +18.78
+    drawdown episodes: 9 (recovered 8); depth quantiles p50 6.74 p90 42.85 max 83.27
+      depth  83.27: peak->trough  60 trades, trough->recovery            36, duration 8.9 d, starts 08-24 17:02
+      depth  32.75: peak->trough  18 trades, trough->recovery            87, duration 14.1 d, starts 08-06 15:06
+      depth  23.50: peak->trough  16 trades, trough->recovery not recovered, duration 2.5 d, starts 09-05 16:26
+      depth  10.47: peak->trough   1 trades, trough->recovery             5, duration 0.5 d, starts 08-22 00:05
+      depth   6.74: peak->trough   1 trades, trough->recovery             1, duration 0.1 d, starts 09-03 21:03
+--- V1 (historical): n 47, net -25.61, maxDD 52.95, avgDD 24.29, final DD 31.12
+    worst rolling $  5/10/20/30/40: -21.86 / -40.08 / -41.02 / -52.95 / -38.47
+    worst rolling R  5/10/20/30/40: -3.28 / -6.45 / -7.52 / -10.35 / -5.98
+    longest losing streak 4 trades | longest run of negative rolling-20 expectancy 28 trades | largest loss -10.91 | largest win +9.69
+    drawdown episodes: 2 (recovered 1); depth quantiles p50 27.36 p90 47.83 max 52.95
+      depth  52.95: peak->trough  30 trades, trough->recovery not recovered, duration 3.0 d, starts 09-08 12:03
+      depth   1.78: peak->trough   1 trades, trough->recovery             1, duration 0.1 d, starts 09-08 07:36
+  R-normalised: TRAIN maxDD 11.82 R, TEST maxDD 10.51 R
+
+=== PART 2. BOOTSTRAP NORMAL VARIANCE (TRAIN trades, block 10, 10000 paths) ===
+  horizon 100 trades (~13 days): maxDD p50 30.69 p90 56.56 p95 67.19 p97.5 76.78 p99 88.15 | underwater max trades p50 37 p95 92 p99 100 | worst rolling 10/20/30 p50 -22.7/-22.8/-19.3 p95 -43.0/-50.2/-54.4 p99 -50.7/-64.6/-70.5
+      P(trailing maxDD >= 60) = 8.1% | P(cumulative net from start <= -60) = 3.0% | P(net <= -60) with -80: 0.8%, -100: 0.2% | P(final < 0) 16.7%
+  horizon 259 trades (~34 days): maxDD p50 46.36 p90 79.34 p95 91.87 p97.5 104.82 p99 120.18 | underwater max trades p50 78 p95 202 p99 252 | worst rolling 10/20/30 p50 -33.6/-35.8/-35.8 p95 -48.3/-60.4/-66.4 p99 -57.5/-71.6/-79.9
+      P(trailing maxDD >= 60) = 26.2% | P(cumulative net from start <= -60) = 5.8% | P(net <= -60) with -80: 2.2%, -100: 0.9% | P(final < 0) 6.5%
+  horizon 265 trades (~35 days): maxDD p50 46.74 p90 79.27 p95 91.87 p97.5 104.67 p99 120.31 | underwater max trades p50 80 p95 206 p99 252 | worst rolling 10/20/30 p50 -33.9/-36.2/-36.3 p95 -49.0/-60.5/-66.1 p99 -58.0/-71.6/-79.8
+      P(trailing maxDD >= 60) = 26.7% | P(cumulative net from start <= -60) = 5.7% | P(net <= -60) with -80: 2.2%, -100: 0.9% | P(final < 0) 6.4%
+  R-based, TRAIN horizon:
+    maxDD R p50 11.23 p95 21.60 p99 27.53 | worst rolling-20 R p5 -9.56 p1 -11.26
+
+FROZEN THRESHOLDS (TRAIN): trailing DD {'p90': 79.3404800000001, 'p95': 91.87449199999881, 'p99': 120.18434800000078, 'obs': 73.44063999999983} | absolute net {'p90': 47.70256000000055, 'p95': 62.88833400000023, 'p99': 95.46378480000051, 'live': 60.0} | rolling $ {10: {'p95': -48.28491999999983, 'p99': -57.481439999999864}, 20: {'p95': -60.36972599999953, 'p99': -71.63104640000005}, 30: {'p95': -66.44773600000029, 'p99': -79.9040052000006}} | rolling R {10: {'p95': -8.325623814074259, 'p99': -8.385877498317228}, 20: {'p95': -9.56131451983921, 'p99': -11.259753048873655}, 30: {'p95': -12.257548560227269, 'p99': -14.06262510142936}}
+
+=== PART 3. FIXED-DOLLAR KILL LINES (frozen from TRAIN) ===
+  TRAIN
+    ABS net <= -48 (p90, floating incl.): never triggers | final +102.22
+    ABS net <= -63 (p95, floating incl.): never triggers | final +102.22
+    ABS net <= -95 (p99, floating incl.): never triggers | final +102.22
+    ABS net <= -60 (live, floating incl.): never triggers | final +102.22
+    TRAIL DD >= 79 (p90, floating incl.): never triggers | final +102.22
+    TRAIL DD >= 92 (p95, floating incl.): never triggers | final +102.22
+    TRAIL DD >= 120 (p99, floating incl.): never triggers | final +102.22
+    TRAIL DD >= 73 (obs, floating incl.): triggers at trade 72/259 (07-09 13:44), net at trigger -0.99, P&L after trigger that is forgone +103.21, final with stop -0.99 vs +102.22
+  TEST 
+    ABS net <= -48 (p90, floating incl.): never triggers | final +134.61
+    ABS net <= -63 (p95, floating incl.): never triggers | final +134.61
+    ABS net <= -95 (p99, floating incl.): never triggers | final +134.61
+    ABS net <= -60 (live, floating incl.): never triggers | final +134.61
+    TRAIL DD >= 79 (p90, floating incl.): triggers at trade 187/265 (08-31 02:50), net at trigger +15.88, P&L after trigger that is forgone +118.74, final with stop +15.88 vs +134.61
+    TRAIL DD >= 92 (p95, floating incl.): never triggers | final +134.61
+    TRAIL DD >= 120 (p99, floating incl.): never triggers | final +134.61
+    TRAIL DD >= 73 (obs, floating incl.): triggers at trade 172/265 (08-29 02:22), net at trigger +27.38, P&L after trigger that is forgone +107.23, final with stop +27.38 vs +134.61
+  V1   
+    ABS net <= -48 (p90, floating incl.): never triggers | final -25.61
+    ABS net <= -63 (p95, floating incl.): never triggers | final -25.61
+    ABS net <= -95 (p99, floating incl.): never triggers | final -25.61
+    ABS net <= -60 (live, floating incl.): never triggers | final -25.61
+    TRAIL DD >= 79 (p90, floating incl.): never triggers | final -25.61
+    TRAIL DD >= 92 (p95, floating incl.): never triggers | final -25.61
+    TRAIL DD >= 120 (p99, floating incl.): never triggers | final -25.61
+    TRAIL DD >= 73 (obs, floating incl.): never triggers | final -25.61
+  false-stop probability under unchanged TRAIN bootstrap (horizon = TRAIN length; closed P&L only, floating adds a little):
+    ABS -48 (p90): 10.0%
+    ABS -63 (p95): 5.0%
+    ABS -95 (p99): 1.0%
+    ABS -60 (live): 5.8%
+    TRAIL 79 (p90): 10.0%
+    TRAIL 92 (p95): 5.0%
+    TRAIL 120 (p99): 1.0%
+    TRAIL 73 (obs): 13.5%
+
+=== PART 4/5. ROLLING-N LOSS STOPS ($ and R; frozen p95/p99 of the TRAIN bootstrap path-minimum) ===
+  TRAIN
+    roll-10 $ <= -48.3 (p95)          : never triggers | final +102.22
+    roll-10 R <= -8.33 (p95)          : never triggers | final +102.22
+    roll-10 $ <= -57.5 (p99)          : never triggers | final +102.22
+    roll-10 R <= -8.39 (p99)          : never triggers | final +102.22
+    roll-20 $ <= -60.4 (p95)          : never triggers | final +102.22
+    roll-20 R <= -9.56 (p95)          : never triggers | final +102.22
+    roll-20 $ <= -71.6 (p99)          : never triggers | final +102.22
+    roll-20 R <= -11.26 (p99)         : never triggers | final +102.22
+    roll-30 $ <= -66.4 (p95)          : never triggers | final +102.22
+    roll-30 R <= -12.26 (p95)         : never triggers | final +102.22
+    roll-30 $ <= -79.9 (p99)          : never triggers | final +102.22
+    roll-30 R <= -14.06 (p99)         : never triggers | final +102.22
+  TEST 
+    roll-10 $ <= -48.3 (p95)          : never triggers | final +134.61
+    roll-10 R <= -8.33 (p95)          : never triggers | final +134.61
+    roll-10 $ <= -57.5 (p99)          : never triggers | final +134.61
+    roll-10 R <= -8.39 (p99)          : never triggers | final +134.61
+    roll-20 $ <= -60.4 (p95)          : never triggers | final +134.61
+    roll-20 R <= -9.56 (p95)          : never triggers | final +134.61
+    roll-20 $ <= -71.6 (p99)          : never triggers | final +134.61
+    roll-20 R <= -11.26 (p99)         : never triggers | final +134.61
+    roll-30 $ <= -66.4 (p95)          : never triggers | final +134.61
+    roll-30 R <= -12.26 (p95)         : never triggers | final +134.61
+    roll-30 $ <= -79.9 (p99)          : never triggers | final +134.61
+    roll-30 R <= -14.06 (p99)         : never triggers | final +134.61
+  V1   
+    roll-10 $ <= -48.3 (p95)          : never triggers | final -25.61
+    roll-10 R <= -8.33 (p95)          : never triggers | final -25.61
+    roll-10 $ <= -57.5 (p99)          : never triggers | final -25.61
+    roll-10 R <= -8.39 (p99)          : never triggers | final -25.61
+    roll-20 $ <= -60.4 (p95)          : never triggers | final -25.61
+    roll-20 R <= -9.56 (p95)          : never triggers | final -25.61
+    roll-20 $ <= -71.6 (p99)          : never triggers | final -25.61
+    roll-20 R <= -11.26 (p99)         : never triggers | final -25.61
+    roll-30 $ <= -66.4 (p95)          : never triggers | final -25.61
+    roll-30 R <= -12.26 (p95)         : never triggers | final -25.61
+    roll-30 $ <= -79.9 (p99)          : never triggers | final -25.61
+    roll-30 R <= -14.06 (p99)         : never triggers | final -25.61
+  false-stop probability under unchanged bootstrap (TRAIN horizon): by construction p95 -> 5%, p99 -> 1% for each rule separately
+  stability TRAIN vs TEST of the underlying statistics:
+    maxDD $          TRAIN   +73.44 TEST   +83.27 ratio 1.13
+    maxDD R          TRAIN   +11.82 TEST   +10.51 ratio 0.89
+    worst roll-20 $  TRAIN   -54.49 TEST   -49.69 ratio 0.91
+    worst roll-20 R  TRAIN    -7.55 TEST    -7.58 ratio 1.00
+    largest loss $   TRAIN   -13.59 TEST   -29.29 ratio 2.16
+    largest loss R   TRAIN    -1.15 TEST    -1.12 ratio 0.97
+    TRAIN maxDD 73.44 built over 35 trades; largest single loss inside it -13.25 = 18% of the DD; top-3 losses = 42%
+    TEST  maxDD 83.27 built over 60 trades; largest single loss inside it -29.29 = 35% of the DD; top-3 losses = 80%
+
+=== PART 6. WHAT HAPPENS AFTER A DRAWDOWN CROSSES A LEVEL (historical + bootstrap) ===
+  TRAIN historical crossings:
+    DD >= 20: 5 crossing(s); next 10 trades: median P&L -12.83, recovered high 0%, deepened by 20+ 40%  (n 5)
+    DD >= 20: 5 crossing(s); next 20 trades: median P&L -39.27, recovered high 40%, deepened by 20+ 60%  (n 5)
+    DD >= 20: 5 crossing(s); next 40 trades: median P&L -13.79, recovered high 40%, deepened by 20+ 60%  (n 5)
+    DD >= 40: 4 crossing(s); next 10 trades: median P&L +5.57, recovered high 0%, deepened by 20+ 25%  (n 4)
+    DD >= 40: 4 crossing(s); next 20 trades: median P&L +13.59, recovered high 0%, deepened by 20+ 25%  (n 4)
+    DD >= 40: 4 crossing(s); next 40 trades: median P&L +44.80, recovered high 75%, deepened by 20+ 25%  (n 4)
+    DD >= 60: 1 crossing(s); next 10 trades: median P&L +3.49, recovered high 0%, deepened by 20+ 0%  (n 1)
+    DD >= 60: 1 crossing(s); next 20 trades: median P&L +23.05, recovered high 0%, deepened by 20+ 0%  (n 1)
+    DD >= 60: 1 crossing(s); next 40 trades: median P&L +39.69, recovered high 0%, deepened by 20+ 0%  (n 1)
+    DD >= 80: no crossing
+  TEST  historical crossings:
+    DD >= 20: 10 crossing(s); next 10 trades: median P&L +4.46, recovered high 10%, deepened by 20+ 10%  (n 10)
+    DD >= 20: 10 crossing(s); next 20 trades: median P&L -0.21, recovered high 12%, deepened by 20+ 12%  (n 8)
+    DD >= 20: 10 crossing(s); next 40 trades: median P&L +3.41, recovered high 12%, deepened by 20+ 12%  (n 8)
+    DD >= 40: 6 crossing(s); next 10 trades: median P&L +17.59, recovered high 0%, deepened by 20+ 17%  (n 6)
+    DD >= 40: 6 crossing(s); next 20 trades: median P&L +19.99, recovered high 50%, deepened by 20+ 33%  (n 6)
+    DD >= 40: 6 crossing(s); next 40 trades: median P&L +22.66, recovered high 50%, deepened by 20+ 50%  (n 6)
+    DD >= 60: 5 crossing(s); next 10 trades: median P&L -5.86, recovered high 0%, deepened by 20+ 20%  (n 5)
+    DD >= 60: 5 crossing(s); next 20 trades: median P&L +2.29, recovered high 0%, deepened by 20+ 20%  (n 5)
+    DD >= 60: 5 crossing(s); next 40 trades: median P&L +17.96, recovered high 20%, deepened by 20+ 100%  (n 5)
+    DD >= 80: 2 crossing(s); next 10 trades: median P&L +29.13, recovered high 0%, deepened by 20+ 0%  (n 2)
+    DD >= 80: 2 crossing(s); next 20 trades: median P&L +41.34, recovered high 0%, deepened by 20+ 0%  (n 2)
+    DD >= 80: 2 crossing(s); next 40 trades: median P&L +85.52, recovered high 100%, deepened by 20+ 0%  (n 2)
+  bootstrap (unchanged TRAIN strategy, 10000 paths of 265): conditional on the FIRST crossing of each level
+    DD >= 20 (reached in 99% of paths): next 10 trades median P&L +4.24, P(recover high) 9%, P(deepen 20+) 16%
+    DD >= 20 (reached in 99% of paths): next 20 trades median P&L +8.74, P(recover high) 28%, P(deepen 20+) 24%
+    DD >= 20 (reached in 99% of paths): next 40 trades median P&L +16.84, P(recover high) 53%, P(deepen 20+) 33%
+    DD >= 40 (reached in 66% of paths): next 10 trades median P&L +4.05, P(recover high) 0%, P(deepen 20+) 13%
+    DD >= 40 (reached in 66% of paths): next 20 trades median P&L +8.24, P(recover high) 3%, P(deepen 20+) 21%
+    DD >= 40 (reached in 66% of paths): next 40 trades median P&L +16.61, P(recover high) 20%, P(deepen 20+) 29%
+    DD >= 60 (reached in 27% of paths): next 10 trades median P&L +3.84, P(recover high) 0%, P(deepen 20+) 12%
+    DD >= 60 (reached in 27% of paths): next 20 trades median P&L +8.27, P(recover high) 0%, P(deepen 20+) 21%
+    DD >= 60 (reached in 27% of paths): next 40 trades median P&L +16.31, P(recover high) 4%, P(deepen 20+) 29%
+    DD >= 80 (reached in 10% of paths): next 10 trades median P&L +4.08, P(recover high) 0%, P(deepen 20+) 12%
+    DD >= 80 (reached in 10% of paths): next 20 trades median P&L +9.02, P(recover high) 0%, P(deepen 20+) 20%
+    DD >= 80 (reached in 10% of paths): next 40 trades median P&L +17.76, P(recover high) 1%, P(deepen 20+) 29%
+
+=== PART 7. COMPOSITE (frozen): trailing DD >= 91.9 AND rolling-20 <= -60.4 at the same time ===
+  TRAIN
+    composite                         : never triggers | final +102.22
+    E005 rolling-20 state -> PAUSED   : triggers at trade 60/259 (07-08 09:14), net at trigger +23.35, P&L after trigger that is forgone +78.87, final with stop +23.35 vs +102.22
+  TEST 
+    composite                         : never triggers | final +134.61
+    E005 rolling-20 state -> PAUSED   : triggers at trade 27/265 (08-10 14:14), net at trigger -20.08, P&L after trigger that is forgone +154.70, final with stop -20.08 vs +134.61
+  V1   
+    composite                         : never triggers | final -25.61
+    E005 rolling-20 state -> PAUSED   : triggers at trade 26/47 (09-09 21:05), net at trigger -25.38, P&L after trigger that is forgone -0.22, final with stop -25.38 vs -25.61
+  false-positive rate under unchanged bootstrap (265 trades, 2000 paths): composite 0.9% | E005 PAUSED 85.5%
+
+=== PART 8. EDGE-DEGRADATION SCENARIOS (bootstrap of TRAIN trades, 265 trades, 3000 paths each) ===
+  S0 unchanged: expectancy +0.396/trade (unchanged +0.395); median path final +106.4
+      ABS -60 (live)                    : fires  5.8% | median trade of trigger    98 | median net at trigger  -62.71
+      ABS -63 (p95)                     : fires  5.3% | median trade of trigger   102 | median net at trigger  -65.80
+      TRAIL 92 (p95)                    : fires  5.4% | median trade of trigger   175 | median net at trigger  -57.35
+      TRAIL 120 (p99)                   : fires  1.2% | median trade of trigger   190 | median net at trigger  -95.18
+      roll-10 $ -57 (p99)               : fires  1.2% | median trade of trigger   164 | median net at trigger   -8.93
+      roll-20 $ -60 (p95)               : fires  4.7% | median trade of trigger   140 | median net at trigger  -29.33
+      roll-20 $ -72 (p99)               : fires  1.2% | median trade of trigger   147 | median net at trigger   -9.22
+      roll-30 $ -66 (p95)               : fires  4.9% | median trade of trigger   137 | median net at trigger  -29.33
+      composite DD p95 & roll-20 p95    : fires  1.0% | median trade of trigger   169 | median net at trigger  -74.41
+      E005 state -> PAUSED              : fires 86.8% | median trade of trigger    83 | median net at trigger  +15.11
+  S1 10% winners->SL: expectancy -0.032/trade (unchanged +0.395); median path final -8.2
+      ABS -60 (live)                    : fires 41.1% | median trade of trigger   116 | median net at trigger  -62.35
+      ABS -63 (p95)                     : fires 39.2% | median trade of trigger   123 | median net at trigger  -65.26
+      TRAIL 92 (p95)                    : fires 36.1% | median trade of trigger   167 | median net at trigger  -74.18
+      TRAIL 120 (p99)                   : fires 17.2% | median trade of trigger   191 | median net at trigger -105.45
+      roll-10 $ -57 (p99)               : fires  2.3% | median trade of trigger   153 | median net at trigger  -61.93
+      roll-20 $ -60 (p95)               : fires 14.2% | median trade of trigger   128 | median net at trigger  -60.84
+      roll-20 $ -72 (p99)               : fires  3.9% | median trade of trigger   130 | median net at trigger  -68.67
+      roll-30 $ -66 (p95)               : fires 17.5% | median trade of trigger   134 | median net at trigger  -65.42
+      composite DD p95 & roll-20 p95    : fires  7.2% | median trade of trigger   155 | median net at trigger  -88.38
+      E005 state -> PAUSED              : fires 98.4% | median trade of trigger    54 | median net at trigger  -12.30
+  S2 20% winners->SL: expectancy -0.476/trade (unchanged +0.395); median path final -126.4
+      ABS -60 (live)                    : fires 89.7% | median trade of trigger    90 | median net at trigger  -62.17
+      ABS -63 (p95)                     : fires 88.8% | median trade of trigger    96 | median net at trigger  -65.04
+      TRAIL 92 (p95)                    : fires 85.8% | median trade of trigger   126 | median net at trigger  -85.61
+      TRAIL 120 (p99)                   : fires 70.8% | median trade of trigger   161 | median net at trigger -114.47
+      roll-10 $ -57 (p99)               : fires  6.6% | median trade of trigger   134 | median net at trigger -107.90
+      roll-20 $ -60 (p95)               : fires 36.1% | median trade of trigger   127 | median net at trigger  -98.91
+      roll-20 $ -72 (p99)               : fires 12.4% | median trade of trigger   139 | median net at trigger -122.82
+      roll-30 $ -66 (p95)               : fires 46.8% | median trade of trigger   124 | median net at trigger  -92.87
+      composite DD p95 & roll-20 p95    : fires 28.4% | median trade of trigger   158 | median net at trigger -118.74
+      E005 state -> PAUSED              : fires 100.0% | median trade of trigger    34 | median net at trigger  -24.42
+  S3 winners x0.7: expectancy -0.172/trade (unchanged +0.395); median path final -43.1
+      ABS -60 (live)                    : fires 53.7% | median trade of trigger   136 | median net at trigger  -62.37
+      ABS -63 (p95)                     : fires 50.8% | median trade of trigger   142 | median net at trigger  -65.26
+      TRAIL 92 (p95)                    : fires 40.6% | median trade of trigger   175 | median net at trigger  -84.11
+      TRAIL 120 (p99)                   : fires 21.4% | median trade of trigger   195 | median net at trigger -114.16
+      roll-10 $ -57 (p99)               : fires  1.6% | median trade of trigger   134 | median net at trigger  -72.20
+      roll-20 $ -60 (p95)               : fires  8.9% | median trade of trigger   134 | median net at trigger  -70.80
+      roll-20 $ -72 (p99)               : fires  2.6% | median trade of trigger   124 | median net at trigger  -79.00
+      roll-30 $ -66 (p95)               : fires 13.5% | median trade of trigger   136 | median net at trigger  -79.63
+      composite DD p95 & roll-20 p95    : fires  5.0% | median trade of trigger   175 | median net at trigger  -98.72
+      E005 state -> PAUSED              : fires 97.7% | median trade of trigger    56 | median net at trigger  -19.83
+  S4 slippage -$0.20/trade: expectancy +0.201/trade (unchanged +0.395); median path final +55.0
+      ABS -60 (live)                    : fires 15.3% | median trade of trigger   116 | median net at trigger  -62.10
+      ABS -63 (p95)                     : fires 14.2% | median trade of trigger   121 | median net at trigger  -65.01
+      TRAIL 92 (p95)                    : fires 12.8% | median trade of trigger   174 | median net at trigger  -66.21
+      TRAIL 120 (p99)                   : fires  4.5% | median trade of trigger   199 | median net at trigger  -97.03
+      roll-10 $ -57 (p99)               : fires  1.7% | median trade of trigger   156 | median net at trigger  -37.52
+      roll-20 $ -60 (p95)               : fires  7.4% | median trade of trigger   134 | median net at trigger  -43.38
+      roll-20 $ -72 (p99)               : fires  2.4% | median trade of trigger   137 | median net at trigger  -60.35
+      roll-30 $ -66 (p95)               : fires  8.8% | median trade of trigger   146 | median net at trigger  -48.42
+      composite DD p95 & roll-20 p95    : fires  2.6% | median trade of trigger   183 | median net at trigger  -78.98
+      E005 state -> PAUSED              : fires 93.3% | median trade of trigger    70 | median net at trigger   +0.33
+  S5 30% cont winners->SL: expectancy -0.202/trade (unchanged +0.395); median path final -51.4
+      ABS -60 (live)                    : fires 62.1% | median trade of trigger   116 | median net at trigger  -62.38
+      ABS -63 (p95)                     : fires 60.0% | median trade of trigger   121 | median net at trigger  -65.35
+      TRAIL 92 (p95)                    : fires 56.1% | median trade of trigger   155 | median net at trigger  -80.71
+      TRAIL 120 (p99)                   : fires 34.7% | median trade of trigger   186 | median net at trigger -110.46
+      roll-10 $ -57 (p99)               : fires  5.9% | median trade of trigger   130 | median net at trigger  -79.15
+      roll-20 $ -60 (p95)               : fires 23.5% | median trade of trigger   138 | median net at trigger  -73.84
+      roll-20 $ -72 (p99)               : fires  8.4% | median trade of trigger   140 | median net at trigger  -91.65
+      roll-30 $ -66 (p95)               : fires 28.8% | median trade of trigger   138 | median net at trigger  -76.19
+      composite DD p95 & roll-20 p95    : fires 15.8% | median trade of trigger   168 | median net at trigger  -98.66
+      E005 state -> PAUSED              : fires 99.5% | median trade of trigger    46 | median net at trigger  -18.02
+  S6 30% flip winners->SL: expectancy -0.318/trade (unchanged +0.395); median path final -84.0
+      ABS -60 (live)                    : fires 76.8% | median trade of trigger   108 | median net at trigger  -62.15
+      ABS -63 (p95)                     : fires 75.1% | median trade of trigger   114 | median net at trigger  -64.91
+      TRAIL 92 (p95)                    : fires 72.7% | median trade of trigger   147 | median net at trigger  -81.51
+      TRAIL 120 (p99)                   : fires 51.3% | median trade of trigger   175 | median net at trigger -110.81
+      roll-10 $ -57 (p99)               : fires  2.7% | median trade of trigger   125 | median net at trigger  -77.70
+      roll-20 $ -60 (p95)               : fires 25.3% | median trade of trigger   134 | median net at trigger  -78.51
+      roll-20 $ -72 (p99)               : fires  6.7% | median trade of trigger   133 | median net at trigger  -98.99
+      roll-30 $ -66 (p95)               : fires 33.8% | median trade of trigger   133 | median net at trigger  -80.50
+      composite DD p95 & roll-20 p95    : fires 17.6% | median trade of trigger   162 | median net at trigger -106.23
+      E005 state -> PAUSED              : fires 99.9% | median trade of trigger    40 | median net at trigger  -21.08
+
+=== PART 9. EXACT PRODUCTION BOOKKEEPING (hwm debt, chest cap 10, fighters <=3 bullets, adds <=2 at 50%, kill on net incl. floating) ===
+  TRAIN: flat 0.02 no kill: net  +102.22 maxDD  73.44 underwater 84% | FULL no kill: net   +83.33 maxDD  84.28 fights 16 adds 30 peak lot 0.05 underwater 89% | FULL with live -60 kill: not killed, net +83.33
+  TEST : flat 0.02 no kill: net  +134.61 maxDD  83.27 underwater 91% | FULL no kill: net  +190.82 maxDD  88.10 fights 9 adds 23 peak lot 0.05 underwater 92% | FULL with live -60 kill: not killed, net +190.82
+  V1   : flat 0.02 no kill: net   -25.61 maxDD  52.95 underwater 96% | FULL no kill: net   -28.06 maxDD  57.96 fights 2 adds 4 peak lot 0.03 underwater 94% | FULL with live -60 kill: not killed, net -28.06
+  bootstrap of the FULL production layer (block resample of TRAIN trade objects, 2000 paths x 265): P(live -60 kill fires) and maxDD
+    P(-60 kill fires within 265 trades, unchanged strategy, full layer) = 9.2% | full-layer maxDD p50 54.0 p95 100.1 p99 126.9
+
+=== PART 10. ACCOUNT SCALE (fixed 0.02, unchanged strategy, TRAIN bootstrap) ===
+  over 100 trades (~13 days): typical maxDD 31; 1-in-10 57; 1-in-20 67; 1-in-100 88; underwater typical 37 trades, 1-in-20 92 trades; P(net from start <= -60) 3%
+  over 259 trades (~34 days): typical maxDD 46; 1-in-10 79; 1-in-20 92; 1-in-100 120; underwater typical 78 trades, 1-in-20 202 trades; P(net from start <= -60) 6%
+  over 265 trades (~35 days): typical maxDD 47; 1-in-10 79; 1-in-20 92; 1-in-100 120; underwater typical 80 trades, 1-in-20 206 trades; P(net from start <= -60) 6%
+
+done
