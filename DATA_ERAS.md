@@ -27,7 +27,7 @@ REDUCED / PAUSED with the thresholds frozen from R0-TRAIN: −15.65 / −22.51
 Every OKX BTC-USDT-SWAP liquidation fill received by `live/liq_shadow.py` from **2026-09-12 13:07:04 UTC** onward, with Exness quotes at detection/entry (`liq_shadow_fills.csv`, `liq_shadow_events.csv`). Blind for E017: the rule was frozen before the first forward outcome; no parameter of E017 may be chosen from it. Fills before 13:07:04 (REST archive, 2026-07-31 -> 2026-09-12) are E015/E016 discovery data, consumed.
 
 ## B1 — 2021 Exness BTCUSD archive: RESERVED (E020 blind validation), frozen 2026-09-12 15:40 UTC
-Not downloaded yet. Will be imported (ticks -> M1 with spread, same pipeline as V3/V4) only AFTER the E020 rule, code and pass criteria are committed. One pass, no adjustment from it. Consumed once E020 reports it.
+STILL SEALED (2026-09-12 17:00 UTC): E020 failed its freeze-before-2021 test on consumed data, so 2021 was never downloaded. Remains reserved as the next blind validation era for a genuinely different mechanism; import only after that experiment's rule and code are committed.
 
 ## U0 — 2017-2020 Exness BTCUSD archive: UNTOUCHED
 Not downloaded, not inspected. Reserved for a later blind confirmation of whatever survives 2021 (or for the next genuinely different mechanism). Nobody opens it without a registered experiment naming it.

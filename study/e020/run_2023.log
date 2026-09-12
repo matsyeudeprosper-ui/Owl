@@ -1,0 +1,26 @@
+2023: M1 bars 525013 2023-01-01 00:00:00 -> 2023-12-31 23:59:00; spread median 11.99
+windows 105067, scorable 104979, scoring from 2023-01-04 11:30:00; raw shocks 5418, first-of-cluster 2601
+
+=== 2023: net points after spread + $5, BUY ===
+  set                                         5m         15m         30m         60m
+  RECLAIM rule (shock->flush->reclaim)  -19.7(28%)  -18.9(38%)  -17.3(43%)  -17.8(45%)  n 2092
+  control A immediate entry           -16.0(34%)  -15.0(40%)  -10.9(45%)  -11.7(46%)  n 2601
+  control C generic sweep/reclaim     -15.9(22%)  -13.3(34%)  -11.1(39%)   -7.6(42%)  n 7025
+    reclaim 30 m: median -12.5, without best-1 -17.6, best-2 -17.8, top-10% (210) -39.1; best +595 worst -1315
+    immediate 30 m: median -8.7, without best-1 -11.3, best-2 -11.6, top-10% (260) -35.0; best +1118 worst -1302
+    generic 30 m: median -12.2, without best-1 -11.2, best-2 -11.3, top-10% (702) -28.7; best +1149 worst -833
+    first passage vs -1R (stop at flush low), within 60 min: +0.5R fav-first 41% / adv-first 57% / neither 3%; +1.0R fav-first 28% / adv-first 65% / neither 6%; +1.5R fav-first 20% / adv-first 69% / neither 10%
+    R median 40 pts; 60-min MFE median 58 / MAE median 88; maxDD 30 m 36354 pts, longest losing streak 12
+    quality (descriptive): shock->flush median 0 min; flush->reclaim median 1 min; same-bar reclaim 56%; depth median 11 pts = 0.23 ATR; reclaim body/range median 14/31; spread median 12.37; M1 break-of-3-bar-high at reclaim 18%
+    same-bar reclaim: yes 30 m -16.7 (n 1174) / no -17.9 (n 918)
+    M1 3-bar break: yes 30 m -22.6 (n 373) / no -16.1 (n 1719)
+    flush depth (ATR) median 0.23: <=median 30 m -13.2 (n 1046) / >median -21.3 (n 1046)
+    R (pts) median 40.15: <=median 30 m -16.7 (n 1046) / >median -17.8 (n 1046)
+    24h vol median 15.92: <=median 30 m -13.5 (n 1046) / >median -21.0 (n 1046)
+    flush->reclaim min median 1.00: <=median 30 m -16.7 (n 1174) / >median -17.9 (n 918)
+    hour buckets 00-06h -17/415, 06-12h -10/333, 12-18h -20/764, 18-24h -18/580
+  control B flush WITHOUT reclaim (n 164): bid move after the 60-min deadline: +30 m +8.9 (52% up), +60 m +6.3 (55% up); MFE median 72 MAE median 72; deadline close vs shock low median -119 pts
+  control D matched random (1000 draws): 5 m real -19.7 vs -16.9 ± 0.6, 95th -15.9, pctile 0.0%; 15 m real -18.9 vs -16.5 ± 1.1, 95th -14.7, pctile 1.2%; 30 m real -17.3 vs -15.6 ± 1.7, 95th -12.9, pctile 16.0%; 60 m real -17.8 vs -13.6 ± 2.4, 95th -9.7, pctile 4.1%
+  frequency: shocks 7.19/day; flushed 87%; of flushed, reclaimed 93%; reclaim trades 5.79/day = 40.5/week; longest no-trade 2.4 days; median shock->entry 8 min; days scored 362
+  by month (reclaim, 30 m mean / n | immediate 30 m mean): 2023-01 -9/185 | -7, 2023-02 -21/163 | -6, 2023-03 -26/178 | -7, 2023-04 -32/177 | -17, 2023-05 -13/174 | -17, 2023-06 -12/170 | -5, 2023-07 -23/145 | -13, 2023-08 -27/182 | -22, 2023-09 -17/157 | -18, 2023-10 -5/176 | -4, 2023-11 -15/179 | -7, 2023-12 -9/206 | -11
+done

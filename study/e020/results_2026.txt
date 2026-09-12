@@ -1,0 +1,26 @@
+2026: M1 bars 365621 2026-01-01 00:00:00 -> 2026-09-11 23:59:00; spread median 9.80
+windows 73148, scorable 73110, scoring from 2026-01-04 11:30:00; raw shocks 3744, first-of-cluster 1855
+
+=== 2026: net points after spread + $5, BUY ===
+  set                                         5m         15m         30m         60m
+  RECLAIM rule (shock->flush->reclaim)  -16.0(45%)   -4.7(48%)   -3.8(50%)   -6.0(50%)  n 1533
+  control A immediate entry           -15.7(47%)  -11.5(49%)  -11.0(51%)  -11.4(52%)  n 1855
+  control C generic sweep/reclaim      -9.1(41%)   -2.4(47%)   +1.4(49%)   -1.0(49%)  n 4784
+    reclaim 30 m: median -1.9, without best-1 -4.8, best-2 -5.7, top-10% (154) -62.6; best +1561 worst -1916
+    immediate 30 m: median +2.7, without best-1 -11.8, best-2 -12.4, top-10% (186) -68.3; best +1312 worst -2460
+    generic 30 m: median -1.6, without best-1 +0.9, best-2 +0.6, top-10% (479) -46.2; best +2389 worst -1744
+    first passage vs -1R (stop at flush low), within 60 min: +0.5R fav-first 53% / adv-first 44% / neither 2%; +1.0R fav-first 40% / adv-first 56% / neither 5%; +1.5R fav-first 31% / adv-first 62% / neither 6%
+    R median 76 pts; 60-min MFE median 199 / MAE median 215; maxDD 30 m 17822 pts, longest losing streak 15
+    quality (descriptive): shock->flush median 0 min; flush->reclaim median 1 min; same-bar reclaim 53%; depth median 31 pts = 0.24 ATR; reclaim body/range median 34/77; spread median 9.80; M1 break-of-3-bar-high at reclaim 18%
+    same-bar reclaim: yes 30 m -1.1 (n 820) / no -7.0 (n 713)
+    M1 3-bar break: yes 30 m -5.7 (n 269) / no -3.4 (n 1264)
+    flush depth (ATR) median 0.24: <=median 30 m -3.8 (n 767) / >median -3.9 (n 766)
+    R (pts) median 76.29: <=median 30 m +6.6 (n 767) / >median -14.3 (n 766)
+    24h vol median 44.89: <=median 30 m +5.7 (n 767) / >median -13.4 (n 766)
+    flush->reclaim min median 1.00: <=median 30 m -1.1 (n 820) / >median -7.0 (n 713)
+    hour buckets 00-06h -13/346, 06-12h -5/267, 12-18h -3/535, 18-24h +3/385
+  control B flush WITHOUT reclaim (n 131): bid move after the 60-min deadline: +30 m -19.3 (45% up), +60 m -37.5 (40% up); MFE median 186 MAE median 243; deadline close vs shock low median -312 pts
+  control D matched random (1000 draws): 5 m real -16.0 vs -14.7 ± 2.1, 95th -11.2, pctile 26.3%; 15 m real -4.7 vs -15.7 ± 3.6, 95th -9.6, pctile 100.0%; 30 m real -3.8 vs -16.9 ± 5.0, 95th -8.8, pctile 99.5%; 60 m real -6.0 vs -19.4 ± 7.2, 95th -7.1, pctile 96.2%
+  frequency: shocks 7.40/day; flushed 90%; of flushed, reclaimed 92%; reclaim trades 6.12/day = 42.8/week; longest no-trade 2.3 days; median shock->entry 8 min; days scored 251
+  by month (reclaim, 30 m mean / n | immediate 30 m mean): 2026-01 +8/186 | -14, 2026-02 -47/154 | -30, 2026-03 +8/198 | +3, 2026-04 +2/172 | -9, 2026-05 -1/184 | -20, 2026-06 -38/212 | -42, 2026-07 +14/168 | -1, 2026-08 +34/182 | +34, 2026-09 -30/77 | -27
+done
