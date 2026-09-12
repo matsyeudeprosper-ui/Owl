@@ -1,0 +1,2 @@
+V4_2024 [pess] net $: real -1050.97 | random mean -1147.96 sd  371.94 p95  -529.39 max  +124.05 | real beats 61.7% | z +0.26  (n seeds 1000, real trades 3006, 485s)
+V4_2024 [pess] sum R: real  -367.20 | random mean  -325.23 sd   46.38 p95  -249.15 max  -164.20 | real beats 17.3% | z -0.90  (n seeds 1000, real trades 3006, 485s)

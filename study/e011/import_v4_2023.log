@@ -1,0 +1,60 @@
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_01.zip: sha256 5254aa81f9b499648c7c011c68e2cba9c2be965f3ee11767b07e0cd4da84bca7 | rows 2731559 -> kept 2731559 (bad ts 0, bad price 0, exact dups 0) | 2023-01-01 00:00:00.212000 -> 2023-01-31 23:59:58.944000 | spread median 12.08 p95 15.01 max 53.34 | M1 bars 44568 | downloaded 2026-09-12T11:35:55Z
+  removed Exness_BTCUSD_2023_01.zip (re-downloadable; sha256 recorded)
+ERA: 2731559 ticks, M1 bars 44568, gaps > 5 min: 1; largest: 2023-01-06 23:05->55min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_02.zip: sha256 775d7cfa5ae2ae157e1d90b8d41ea72f34f1a96c2ccfb4c33aedfc4610b6b075 | rows 2491487 -> kept 2491487 (bad ts 0, bad price 0, exact dups 0) | 2023-02-01 00:00:00.008000 -> 2023-02-28 23:59:59.831000 | spread median 12.58 p95 15.37 max 38.30 | M1 bars 40268 | downloaded 2026-09-12T11:38:02Z
+  removed Exness_BTCUSD_2023_02.zip (re-downloadable; sha256 recorded)
+ERA: 5223046 ticks, M1 bars 40268, gaps > 5 min: 1; largest: 2023-02-03 16:04->33min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_03.zip: sha256 286a7ba30baab0c6557cd1f8f880317b6bcb64c3caf55d8531a309e9e8bddabb | rows 2866965 -> kept 2866965 (bad ts 0, bad price 0, exact dups 0) | 2023-03-01 00:00:00.291000 -> 2023-03-31 23:59:59.255000 | spread median 13.64 p95 21.52 max 50.36 | M1 bars 44589 | downloaded 2026-09-12T11:39:07Z
+  removed Exness_BTCUSD_2023_03.zip (re-downloadable; sha256 recorded)
+ERA: 8090011 ticks, M1 bars 44589, gaps > 5 min: 1; largest: 2023-03-15 12:36->30min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_04.zip: sha256 d9f7d2a61b6981ca92ecc1b1ae4ccf5caea334b2c77a84dd797d0ad817b3866a | rows 2628488 -> kept 2628488 (bad ts 0, bad price 0, exact dups 0) | 2023-04-01 00:00:00.254000 -> 2023-04-30 23:59:58.395000 | spread median 14.19 p95 20.30 max 42.47 | M1 bars 43121 | downloaded 2026-09-12T11:40:58Z
+  removed Exness_BTCUSD_2023_04.zip (re-downloadable; sha256 recorded)
+ERA: 10718499 ticks, M1 bars 43121, gaps > 5 min: 2; largest: 2023-04-01 06:50->23min, 2023-04-03 07:22->19min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_05.zip: sha256 9515d0d6cd685180c53d6f3d362efe8ac676f390fd0cebff101131d61b1fccb4 | rows 3413688 -> kept 3413688 (bad ts 0, bad price 0, exact dups 0) | 2023-05-01 00:00:00.421000 -> 2023-05-31 23:59:59.976000 | spread median 16.09 p95 19.79 max 47.71 | M1 bars 44569 | downloaded 2026-09-12T11:42:31Z
+  removed Exness_BTCUSD_2023_05.zip (re-downloadable; sha256 recorded)
+ERA: 14132187 ticks, M1 bars 44569, gaps > 5 min: 2; largest: 2023-05-22 07:41->28min, 2023-05-27 07:54->9min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_06.zip: sha256 c75976d1253667efc5b129f1966b0c44cb4608e0e3248dbbbb982b3f373514b9 | rows 3645650 -> kept 3645650 (bad ts 0, bad price 0, exact dups 0) | 2023-06-01 00:00:00.217000 -> 2023-06-30 23:59:59.673000 | spread median 14.36 p95 18.55 max 45.35 | M1 bars 43131 | downloaded 2026-09-12T11:44:01Z
+  removed Exness_BTCUSD_2023_06.zip (re-downloadable; sha256 recorded)
+ERA: 17777837 ticks, M1 bars 43131, gaps > 5 min: 1; largest: 2023-06-24 15:15->36min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_07.zip: sha256 2cefaabe4a1bd316717a8769545e389be808491bd4d2079549d1dfe7ca13675d | rows 3533682 -> kept 3533682 (bad ts 0, bad price 0, exact dups 0) | 2023-07-01 00:00:00.052000 -> 2023-07-31 23:59:58.586000 | spread median 12.24 p95 17.91 max 47.04 | M1 bars 44622 | downloaded 2026-09-12T11:45:22Z
+  removed Exness_BTCUSD_2023_07.zip (re-downloadable; sha256 recorded)
+ERA: 21311519 ticks, M1 bars 44622, gaps > 5 min: 0
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_08.zip: sha256 7169653bdb569ada7f0d8ee62524feb06f20e330339924fc5065f1f5a3c20ee1 | rows 3331166 -> kept 3331166 (bad ts 0, bad price 0, exact dups 0) | 2023-08-01 00:00:00.488000 -> 2023-08-31 23:59:58.857000 | spread median 9.30 p95 14.37 max 43.68 | M1 bars 44625 | downloaded 2026-09-12T11:47:03Z
+  removed Exness_BTCUSD_2023_08.zip (re-downloadable; sha256 recorded)
+ERA: 24642685 ticks, M1 bars 44625, gaps > 5 min: 0
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_09.zip: sha256 1748faeb7fcd0987aa216d0bd21e9b937c21f32527f429970f00107d489325e1 | rows 3181293 -> kept 3181293 (bad ts 0, bad price 0, exact dups 0) | 2023-09-01 00:00:00.329000 -> 2023-09-30 23:59:58.659000 | spread median 8.61 p95 12.31 max 46.52 | M1 bars 43158 | downloaded 2026-09-12T11:48:23Z
+  removed Exness_BTCUSD_2023_09.zip (re-downloadable; sha256 recorded)
+ERA: 27823978 ticks, M1 bars 43158, gaps > 5 min: 1; largest: 2023-09-03 00:02->30min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_10.zip: sha256 9f18891bb1e0a2932b091f4fa81d9feeb6e8aa77427933def5fe5c4f1ceabdc3 | rows 3425526 -> kept 3425526 (bad ts 0, bad price 0, exact dups 0) | 2023-10-01 00:00:00.748000 -> 2023-10-31 23:59:58.036000 | spread median 8.49 p95 12.61 max 42.48 | M1 bars 44625 | downloaded 2026-09-12T11:49:38Z
+  removed Exness_BTCUSD_2023_10.zip (re-downloadable; sha256 recorded)
+ERA: 31249504 ticks, M1 bars 44625, gaps > 5 min: 0
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_11.zip: sha256 e0e7cdbd09b042d5471c406f1fa0db1b62fe287f7993b3c61ac07224f0f4cd05 | rows 3588733 -> kept 3588733 (bad ts 0, bad price 0, exact dups 0) | 2023-11-01 00:00:00.112000 -> 2023-11-30 23:59:58.378000 | spread median 10.77 p95 16.18 max 33.06 | M1 bars 43147 | downloaded 2026-09-12T11:51:22Z
+  removed Exness_BTCUSD_2023_11.zip (re-downloadable; sha256 recorded)
+ERA: 34838237 ticks, M1 bars 43147, gaps > 5 min: 3; largest: 2023-11-22 13:26->23min, 2023-11-12 06:00->17min, 2023-11-22 14:16->7min
+C:\Users\Administrator\AppData\Local\Temp\2\claude\C--Users-Administrator--local-bin\d0f3d5ec-64a9-4f73-81c4-6f2d05427fd0\scratchpad\Owl\study\e011\exness_import2.py:43: UserWarning: no explicit representation of timezones available for np.datetime64
+  t = ts.to_numpy().astype("datetime64[ms]").astype(np.int64)   # -> ms since epoch, unit-safe
+Exness_BTCUSD_2023_12.zip: sha256 10d65558b110dbbda9296be1feb0ffcc63bd1a02e2b882ed0704e5f443900568 | rows 4216379 -> kept 4216379 (bad ts 0, bad price 0, exact dups 0) | 2023-12-01 00:00:00.395000 -> 2023-12-31 23:59:58.769000 | spread median 16.98 p95 24.33 max 42.81 | M1 bars 44590 | downloaded 2026-09-12T11:52:54Z
+  removed Exness_BTCUSD_2023_12.zip (re-downloadable; sha256 recorded)
+ERA: 39054616 ticks, M1 bars 44590, gaps > 5 min: 2; largest: 2023-12-21 02:14->28min, 2023-12-02 06:47->7min

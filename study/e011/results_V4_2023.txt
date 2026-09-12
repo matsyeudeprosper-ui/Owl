@@ -1,0 +1,78 @@
+--- DATA V4_2023 primary (v4_2023): 39054616 ticks 2023-01-01 00:00:00.212000 -> 2023-12-31 23:59:58.769000
+  2023-01: ticks   2731559 | spread median 12.08 p95 15.01 max 53.34 | M1 bars 44568 = 99.8% of minutes | median M1 range 11.5
+  2023-02: ticks   2491487 | spread median 12.58 p95 15.37 max 38.30 | M1 bars 40268 = 99.9% of minutes | median M1 range 14.3
+  2023-03: ticks   2866965 | spread median 13.64 p95 21.52 max 50.36 | M1 bars 44589 = 99.9% of minutes | median M1 range 20.7
+  2023-04: ticks   2628488 | spread median 14.19 p95 20.30 max 42.47 | M1 bars 43121 = 99.8% of minutes | median M1 range 16.2
+  2023-05: ticks   3413688 | spread median 16.09 p95 19.79 max 47.71 | M1 bars 44569 = 99.8% of minutes | median M1 range 16.3
+  2023-06: ticks   3645650 | spread median 14.36 p95 18.55 max 45.35 | M1 bars 43131 = 99.8% of minutes | median M1 range 15.8
+  2023-07: ticks   3533682 | spread median 12.24 p95 17.91 max 47.04 | M1 bars 44622 = 100.0% of minutes | median M1 range 12.5
+  2023-08: ticks   3331166 | spread median 9.30 p95 14.37 max 43.68 | M1 bars 44625 = 100.0% of minutes | median M1 range 8.8
+  2023-09: ticks   3181293 | spread median 8.61 p95 12.31 max 46.52 | M1 bars 43158 = 99.9% of minutes | median M1 range 9.8
+  2023-10: ticks   3425526 | spread median 8.49 p95 12.61 max 42.48 | M1 bars 44625 = 100.0% of minutes | median M1 range 12.0
+  2023-11: ticks   3588733 | spread median 10.77 p95 16.18 max 33.06 | M1 bars 43147 = 99.9% of minutes | median M1 range 20.0
+  2023-12: ticks   4216379 | spread median 16.98 p95 24.33 max 42.81 | M1 bars 44590 = 99.9% of minutes | median M1 range 32.9
+  gaps > 5 min: 14; largest: 01-06 23:05->55min, 06-24 15:15->36min, 02-03 16:04->33min, 03-15 12:36->30min, 09-03 00:02->30min, 05-22 07:41->28min
+  ask<bid or non-positive: 0; ticks with spread > 3x median: 41640
+
+=== V4_2023: FROZEN STRATEGY, actual historical spread ===  (1480 confirmed flips, 4.1/day)
+  2h gate (production) ALL           n 1629 (136.1/mo) wr 42.8% net   -498.87 PF 0.75 exp$ -0.306 expR -0.239 sumR -389.1 maxDD$ 500.51 maxDD_R 389.9 underwater max 1628 tr | largest +42.36/-21.99 | worst r20 -63.66 r40 -87.94
+  2h gate FLIP                       n  971 ( 81.1/mo) wr 41.7% net   -255.89 PF 0.78 exp$ -0.264 expR -0.259 sumR -251.4 maxDD$ 261.08 maxDD_R 252.4 underwater max 930 tr | largest +42.36/-21.99 | worst r20 -54.60 r40 -67.70
+  2h gate CONT                       n  658 ( 55.0/mo) wr 44.4% net   -242.98 PF 0.69 exp$ -0.369 expR -0.209 sumR -137.7 maxDD$ 244.85 maxDD_R 138.3 underwater max 655 tr | largest +12.01/-17.45 | worst r20 -43.91 r40 -55.55
+  no gate ALL                        n 1416 (118.2/mo) wr 45.8% net   -412.21 PF 0.83 exp$ -0.291 expR -0.183 sumR -259.3 maxDD$ 500.68 maxDD_R 259.3 underwater max 1337 tr | largest +42.36/-31.70 | worst r20 -82.77 r40 -111.24
+  no gate FLIP                       n  598 ( 50.1/mo) wr 41.6% net   -195.58 PF 0.76 exp$ -0.327 expR -0.260 sumR -155.2 maxDD$ 202.72 maxDD_R 156.8 underwater max 598 tr | largest +42.36/-21.99 | worst r20 -48.05 r40 -58.42
+  no gate CONT                       n  818 ( 68.3/mo) wr 48.8% net   -216.63 PF 0.86 exp$ -0.265 expR -0.127 sumR -104.1 maxDD$ 351.38 maxDD_R 115.5 underwater max 770 tr | largest +35.63/-31.70 | worst r20 -94.08 r40 -103.84
+  gate contribution (gated minus ungated net): -86.66
+  monthly (2h gate):
+    2023-01: n 120 wr 37.5% net   -70.74 PF 0.46 exp$ -0.590 sumR -40.5 maxDD  70.95 | flip n 69 $-54.4 cont n 51 $-16.3
+    2023-02: n 105 wr 38.1% net   -45.06 PF 0.67 exp$ -0.429 sumR -34.4 maxDD  60.69 | flip n 67 $-22.1 cont n 38 $-23.0
+    2023-03: n 156 wr 44.2% net   -84.43 PF 0.70 exp$ -0.541 sumR -33.8 maxDD 117.50 | flip n 92 $-61.5 cont n 64 $-23.0
+    2023-04: n 130 wr 40.8% net   -60.08 PF 0.61 exp$ -0.462 sumR -36.3 maxDD  72.98 | flip n 80 $-43.3 cont n 50 $-16.7
+    2023-05: n   1 wr 100.0% net   +42.36 PF  inf exp$ +42.359 sumR  +0.8 maxDD   0.00 | flip n 1 $+42.4 cont n 0 $+0.0
+    2023-06: n  62 wr 46.8% net    +5.78 PF 1.07 exp$ +0.093 sumR -10.2 maxDD  25.36 | flip n 40 $-16.4 cont n 22 $+22.2
+    2023-07: n 105 wr 47.6% net   -10.57 PF 0.89 exp$ -0.101 sumR -15.6 maxDD  19.71 | flip n 68 $-10.5 cont n 37 $-0.1
+    2023-08: n 141 wr 37.6% net   -25.90 PF 0.73 exp$ -0.184 sumR -47.0 maxDD  40.78 | flip n 83 $-8.3 cont n 58 $-17.5
+    2023-09: n 119 wr 42.9% net   -16.98 PF 0.80 exp$ -0.143 sumR -28.3 maxDD  28.27 | flip n 72 $-8.4 cont n 47 $-8.6
+    2023-10: n 281 wr 42.0% net  -106.98 PF 0.63 exp$ -0.381 sumR -70.3 maxDD 118.06 | flip n 155 $-29.6 cont n 126 $-77.4
+    2023-11: n 224 wr 47.3% net    +0.02 PF 1.00 exp$ +0.000 sumR -34.7 maxDD  44.52 | flip n 130 $+20.2 cont n 94 $-20.2
+    2023-12: n 185 wr 44.3% net  -126.29 PF 0.64 exp$ -0.683 sumR -38.8 maxDD 130.71 | flip n 114 $-63.8 cont n 71 $-62.5
+  halves (2h gate):
+  first 6 months 2023-01..2023-06    n  574 ( 96.6/mo) wr 41.3% net   -212.17 PF 0.73 exp$ -0.370 expR -0.269 sumR -154.4 maxDD$ 273.03 maxDD_R 155.2 underwater max 573 tr | largest +42.36/-21.99 | worst r20 -63.66 r40 -87.94
+  last 6 months 2023-07..2023-12     n 1055 (175.2/mo) wr 43.6% net   -286.70 PF 0.75 exp$ -0.272 expR -0.222 sumR -234.7 maxDD$ 296.69 maxDD_R 234.7 underwater max 1017 tr | largest +14.08/-17.64 | worst r20 -44.44 r40 -70.56
+
+--- DIAGNOSTIC ONLY: same ticks with a constant $7 spread (ask = bid + 7) ---
+  2h gate, constant $7 (diagnostic)  n 1665 (139.1/mo) wr 46.8% net   -297.29 PF 0.84 exp$ -0.179 expR -0.164 sumR -273.3 maxDD$ 298.97 maxDD_R 274.1 underwater max 1664 tr | largest +42.36/-21.96 | worst r20 -55.71 r40 -70.46
+  spread cost attribution: actual-spread net -498.87 vs $7 net -297.29 -> +201.58 attributable to the higher historical spread
+  monthly ($7 diagnostic):
+    2023-01: n 121 wr 40.5% net   -61.80 PF 0.50 exp$ -0.511 sumR -34.3 maxDD  62.01 | flip n 70 $-51.3 cont n 51 $-10.5
+    2023-02: n 104 wr 44.2% net   -28.26 PF 0.77 exp$ -0.272 sumR -22.1 maxDD  48.37 | flip n 67 $-15.8 cont n 37 $-12.4
+    2023-03: n 166 wr 50.6% net   -54.01 PF 0.80 exp$ -0.325 sumR -16.1 maxDD  97.76 | flip n 96 $-33.8 cont n 70 $-20.2
+    2023-04: n 131 wr 51.1% net    -9.84 PF 0.92 exp$ -0.075 sumR -11.7 maxDD  25.65 | flip n 81 $-24.9 cont n 50 $+15.0
+    2023-05: n   1 wr 100.0% net   +42.36 PF  inf exp$ +42.359 sumR  +0.8 maxDD   0.00 | flip n 1 $+42.4 cont n 0 $+0.0
+    2023-06: n  65 wr 49.2% net    +8.99 PF 1.11 exp$ +0.138 sumR  -7.7 maxDD  24.92 | flip n 43 $-16.6 cont n 22 $+25.6
+    2023-07: n 117 wr 49.6% net    -3.95 PF 0.96 exp$ -0.034 sumR -13.2 maxDD  14.01 | flip n 70 $-5.3 cont n 47 $+1.4
+    2023-08: n 144 wr 45.8% net    -8.95 PF 0.89 exp$ -0.062 sumR -26.4 maxDD  27.03 | flip n 83 $-3.4 cont n 61 $-5.5
+    2023-09: n 121 wr 43.0% net   -14.82 PF 0.82 exp$ -0.122 sumR -28.4 maxDD  26.51 | flip n 72 $-3.6 cont n 49 $-11.2
+    2023-10: n 283 wr 44.9% net   -88.81 PF 0.68 exp$ -0.314 sumR -55.9 maxDD 101.34 | flip n 155 $-22.0 cont n 128 $-66.8
+    2023-11: n 221 wr 49.3% net   +22.13 PF 1.09 exp$ +0.100 sumR -26.3 maxDD  42.46 | flip n 127 $+38.6 cont n 94 $-16.4
+    2023-12: n 191 wr 46.6% net  -100.32 PF 0.70 exp$ -0.525 sumR -32.0 maxDD 104.78 | flip n 115 $-58.8 cont n 76 $-41.5
+
+--- STRUCTURAL FINDINGS (frozen E007/E008 definitions) ---
+  1/2. continuation by flip age (no-gate population): n / wr / net$ / expR
+     age 0-15    : n  46 wr 28.3% net   -47.59 expR -0.501
+     age 15-30   : n  75 wr 49.3% net   -27.17 expR -0.118
+     age 30-60   : n 126 wr 42.9% net   -44.75 expR -0.236
+     age 60-120  : n 175 wr 49.7% net   -48.60 expR -0.110
+     age 120-240 : n 157 wr 52.2% net   +21.10 expR -0.064
+     age 240+    : n 239 wr 52.7% net   -69.61 expR -0.054
+  3. FLIPS with stop <= 83 pt (E008 Q1 cut): n 279 wr 35.1% net -92.97 expR -0.382 | other flips: n 319 wr 47.3% net -102.61 expR -0.153
+  4. continuation width tertiles (E008 cuts 146/272): fixed-lot $ / sum R / constant-risk $2.99 (cap 0.05):
+     narrow<=146 : n 440 fixed   -98.47 | sumR  -76.0 | constant-risk  -168.11
+     medium      : n 205 fixed  -121.81 | sumR  -33.0 | constant-risk   -65.98
+     wide>272    : n 173 fixed    +3.64 | sumR   +4.9 | constant-risk    +1.82
+     stale >=4h conts: n 239 fixed -69.61 sumR -13.0 avg $risk 6.29 vs all conts avg $risk 3.89
+  5. awake-gate contribution: $-86.66 (R: -129.8)
+  6. $ vs R stability across the two halves (gated run): maxDD, worst roll-20, largest loss
+     $: maxDD 273.03 / 296.69 (ratio 1.09) | roll-20 -63.66 / -44.44 | largest loss -21.99 / -17.64 (ratio 0.80)
+     R: maxDD 155.20 / 234.72 (ratio 1.51) | roll-20 -15.04 / -14.79 | largest loss -1.20 / -1.20 (ratio 1.01)
+
+done

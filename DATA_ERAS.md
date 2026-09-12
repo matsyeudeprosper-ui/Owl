@@ -12,9 +12,9 @@ was still forward data when the idea was proposed.
 | L1 live TOUCH era | 2026-09-08 19:30 → 2026-09-11 17:26 | `results/bos/trades_live_canonical.csv` (MT5 deals) | Real trades of the flip+touch config (41 positions, base −$43.08). Closed era. |
 | L2 live CANDLE-CLOSE era | 2026-09-11 17:26 → now | `live/bos_forward_ledger.csv` (observer, MT5 deals) + `bos_bot.log` | Forward evidence of the frozen production config. Reserved: validation only, opened per experiment by ChatGPT. |
 | T2 paper twin (flip+touch) | 2026-09-11 17:26 → now | `live/bos_forward_ledger.csv` source=twin, `bos_paper_touch_state.json` | Side-by-side record of the previous rule. Reserved like L2. |
-| **V2** RESERVED VALIDATION (E011) | 2026-01-01 00:00 → 2026-06-30 23:59 UTC | PRIMARY: MT5 Exness Pro BTCUSD ticks (demo terminal 476954287, same feed as live); public archive Jan–Jun 2026 as feed cross-check only | Frozen 2026-09-12 (owner approval) BEFORE any P&L. Purpose: nearest independent pre-R0 period; spread regimes $12.60 (Jan–Mar), $9.80 (Apr–May), transition to $7 (Jun). Consumed once reported. |
-| **V3** RESERVED VALIDATION (E011) | 2025-01-01 → 2025-12-31 UTC | Exness public archive `ticks/BTCUSD/2025/` (monthly zips; SHA-256 in the import report) | Frozen 2026-09-12 before download. One full recent independent year. Run only after V2 is reported; consumed once reported. |
-| **V4** RESERVED VALIDATION (E011) | 2022-01-01 → 2024-12-31 UTC | Exness public archive `ticks/BTCUSD/2022..2024/` | Frozen 2026-09-12 before download. Multiple BTC regimes. Run only after V3 is reported; consumed once reported. |
+| **V2** RESERVED VALIDATION (E011) | 2026-01-01 00:00 → 2026-06-30 23:59 UTC | PRIMARY: MT5 Exness Pro BTCUSD ticks (demo terminal 476954287, same feed as live); public archive Jan–Jun 2026 as feed cross-check only | CONSUMED 2026-09-12 (E011: -606, 5 of 6 months red). Also used by E012-E014 as consumed data. |
+| **V3** RESERVED VALIDATION (E011) | 2025-01-01 → 2025-12-31 UTC | Exness public archive `ticks/BTCUSD/2025/` (monthly zips; SHA-256 in the import report) | CONSUMED 2026-09-12 (E011: -1390, 1 of 12 months green). Used by E014 as consumed data. |
+| **V4** RESERVED VALIDATION (E011) | 2022-01-01 → 2024-12-31 UTC | Exness public archive `ticks/BTCUSD/2022..2024/` | CONSUMED 2026-09-12 (E011: -1191 / -499 / -1521, 0 of 36 months green). |
 | F(n) future | after each new hypothesis timestamp | ticks + M1 fetched on demand | Reserved for that hypothesis' validation. |
 
 Forward-observation variables recorded per trade in L2/T2 (informational,
