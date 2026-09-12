@@ -1,0 +1,19 @@
+E017 forward read at 2026-09-12 13:33 UTC: 0.0 days since freeze; detections 0 (forced selling 0, forced buying 0)
+feed latency (exchange -> receive) over 1 fills: median 2.96 s, p90 2.96 s, max 2.96 s
+
+=== PRIMARY (observer quotes): forced SELLING -> BUY, +20 s, exit 300 s, costs inside quotes + $5 ===
+  primary 300 s: n 0
+  descriptive 120 s: n 0
+
+=== CONTROL C (descriptive): forced BUYING -> SELL, same cell ===
+  forced buying 300 s: n 0
+  forced buying 120 s: n 0
+
+=== TICK REPLAY (MT5 Trial9 ticks at exchange time + delay) and CONTROLS A / B ===
+  ticks 750637 2026-09-05 18:07:04.169000 -> 2026-09-12 13:33:15.354000
+  controls A/B skipped: fewer than 5 forward events
+
+=== ECONOMIC READ (primary cell, observer quotes) ===
+  no forward forced-selling events yet
+
+VERDICT: not due before 30 forward forced-selling events.

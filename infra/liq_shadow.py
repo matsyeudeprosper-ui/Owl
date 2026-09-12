@@ -1,4 +1,4 @@
-"""LIQUIDATION SHADOW OBSERVER (E016, 2026-09-12). NO ORDERS.
+"""LIQUIDATION SHADOW OBSERVER (E016 latency logger; E017 forward stream from 2026-09-12 13:07 UTC). NO ORDERS.
 
 Subscribes to the OKX v5 public websocket channel 'liquidation-orders'
 (instType SWAP), keeps BTC-USDT-SWAP fills, maintains the rolling burst
@@ -53,7 +53,8 @@ def quote():
     tk = mt5.symbol_info_tick(SYMBOL)
     if tk is None:
         return None
-    return dict(t=time.time(), bid=tk.bid, ask=tk.ask, tms=tk.time_msc)
+    now = time.time()
+    return dict(t=now, bid=tk.bid, ask=tk.ask, tms=tk.time_msc, spread=round(tk.ask - tk.bid, 2), age=round(now - tk.time_msc / 1000, 3))
 
 
 class Burst:
@@ -111,12 +112,12 @@ async def outcome_logger(ev, cfg):
             res[nxt[0]] = round(pnl - cfg["slip"], 2)
             nxt.pop(0)
     row = [dt.datetime.utcfromtimestamp(ev["t_exch"]).isoformat(timespec="milliseconds"), round(ev["t_recv"] - ev["t_exch"], 3), round(ev["t_det"] - ev["t_exch"], 3),
-           ev["forced"], d, round(ev["burst"], 3), round(ev["thr"], 3), ev["q_det"]["bid"], ev["q_det"]["ask"], round(ev["entry_t"] - ev["t_exch"], 3), e] + [res.get(h, "") for h in sorted(cfg["horizons_s"])] + [round(mfe, 2), round(mae, 2)]
+           ev["forced"], d, round(ev["burst"], 3), round(ev["thr"], 3), ev["q_det"]["bid"], ev["q_det"]["ask"], ev["q_det"].get("spread", ""), ev["q_det"].get("age", ""), round(ev["entry_t"] - ev["t_exch"], 3), e, q["spread"], q["age"]] + [res.get(h, "") for h in sorted(cfg["horizons_s"])] + [round(mfe, 2), round(mae, 2)]
     new = not os.path.exists(EVENTS)
     with open(EVENTS, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         if new:
-            w.writerow(["exch_utc", "recv_latency_s", "det_latency_s", "forced_side", "trade_dir", "burst_btc", "thr_btc", "bid_at_det", "ask_at_det", "entry_delay_s", "entry_px"] + [f"net_{h}s" for h in sorted(cfg["horizons_s"])] + ["mfe", "mae"])
+            w.writerow(["exch_utc", "recv_latency_s", "det_latency_s", "forced_side", "trade_dir", "burst_btc", "thr_btc", "bid_at_det", "ask_at_det", "spread_at_det", "quote_age_det_s", "entry_delay_s", "entry_px", "spread_at_entry", "quote_age_entry_s"] + [f"net_{h}s" for h in sorted(cfg["horizons_s"])] + ["mfe", "mae"])
         w.writerow(row)
     say(f"EVENT {row[0]} forced {ev['forced']:+d} burst {ev['burst']:.2f}/{ev['thr']:.2f} latency recv {row[1]}s -> outcomes {res} mfe {mfe:.1f} mae {mae:.1f}")
 

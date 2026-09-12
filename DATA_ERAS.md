@@ -22,3 +22,7 @@ never acted on): `narrow_stop` (stop distance ≤ 98 pt) and
 `shadow_state_before` / `rolling20_before` (rolling-20 state NORMAL /
 REDUCED / PAUSED with the thresholds frozen from R0-TRAIN: −15.65 / −22.51
 / +8.14; seeded from the tick backtest of the same rule set up to the switch).
+
+## FL1 — forward liquidation stream (E017)
+Every OKX BTC-USDT-SWAP liquidation fill received by `live/liq_shadow.py` from **2026-09-12 13:07:04 UTC** onward, with Exness quotes at detection/entry (`liq_shadow_fills.csv`, `liq_shadow_events.csv`). Blind for E017: the rule was frozen before the first forward outcome; no parameter of E017 may be chosen from it. Fills before 13:07:04 (REST archive, 2026-07-31 -> 2026-09-12) are E015/E016 discovery data, consumed.
+
