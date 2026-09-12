@@ -1,0 +1,474 @@
+R0: 524 trades; HTF bars M5 19805 M15 6603 H1 1652; confirmed swings H1 hi/lo 2/7
+V2 (consumed, historical replication only; archive M1): 1136 trades; HTF bars M5 52124 M15 17376 H1 4344; confirmed swings H1 hi/lo 22/12
+
+=== PART 0. STOP DISTANCE BY ORDINAL (R0 gated trade list) ===
+  TRAIN
+    FLIP-BOS                   n 147 stop median  146.7 q25   91.1 q75  255.5 | n  147 TPfirst 57.8% wr 57.8% expR +0.034 exp$ +0.296 PF 1.19 net   +43.56
+    cont ordinal 2 (1st cont)  n  41 stop median  161.2 q25  120.0 q75  290.0 | n   41 TPfirst 63.4% wr 63.4% expR +0.133 exp$ +1.056 PF 1.80 net   +43.31
+    cont ordinal 3             n  35 stop median  128.1 q25   96.2 q75  254.8 | n   35 TPfirst 68.6% wr 68.6% expR +0.231 exp$ +1.163 PF 2.03 net   +40.71
+    cont ordinal 4+            n  36 stop median  154.6 q25  113.9 q75  219.4 | n   36 TPfirst 44.4% wr 44.4% expR -0.209 exp$ -0.704 PF 0.65 net   -25.36
+  TEST
+    FLIP-BOS                   n 156 stop median  137.7 q25   82.8 q75  251.3 | n  156 TPfirst 55.1% wr 55.1% expR -0.014 exp$ +0.253 PF 1.14 net   +39.53
+    cont ordinal 2 (1st cont)  n  54 stop median  168.2 q25  121.6 q75  333.9 | n   54 TPfirst 63.0% wr 63.0% expR +0.129 exp$ +0.605 PF 1.29 net   +32.69
+    cont ordinal 3             n  27 stop median  198.1 q25  160.6 q75  277.2 | n   27 TPfirst 81.5% wr 81.5% expR +0.465 exp$ +1.931 PF 3.36 net   +52.14
+    cont ordinal 4+            n  28 stop median  166.8 q25  106.8 q75  285.8 | n   28 TPfirst 50.0% wr 50.0% expR -0.108 exp$ +0.366 PF 1.23 net   +10.25
+
+=== FEATURE FAMILY 1. HTF STRUCTURE ALIGNMENT (completed candles; 1 aligned, 0 neutral, -1 opposing) ===
+
+--- M5 trend vs trade direction
+  flip TRAIN
+      1: n   67 TPfirst 61.2% wr 61.2% expR +0.097 exp$ +0.330 PF 1.21 net   +22.12
+      -1: n   80 TPfirst 55.0% wr 55.0% expR -0.018 exp$ +0.268 PF 1.18 net   +21.44
+  flip TEST 
+      1: n   66 TPfirst 48.5% wr 48.5% expR -0.134 exp$ +0.095 PF 1.05 net    +6.25
+      -1: n   90 TPfirst 60.0% wr 60.0% expR +0.074 exp$ +0.370 PF 1.21 net   +33.28
+  flip V2   
+      1: n  289 TPfirst 52.9% wr 52.9% expR -0.054 exp$ -0.444 PF 0.86 net  -128.38
+      0: n    2 TPfirst 50.0% wr 50.0% expR -0.122 exp$ -0.220 PF 0.65 net    -0.44
+      -1: n  369 TPfirst 48.2% wr 48.2% expR -0.140 exp$ -0.841 PF 0.74 net  -310.48
+  cont TRAIN
+      1: n   73 TPfirst 58.9% wr 58.9% expR +0.053 exp$ +0.583 PF 1.38 net   +42.58
+      -1: n   39 TPfirst 59.0% wr 59.0% expR +0.056 exp$ +0.412 PF 1.30 net   +16.08
+  cont TEST 
+      1: n   56 TPfirst 66.1% wr 66.1% expR +0.184 exp$ +1.550 PF 2.21 net   +86.78
+      -1: n   53 TPfirst 62.3% wr 62.3% expR +0.117 exp$ +0.157 PF 1.08 net    +8.30
+  cont V2   
+      1: n  244 TPfirst 52.0% wr 52.0% expR -0.068 exp$ -0.458 PF 0.85 net  -111.70
+      -1: n  232 TPfirst 53.4% wr 53.4% expR -0.046 exp$ -0.237 PF 0.92 net   -54.99
+
+--- M15 trend vs trade direction
+  flip TRAIN
+      1: n   65 TPfirst 64.6% wr 64.6% expR +0.156 exp$ +0.636 PF 1.51 net   +41.37
+      0: n    6 TPfirst 50.0% wr 50.0% expR -0.106 exp$ -0.783 PF 0.57 net    -4.70
+      -1: n   76 TPfirst 52.6% wr 52.6% expR -0.060 exp$ +0.091 PF 1.05 net    +6.89
+  flip TEST 
+      1: n   73 TPfirst 53.4% wr 53.4% expR -0.045 exp$ +0.538 PF 1.36 net   +39.30
+      -1: n   83 TPfirst 56.6% wr 56.6% expR +0.013 exp$ +0.003 PF 1.00 net    +0.23
+  flip V2   
+      1: n  309 TPfirst 50.8% wr 50.8% expR -0.093 exp$ -0.455 PF 0.85 net  -140.44
+      0: n    2 TPfirst 50.0% wr 50.0% expR -0.122 exp$ -0.220 PF 0.65 net    -0.44
+      -1: n  349 TPfirst 49.9% wr 49.9% expR -0.111 exp$ -0.855 PF 0.74 net  -298.42
+  cont TRAIN
+      1: n   56 TPfirst 60.7% wr 60.7% expR +0.086 exp$ +0.328 PF 1.20 net   +18.38
+      0: n   10 TPfirst 70.0% wr 70.0% expR +0.255 exp$ +2.535 PF 3.96 net   +25.35
+      -1: n   46 TPfirst 54.3% wr 54.3% expR -0.028 exp$ +0.325 PF 1.23 net   +14.94
+  cont TEST 
+      1: n   68 TPfirst 66.2% wr 66.2% expR +0.187 exp$ +1.085 PF 1.67 net   +73.81
+      -1: n   41 TPfirst 61.0% wr 61.0% expR +0.092 exp$ +0.519 PF 1.32 net   +21.27
+  cont V2   
+      1: n  229 TPfirst 51.1% wr 51.1% expR -0.088 exp$ -0.474 PF 0.85 net  -108.50
+      -1: n  247 TPfirst 54.3% wr 54.3% expR -0.029 exp$ -0.236 PF 0.92 net   -58.18
+
+--- H1 trend vs trade direction
+  flip TRAIN
+      1: n   70 TPfirst 61.4% wr 61.4% expR +0.100 exp$ +0.587 PF 1.43 net   +41.12
+      0: n    1 TPfirst  0.0% wr  0.0% expR -1.002 exp$ -5.753 PF 0.00 net    -5.75
+      -1: n   71 TPfirst 54.9% wr 54.9% expR -0.020 exp$ +0.101 PF 1.06 net    +7.14
+  flip TEST 
+      1: n   80 TPfirst 55.0% wr 55.0% expR -0.016 exp$ -0.389 PF 0.81 net   -31.12
+      -1: n   76 TPfirst 55.3% wr 55.3% expR -0.013 exp$ +0.930 PF 1.64 net   +70.65
+  flip V2   
+      1: n  300 TPfirst 52.0% wr 52.0% expR -0.072 exp$ -0.345 PF 0.88 net  -103.39
+      0: n   48 TPfirst 47.9% wr 47.9% expR -0.146 exp$ -1.540 PF 0.60 net   -73.90
+      -1: n  309 TPfirst 49.2% wr 49.2% expR -0.122 exp$ -0.838 PF 0.76 net  -258.94
+  cont TRAIN
+      1: n   53 TPfirst 62.3% wr 62.3% expR +0.114 exp$ +0.607 PF 1.44 net   +32.15
+      0: n    3 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +7.044 PF  inf net   +21.13
+      -1: n   49 TPfirst 53.1% wr 53.1% expR -0.053 exp$ +0.024 PF 1.01 net    +1.17
+  cont TEST 
+      1: n   44 TPfirst 63.6% wr 63.6% expR +0.141 exp$ +0.724 PF 1.50 net   +31.84
+      -1: n   65 TPfirst 64.6% wr 64.6% expR +0.158 exp$ +0.973 PF 1.56 net   +63.24
+  cont V2   
+      1: n  243 TPfirst 53.5% wr 53.5% expR -0.042 exp$ -0.234 PF 0.92 net   -56.86
+      0: n   36 TPfirst 47.2% wr 47.2% expR -0.158 exp$ -0.275 PF 0.91 net    -9.89
+      -1: n  196 TPfirst 53.1% wr 53.1% expR -0.053 exp$ -0.480 PF 0.85 net   -93.99
+
+--- number of aligned timeframes (M5+M15+H1)
+  flip TRAIN
+      0: n   35 TPfirst 45.7% wr 45.7% expR -0.186 exp$ -0.314 PF 0.84 net   -11.00
+      1: n   47 TPfirst 55.3% wr 55.3% expR -0.013 exp$ +0.066 PF 1.04 net    +3.10
+      2: n   40 TPfirst 72.5% wr 72.5% expR +0.301 exp$ +1.322 PF 2.46 net   +52.87
+      3: n   25 TPfirst 56.0% wr 56.0% expR +0.003 exp$ -0.056 PF 0.97 net    -1.41
+  flip TEST 
+      0: n   19 TPfirst 68.4% wr 68.4% expR +0.221 exp$ +1.834 PF 2.99 net   +34.85
+      1: n   67 TPfirst 52.2% wr 52.2% expR -0.065 exp$ -0.317 PF 0.86 net   -21.24
+      2: n   58 TPfirst 58.6% wr 58.6% expR +0.050 exp$ +0.726 PF 1.50 net   +42.09
+      3: n   12 TPfirst 33.3% wr 33.3% expR -0.412 exp$ -1.348 PF 0.38 net   -16.17
+  flip V2   
+      0: n  140 TPfirst 50.7% wr 50.7% expR -0.094 exp$ -0.803 PF 0.77 net  -112.41
+      1: n  232 TPfirst 45.3% wr 45.3% expR -0.194 exp$ -1.391 PF 0.60 net  -322.78
+      2: n  198 TPfirst 54.0% wr 54.0% expR -0.036 exp$ +0.187 PF 1.07 net   +37.08
+      3: n   90 TPfirst 54.4% wr 54.4% expR -0.025 exp$ -0.458 PF 0.85 net   -41.20
+  cont TRAIN
+      0: n   16 TPfirst 56.2% wr 56.2% expR +0.009 exp$ +0.296 PF 1.17 net    +4.73
+      1: n   34 TPfirst 55.9% wr 55.9% expR -0.001 exp$ +0.893 PF 1.68 net   +30.36
+      2: n   38 TPfirst 60.5% wr 60.5% expR +0.080 exp$ +0.210 PF 1.16 net    +7.97
+      3: n   24 TPfirst 62.5% wr 62.5% expR +0.120 exp$ +0.650 PF 1.35 net   +15.60
+  cont TEST 
+      0: n   17 TPfirst 58.8% wr 58.8% expR +0.054 exp$ +0.903 PF 1.61 net   +15.34
+      1: n   27 TPfirst 66.7% wr 66.7% expR +0.196 exp$ -0.364 PF 0.86 net    -9.82
+      2: n   54 TPfirst 63.0% wr 63.0% expR +0.129 exp$ +1.230 PF 2.02 net   +66.41
+      3: n   11 TPfirst 72.7% wr 72.7% expR +0.305 exp$ +2.104 PF 2.60 net   +23.14
+  cont V2   
+      0: n   87 TPfirst 56.3% wr 56.3% expR +0.009 exp$ -0.159 PF 0.95 net   -13.83
+      1: n  151 TPfirst 53.6% wr 53.6% expR -0.043 exp$ -0.061 PF 0.98 net    -9.24
+      2: n  149 TPfirst 47.0% wr 47.0% expR -0.161 exp$ -1.094 PF 0.67 net  -163.04
+      3: n   89 TPfirst 57.3% wr 57.3% expR +0.028 exp$ +0.218 PF 1.07 net   +19.42
+
+=== FEATURE FAMILY 2. RECENT HTF BOS / CHoCH (recent = <= 3 completed bars) ===
+
+--- M15 last confirmed BOS
+  flip TRAIN
+      recent_aligned: n    1 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +4.101 PF  inf net    +4.10
+      recent_opposing: n    5 TPfirst 60.0% wr 60.0% expR +0.070 exp$ +0.523 PF 1.51 net    +2.61
+      stale: n  135 TPfirst 57.8% wr 57.8% expR +0.033 exp$ +0.308 PF 1.20 net   +41.55
+      none: n    6 TPfirst 50.0% wr 50.0% expR -0.106 exp$ -0.783 PF 0.57 net    -4.70
+  flip TEST 
+      recent_aligned: n    1 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +7.378 PF  inf net    +7.38
+      recent_opposing: n    2 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +4.905 PF  inf net    +9.81
+      stale: n  153 TPfirst 54.2% wr 54.2% expR -0.030 exp$ +0.146 PF 1.08 net   +22.34
+  flip V2   
+      recent_aligned: n    9 TPfirst 44.4% wr 44.4% expR -0.204 exp$ +1.960 PF 1.55 net   +17.64
+      recent_opposing: n   19 TPfirst 42.1% wr 42.1% expR -0.257 exp$ -2.501 PF 0.50 net   -47.52
+      stale: n  630 TPfirst 50.6% wr 50.6% expR -0.096 exp$ -0.649 PF 0.79 net  -408.99
+      none: n    2 TPfirst 50.0% wr 50.0% expR -0.122 exp$ -0.220 PF 0.65 net    -0.44
+  cont TRAIN
+      recent_aligned: n    8 TPfirst 62.5% wr 62.5% expR +0.118 exp$ +0.451 PF 1.28 net    +3.61
+      stale: n   94 TPfirst 57.4% wr 57.4% expR +0.027 exp$ +0.316 PF 1.21 net   +29.71
+      none: n   10 TPfirst 70.0% wr 70.0% expR +0.255 exp$ +2.535 PF 3.96 net   +25.35
+  cont TEST 
+      recent_aligned: n    4 TPfirst 75.0% wr 75.0% expR +0.347 exp$ +1.832 PF 4.62 net    +7.33
+      recent_opposing: n    1 TPfirst  0.0% wr  0.0% expR -1.002 exp$ -13.626 PF 0.00 net   -13.63
+      stale: n  104 TPfirst 64.4% wr 64.4% expR +0.155 exp$ +0.975 PF 1.63 net  +101.38
+  cont V2   
+      recent_aligned: n   35 TPfirst 48.6% wr 48.6% expR -0.129 exp$ -1.109 PF 0.73 net   -38.80
+      recent_opposing: n    1 TPfirst  0.0% wr  0.0% expR -1.006 exp$ -2.712 PF 0.00 net    -2.71
+      stale: n  440 TPfirst 53.2% wr 53.2% expR -0.049 exp$ -0.284 PF 0.90 net  -125.17
+
+--- M15 last trend flip
+  flip TRAIN
+      recent_opposing: n    2 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +2.111 PF  inf net    +4.22
+      stale: n   80 TPfirst 60.0% wr 60.0% expR +0.073 exp$ +0.729 PF 1.61 net   +58.33
+      none: n   65 TPfirst 53.8% wr 53.8% expR -0.038 exp$ -0.292 PF 0.85 net   -18.99
+  flip TEST 
+      stale: n  156 TPfirst 55.1% wr 55.1% expR -0.014 exp$ +0.253 PF 1.14 net   +39.53
+  flip V2   
+      recent_aligned: n    1 TPfirst  0.0% wr  0.0% expR -1.002 exp$ -3.672 PF 0.00 net    -3.67
+      recent_opposing: n    3 TPfirst 33.3% wr 33.3% expR -0.429 exp$ -3.800 PF 0.31 net   -11.40
+      stale: n  627 TPfirst 50.6% wr 50.6% expR -0.098 exp$ -0.635 PF 0.80 net  -398.28
+      none: n   29 TPfirst 48.3% wr 48.3% expR -0.139 exp$ -0.895 PF 0.67 net   -25.95
+  cont TRAIN
+      recent_aligned: n    5 TPfirst 80.0% wr 80.0% expR +0.440 exp$ +1.350 PF 2.22 net    +6.75
+      stale: n   57 TPfirst 56.1% wr 56.1% expR +0.002 exp$ +0.009 PF 1.01 net    +0.54
+      none: n   50 TPfirst 60.0% wr 60.0% expR +0.075 exp$ +1.027 PF 1.61 net   +51.37
+  cont TEST 
+      recent_aligned: n    3 TPfirst 66.7% wr 66.7% expR +0.196 exp$ +0.868 PF 2.29 net    +2.60
+      stale: n  106 TPfirst 64.2% wr 64.2% expR +0.150 exp$ +0.872 PF 1.53 net   +92.48
+  cont V2   
+      recent_aligned: n   12 TPfirst 25.0% wr 25.0% expR -0.555 exp$ -4.440 PF 0.22 net   -53.28
+      stale: n  442 TPfirst 54.1% wr 54.1% expR -0.033 exp$ -0.259 PF 0.91 net  -114.59
+      none: n   22 TPfirst 40.9% wr 40.9% expR -0.274 exp$ +0.054 PF 1.02 net    +1.19
+
+--- H1 last confirmed BOS
+  flip TRAIN
+      recent_aligned: n    1 TPfirst  0.0% wr  0.0% expR -1.016 exp$ -4.170 PF 0.00 net    -4.17
+      recent_opposing: n    2 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +2.302 PF  inf net    +4.60
+      stale: n  138 TPfirst 58.0% wr 58.0% expR +0.037 exp$ +0.347 PF 1.23 net   +47.83
+      none: n    1 TPfirst  0.0% wr  0.0% expR -1.002 exp$ -5.753 PF 0.00 net    -5.75
+  flip TEST 
+      stale: n  156 TPfirst 55.1% wr 55.1% expR -0.014 exp$ +0.253 PF 1.14 net   +39.53
+  flip V2   
+      recent_aligned: n    8 TPfirst 50.0% wr 50.0% expR -0.109 exp$ +0.221 PF 1.11 net    +1.77
+      recent_opposing: n   18 TPfirst 38.9% wr 38.9% expR -0.307 exp$ -3.247 PF 0.35 net   -58.45
+      stale: n  583 TPfirst 50.9% wr 50.9% expR -0.091 exp$ -0.524 PF 0.83 net  -305.64
+      none: n   48 TPfirst 47.9% wr 47.9% expR -0.146 exp$ -1.540 PF 0.60 net   -73.90
+  cont TRAIN
+      recent_aligned: n    1 TPfirst  0.0% wr  0.0% expR -1.014 exp$ -7.896 PF 0.00 net    -7.90
+      recent_opposing: n    1 TPfirst  0.0% wr  0.0% expR -1.000 exp$ -1.428 PF 0.00 net    -1.43
+      stale: n  100 TPfirst 59.0% wr 59.0% expR +0.055 exp$ +0.426 PF 1.29 net   +42.64
+      none: n    3 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +7.044 PF  inf net   +21.13
+  cont TEST 
+      stale: n  109 TPfirst 64.2% wr 64.2% expR +0.151 exp$ +0.872 PF 1.54 net   +95.08
+  cont V2   
+      recent_aligned: n   16 TPfirst 62.5% wr 62.5% expR +0.123 exp$ +1.126 PF 1.30 net   +18.01
+      recent_opposing: n   13 TPfirst 53.8% wr 53.8% expR -0.037 exp$ +0.175 PF 1.07 net    +2.27
+      stale: n  410 TPfirst 52.9% wr 52.9% expR -0.054 exp$ -0.417 PF 0.86 net  -171.13
+      none: n   36 TPfirst 47.2% wr 47.2% expR -0.158 exp$ -0.275 PF 0.91 net    -9.89
+
+--- H1 last trend flip
+  flip TRAIN
+      recent_opposing: n    1 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +1.125 PF  inf net    +1.12
+      stale: n   77 TPfirst 58.4% wr 58.4% expR +0.045 exp$ +0.629 PF 1.51 net   +48.46
+      none: n   64 TPfirst 56.2% wr 56.2% expR +0.006 exp$ -0.111 PF 0.94 net    -7.08
+  flip TEST 
+      stale: n  156 TPfirst 55.1% wr 55.1% expR -0.014 exp$ +0.253 PF 1.14 net   +39.53
+  flip V2   
+      recent_opposing: n    3 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +3.327 PF  inf net    +9.98
+      stale: n  578 TPfirst 50.3% wr 50.3% expR -0.101 exp$ -0.554 PF 0.82 net  -320.02
+      none: n   76 TPfirst 48.7% wr 48.7% expR -0.132 exp$ -1.660 PF 0.56 net  -126.19
+  cont TRAIN
+      recent_opposing: n    1 TPfirst  0.0% wr  0.0% expR -1.000 exp$ -1.428 PF 0.00 net    -1.43
+      stale: n   59 TPfirst 57.6% wr 57.6% expR +0.029 exp$ +0.076 PF 1.06 net    +4.47
+      none: n   45 TPfirst 62.2% wr 62.2% expR +0.115 exp$ +1.142 PF 1.67 net   +51.41
+  cont TEST 
+      stale: n  109 TPfirst 64.2% wr 64.2% expR +0.151 exp$ +0.872 PF 1.54 net   +95.08
+  cont V2   
+      recent_aligned: n    1 TPfirst  0.0% wr  0.0% expR -1.002 exp$ -10.010 PF 0.00 net   -10.01
+      recent_opposing: n    6 TPfirst 66.7% wr 66.7% expR +0.199 exp$ +1.356 PF 1.73 net    +8.14
+      stale: n  418 TPfirst 53.6% wr 53.6% expR -0.042 exp$ -0.327 PF 0.89 net  -136.60
+      none: n   50 TPfirst 46.0% wr 46.0% expR -0.182 exp$ -0.445 PF 0.86 net   -22.26
+
+=== FEATURE FAMILY 3. ROOM TO TP vs nearest confirmed opposing HTF swing (ratio = obstacle distance / TP distance) ===
+
+--- M5 room ratio
+  flip TRAIN
+      <0.5: n   55 TPfirst 65.5% wr 65.5% expR +0.173 exp$ +0.783 PF 1.47 net   +43.07
+      0.5-1: n   28 TPfirst 53.6% wr 53.6% expR -0.043 exp$ -0.017 PF 0.99 net    -0.48
+      1-2: n   21 TPfirst 47.6% wr 47.6% expR -0.152 exp$ -0.055 PF 0.96 net    -1.16
+      >2: n   29 TPfirst 51.7% wr 51.7% expR -0.079 exp$ -0.069 PF 0.94 net    -2.02
+      none: n   14 TPfirst 64.3% wr 64.3% expR +0.153 exp$ +0.296 PF 1.26 net    +4.15
+  flip TEST 
+      <0.5: n   53 TPfirst 43.4% wr 43.4% expR -0.226 exp$ -0.571 PF 0.67 net   -30.25
+      0.5-1: n   13 TPfirst 46.2% wr 46.2% expR -0.180 exp$ -0.181 PF 0.83 net    -2.35
+      1-2: n   22 TPfirst 68.2% wr 68.2% expR +0.222 exp$ +0.925 PF 2.13 net   +20.34
+      >2: n   59 TPfirst 59.3% wr 59.3% expR +0.061 exp$ -0.097 PF 0.96 net    -5.72
+      none: n    9 TPfirst 77.8% wr 77.8% expR +0.399 exp$ +6.390 PF 5.62 net   +57.51
+  flip V2   
+      <0.5: n  228 TPfirst 50.9% wr 50.9% expR -0.090 exp$ -0.654 PF 0.83 net  -149.03
+      0.5-1: n  109 TPfirst 50.5% wr 50.5% expR -0.098 exp$ -0.159 PF 0.95 net   -17.31
+      1-2: n   97 TPfirst 54.6% wr 54.6% expR -0.022 exp$ -0.673 PF 0.77 net   -65.31
+      >2: n  196 TPfirst 45.9% wr 45.9% expR -0.185 exp$ -0.931 PF 0.61 net  -182.47
+      none: n   30 TPfirst 60.0% wr 60.0% expR +0.076 exp$ -0.839 PF 0.82 net   -25.18
+  cont TRAIN
+      <0.5: n   40 TPfirst 62.5% wr 62.5% expR +0.120 exp$ +0.927 PF 1.67 net   +37.09
+      0.5-1: n   22 TPfirst 59.1% wr 59.1% expR +0.058 exp$ +0.761 PF 1.47 net   +16.75
+      1-2: n    9 TPfirst 44.4% wr 44.4% expR -0.209 exp$ -1.143 PF 0.35 net   -10.28
+      >2: n   20 TPfirst 60.0% wr 60.0% expR +0.077 exp$ +0.298 PF 1.31 net    +5.95
+      none: n   21 TPfirst 57.1% wr 57.1% expR +0.014 exp$ +0.436 PF 1.24 net    +9.16
+  cont TEST 
+      <0.5: n   41 TPfirst 68.3% wr 68.3% expR +0.227 exp$ +0.694 PF 1.59 net   +28.44
+      0.5-1: n   10 TPfirst 50.0% wr 50.0% expR -0.109 exp$ +0.463 PF 1.25 net    +4.63
+      1-2: n    9 TPfirst 88.9% wr 88.9% expR +0.600 exp$ +2.910 PF 9.13 net   +26.19
+      >2: n   37 TPfirst 54.1% wr 54.1% expR -0.034 exp$ +0.376 PF 1.22 net   +13.93
+      none: n   12 TPfirst 75.0% wr 75.0% expR +0.348 exp$ +1.824 PF 1.50 net   +21.89
+  cont V2   
+      <0.5: n  165 TPfirst 50.3% wr 50.3% expR -0.103 exp$ -0.672 PF 0.82 net  -110.90
+      0.5-1: n   86 TPfirst 51.2% wr 51.2% expR -0.083 exp$ -0.253 PF 0.92 net   -21.74
+      1-2: n   84 TPfirst 56.0% wr 56.0% expR +0.001 exp$ -0.187 PF 0.93 net   -15.67
+      >2: n  109 TPfirst 56.9% wr 56.9% expR +0.017 exp$ -0.252 PF 0.87 net   -27.50
+      none: n   32 TPfirst 46.9% wr 46.9% expR -0.162 exp$ +0.285 PF 1.07 net    +9.12
+
+--- M15 room ratio
+  flip TRAIN
+      <0.5: n   11 TPfirst 90.9% wr 90.9% expR +0.635 exp$ +4.648 PF 37.38 net   +51.13
+      0.5-1: n   17 TPfirst 41.2% wr 41.2% expR -0.261 exp$ -1.057 PF 0.65 net   -17.97
+      1-2: n   18 TPfirst 61.1% wr 61.1% expR +0.097 exp$ +0.247 PF 1.13 net    +4.44
+      >2: n   61 TPfirst 52.5% wr 52.5% expR -0.067 exp$ -0.104 PF 0.91 net    -6.32
+      none: n   40 TPfirst 62.5% wr 62.5% expR +0.120 exp$ +0.307 PF 1.19 net   +12.28
+  flip TEST 
+      <0.5: n   17 TPfirst 52.9% wr 52.9% expR -0.052 exp$ -0.025 PF 0.99 net    -0.43
+      0.5-1: n   18 TPfirst 66.7% wr 66.7% expR +0.196 exp$ +1.847 PF 2.75 net   +33.24
+      1-2: n   34 TPfirst 47.1% wr 47.1% expR -0.163 exp$ -0.109 PF 0.92 net    -3.72
+      >2: n   74 TPfirst 52.7% wr 52.7% expR -0.058 exp$ -0.789 PF 0.64 net   -58.37
+      none: n   13 TPfirst 76.9% wr 76.9% expR +0.381 exp$ +5.294 PF 5.82 net   +68.82
+  flip V2   
+      <0.5: n   83 TPfirst 59.0% wr 59.0% expR +0.059 exp$ +0.843 PF 1.23 net   +70.01
+      0.5-1: n   54 TPfirst 63.0% wr 63.0% expR +0.125 exp$ +1.278 PF 1.48 net   +69.02
+      1-2: n   79 TPfirst 45.6% wr 45.6% expR -0.188 exp$ -1.198 PF 0.68 net   -94.65
+      >2: n  397 TPfirst 46.9% wr 46.9% expR -0.166 exp$ -1.102 PF 0.63 net  -437.51
+      none: n   47 TPfirst 57.4% wr 57.4% expR +0.029 exp$ -0.982 PF 0.75 net   -46.17
+  cont TRAIN
+      <0.5: n   15 TPfirst 46.7% wr 46.7% expR -0.167 exp$ -0.990 PF 0.50 net   -14.85
+      0.5-1: n   15 TPfirst 53.3% wr 53.3% expR -0.043 exp$ -0.309 PF 0.83 net    -4.64
+      1-2: n   11 TPfirst 54.5% wr 54.5% expR -0.022 exp$ +0.390 PF 1.22 net    +4.29
+      >2: n   31 TPfirst 64.5% wr 64.5% expR +0.155 exp$ +0.885 PF 1.95 net   +27.45
+      none: n   40 TPfirst 62.5% wr 62.5% expR +0.115 exp$ +1.160 PF 1.76 net   +46.41
+  cont TEST 
+      <0.5: n   25 TPfirst 72.0% wr 72.0% expR +0.294 exp$ +0.822 PF 1.61 net   +20.55
+      0.5-1: n   13 TPfirst 53.8% wr 53.8% expR -0.039 exp$ -0.056 PF 0.95 net    -0.73
+      1-2: n   10 TPfirst 60.0% wr 60.0% expR +0.073 exp$ +2.168 PF 2.54 net   +21.68
+      >2: n   45 TPfirst 60.0% wr 60.0% expR +0.075 exp$ +0.541 PF 1.36 net   +24.34
+      none: n   16 TPfirst 75.0% wr 75.0% expR +0.348 exp$ +1.828 PF 1.62 net   +29.24
+  cont V2   
+      <0.5: n   63 TPfirst 63.5% wr 63.5% expR +0.139 exp$ +1.019 PF 1.33 net   +64.19
+      0.5-1: n   41 TPfirst 70.7% wr 70.7% expR +0.270 exp$ +0.852 PF 1.34 net   +34.92
+      1-2: n   68 TPfirst 42.6% wr 42.6% expR -0.240 exp$ -2.013 PF 0.57 net  -136.89
+      >2: n  258 TPfirst 52.3% wr 52.3% expR -0.065 exp$ -0.342 PF 0.86 net   -88.28
+      none: n   46 TPfirst 39.1% wr 39.1% expR -0.305 exp$ -0.883 PF 0.78 net   -40.63
+
+--- H1 room ratio
+  flip TRAIN
+      <0.5: n    1 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +2.170 PF  inf net    +2.17
+      0.5-1: n    7 TPfirst 28.6% wr 28.6% expR -0.488 exp$ -2.045 PF 0.47 net   -14.31
+      1-2: n    9 TPfirst 77.8% wr 77.8% expR +0.397 exp$ +2.520 PF 3.24 net   +22.68
+      >2: n   81 TPfirst 55.6% wr 55.6% expR -0.009 exp$ +0.329 PF 1.27 net   +26.63
+      none: n   44 TPfirst 61.4% wr 61.4% expR +0.100 exp$ +0.121 PF 1.06 net    +5.34
+  flip TEST 
+      <0.5: n    2 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +2.206 PF  inf net    +4.41
+      0.5-1: n    2 TPfirst 50.0% wr 50.0% expR -0.103 exp$ -3.626 PF 0.24 net    -7.25
+      1-2: n    5 TPfirst 60.0% wr 60.0% expR +0.076 exp$ +0.259 PF 1.27 net    +1.29
+      >2: n  103 TPfirst 51.5% wr 51.5% expR -0.081 exp$ -0.286 PF 0.85 net   -29.41
+      none: n   44 TPfirst 61.4% wr 61.4% expR +0.099 exp$ +1.602 PF 2.00 net   +70.49
+  flip V2   
+      <0.5: n   11 TPfirst 45.5% wr 45.5% expR -0.186 exp$ +2.036 PF 1.55 net   +22.39
+      0.5-1: n   13 TPfirst 53.8% wr 53.8% expR -0.043 exp$ +1.306 PF 1.33 net   +16.98
+      1-2: n   22 TPfirst 31.8% wr 31.8% expR -0.434 exp$ -1.606 PF 0.65 net   -35.32
+      >2: n  422 TPfirst 51.7% wr 51.7% expR -0.077 exp$ -0.658 PF 0.78 net  -277.67
+      none: n  189 TPfirst 49.7% wr 49.7% expR -0.113 exp$ -0.860 PF 0.75 net  -162.60
+  cont TRAIN
+      <0.5: n    4 TPfirst 25.0% wr 25.0% expR -0.554 exp$ -0.824 PF 0.39 net    -3.30
+      0.5-1: n    7 TPfirst 14.3% wr 14.3% expR -0.749 exp$ -3.051 PF 0.12 net   -21.36
+      1-2: n    8 TPfirst 62.5% wr 62.5% expR +0.121 exp$ +1.497 PF 1.89 net   +11.98
+      >2: n   51 TPfirst 62.7% wr 62.7% expR +0.124 exp$ +0.367 PF 1.30 net   +18.72
+      none: n   35 TPfirst 65.7% wr 65.7% expR +0.173 exp$ +1.383 PF 1.93 net   +48.41
+  cont TEST 
+      <0.5: n    2 TPfirst 50.0% wr 50.0% expR -0.113 exp$ -0.023 PF 0.98 net    -0.05
+      1-2: n    3 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +2.703 PF  inf net    +8.11
+      >2: n   72 TPfirst 62.5% wr 62.5% expR +0.121 exp$ +0.715 PF 1.54 net   +51.50
+      none: n   32 TPfirst 65.6% wr 65.6% expR +0.177 exp$ +1.110 PF 1.45 net   +35.52
+  cont V2   
+      <0.5: n    4 TPfirst 100.0% wr 100.0% expR +0.800 exp$ +6.498 PF  inf net   +25.99
+      0.5-1: n   13 TPfirst 69.2% wr 69.2% expR +0.244 exp$ +0.971 PF 1.34 net   +12.63
+      1-2: n   20 TPfirst 50.0% wr 50.0% expR -0.105 exp$ +0.195 PF 1.04 net    +3.91
+      >2: n  279 TPfirst 53.4% wr 53.4% expR -0.046 exp$ -0.351 PF 0.87 net   -97.95
+      none: n  159 TPfirst 49.7% wr 49.7% expR -0.112 exp$ -0.662 PF 0.81 net  -105.31
+
+--- MINIMUM room ratio across M5/M15/H1
+  flip TRAIN
+      <0.5: n   56 TPfirst 66.1% wr 66.1% expR +0.185 exp$ +0.840 PF 1.52 net   +47.06
+      0.5-1: n   30 TPfirst 50.0% wr 50.0% expR -0.107 exp$ -0.094 PF 0.95 net    -2.82
+      1-2: n   18 TPfirst 50.0% wr 50.0% expR -0.110 exp$ -0.156 PF 0.89 net    -2.81
+      >2: n   29 TPfirst 51.7% wr 51.7% expR -0.079 exp$ -0.069 PF 0.94 net    -2.02
+      none: n   14 TPfirst 64.3% wr 64.3% expR +0.153 exp$ +0.296 PF 1.26 net    +4.15
+  flip TEST 
+      <0.5: n   56 TPfirst 46.4% wr 46.4% expR -0.171 exp$ -0.254 PF 0.85 net   -14.22
+      0.5-1: n   17 TPfirst 58.8% wr 58.8% expR +0.051 exp$ +1.075 PF 2.30 net   +18.27
+      1-2: n   22 TPfirst 59.1% wr 59.1% expR +0.051 exp$ +0.545 PF 1.55 net   +11.98
+      >2: n   52 TPfirst 57.7% wr 57.7% expR +0.034 exp$ -0.654 PF 0.75 net   -34.01
+      none: n    9 TPfirst 77.8% wr 77.8% expR +0.399 exp$ +6.390 PF 5.62 net   +57.51
+  flip V2   
+      <0.5: n  252 TPfirst 50.4% wr 50.4% expR -0.099 exp$ -0.642 PF 0.83 net  -161.83
+      0.5-1: n  110 TPfirst 50.9% wr 50.9% expR -0.091 exp$ -0.432 PF 0.87 net   -47.47
+      1-2: n   87 TPfirst 54.0% wr 54.0% expR -0.034 exp$ -0.647 PF 0.77 net   -56.26
+      >2: n  181 TPfirst 46.4% wr 46.4% expR -0.176 exp$ -0.821 PF 0.64 net  -148.57
+      none: n   30 TPfirst 60.0% wr 60.0% expR +0.076 exp$ -0.839 PF 0.82 net   -25.18
+  cont TRAIN
+      <0.5: n   44 TPfirst 59.1% wr 59.1% expR +0.058 exp$ +0.711 PF 1.50 net   +31.27
+      0.5-1: n   22 TPfirst 54.5% wr 54.5% expR -0.023 exp$ +0.506 PF 1.28 net   +11.14
+      1-2: n    7 TPfirst 71.4% wr 71.4% expR +0.279 exp$ -0.138 PF 0.88 net    -0.97
+      >2: n   18 TPfirst 61.1% wr 61.1% expR +0.097 exp$ +0.448 PF 1.51 net    +8.06
+      none: n   21 TPfirst 57.1% wr 57.1% expR +0.014 exp$ +0.436 PF 1.24 net    +9.16
+  cont TEST 
+      <0.5: n   43 TPfirst 67.4% wr 67.4% expR +0.211 exp$ +0.682 PF 1.58 net   +29.31
+      0.5-1: n   10 TPfirst 60.0% wr 60.0% expR +0.074 exp$ +0.849 PF 1.50 net    +8.49
+      1-2: n   14 TPfirst 71.4% wr 71.4% expR +0.282 exp$ +1.748 PF 3.13 net   +24.47
+      >2: n   30 TPfirst 53.3% wr 53.3% expR -0.047 exp$ +0.364 PF 1.20 net   +10.93
+      none: n   12 TPfirst 75.0% wr 75.0% expR +0.348 exp$ +1.824 PF 1.50 net   +21.89
+  cont V2   
+      <0.5: n  176 TPfirst 52.8% wr 52.8% expR -0.057 exp$ -0.394 PF 0.89 net   -69.30
+      0.5-1: n   86 TPfirst 51.2% wr 51.2% expR -0.083 exp$ -0.372 PF 0.88 net   -32.00
+      1-2: n   78 TPfirst 52.6% wr 52.6% expR -0.061 exp$ -0.547 PF 0.81 net   -42.63
+      >2: n  104 TPfirst 55.8% wr 55.8% expR -0.003 exp$ -0.306 PF 0.85 net   -31.87
+      none: n   32 TPfirst 46.9% wr 46.9% expR -0.162 exp$ +0.285 PF 1.07 net    +9.12
+
+=== FEATURE FAMILY 4. POSITION IN THE PREVIOUS 20 COMPLETED BARS' RANGE (directional thirds) ===
+
+--- M15 range position
+  flip TRAIN
+      favourable: n   23 TPfirst 69.6% wr 69.6% expR +0.247 exp$ +0.830 PF 2.39 net   +19.09
+      middle: n   41 TPfirst 43.9% wr 43.9% expR -0.221 exp$ -0.630 PF 0.63 net   -25.82
+      unfavourable: n   83 TPfirst 61.4% wr 61.4% expR +0.101 exp$ +0.606 PF 1.36 net   +50.29
+  flip TEST 
+      favourable: n   20 TPfirst 45.0% wr 45.0% expR -0.200 exp$ -0.505 PF 0.58 net   -10.09
+      middle: n   51 TPfirst 52.9% wr 52.9% expR -0.055 exp$ -0.081 PF 0.95 net    -4.14
+      unfavourable: n   85 TPfirst 58.8% wr 58.8% expR +0.054 exp$ +0.633 PF 1.33 net   +53.77
+  flip V2   
+      favourable: n   88 TPfirst 51.1% wr 51.1% expR -0.088 exp$ -0.664 PF 0.71 net   -58.42
+      middle: n  224 TPfirst 48.2% wr 48.2% expR -0.141 exp$ -0.992 PF 0.64 net  -222.21
+      unfavourable: n  348 TPfirst 51.4% wr 51.4% expR -0.081 exp$ -0.456 PF 0.88 net  -158.67
+  cont TRAIN
+      favourable: n    5 TPfirst 80.0% wr 80.0% expR +0.431 exp$ +1.478 PF 11.45 net    +7.39
+      middle: n   32 TPfirst 65.6% wr 65.6% expR +0.177 exp$ +1.126 PF 2.36 net   +36.04
+      unfavourable: n   75 TPfirst 54.7% wr 54.7% expR -0.024 exp$ +0.203 PF 1.11 net   +15.23
+  cont TEST 
+      favourable: n    2 TPfirst 50.0% wr 50.0% expR -0.109 exp$ -0.946 PF 0.44 net    -1.89
+      middle: n   22 TPfirst 72.7% wr 72.7% expR +0.305 exp$ +1.076 PF 2.24 net   +23.67
+      unfavourable: n   85 TPfirst 62.4% wr 62.4% expR +0.118 exp$ +0.862 PF 1.47 net   +73.30
+  cont V2   
+      favourable: n   13 TPfirst 61.5% wr 61.5% expR +0.101 exp$ +0.346 PF 1.19 net    +4.49
+      middle: n  110 TPfirst 55.5% wr 55.5% expR -0.007 exp$ -0.351 PF 0.86 net   -38.56
+      unfavourable: n  353 TPfirst 51.6% wr 51.6% expR -0.079 exp$ -0.376 PF 0.88 net  -132.62
+
+--- H1 range position
+  flip TRAIN
+      favourable: n   39 TPfirst 59.0% wr 59.0% expR +0.055 exp$ +0.131 PF 1.11 net    +5.12
+      middle: n   47 TPfirst 53.2% wr 53.2% expR -0.053 exp$ +0.316 PF 1.19 net   +14.83
+      unfavourable: n   56 TPfirst 60.7% wr 60.7% expR +0.089 exp$ +0.403 PF 1.24 net   +22.55
+  flip TEST 
+      favourable: n   39 TPfirst 51.3% wr 51.3% expR -0.084 exp$ -0.411 PF 0.81 net   -16.02
+      middle: n   57 TPfirst 47.4% wr 47.4% expR -0.156 exp$ -0.609 PF 0.68 net   -34.70
+      unfavourable: n   60 TPfirst 65.0% wr 65.0% expR +0.166 exp$ +1.504 PF 2.06 net   +90.26
+  flip V2   
+      favourable: n  185 TPfirst 44.9% wr 44.9% expR -0.201 exp$ -1.066 PF 0.62 net  -197.22
+      middle: n  236 TPfirst 53.0% wr 53.0% expR -0.053 exp$ -0.736 PF 0.77 net  -173.58
+      unfavourable: n  236 TPfirst 52.1% wr 52.1% expR -0.070 exp$ -0.277 PF 0.92 net   -65.43
+  cont TRAIN
+      favourable: n   13 TPfirst 69.2% wr 69.2% expR +0.242 exp$ +1.544 PF 3.60 net   +20.08
+      middle: n   28 TPfirst 60.7% wr 60.7% expR +0.084 exp$ +0.365 PF 1.35 net   +10.21
+      unfavourable: n   64 TPfirst 56.2% wr 56.2% expR +0.006 exp$ +0.377 PF 1.20 net   +24.16
+  cont TEST 
+      favourable: n   13 TPfirst 84.6% wr 84.6% expR +0.520 exp$ +3.019 PF 7.53 net   +39.25
+      middle: n   29 TPfirst 72.4% wr 72.4% expR +0.298 exp$ +0.899 PF 1.79 net   +26.07
+      unfavourable: n   67 TPfirst 56.7% wr 56.7% expR +0.016 exp$ +0.444 PF 1.22 net   +29.77
+  cont V2   
+      favourable: n   81 TPfirst 54.3% wr 54.3% expR -0.028 exp$ -0.898 PF 0.67 net   -72.72
+      middle: n  152 TPfirst 51.3% wr 51.3% expR -0.083 exp$ -0.198 PF 0.93 net   -30.08
+      unfavourable: n  242 TPfirst 53.3% wr 53.3% expR -0.047 exp$ -0.239 PF 0.93 net   -57.92
+
+=== DESCRIPTIVE: last completed M15 / H1 candle, means by outcome (TRAIN / TEST / V2) ===
+  M15 TRAIN TP-first n  151 | candle with trade 74% | body/range 0.440 | body/ATR 0.509 | upper wick 0.260 | lower wick 0.300
+  M15 TRAIN SL-first n  108 | candle with trade 76% | body/range 0.464 | body/ATR 0.519 | upper wick 0.265 | lower wick 0.270
+  M15 TEST  TP-first n  156 | candle with trade 78% | body/range 0.437 | body/ATR 0.529 | upper wick 0.290 | lower wick 0.272
+  M15 TEST  SL-first n  109 | candle with trade 84% | body/range 0.435 | body/ATR 0.442 | upper wick 0.268 | lower wick 0.296
+  M15 V2    TP-first n  583 | candle with trade 75% | body/range 0.460 | body/ATR 0.525 | upper wick 0.267 | lower wick 0.273
+  M15 V2    SL-first n  553 | candle with trade 76% | body/range 0.458 | body/ATR 0.501 | upper wick 0.272 | lower wick 0.270
+  H1 TRAIN TP-first n  144 | candle with trade 60% | body/range 0.501 | body/ATR 0.560 | upper wick 0.233 | lower wick 0.266
+  H1 TRAIN SL-first n  103 | candle with trade 63% | body/range 0.490 | body/ATR 0.567 | upper wick 0.239 | lower wick 0.271
+  H1 TEST  TP-first n  156 | candle with trade 59% | body/range 0.420 | body/ATR 0.509 | upper wick 0.293 | lower wick 0.288
+  H1 TEST  SL-first n  109 | candle with trade 66% | body/range 0.419 | body/ATR 0.479 | upper wick 0.276 | lower wick 0.304
+  H1 V2    TP-first n  582 | candle with trade 63% | body/range 0.457 | body/ATR 0.530 | upper wick 0.266 | lower wick 0.277
+  H1 V2    SL-first n  550 | candle with trade 62% | body/range 0.463 | body/ATR 0.554 | upper wick 0.261 | lower wick 0.276
+
+=== LOGISTIC REGRESSION on R0-TRAIN, predeclared variables only; frozen, scored on TEST and V2 ===
+  coefficients (log-odds): intercept -0.069 | n_aligned +0.213 | rec_al_m15h1 -0.409 | rec_op_m15h1 +0.009 | room_lt1 +0.115 | room_none +0.151 | h1_fav +0.254 | h1_unfav -0.006 | is_flip -0.044
+  TRAIN: n 259 AUC 0.569 Brier 0.2398 (base rate 0.583, Brier of base rate 0.2431)
+      quintile 1 (pred 0.501): n   52 TPfirst 46.2% wr 46.2% expR -0.177 exp$ -0.254 PF 0.87 net   -13.21
+      quintile 2 (pred 0.554): n   50 TPfirst 56.0% wr 56.0% expR +0.000 exp$ +0.275 PF 1.16 net   +13.76
+      quintile 3 (pred 0.576): n   48 TPfirst 62.5% wr 62.5% expR +0.119 exp$ +0.350 PF 1.31 net   +16.78
+      quintile 4 (pred 0.616): n   57 TPfirst 61.4% wr 61.4% expR +0.097 exp$ +0.922 PF 1.78 net   +52.53
+      quintile 5 (pred 0.663): n   52 TPfirst 65.4% wr 65.4% expR +0.173 exp$ +0.622 PF 1.41 net   +32.36
+  TEST : n 265 AUC 0.499 Brier 0.2457 (base rate 0.589, Brier of base rate 0.2421)
+      quintile 1 (pred 0.508): n   55 TPfirst 63.6% wr 63.6% expR +0.140 exp$ +0.683 PF 1.41 net   +37.56
+      quintile 2 (pred 0.549): n   40 TPfirst 52.5% wr 52.5% expR -0.062 exp$ +0.425 PF 1.31 net   +16.99
+      quintile 3 (pred 0.582): n   74 TPfirst 55.4% wr 55.4% expR -0.009 exp$ -0.366 PF 0.86 net   -27.07
+      quintile 4 (pred 0.615): n   71 TPfirst 64.8% wr 64.8% expR +0.163 exp$ +1.327 PF 2.24 net   +94.19
+      quintile 5 (pred 0.670): n   25 TPfirst 52.0% wr 52.0% expR -0.072 exp$ +0.518 PF 1.31 net   +12.94
+  V2   : n 1136 AUC 0.504 Brier 0.2560 (base rate 0.513, Brier of base rate 0.2498)
+      quintile 1 (pred 0.506): n  209 TPfirst 53.6% wr 53.6% expR -0.043 exp$ +0.028 PF 1.01 net    +5.83
+      quintile 2 (pred 0.550): n  277 TPfirst 48.7% wr 48.7% expR -0.131 exp$ -1.313 PF 0.65 net  -363.79
+      quintile 3 (pred 0.579): n  242 TPfirst 50.4% wr 50.4% expR -0.100 exp$ -0.452 PF 0.82 net  -109.36
+      quintile 4 (pred 0.615): n  285 TPfirst 52.3% wr 52.3% expR -0.066 exp$ -0.283 PF 0.91 net   -80.79
+      quintile 5 (pred 0.667): n  123 TPfirst 52.8% wr 52.8% expR -0.054 exp$ -0.471 PF 0.85 net   -57.88
+
+=== PREDECLARED CANDIDATE: skip CONTINUATION entries when a confirmed opposing M15 or H1 swing lies before the TP (room ratio < 1 on M15 or H1) ===
+  TRAIN baseline n  259 TPfirst 58.3% wr 58.3% expR +0.043 exp$ +0.395 PF 1.26 net  +102.22
+  TRAIN kept     n  227 TPfirst 59.9% wr 59.9% expR +0.071 exp$ +0.563 PF 1.39 net  +127.87
+  TRAIN blocked  n   32 TPfirst 46.9% wr 46.9% expR -0.161 exp$ -0.802 PF 0.59 net   -25.65
+  TEST  baseline n  265 TPfirst 58.9% wr 58.9% expR +0.054 exp$ +0.508 PF 1.30 net  +134.61
+  TEST  kept     n  227 TPfirst 57.7% wr 57.7% expR +0.033 exp$ +0.506 PF 1.28 net  +114.79
+  TEST  blocked  n   38 TPfirst 65.8% wr 65.8% expR +0.180 exp$ +0.522 PF 1.41 net   +19.82
+  V2    baseline n 1136 TPfirst 51.3% wr 51.3% expR -0.083 exp$ -0.533 PF 0.83 net  -605.99
+  V2    kept     n 1030 TPfirst 49.8% wr 49.8% expR -0.111 exp$ -0.689 PF 0.78 net  -709.36
+  V2    blocked  n  106 TPfirst 66.0% wr 66.0% expR +0.185 exp$ +0.975 PF 1.34 net  +103.38
+
+done
