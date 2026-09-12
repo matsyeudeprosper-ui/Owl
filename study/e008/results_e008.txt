@@ -1,0 +1,152 @@
+baseline gated: : n  524 wr 58.6% net  +236.83 avgW +3.52 avgL -3.89 PF 1.28 maxDD  83.27 exp/tr +0.452 | flip n 303 +83.1 | touch n 0 +0.0
+population (no gate): 570 trades = 237 flips + 333 continuations; TRAIN 300 / TEST 270
+
+=== PART 1. STOP-DISTANCE SHAPE, continuation entries (population: no gate) ===
+TRAIN quintile cuts (continuations): 113, 160, 235, 386 pts
+  TRAIN quintiles:
+    Q1 (-1-113]                n   36 wr 58.3% net    -0.41 PF 0.98 exp$ -0.011 expR +0.044 avgW +1.24 avgL -1.76 maxDD  11.28 constRisk    +6.33
+    Q2 (113-160]               n   36 wr 55.6% net    -2.31 PF 0.95 exp$ -0.064 expR -0.008 avgW +2.17 avgL -2.86 maxDD  16.14 constRisk    -1.18
+    Q3 (160-235]               n   35 wr 54.3% net    -5.44 PF 0.91 exp$ -0.155 expR -0.028 avgW +3.08 avgL -3.99 maxDD  23.19 constRisk    -3.98
+    Q4 (235-386]               n   36 wr 47.2% net   -34.65 PF 0.71 exp$ -0.963 expR -0.154 avgW +4.88 avgL -6.19 maxDD  60.45 constRisk   -22.19
+    Q5 (>386)                  n   36 wr 58.3% net   +25.87 PF 1.15 exp$ +0.719 expR +0.048 avgW +9.70 avgL -11.86 maxDD  84.25 constRisk    +6.94
+  TRAIN raw bands:
+    0-75                       n   14 wr 71.4% net    +3.79 PF 1.83 exp$ +0.271 expR +0.282 avgW +0.84 avgL -1.15 maxDD   3.00 constRisk   +15.80
+    75-100                     n   11 wr 36.4% net    -7.26 PF 0.44 exp$ -0.660 expR -0.355 avgW +1.45 avgL -1.86 maxDD   8.82 constRisk   -15.63
+    100-150                    n   36 wr 63.9% net   +13.17 PF 1.41 exp$ +0.366 expR +0.144 avgW +1.97 avgL -2.48 maxDD   6.88 constRisk   +20.72
+    150-250                    n   52 wr 48.1% net   -29.41 PF 0.72 exp$ -0.566 expR -0.142 avgW +3.05 avgL -3.91 maxDD  34.46 constRisk   -29.47
+    250-400                    n   35 wr 48.6% net   -34.17 PF 0.72 exp$ -0.976 expR -0.129 avgW +5.16 avgL -6.77 maxDD  62.36 constRisk   -18.08
+    400-9999                   n   31 wr 61.3% net   +36.94 PF 1.24 exp$ +1.192 expR +0.101 avgW +10.06 avgL -12.85 maxDD  68.42 constRisk   +12.57
+  TEST  quintiles:
+    Q1 (-1-113]                n   22 wr 63.6% net    +6.92 PF 1.61 exp$ +0.315 expR +0.135 avgW +1.31 avgL -1.42 maxDD   2.91 constRisk   +11.89
+    Q2 (113-160]               n   24 wr 50.0% net    -6.78 PF 0.79 exp$ -0.283 expR -0.105 avgW +2.07 avgL -2.63 maxDD  15.25 constRisk   -10.07
+    Q3 (160-235]               n   29 wr 58.6% net   +10.13 PF 1.23 exp$ +0.349 expR +0.051 avgW +3.23 avgL -3.73 maxDD  12.38 constRisk    +5.88
+    Q4 (235-386]               n   38 wr 68.4% net   +49.72 PF 1.65 exp$ +1.309 expR +0.230 avgW +4.85 avgL -6.36 maxDD  14.94 constRisk   +34.90
+    Q5 (>386)                  n   41 wr 61.0% net    +7.53 PF 1.03 exp$ +0.184 expR +0.096 avgW +9.90 avgL -14.99 maxDD  69.35 constRisk   +15.72
+  TEST  raw bands:
+    0-75                       n    8 wr 50.0% net    -0.01 PF 1.00 exp$ -0.001 expR -0.123 avgW +0.84 avgL -0.84 maxDD   2.68 constRisk    -3.94   (n<10: read with the neighbour)
+    75-100                     n    8 wr 87.5% net    +8.13 PF 5.66 exp$ +1.016 expR +0.572 avgW +1.41 avgL -1.74 maxDD   1.74 constRisk   +18.29   (n<10: read with the neighbour)
+    100-150                    n   29 wr 48.3% net   -10.45 PF 0.72 exp$ -0.360 expR -0.136 avgW +1.96 avgL -2.52 maxDD  20.68 constRisk   -15.73
+    150-250                    n   35 wr 62.9% net   +23.61 PF 1.48 exp$ +0.675 expR +0.128 avgW +3.32 avgL -3.80 maxDD  11.99 constRisk   +17.87
+    250-400                    n   34 wr 67.6% net   +45.07 PF 1.63 exp$ +1.325 expR +0.215 avgW +5.07 avgL -6.50 maxDD  14.94 constRisk   +29.30
+    400-9999                   n   40 wr 60.0% net    +1.18 PF 1.00 exp$ +0.030 expR +0.078 avgW +10.05 avgL -14.99 maxDD  75.69 constRisk   +12.52
+  other geometry ratios (TRAIN tertiles applied to both halves), continuations:
+    stop/ATR14       TRAIN: low n  60 $  -25.76 R -0.049 | mid n  59 $   +3.35 R +0.002 | high n  60 $   +5.48 R -0.012   (cuts 3.46/5.69)
+    stop/ATR14       TEST : low n  48 $  +24.87 R +0.005 | mid n  53 $  -16.33 R +0.118 | high n  53 $  +58.98 R +0.153   (cuts 3.46/5.69)
+    stop/medRange60  TRAIN: low n  60 $   +1.03 R +0.043 | mid n  59 $  +16.71 R +0.001 | high n  60 $  -34.67 R -0.102   (cuts 4.26/7.15)
+    stop/medRange60  TEST : low n  47 $  -15.32 R -0.127 | mid n  61 $  +57.92 R +0.237 | high n  46 $  +24.92 R +0.133   (cuts 4.26/7.15)
+    stop/range15     TRAIN: low n  60 $  -17.35 R -0.047 | mid n  59 $  +11.28 R +0.001 | high n  60 $  -10.86 R -0.012   (cuts 0.86/1.05)
+    stop/range15     TEST : low n  56 $   +8.46 R -0.010 | mid n  46 $  -24.79 R +0.053 | high n  52 $  +83.85 R +0.244   (cuts 0.86/1.05)
+    stop/range30     TRAIN: low n  60 $   +3.88 R +0.013 | mid n  59 $  -26.25 R -0.153 | high n  60 $   +5.44 R +0.078   (cuts 0.61/0.96)
+    stop/range30     TEST : low n  56 $  +24.87 R +0.022 | mid n  45 $  -39.89 R +0.038 | high n  53 $  +82.54 R +0.220   (cuts 0.61/0.96)
+    stop/range60     TRAIN: low n  60 $   +1.47 R +0.042 | mid n  59 $  -21.01 R -0.121 | high n  60 $   +2.60 R +0.018   (cuts 0.39/0.84)
+    stop/range60     TEST : low n  49 $  +24.35 R +0.021 | mid n  51 $  -25.48 R +0.020 | high n  54 $  +68.65 R +0.232   (cuts 0.39/0.84)
+
+=== PART 2. DOES STOP WIDTH EXPLAIN TREND AGE? cross-tab, continuations, TRAIN width tertiles ===
+width tertiles (TRAIN): narrow <= 146, medium 146-272, wide > 272 pts
+  TRAIN: cell = n / net$ / expR / wr
+                                      narrow                        medium                          wide                    ALL widths
+    age<=2h      46 /  +11.78 / +0.129 / 63%   32 /  -20.88 / -0.163 / 47%   23 /  +65.55 / +0.250 / 70%  101 /  +56.45 / +0.064 / 59%
+    age 2-4h     12 /   +0.81 / +0.042 / 58%   14 /   -6.27 / -0.107 / 50%   14 /  -12.49 / -0.361 / 36%   40 /  -17.95 / -0.151 / 48%
+    age>=4h       2 /   +0.06 / -0.103 / 50%   13 /   +1.08 / -0.037 / 54%   23 /  -56.57 / -0.141 / 48%   38 /  -55.44 / -0.103 / 50%
+    ALL ages     60 /  +12.65 / +0.104 / 62%   59 /  -26.08 / -0.122 / 49%   60 /   -3.51 / -0.043 / 53%  179 /  -16.93 / -0.020 / 55%
+  TEST : cell = n / net$ / expR / wr
+                                      narrow                        medium                          wide                    ALL widths
+    age<=2h      30 /   -4.41 / -0.047 / 53%   30 /  +19.56 / +0.136 / 63%   32 /  +61.80 / +0.292 / 72%   92 /  +76.95 / +0.130 / 63%
+    age 2-4h      8 /   +4.79 / +0.339 / 75%    7 /  +17.28 / +0.543 / 86%   20 /   +5.41 / +0.079 / 60%   35 /  +27.49 / +0.231 / 69%
+    age>=4h       4 /   -4.46 / -0.558 / 25%     3 /  -12.70 / -1.006 / 0%   20 /  -19.75 / -0.012 / 55%   27 /  -36.92 / -0.204 / 44%
+    ALL ages     42 /   -4.08 / -0.022 / 55%   40 /  +24.14 / +0.121 / 62%   72 /  +47.46 / +0.148 / 64%  154 /  +67.52 / +0.095 / 61%
+  secondary: OLS  pnl_R ~ 1 + log(dist) + [age 2-4h] + [age >= 4h]   (continuations; t-stats from classical SE)
+    TRAIN: const +0.068 (t +0.13) | log(dist) -0.001 (t -0.01) | age2-4h -0.214 (t -1.25) | age>=4h -0.167 (t -0.89)  n 179
+    TRAIN without dist: age2-4h -0.215 (t -1.27) | age>=4h -0.167 (t -0.97)
+    TEST : const -0.267 (t -0.51) | log(dist) +0.075 (t +0.78) | age2-4h +0.077 (t +0.43) | age>=4h -0.379 (t -1.88)  n 154
+    TEST  without dist: age2-4h +0.101 (t +0.58) | age>=4h -0.334 (t -1.73)
+
+=== PART 3. RISK NORMALISATION: fixed 0.02 $ vs R vs constant-risk ($4/trade), continuations by age and by width ===
+  TRAIN
+    age<=2h    n 101 fixed-lot   +56.45 | sum R   +6.45 (mean R +0.064) | constant-risk   +25.78
+    age 2-4h   n  40 fixed-lot   -17.95 | sum R   -6.03 (mean R -0.151) | constant-risk   -24.14
+    age>=4h    n  38 fixed-lot   -55.44 | sum R   -3.93 (mean R -0.103) | constant-risk   -15.73
+    narrow     n  60 fixed-lot   +12.65 | sum R   +6.23 (mean R +0.104) | constant-risk   +24.92
+    medium     n  59 fixed-lot   -26.08 | sum R   -7.20 (mean R -0.122) | constant-risk   -28.79
+    wide       n  60 fixed-lot    -3.51 | sum R   -2.55 (mean R -0.043) | constant-risk   -10.21
+  TEST 
+    age<=2h    n  92 fixed-lot   +76.95 | sum R  +11.99 (mean R +0.130) | constant-risk   +47.95
+    age 2-4h   n  35 fixed-lot   +27.49 | sum R   +8.08 (mean R +0.231) | constant-risk   +32.34
+    age>=4h    n  27 fixed-lot   -36.92 | sum R   -5.49 (mean R -0.204) | constant-risk   -21.98
+    narrow     n  42 fixed-lot    -4.08 | sum R   -0.94 (mean R -0.022) | constant-risk    -3.77
+    medium     n  40 fixed-lot   +24.14 | sum R   +4.85 (mean R +0.121) | constant-risk   +19.40
+    wide       n  72 fixed-lot   +47.46 | sum R  +10.67 (mean R +0.148) | constant-risk   +42.68
+  awake gate value under each normalisation (in-engine gated run vs ungated run, all entries):
+    TRAIN: gated  fixed-lot  +102.22 | sum R  +11.03 | constant-risk   +44.13  (n 259)
+    TRAIN: ungated fixed-lot   +12.08 | sum R   -1.18 | constant-risk    -4.71  (n 300)
+    TEST : gated  fixed-lot  +134.61 | sum R  +14.29 | constant-risk   +57.16  (n 265)
+    TEST : ungated fixed-lot  +135.18 | sum R  +18.48 | constant-risk   +73.93  (n 270)
+
+=== PART 4. COST FRACTION (spread 7 / stop; total 12 / stop), continuations, predeclared bands ===
+  TRAIN by spread fraction:
+    >10% (stop<70)     n  10 wr 80.0% net   +4.46 meanR +0.439 | break-even wr for RR 0.8 with this cost: 71% (mean total-cost frac 28.3%)
+    7-10% (70-100)     n  15 wr 40.0% net   -7.93 meanR -0.290 | break-even wr for RR 0.8 with this cost: 63% (mean total-cost frac 14.1%)
+    4-7% (100-175)     n  56 wr 58.9% net   +6.69 meanR +0.053 | break-even wr for RR 0.8 with this cost: 61% (mean total-cost frac 9.0%)
+    2-4% (175-350)     n  52 wr 51.9% net  -12.45 meanR -0.070 | break-even wr for RR 0.8 with this cost: 58% (mean total-cost frac 5.1%)
+    <2% (>350)         n  46 wr 52.2% net   -7.70 meanR -0.063 | break-even wr for RR 0.8 with this cost: 57% (mean total-cost frac 2.4%)
+  TEST  by spread fraction:
+    >10% (stop<70)     n   8 wr 50.0% net   -0.01 meanR -0.123 | break-even wr for RR 0.8 with this cost: 71% (mean total-cost frac 28.0%)
+    7-10% (70-100)     n   8 wr 87.5% net   +8.13 meanR +0.572 | break-even wr for RR 0.8 with this cost: 63% (mean total-cost frac 13.8%)
+    4-7% (100-175)     n  38 wr 47.4% net  -16.65 meanR -0.152 | break-even wr for RR 0.8 with this cost: 61% (mean total-cost frac 9.2%)
+    2-4% (175-350)     n  52 wr 69.2% net  +67.30 meanR +0.243 | break-even wr for RR 0.8 with this cost: 58% (mean total-cost frac 4.8%)
+    <2% (>350)         n  48 wr 60.4% net   +8.76 meanR +0.086 | break-even wr for RR 0.8 with this cost: 57% (mean total-cost frac 2.2%)
+  (break-even win rate = (1 + c) / (1 + RR) where c = total cost as a fraction of the stop; RR 0.8 -> 56% at zero cost)
+
+=== PART 7. FLIP-BOS entries by stop distance (TRAIN flip quintiles) ===
+TRAIN flip quintile cuts: 83, 117, 169, 265 pts
+  TRAIN flips Q1             n   25 wr 44.0% net    -6.30 PF 0.62 exp$ -0.252 expR -0.220 avgW +0.92 avgL -1.18 maxDD  10.15 constRisk   -22.02
+  TRAIN flips Q2             n   24 wr 54.2% net    -0.04 PF 1.00 exp$ -0.002 expR -0.040 avgW +1.63 avgL -1.93 maxDD   8.38 constRisk    -3.88
+  TRAIN flips Q3             n   24 wr 66.7% net   +10.30 PF 1.40 exp$ +0.429 expR +0.195 avgW +2.23 avgL -3.18 maxDD   8.96 constRisk   +18.75
+  TRAIN flips Q4             n   24 wr 66.7% net   +19.30 PF 1.54 exp$ +0.804 expR +0.198 avgW +3.44 avgL -4.46 maxDD   6.24 constRisk   +19.06
+  TRAIN flips Q5             n   24 wr 54.2% net    +5.75 PF 1.07 exp$ +0.240 expR -0.026 avgW +6.54 avgL -7.21 maxDD  48.62 constRisk    -2.53
+  TRAIN flips by cost band: >10% n 18 $-0.8 | 7-10% n 22 $-9.6 | 4-7% n 35 $+19.9 | 2-4% n 35 $-0.7 | <2% n 11 $+20.2
+  TEST  flips Q1             n   25 wr 40.0% net    -9.63 PF 0.48 exp$ -0.385 expR -0.296 avgW +0.89 avgL -1.24 maxDD  12.26 constRisk   -29.58
+  TEST  flips Q2             n   16 wr 56.2% net    +0.03 PF 1.00 exp$ +0.002 expR +0.008 avgW +1.54 avgL -1.97 maxDD   4.96 constRisk    +0.49
+  TEST  flips Q3             n   20 wr 75.0% net   +19.10 PF 2.32 exp$ +0.955 expR +0.346 avgW +2.24 avgL -2.90 maxDD   5.65 constRisk   +27.69
+  TEST  flips Q4             n   21 wr 57.1% net    +3.70 PF 1.10 exp$ +0.176 expR +0.025 avgW +3.47 avgL -4.21 maxDD  23.20 constRisk    +2.09
+  TEST  flips Q5             n   34 wr 61.8% net   +54.47 PF 1.44 exp$ +1.602 expR +0.110 avgW +8.48 avgL -9.51 maxDD  38.07 constRisk   +14.92
+  TEST  flips by cost band: >10% n 18 $-7.3 | 7-10% n 16 $+0.9 | 4-7% n 29 $+21.4 | 2-4% n 28 $+21.4 | <2% n 25 $+31.3
+
+=== PART 5. ONE TRAIN-DERIVED BAND (predeclared rule: both tails worse than the middle 60% in TRAIN $ expectancy) ===
+TRAIN $ expectancy by quintile: -0.011, -0.064, -0.155, -0.963, +0.719 | middle 60%: -0.396
+-> rule condition NOT met in TRAIN: no candidate band. (Reported anyway below as a descriptive test of [q20,q80], NOT a candidate.)
+  TRAIN (on the gated baseline, list-based):
+    baseline                   n  259 wr 58.3% net  +102.22 PF 1.26 exp$ +0.395 expR +0.043 avgW +3.25 avgL -3.60 maxDD  73.44 constRisk   +44.13
+    kept                       n  216 wr 57.4% net   +41.44 PF 1.12 exp$ +0.192 expR +0.027 avgW +3.16 avgL -3.81 maxDD  81.55 constRisk   +23.12
+    blocked narrow             n   32 wr 56.2% net    +0.78 PF 1.04 exp$ +0.024 expR +0.002 avgW +1.27 avgL -1.58 maxDD  11.50 constRisk    +0.28
+    blocked wide               n   11 wr 81.8% net   +60.00 PF 4.70 exp$ +5.455 expR +0.471 avgW +8.47 avgL -8.10 maxDD   8.31 constRisk   +20.73
+    control narrow: blocked n  32 P&L   +0.78 | random same-size mean  +12.73 sd  21.73 | P(random <= real) 0.286
+    control wide  : blocked n  11 P&L  +60.00 | random same-size mean   +3.97 sd  13.76 | P(random <= real) 1.000
+    control both  : blocked n  43 P&L  +60.78 | random same-size mean  +17.89 sd  24.57 | P(random <= real) 0.959
+  TEST  (on the gated baseline, list-based):
+    baseline                   n  265 wr 58.9% net  +134.61 PF 1.30 exp$ +0.508 expR +0.054 avgW +3.78 avgL -4.17 maxDD  83.27 constRisk   +57.16
+    kept                       n  228 wr 58.3% net  +101.73 PF 1.27 exp$ +0.446 expR +0.044 avgW +3.60 avgL -3.97 maxDD  30.90 constRisk   +40.46
+    blocked narrow             n   22 wr 54.5% net    -0.84 PF 0.94 exp$ -0.038 expR -0.027 avgW +1.19 avgL -1.52 maxDD   5.84 constRisk    -2.41
+    blocked wide               n   15 wr 73.3% net   +33.73 PF 1.54 exp$ +2.249 expR +0.319 avgW +8.74 avgL -15.59 maxDD  55.65 constRisk   +19.11
+    control narrow: blocked n  22 P&L   -0.84 | random same-size mean  +10.14 sd  25.05 | P(random <= real) 0.309
+    control wide  : blocked n  15 P&L  +33.73 | random same-size mean   +7.74 sd  20.29 | P(random <= real) 0.908
+    control both  : blocked n  37 P&L  +32.89 | random same-size mean  +17.54 sd  30.20 | P(random <= real) 0.692
+
+=== PART 6. INTERACTION WITH THE AWAKE GATE (in-engine tick re-simulation; band applied to continuation signals) ===
+  1 no gate                TRAIN:                            n  300 wr 55.7% net   +12.08 PF 1.02 exp$ +0.040 expR -0.004 avgW +3.72 avgL -4.58 maxDD  87.04 constRisk    -4.71 | cont n 179 $-16.93
+  1 no gate                TEST :                            n  270 wr 59.6% net  +135.18 PF 1.22 exp$ +0.501 expR +0.068 avgW +4.64 avgL -5.62 maxDD  60.89 constRisk   +73.93 | cont n 154 $+67.52
+  1 no gate                V1   :                            n   53 wr 52.8% net   -12.52 PF 0.90 exp$ -0.236 expR -0.053 avgW +4.04 avgL -5.02 maxDD  41.93 constRisk   -11.23   (historical only)
+  2 awake 2h (live)        TRAIN:                            n  259 wr 58.3% net  +102.22 PF 1.26 exp$ +0.395 expR +0.043 avgW +3.25 avgL -3.60 maxDD  73.44 constRisk   +44.13 | cont n 112 $+58.66
+  2 awake 2h (live)        TEST :                            n  265 wr 58.9% net  +134.61 PF 1.30 exp$ +0.508 expR +0.054 avgW +3.78 avgL -4.17 maxDD  83.27 constRisk   +57.16 | cont n 109 $+95.08
+  2 awake 2h (live)        V1   :                            n   47 wr 51.1% net   -25.61 PF 0.77 exp$ -0.545 expR -0.085 avgW +3.60 avgL -4.87 maxDD  52.95 constRisk   -15.97   (historical only)
+  3 stale >=4h excluded    TRAIN:                            n  288 wr 56.6% net   +68.60 PF 1.14 exp$ +0.238 expR +0.012 avgW +3.38 avgL -3.86 maxDD  73.44 constRisk   +13.95 | cont n 150 $+36.32
+  3 stale >=4h excluded    TEST :                            n  303 wr 60.7% net  +181.23 PF 1.33 exp$ +0.598 expR +0.087 avgW +3.95 avgL -4.58 maxDD  46.25 constRisk  +105.91 | cont n 154 $+104.24
+  3 stale >=4h excluded    V1   :                            n   51 wr 52.9% net   -11.54 PF 0.90 exp$ -0.226 expR -0.051 avgW +4.07 avgL -5.06 maxDD  40.95 constRisk   -10.37   (historical only)
+  4 band only              TRAIN:                            n  291 wr 52.9% net   -57.44 PF 0.90 exp$ -0.197 expR -0.054 avgW +3.27 avgL -4.10 maxDD  88.90 constRisk   -62.90 | cont n 142 $-103.33
+  4 band only              TEST :                            n  317 wr 56.5% net   +90.52 PF 1.16 exp$ +0.286 expR +0.011 avgW +3.63 avgL -4.06 maxDD  47.76 constRisk   +14.20 | cont n 142 $+75.63
+  4 band only              V1   :                            n   42 wr 54.8% net   -19.95 PF 0.77 exp$ -0.475 expR -0.018 avgW +2.99 avgL -4.66 maxDD  33.13 constRisk    -3.01   (historical only)
+  5 awake 2h + band        TRAIN:                            n  230 wr 59.1% net   +64.96 PF 1.18 exp$ +0.282 expR +0.058 avgW +3.13 avgL -3.84 maxDD  70.56 constRisk   +53.43 | cont n 75 $+12.53
+  5 awake 2h + band        TEST :                            n  268 wr 56.7% net   +82.05 PF 1.18 exp$ +0.306 expR +0.015 avgW +3.53 avgL -3.92 maxDD  30.90 constRisk   +16.52 | cont n 87 $+67.75
+  5 awake 2h + band        V1   :                            n   38 wr 52.6% net   -23.08 PF 0.71 exp$ -0.607 expR -0.056 avgW +2.84 avgL -4.44 maxDD  38.26 constRisk    -8.52   (historical only)
+
+done

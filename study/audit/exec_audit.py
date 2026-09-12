@@ -135,7 +135,7 @@ class Ticks:
 def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
              S=7.0, min_dist=None, slip_entry=0.0, slip_sl=0.0,
              seed=None, ticks=None, poll_delay_ms=1000, lot=LOT,
-             cont_tp="own"):
+             cont_tp="own", max_dist=float("inf"), max_dist_cont_only=True):
     """Returns the list of closed trades (dicts).
     cont_tp: "own" = TP from the close entry (RR x its own risk);
              "touch" = the TP the touch rule would have set (measured
@@ -303,7 +303,7 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                     dist = abs(e_ref - slp)
                     d = coin(d0)
                     e = (ticks.ask[i2] + slip_entry) if d == 1 else (ticks.bid[i2] - slip_entry)
-                    if dist > min_dist:
+                    if dist > min_dist and (dist < max_dist or (max_dist_cont_only and P.sig_flip[j])):
                         p = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j, i2)
                         if cont_tp == "touch" and not P.sig_flip[j] and d == d0:
                             t2 = touch_tp(j, d, slp)
@@ -316,7 +316,7 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                 dist = abs(e_ref - slp)
                 d = coin(d0)
                 e = (C[j] + S + slip_entry) if d == 1 else (C[j] - slip_entry)
-                if dist > min_dist:
+                if dist > min_dist and (dist < max_dist or (max_dist_cont_only and P.sig_flip[j])):
                     pos = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j)
                     if cont_tp == "touch" and not P.sig_flip[j] and d == d0:
                         t2 = touch_tp(j, d, slp)
