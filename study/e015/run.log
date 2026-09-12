@@ -1,0 +1,72 @@
+liquidation feed: 74695 fills, 3126 non-empty 5-min buckets, 2026-07-31 02:00:00 -> 2026-09-12 07:05:00 (price data to 2026-09-11 23:59:00); bucket total BTC median 0.26 p95 15.58 max 1139.0
+
+=== TRAILING 7-DAY 95th-PERCENTILE CASCADES (FROZEN PRIMARY) ===
+  large buckets -> 113 episodes (22 multi-bucket), 113 with price data; forced-selling 56, forced-buying 57; episode size median 28.4 BTC, q95 threshold median 15.0 BTC
+  ALL: n 113
+    CONT net after $12 costs:  1m  -44.06 pts (wr 32%) |  5m  -59.44 pts (wr 27%) | 15m  -32.56 pts (wr 30%) | 30m  -47.59 pts (wr 35%) | 60m  -41.93 pts (wr 43%)
+    REV  net after $12 costs:  1m  +20.06 pts (wr 56%) |  5m  +35.44 pts (wr 64%) | 15m   +8.56 pts (wr 65%) | 30m  +23.59 pts (wr 59%) | 60m  +17.93 pts (wr 57%)
+    MFE60 383.0 MAE60 361.5 pts (cascade direction); first passage +/-1 ATR: fav 34% adv 65% none 1%
+  forced SELLING cascades: n 56
+    CONT net after $12 costs:  1m  -47.65 pts (wr 29%) |  5m  -55.94 pts (wr 25%) | 15m  -88.58 pts (wr 23%) | 30m -109.37 pts (wr 27%) | 60m -150.95 pts (wr 30%)
+    REV  net after $12 costs:  1m  +23.65 pts (wr 54%) |  5m  +31.94 pts (wr 61%) | 15m  +64.58 pts (wr 73%) | 30m  +85.37 pts (wr 64%) | 60m +126.95 pts (wr 70%)
+    MFE60 283.4 MAE60 364.0 pts (cascade direction); first passage +/-1 ATR: fav 38% adv 62% none 0%
+  forced BUYING cascades: n 57
+    CONT net after $12 costs:  1m  -40.54 pts (wr 35%) |  5m  -62.89 pts (wr 30%) | 15m  +22.49 pts (wr 37%) | 30m  +13.10 pts (wr 42%) | 60m  +65.18 pts (wr 56%)
+    REV  net after $12 costs:  1m  +16.54 pts (wr 58%) |  5m  +38.89 pts (wr 67%) | 15m  -46.49 pts (wr 56%) | 30m  -37.10 pts (wr 54%) | 60m  -89.18 pts (wr 44%)
+    MFE60 480.8 MAE60 359.0 pts (cascade direction); first passage +/-1 ATR: fav 30% adv 68% none 2%
+  first half: n 50
+    CONT net after $12 costs:  1m  -43.50 pts (wr 32%) |  5m  -62.45 pts (wr 24%) | 15m   -8.95 pts (wr 22%) | 30m   +6.26 pts (wr 42%) | 60m  +99.96 pts (wr 54%)
+    REV  net after $12 costs:  1m  +19.50 pts (wr 46%) |  5m  +38.45 pts (wr 64%) | 15m  -15.05 pts (wr 74%) | 30m  -30.26 pts (wr 54%) | 60m -123.96 pts (wr 46%)
+    MFE60 411.7 MAE60 269.7 pts (cascade direction); first passage +/-1 ATR: fav 34% adv 64% none 2%
+  second half: n 63
+    CONT net after $12 costs:  1m  -44.50 pts (wr 32%) |  5m  -57.06 pts (wr 30%) | 15m  -51.30 pts (wr 37%) | 30m  -90.33 pts (wr 29%) | 60m -154.54 pts (wr 35%)
+    REV  net after $12 costs:  1m  +20.50 pts (wr 63%) |  5m  +33.06 pts (wr 63%) | 15m  +27.30 pts (wr 57%) | 30m  +66.33 pts (wr 63%) | 60m +130.54 pts (wr 65%)
+    MFE60 360.2 MAE60 434.3 pts (cascade direction); first passage +/-1 ATR: fav 33% adv 67% none 0%
+  size tertile SMALL: n 38
+    CONT net after $12 costs:  1m  -10.23 pts (wr 39%) |  5m  -46.09 pts (wr 32%) | 15m  -45.34 pts (wr 24%) | 30m  -80.47 pts (wr 24%) | 60m  -26.56 pts (wr 42%)
+    REV  net after $12 costs:  1m  -13.77 pts (wr 42%) |  5m  +22.09 pts (wr 66%) | 15m  +21.34 pts (wr 68%) | 30m  +56.47 pts (wr 63%) | 60m   +2.56 pts (wr 58%)
+    MFE60 281.5 MAE60 280.8 pts (cascade direction); first passage +/-1 ATR: fav 34% adv 66% none 0%
+  size tertile MID: n 37
+    CONT net after $12 costs:  1m  -43.08 pts (wr 32%) |  5m  -54.35 pts (wr 30%) | 15m -105.33 pts (wr 30%) | 30m -123.63 pts (wr 30%) | 60m -177.51 pts (wr 35%)
+    REV  net after $12 costs:  1m  +19.08 pts (wr 57%) |  5m  +30.35 pts (wr 57%) | 15m  +81.33 pts (wr 68%) | 30m  +99.63 pts (wr 65%) | 60m +153.51 pts (wr 65%)
+    MFE60 283.2 MAE60 421.5 pts (cascade direction); first passage +/-1 ATR: fav 35% adv 65% none 0%
+  size tertile LARGE: n 38
+    CONT net after $12 costs:  1m  -78.85 pts (wr 24%) |  5m  -77.75 pts (wr 21%) | 15m  +51.09 pts (wr 37%) | 30m  +59.32 pts (wr 50%) | 60m  +74.72 pts (wr 53%)
+    REV  net after $12 costs:  1m  +54.85 pts (wr 68%) |  5m  +53.75 pts (wr 68%) | 15m  -75.09 pts (wr 58%) | 30m  -83.32 pts (wr 50%) | 60m  -98.72 pts (wr 47%)
+    MFE60 581.6 MAE60 383.7 pts (cascade direction); first passage +/-1 ATR: fav 32% adv 66% none 3%
+  context at event buckets: OI change mean -0.226% (all buckets ~ 0), taker imbalance mean -0.001; forced-selling events taker imb +0.108, forced-buying -0.106
+
+=== TRAILING 30-DAY 95th-PERCENTILE CASCADES (original 30-day rule, fewer scorable days) ===
+  large buckets -> 32 episodes (6 multi-bucket), 32 with price data; forced-selling 21, forced-buying 11; episode size median 34.9 BTC, q95 threshold median 16.2 BTC
+  ALL: n 32
+    CONT net after $12 costs:  1m  -61.38 pts (wr 28%) |  5m -124.66 pts (wr 19%) | 15m  -86.07 pts (wr 34%) | 30m -123.89 pts (wr 34%) | 60m -185.76 pts (wr 28%)
+    REV  net after $12 costs:  1m  +37.38 pts (wr 66%) |  5m +100.66 pts (wr 75%) | 15m  +62.07 pts (wr 62%) | 30m  +99.89 pts (wr 59%) | 60m +161.76 pts (wr 72%)
+    MFE60 315.2 MAE60 446.9 pts (cascade direction); first passage +/-1 ATR: fav 28% adv 72% none 0%
+  forced SELLING cascades: n 21
+    CONT net after $12 costs:  1m  -59.82 pts (wr 29%) |  5m  -85.07 pts (wr 24%) | 15m -123.33 pts (wr 24%) | 30m -162.17 pts (wr 29%) | 60m -278.25 pts (wr 10%)
+    REV  net after $12 costs:  1m  +35.82 pts (wr 62%) |  5m  +61.07 pts (wr 67%) | 15m  +99.33 pts (wr 71%) | 30m +138.17 pts (wr 62%) | 60m +254.25 pts (wr 90%)
+    MFE60 280.3 MAE60 442.6 pts (cascade direction); first passage +/-1 ATR: fav 43% adv 57% none 0%
+  forced BUYING cascades: n 11
+    CONT net after $12 costs:  1m  -64.37 pts (wr 27%) |  5m -200.24 pts (wr 9%) | 15m  -14.95 pts (wr 55%) | 30m  -50.81 pts (wr 45%) | 60m   -9.19 pts (wr 64%)
+    REV  net after $12 costs:  1m  +40.37 pts (wr 73%) |  5m +176.24 pts (wr 91%) | 15m   -9.05 pts (wr 45%) | 30m  +26.81 pts (wr 55%) | 60m  -14.81 pts (wr 36%)
+    MFE60 381.7 MAE60 455.2 pts (cascade direction); first passage +/-1 ATR: fav 0% adv 100% none 0%
+
+=== MATCHED RANDOM CONTROL (1000 draws): same number of timestamps, same hour-of-day per event, non-event buckets, event direction inherited ===
+  cell         real  rnd mean      sd      p95    p99.5      max  pctile      z
+  cont1      -44.06    -12.15    3.45    -6.70    -3.43    -0.74    0.0%  -9.26
+  cont5      -59.44    -11.83    7.00    -0.51    +5.41    +8.79    0.0%  -6.80
+  cont15     -32.56    -11.04   12.91   +10.28   +23.95   +33.38    5.0%  -1.67
+  cont30     -47.59    -10.30   19.19   +20.55   +34.99   +45.53    2.5%  -1.94
+  cont60     -41.93    -11.79   24.96   +30.61   +51.35   +71.35   10.4%  -1.21
+  rev1       +20.06    -11.85    3.45    -6.07    -3.09    +0.81  100.0%  +9.26
+  rev5       +35.44    -12.17    7.00    -0.45    +5.54    +7.77  100.0%  +6.80
+  rev15       +8.56    -12.96   12.91    +8.40   +20.49   +26.86   95.0%  +1.67
+  rev30      +23.59    -13.70   19.19   +17.41   +38.43   +42.77   97.5%  +1.94
+  rev60      +17.93    -12.21   24.96   +28.53   +49.39   +56.55   89.6%  +1.21
+
+=== PASS RULE (frozen): better direction net > 0 AND above the 99.5th random percentile AND same sign in both halves ===
+  best cell rev5: real +35.44 pts net, random percentile 100.0%, z +6.80; halves +38.45 / +33.06
+  -> A candidate
+  fixed-lot harvest of that cell ($500, +$100, -60): withdrawn 0, ending 580.10, ruin none (n 113, net +80.10)
+
+done
