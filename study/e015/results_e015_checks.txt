@@ -1,0 +1,37 @@
+liquidation feed: 74695 fills, 3126 non-empty 5-min buckets, 2026-07-31 02:00:00 -> 2026-09-12 07:05:00 (price data to 2026-09-11 23:59:00); bucket total BTC median 0.26 p95 15.58 max 1139.0
+
+=== (a) LATENCY: reversal entered k minutes AFTER the bucket end (n 113) ===
+  delay  0 min: + 5m  +35.44 pts (wr 64%, n 113) | +15m   +8.56 pts (wr 65%, n 113) | +30m  +23.59 pts (wr 59%, n 113)
+  delay  1 min: + 5m   +5.23 pts (wr 54%, n 113) | +15m  -18.85 pts (wr 56%, n 113) | +30m   -4.54 pts (wr 56%, n 113)
+  delay  2 min: + 5m  -16.25 pts (wr 53%, n 113) | +15m  -31.39 pts (wr 52%, n 113) | +30m  -11.46 pts (wr 58%, n 113)
+  delay  5 min: + 5m  -25.38 pts (wr 50%, n 113) | +15m  -37.57 pts (wr 49%, n 113) | +30m  -15.76 pts (wr 52%, n 113)
+  delay 10 min: + 5m  -25.51 pts (wr 45%, n 113) | +15m  -15.34 pts (wr 49%, n 113) | +30m  -15.23 pts (wr 51%, n 113)
+
+=== (b) VOLATILITY-MATCHED PRICE-ONLY CONTROL: top-5% |5-min move| (trailing 7 days), reversal against the move ===
+  price-only large-move episodes: 449 (80 coincide with a liquidation cascade, 369 do not)
+  ALL price-only large moves: n 449
+    CONT net after $12 costs:  1m  -18.82 pts (wr 35%) |  5m  -17.78 pts (wr 41%) | 15m   -9.82 pts (wr 43%) | 30m  -14.12 pts (wr 45%) | 60m   -5.98 pts (wr 45%)
+    REV  net after $12 costs:  1m   -5.18 pts (wr 47%) |  5m   -6.22 pts (wr 49%) | 15m  -14.18 pts (wr 50%) | 30m   -9.88 pts (wr 50%) | 60m  -18.02 pts (wr 51%)
+    MFE60 339.3 MAE60 300.4 pts (cascade direction); first passage +/-1 ATR: fav 45% adv 55% none 0%
+  price-only large moves WITH a liquidation cascade: n 80
+    CONT net after $12 costs:  1m  -26.07 pts (wr 35%) |  5m  -34.22 pts (wr 36%) | 15m   +2.71 pts (wr 36%) | 30m  +10.14 pts (wr 42%) | 60m   +7.80 pts (wr 48%)
+    REV  net after $12 costs:  1m   +2.07 pts (wr 52%) |  5m  +10.22 pts (wr 57%) | 15m  -26.71 pts (wr 55%) | 30m  -34.14 pts (wr 51%) | 60m  -31.80 pts (wr 50%)
+    MFE60 451.8 MAE60 335.1 pts (cascade direction); first passage +/-1 ATR: fav 41% adv 57% none 1%
+  price-only large moves WITHOUT a liquidation cascade: n 369
+    CONT net after $12 costs:  1m  -17.25 pts (wr 35%) |  5m  -14.22 pts (wr 41%) | 15m  -12.53 pts (wr 45%) | 30m  -19.38 pts (wr 45%) | 60m   -8.97 pts (wr 44%)
+    REV  net after $12 costs:  1m   -6.75 pts (wr 46%) |  5m   -9.78 pts (wr 47%) | 15m  -11.47 pts (wr 49%) | 30m   -4.62 pts (wr 50%) | 60m  -15.03 pts (wr 52%)
+    MFE60 314.9 MAE60 292.8 pts (cascade direction); first passage +/-1 ATR: fav 46% adv 54% none 0%
+  liquidation cascades WITH a top-5% price move: n 79
+    CONT net after $12 costs:  1m  -59.22 pts (wr 23%) |  5m  -73.91 pts (wr 23%) | 15m  -55.09 pts (wr 28%) | 30m  -36.40 pts (wr 38%) | 60m  -33.05 pts (wr 46%)
+    REV  net after $12 costs:  1m  +35.22 pts (wr 65%) |  5m  +49.91 pts (wr 68%) | 15m  +31.09 pts (wr 68%) | 30m  +12.40 pts (wr 57%) | 60m   +9.05 pts (wr 54%)
+    MFE60 417.0 MAE60 384.3 pts (cascade direction); first passage +/-1 ATR: fav 27% adv 72% none 1%
+  liquidation cascades WITHOUT a top-5% price move: n 34
+    CONT net after $12 costs:  1m   -8.83 pts (wr 53%) |  5m  -25.82 pts (wr 38%) | 15m  +19.80 pts (wr 35%) | 30m  -73.59 pts (wr 26%) | 60m  -62.55 pts (wr 38%)
+    REV  net after $12 costs:  1m  -15.17 pts (wr 35%) |  5m   +1.82 pts (wr 53%) | 15m  -43.80 pts (wr 56%) | 30m  +49.59 pts (wr 65%) | 60m  +38.55 pts (wr 62%)
+    MFE60 303.9 MAE60 308.5 pts (cascade direction); first passage +/-1 ATR: fav 50% adv 50% none 0%
+
+=== (c) 0.02-lot equity of the primary cell (reversal, exit 5 min) and 15 min ===
+  rev5: n 113 net $+80.10 maxDD $20.17 avg $+0.709 largest win/loss $+10.00/$-8.62 | per week: +1.2 +5.2 +28.4 +3.8 +34.6 +7.0
+  rev15: n 113 net $+19.34 maxDD $66.78 avg $+0.171 largest win/loss $+12.85/$-33.36 | per week: +5.6 +18.2 -23.7 +8.6 -11.5 +22.2
+
+done
