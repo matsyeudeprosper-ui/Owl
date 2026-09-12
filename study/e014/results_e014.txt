@@ -1,0 +1,114 @@
+2025 (V3): 8671 signals, 8670 evaluated (R > 10 and both sides resolved)
+2026 Jan-Sep (V2, R0, V1): 4249 signals, 4248 evaluated (R > 10 and both sides resolved)
+
+=== PHASE 1. FOLLOW vs FADE, identical R geometry (SL 1R, TP 0.8R), per-bar spread, M1 first-passage (SCREENING) ===
+  V3: FOLLOW n  8670 TPfirst 49.7% expR -0.105 PF 0.89 net$  -2982.72 | FADE n  8670 TPfirst 52.1% expR -0.062 PF 0.92 net$  -2214.87 | follow-fade expR gap -0.043
+      MFE60 mean 1.46R, MAE60 mean 1.47R (relative to BOS direction)
+  V2: FOLLOW n  2830 TPfirst 50.0% expR -0.101 PF 0.87 net$  -1156.90 | FADE n  2830 TPfirst 54.2% expR -0.025 PF 0.98 net$   -200.55 | follow-fade expR gap -0.076
+      MFE60 mean 1.40R, MAE60 mean 1.40R (relative to BOS direction)
+  R0: FOLLOW n  1324 TPfirst 50.9% expR -0.084 PF 0.86 net$   -379.44 | FADE n  1324 TPfirst 53.2% expR -0.043 PF 0.97 net$    -68.34 | follow-fade expR gap -0.041
+      MFE60 mean 1.58R, MAE60 mean 1.49R (relative to BOS direction)
+  V1: FOLLOW n    94 TPfirst 48.9% expR -0.119 PF 0.89 net$    -21.48 | FADE n    94 TPfirst 56.4% expR +0.015 PF 0.84 net$    -34.58 | follow-fade expR gap -0.134
+      MFE60 mean 1.30R, MAE60 mean 1.55R (relative to BOS direction)
+
+=== PHASE 3. BY EVENT TYPE ===
+  V3 FLIP-BOS                 FOLLOW n  2504 TPfirst 49.2% expR -0.114 PF 0.85 net$  -1136.48 | FADE n  2504 TPfirst 52.2% expR -0.060 PF 0.95 net$   -376.92
+  V3 1st continuation         FOLLOW n  1802 TPfirst 49.6% expR -0.108 PF 0.95 net$   -279.12 | FADE n  1802 TPfirst 51.6% expR -0.072 PF 0.83 net$   -989.89
+  V3 2nd-3rd continuation     FOLLOW n  2183 TPfirst 49.8% expR -0.104 PF 0.94 net$   -378.10 | FADE n  2183 TPfirst 52.3% expR -0.058 PF 0.93 net$   -508.20
+  V3 late continuation (5+)   FOLLOW n  2181 TPfirst 50.3% expR -0.094 PF 0.85 net$  -1189.01 | FADE n  2181 TPfirst 52.2% expR -0.060 PF 0.95 net$   -339.86
+  V2 FLIP-BOS                 FOLLOW n   847 TPfirst 47.9% expR -0.137 PF 0.74 net$   -655.31 | FADE n   847 TPfirst 56.4% expR +0.016 PF 1.16 net$   +326.92
+  V2 1st continuation         FOLLOW n   614 TPfirst 49.2% expR -0.115 PF 0.79 net$   -407.03 | FADE n   614 TPfirst 53.4% expR -0.038 PF 0.97 net$    -52.54
+  V2 2nd-3rd continuation     FOLLOW n   725 TPfirst 49.5% expR -0.109 PF 0.93 net$   -158.32 | FADE n   725 TPfirst 55.0% expR -0.009 PF 1.00 net$     +7.92
+  V2 late continuation (5+)   FOLLOW n   644 TPfirst 53.9% expR -0.030 PF 1.03 net$    +63.76 | FADE n   644 TPfirst 50.9% expR -0.083 PF 0.81 net$   -482.85
+  R0 FLIP-BOS                 FOLLOW n   403 TPfirst 53.3% expR -0.040 PF 1.01 net$     +8.50 | FADE n   403 TPfirst 50.4% expR -0.093 PF 0.86 net$   -105.00
+  R0 1st continuation         FOLLOW n   288 TPfirst 53.8% expR -0.031 PF 0.98 net$    -10.73 | FADE n   288 TPfirst 51.7% expR -0.069 PF 0.86 net$    -75.73
+  R0 2nd-3rd continuation     FOLLOW n   350 TPfirst 53.4% expR -0.038 PF 0.85 net$   -109.76 | FADE n   350 TPfirst 49.4% expR -0.110 PF 0.94 net$    -41.43
+  R0 late continuation (5+)   FOLLOW n   283 TPfirst 41.3% expR -0.256 PF 0.61 net$   -267.46 | FADE n   283 TPfirst 63.3% expR +0.139 PF 1.34 net$   +153.81
+  V1 FLIP-BOS                 FOLLOW n    34 TPfirst 55.9% expR +0.006 PF 0.90 net$     -5.88 | FADE n    34 TPfirst 52.9% expR -0.047 PF 1.00 net$     +0.05
+  V1 1st continuation         FOLLOW n    26 TPfirst 42.3% expR -0.238 PF 1.09 net$     +5.00 | FADE n    26 TPfirst 57.7% expR +0.038 PF 0.59 net$    -31.27
+  V1 2nd-3rd continuation     FOLLOW n    28 TPfirst 50.0% expR -0.100 PF 0.95 net$     -3.65 | FADE n    28 TPfirst 53.6% expR -0.036 PF 0.72 net$    -22.29
+  V1 late continuation (5+)   FOLLOW n     6 TPfirst 33.3% expR -0.400 PF 0.18 net$    -16.95 | FADE n     6 TPfirst 83.3% expR +0.500 PF 9.99 net$    +18.93
+
+=== PHASE 2. FIRST-PASSAGE MAP relative to BOS direction: P(favourable first) / P(adverse first) / P(neither) ===
+  V3 15m : ±0.5R fav 39% adv 39% none 22% | ±0.8R fav 28% adv 28% none 45% | ±1.0R fav 22% adv 22% none 57%
+  V3 30m : ±0.5R fav 44% adv 45% none 11% | ±0.8R fav 36% adv 37% none 27% | ±1.0R fav 30% adv 32% none 38%
+  V3 60m : ±0.5R fav 48% adv 48% none 4% | ±0.8R fav 42% adv 44% none 15% | ±1.0R fav 37% adv 40% none 23%
+  V3 flip: ±0.5R fav 49% adv 49% none 2% | ±0.8R fav 47% adv 47% none 6% | ±1.0R fav 45% adv 45% none 11%
+  V2 15m : ±0.5R fav 38% adv 38% none 24% | ±0.8R fav 27% adv 26% none 47% | ±1.0R fav 22% adv 20% none 59%
+  V2 30m : ±0.5R fav 43% adv 44% none 13% | ±0.8R fav 34% adv 36% none 30% | ±1.0R fav 30% adv 30% none 40%
+  V2 60m : ±0.5R fav 46% adv 48% none 7% | ±0.8R fav 40% adv 42% none 18% | ±1.0R fav 36% adv 38% none 26%
+  V2 flip: ±0.5R fav 48% adv 50% none 2% | ±0.8R fav 45% adv 48% none 7% | ±1.0R fav 44% adv 45% none 11%
+  R0 15m : ±0.5R fav 39% adv 39% none 22% | ±0.8R fav 28% adv 27% none 45% | ±1.0R fav 22% adv 21% none 57%
+  R0 30m : ±0.5R fav 43% adv 44% none 13% | ±0.8R fav 35% adv 36% none 29% | ±1.0R fav 30% adv 30% none 40%
+  R0 60m : ±0.5R fav 46% adv 48% none 6% | ±0.8R fav 41% adv 43% none 17% | ±1.0R fav 37% adv 38% none 25%
+  R0 flip: ±0.5R fav 48% adv 50% none 2% | ±0.8R fav 45% adv 48% none 7% | ±1.0R fav 44% adv 44% none 11%
+  V1 15m : ±0.5R fav 38% adv 46% none 16% | ±0.8R fav 34% adv 34% none 32% | ±1.0R fav 19% adv 28% none 53%
+  V1 30m : ±0.5R fav 43% adv 50% none 7% | ±0.8R fav 39% adv 39% none 21% | ±1.0R fav 27% adv 35% none 38%
+  V1 60m : ±0.5R fav 44% adv 54% none 2% | ±0.8R fav 43% adv 45% none 13% | ±1.0R fav 35% adv 46% none 19%
+  V1 flip: ±0.5R fav 44% adv 55% none 1% | ±0.8R fav 49% adv 47% none 4% | ±1.0R fav 39% adv 48% none 13%
+
+=== PHASE 4. POLARITY THROUGH TIME (monthly): FOLLOW expR, FADE expR, difference ===
+  2025-01 n  650 FOLLOW -0.130 FADE -0.022 diff -0.108 FADE | follow net$   -616.9 fade net$   +329.0
+  2025-02 n  777 FOLLOW -0.062 FADE -0.131 diff +0.069 FOLLOW | follow net$   +197.7 fade net$   -793.5
+  2025-03 n  760 FOLLOW -0.069 FADE -0.114 diff +0.045 FOLLOW | follow net$    -55.5 fade net$   -541.0
+  2025-04 n  673 FOLLOW -0.141 FADE -0.061 diff -0.080 FADE | follow net$   -200.1 fade net$   -445.1
+  2025-05 n  738 FOLLOW -0.156 FADE -0.059 diff -0.098 FADE | follow net$   -555.9 fade net$   -106.2
+  2025-06 n  690 FOLLOW -0.066 FADE -0.116 diff +0.050 FOLLOW | follow net$    -50.0 fade net$   -428.2
+  2025-07 n  802 FOLLOW -0.145 FADE -0.028 diff -0.117 FADE | follow net$   -513.3 fade net$     +6.0
+  2025-08 n  960 FOLLOW -0.128 FADE -0.059 diff -0.069 FADE | follow net$   -423.8 fade net$     -6.9
+  2025-09 n  685 FOLLOW -0.146 FADE -0.025 diff -0.121 FADE | follow net$   -450.6 fade net$   +142.1
+  2025-10 n  628 FOLLOW -0.005 FADE -0.089 diff +0.083 FOLLOW | follow net$   +334.9 fade net$   -315.8
+  2025-11 n  750 FOLLOW -0.100 FADE -0.009 diff -0.091 FADE | follow net$   -545.3 fade net$    +86.1
+  2025-12 n  557 FOLLOW -0.095 FADE -0.021 diff -0.074 FADE | follow net$   -103.8 fade net$   -141.4
+  2026-01 n  517 FOLLOW -0.154 FADE -0.008 diff -0.146 FADE | follow net$   -386.2 fade net$    +30.4
+  2026-02 n  491 FOLLOW -0.062 FADE -0.054 diff -0.007 FADE | follow net$    -60.0 fade net$   -321.5
+  2026-03 n  427 FOLLOW -0.085 FADE -0.009 diff -0.076 FADE | follow net$   -384.7 fade net$   +222.0
+  2026-04 n  406 FOLLOW -0.109 FADE -0.011 diff -0.098 FADE | follow net$   -168.8 fade net$    -14.5
+  2026-05 n  523 FOLLOW -0.102 FADE -0.057 diff -0.045 FADE | follow net$   -145.1 fade net$    +10.5
+  2026-06 n  466 FOLLOW -0.088 FADE -0.003 diff -0.085 FADE | follow net$    -12.1 fade net$   -127.4
+  2026-07 n  556 FOLLOW -0.068 FADE -0.058 diff -0.010 FADE | follow net$   -123.4 fade net$    -88.1
+  2026-08 n  571 FOLLOW -0.102 FADE -0.026 diff -0.076 FADE | follow net$   -272.8 fade net$   +122.6
+  2026-09 n  291 FOLLOW -0.091 FADE -0.029 diff -0.062 FADE | follow net$     -4.7 fade net$   -137.4
+  weekly polarity sign sequence (F = follow better, f = fade better), 2025 -> 2026:
+    fFfffffFFfFFFFffffffFfFfFfffFffFfffffFfFFFFfffFffffFFfFfffFffFfffFFfFfffFffffFFffFfFffffff
+    90 weeks, 43 runs (a random sequence of this length has ~46 runs); F share 34%
+
+=== PHASE 5. PAST-ONLY POLARITY SCORE (rolling mean of follow R - fade R over the last 20 / 50 RESOLVED signals; sign decides) ===
+  V3: FOLLOW always n  8670 TPfirst 49.7% expR -0.105 PF 0.89 net$  -2982.72
+  V3: FADE   always n  8670 TPfirst 52.1% expR -0.062 PF 0.92 net$  -2214.87
+  V3: rolling-20 polarity n  8670 TPfirst 51.3% expR -0.077 PF 0.92 net$  -2167.87 | chose FADE on 53% of signals
+  V3: rolling-50 polarity n  8670 TPfirst 50.6% expR -0.090 PF 0.88 net$  -3342.99 | chose FADE on 55% of signals
+  V2: FOLLOW always n  2830 TPfirst 50.0% expR -0.101 PF 0.87 net$  -1156.90
+  V2: FADE   always n  2830 TPfirst 54.2% expR -0.025 PF 0.98 net$   -200.55
+  V2: rolling-20 polarity n  2830 TPfirst 52.0% expR -0.063 PF 0.87 net$  -1129.28 | chose FADE on 58% of signals
+  V2: rolling-50 polarity n  2830 TPfirst 53.1% expR -0.045 PF 0.92 net$   -667.81 | chose FADE on 62% of signals
+  R0: FOLLOW always n  1324 TPfirst 50.9% expR -0.084 PF 0.86 net$   -379.44
+  R0: FADE   always n  1324 TPfirst 53.2% expR -0.043 PF 0.97 net$    -68.34
+  R0: rolling-20 polarity n  1324 TPfirst 51.6% expR -0.071 PF 0.92 net$   -211.87 | chose FADE on 56% of signals
+  R0: rolling-50 polarity n  1324 TPfirst 51.7% expR -0.069 PF 0.92 net$   -199.49 | chose FADE on 53% of signals
+  V1: FOLLOW always n    94 TPfirst 48.9% expR -0.119 PF 0.89 net$    -21.48
+  V1: FADE   always n    94 TPfirst 56.4% expR +0.015 PF 0.84 net$    -34.58
+  V1: rolling-20 polarity n    94 TPfirst 59.6% expR +0.072 PF 1.15 net$    +27.20 | chose FADE on 74% of signals
+  V1: rolling-50 polarity n    94 TPfirst 54.3% expR -0.023 PF 1.10 net$    +18.81 | chose FADE on 87% of signals
+
+=== CONTROL: randomized direction per event, same times and R (200 seeds) ===
+  V3: FOLLOW expR -0.105 | FADE -0.062 | random mean -0.084 sd 0.010 | FOLLOW z -2.27 | FADE z +2.26
+  V2: FOLLOW expR -0.101 | FADE -0.025 | random mean -0.063 sd 0.016 | FOLLOW z -2.33 | FADE z +2.33
+  R0: FOLLOW expR -0.084 | FADE -0.043 | random mean -0.063 sd 0.024 | FOLLOW z -0.85 | FADE z +0.82
+  V1: FOLLOW expR -0.119 | FADE +0.015 | random mean -0.046 sd 0.091 | FOLLOW z -0.81 | FADE z +0.66
+
+=== WITHDRAWAL SIMULATION ($500, 0.02, harvest $100 above baseline, dead at baseline -60), event-level sequences (screening) ===
+  V3 follow-only             withdrawn     0 | ending  423.71 | ruin 2025-01-08
+  V3 fade-only               withdrawn     0 | ending  434.37 | ruin 2025-01-01
+  V3 polarity-20             withdrawn     0 | ending  434.79 | ruin 2025-01-08
+  V3 polarity-50             withdrawn     0 | ending  438.52 | ruin 2025-01-05
+  V2 follow-only             withdrawn     0 | ending  438.92 | ruin 2026-01-03
+  V2 fade-only               withdrawn   100 | ending  439.93 | ruin 2026-01-20
+  V2 polarity-20             withdrawn     0 | ending  436.91 | ruin 2026-01-07
+  V2 polarity-50             withdrawn     0 | ending  400.62 | ruin 2026-01-07
+  R0 follow-only             withdrawn     0 | ending  438.66 | ruin 2026-07-03
+  R0 fade-only               withdrawn     0 | ending  435.97 | ruin 2026-07-22
+  R0 polarity-20             withdrawn     0 | ending  439.38 | ruin 2026-07-18
+  R0 polarity-50             withdrawn     0 | ending  438.66 | ruin 2026-07-03
+
+done
