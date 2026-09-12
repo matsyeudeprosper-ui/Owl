@@ -1,0 +1,16 @@
+REAL 2h gate: train +102.22 test +134.61 full +236.83 eligible share 0.610
+  100 shifts: train mean +14.65 test mean +36.04 full mean +50.69 share mean 0.372  [165s]
+  200 shifts: train mean +13.10 test mean +40.26 full mean +53.36 share mean 0.373  [347s]
+  300 shifts: train mean +11.43 test mean +43.80 full mean +55.23 share mean 0.372  [532s]
+  400 shifts: train mean +9.90 test mean +43.79 full mean +53.69 share mean 0.371  [710s]
+  500 shifts: train mean +9.00 test mean +42.53 full mean +51.53 share mean 0.371  [893s]
+  600 shifts: train mean +8.70 test mean +43.88 full mean +52.58 share mean 0.371  [1074s]
+  700 shifts: train mean +8.82 test mean +45.04 full mean +53.87 share mean 0.372  [1252s]
+  800 shifts: train mean +9.48 test mean +44.70 full mean +54.18 share mean 0.372  [1431s]
+  900 shifts: train mean +9.82 test mean +45.46 full mean +55.28 share mean 0.372  [1622s]
+  1000 shifts: train mean +9.93 test mean +45.85 full mean +55.79 share mean 0.372  [1814s]
+TRAIN: real  +102.22 | placebo mean   +9.93 sd  48.62 p5  -69.97 p50  +11.10 p95  +90.74 max +140.44 | real beats 97.4% | z +1.90
+TEST: real  +134.61 | placebo mean  +45.85 sd  53.62 p5  -35.92 p50  +43.99 p95 +138.05 max +227.97 | real beats 94.2% | z +1.66
+FULL: real  +236.83 | placebo mean  +55.79 sd  74.63 p5  -67.00 p50  +53.53 p95 +185.52 max +276.09 | real beats 99.2% | z +2.43
+eligible share: real 0.610 | placebo mean 0.372 sd 0.022
+done

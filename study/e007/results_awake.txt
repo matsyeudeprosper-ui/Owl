@@ -1,0 +1,133 @@
+R0: 99000 bars 2026-07-01 12:36:00 -> 2026-09-08 07:11:00; 405 confirmed trend flips (5.9/day); TRAIN < 2026-08-04 21:53:30
+PARITY baseline 2h gate      n  524 wr 58.6% net  +236.83 PF 1.28 exp +0.452 maxDD  83.27 | flip 303  +83.09 cont 221 +153.74   (expect +236.83 / 524)
+
+=== 1. TIME SINCE LAST CONFIRMED FLIP at entry (population: NO gate, so every otherwise-valid entry) ===
+  TRAIN: all entries, no gate         n  300 wr 55.7% net   +12.08 PF 1.02 exp +0.040 maxDD  87.04 | flip 121  +29.01 cont 179  -16.93
+    FLIP entry (age 0)           n  121 wr 57.0% net   +29.01 PF 1.16 exp +0.240 maxDD  59.19 | flip 121  +29.01 cont   0   +0.00
+    cont 0-15 min                n    8 wr 75.0% net    +2.39 PF 1.34 exp +0.299 maxDD   7.08 | flip   0   +0.00 cont   8   +2.39
+    cont 15-30 min               n   17 wr 64.7% net    +8.78 PF 1.37 exp +0.517 maxDD  11.66 | flip   0   +0.00 cont  17   +8.78
+    cont 30-60 min               n   35 wr 60.0% net   +10.39 PF 1.23 exp +0.297 maxDD  11.91 | flip   0   +0.00 cont  35  +10.39
+    cont 60-120 min              n   41 wr 53.7% net   +34.89 PF 1.46 exp +0.851 maxDD  25.04 | flip   0   +0.00 cont  41  +34.89
+    cont 120-240 min             n   40 wr 47.5% net   -17.95 PF 0.83 exp -0.449 maxDD  49.92 | flip   0   +0.00 cont  40  -17.95
+    cont 240+ / none             n   38 wr 50.0% net   -55.44 PF 0.68 exp -1.459 maxDD  96.16 | flip   0   +0.00 cont  38  -55.44
+  TEST : all entries, no gate         n  270 wr 59.6% net  +135.18 PF 1.22 exp +0.501 maxDD  60.89 | flip 116  +67.66 cont 154  +67.52
+    FLIP entry (age 0)           n  116 wr 57.8% net   +67.66 PF 1.32 exp +0.583 maxDD  23.22 | flip 116  +67.66 cont   0   +0.00
+    cont 0-15 min                n    9 wr 55.6% net    +2.83 PF 1.24 exp +0.314 maxDD   7.86 | flip   0   +0.00 cont   9   +2.83
+    cont 15-30 min               n   16 wr 75.0% net   +11.56 PF 1.45 exp +0.722 maxDD  19.16 | flip   0   +0.00 cont  16  +11.56
+    cont 30-60 min               n   30 wr 63.3% net   +18.89 PF 1.38 exp +0.630 maxDD  32.15 | flip   0   +0.00 cont  30  +18.89
+    cont 60-120 min              n   37 wr 59.5% net   +43.67 PF 1.55 exp +1.180 maxDD  29.29 | flip   0   +0.00 cont  37  +43.67
+    cont 120-240 min             n   35 wr 68.6% net   +27.49 PF 1.27 exp +0.785 maxDD  48.75 | flip   0   +0.00 cont  35  +27.49
+    cont 240+ / none             n   27 wr 44.4% net   -36.92 PF 0.73 exp -1.367 maxDD  49.50 | flip   0   +0.00 cont  27  -36.92
+  (continuation entries with age >= 120 min are exactly the ones the production gate blocks)
+
+=== 2. WINDOW ROBUSTNESS: continuation eligible iff a real flip within W (flips always eligible) ===
+  W =  30 min TRAIN:                              n  189 wr 57.7% net   +40.72 PF 1.15 exp +0.215 maxDD  59.55 | flip 158  +42.59 cont  31   -1.87 | vs no gate  +28.64 | eligible share 22% | blocked(list) n 154 net  -28.10
+  W =  30 min TEST :                              n  213 wr 54.9% net   +26.61 PF 1.07 exp +0.125 maxDD  43.81 | flip 177   +7.93 cont  36  +18.68 | vs no gate -108.57 | eligible share 22% | blocked(list) n 127 net  +58.64
+  W =  60 min TRAIN:                              n  228 wr 59.2% net   +66.60 PF 1.21 exp +0.292 maxDD  60.00 | flip 157  +43.32 cont  71  +23.28 | vs no gate  +54.52 | eligible share 40% | blocked(list) n 119 net  -38.49
+  W =  60 min TEST :                              n  244 wr 55.7% net   +60.95 PF 1.14 exp +0.250 maxDD  63.76 | flip 173  +10.94 cont  71  +50.02 | vs no gate  -74.23 | eligible share 40% | blocked(list) n 96 net  +19.39
+  W = 120 min TRAIN:                              n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44 | flip 147  +43.56 cont 112  +58.66 | vs no gate  +90.14 | eligible share 61% | blocked(list) n 78 net  -73.38
+  W = 120 min TEST :                              n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27 | flip 156  +39.53 cont 109  +95.08 | vs no gate   -0.57 | eligible share 61% | blocked(list) n 62 net   -9.43
+  W = 240 min TRAIN:                              n  288 wr 56.6% net   +68.60 PF 1.14 exp +0.238 maxDD  73.44 | flip 138  +32.28 cont 150  +36.32 | vs no gate  +56.52 | eligible share 80% | blocked(list) n 38 net  -55.44
+  W = 240 min TEST :                              n  303 wr 60.7% net  +181.23 PF 1.33 exp +0.598 maxDD  46.25 | flip 149  +76.99 cont 154 +104.24 | vs no gate  +46.05 | eligible share 80% | blocked(list) n 27 net  -36.92
+  no gate TRAIN:                              n  300 wr 55.7% net   +12.08 PF 1.02 exp +0.040 maxDD  87.04 | flip 121  +29.01 cont 179  -16.93 | vs no gate   +0.00 | eligible share 100% | blocked(list) n 0 net   +0.00
+  no gate TEST :                              n  270 wr 59.6% net  +135.18 PF 1.22 exp +0.501 maxDD  60.89 | flip 116  +67.66 cont 154  +67.52 | vs no gate   +0.00 | eligible share 100% | blocked(list) n 0 net   +0.00
+
+=== COMPONENT DEPENDENCE: 2h gate vs no gate, combined / flip-only / cont-only (tick) ===
+  combined  2h gate  TRAIN:                              n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44 | flip 147  +43.56 cont 112  +58.66
+  combined  2h gate  TEST :                              n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27 | flip 156  +39.53 cont 109  +95.08
+  combined  no gate  TRAIN:                              n  300 wr 55.7% net   +12.08 PF 1.02 exp +0.040 maxDD  87.04 | flip 121  +29.01 cont 179  -16.93
+  combined  no gate  TEST :                              n  270 wr 59.6% net  +135.18 PF 1.22 exp +0.501 maxDD  60.89 | flip 116  +67.66 cont 154  +67.52
+  flip-only 2h gate  TRAIN:                              n  161 wr 58.4% net   +47.85 PF 1.20 exp +0.297 maxDD  54.73 | flip 161  +47.85 cont   0   -0.00
+  flip-only 2h gate  TEST :                              n  188 wr 52.1% net    +1.81 PF 1.01 exp +0.010 maxDD  58.96 | flip 188   +1.81 cont   0   -0.00
+  flip-only no gate  TRAIN:                              n  162 wr 58.0% net   +43.95 PF 1.18 exp +0.271 maxDD  54.73 | flip 162  +43.95 cont   0   -0.00
+  flip-only no gate  TEST :                              n  188 wr 52.1% net    +1.81 PF 1.01 exp +0.010 maxDD  58.96 | flip 188   +1.81 cont   0   -0.00
+  cont-only 2h gate  TRAIN:                              n  180 wr 58.9% net   +70.56 PF 1.31 exp +0.392 maxDD  35.47 | flip   0   +0.00 cont 180  +70.56
+  cont-only 2h gate  TEST :                              n  193 wr 56.0% net   +26.14 PF 1.08 exp +0.135 maxDD 126.05 | flip   0   +0.00 cont 193  +26.14
+  cont-only no gate  TRAIN:                              n  232 wr 55.6% net   -12.18 PF 0.98 exp -0.052 maxDD 103.47 | flip   0   +0.00 cont 232  -12.18
+  cont-only no gate  TEST :                              n  228 wr 57.0% net   -25.54 PF 0.96 exp -0.112 maxDD 140.14 | flip   0   +0.00 cont 228  -25.54
+
+=== 3a. FIXED PLACEBO SHIFTS of the flip timeline (circular within R0), 2h continuation eligibility ===
+  REAL (shift 0)  TRAIN:                              n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44 | flip 147  +43.56 cont 112  +58.66 | eligible share 61%
+  REAL (shift 0)  TEST :                              n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27 | flip 156  +39.53 cont 109  +95.08 | eligible share 61%
+  shift +6 h      TRAIN:                              n  220 wr 55.0% net   +34.11 PF 1.08 exp +0.155 maxDD  91.88 | flip 130  +24.07 cont  90  +10.04 | eligible share 43%
+  shift +6 h      TEST :                              n  279 wr 55.9% net   +59.37 PF 1.12 exp +0.213 maxDD  41.04 | flip 178   +9.51 cont 101  +49.85 | eligible share 43%
+  shift +12 h     TRAIN:                              n  212 wr 53.3% net    +2.73 PF 1.01 exp +0.013 maxDD  61.64 | flip 137  +33.90 cont  75  -31.18 | eligible share 40%
+  shift +12 h     TEST :                              n  251 wr 54.6% net   +82.24 PF 1.17 exp +0.328 maxDD  58.71 | flip 162  +13.16 cont  89  +69.09 | eligible share 40%
+  shift +24 h     TRAIN:                              n  222 wr 55.4% net   +86.03 PF 1.22 exp +0.388 maxDD  87.17 | flip 146  +38.23 cont  76  +47.80 | eligible share 41%
+  shift +24 h     TEST :                              n  261 wr 55.6% net   +60.47 PF 1.11 exp +0.232 maxDD  57.25 | flip 160  +38.48 cont 101  +21.99 | eligible share 41%
+  shift -6 h      TRAIN:                              n  226 wr 54.0% net   -40.93 PF 0.91 exp -0.181 maxDD  95.10 | flip 140   +7.11 cont  86  -48.04 | eligible share 44%
+  shift -6 h      TEST :                              n  244 wr 55.3% net   +60.36 PF 1.12 exp +0.247 maxDD  78.55 | flip 151  +17.27 cont  93  +43.09 | eligible share 44%
+  shift -12 h     TRAIN:                              n  226 wr 57.1% net    +8.45 PF 1.02 exp +0.037 maxDD  86.72 | flip 143  +37.68 cont  83  -29.22 | eligible share 41%
+  shift -12 h     TEST :                              n  209 wr 56.9% net   +81.64 PF 1.19 exp +0.391 maxDD  68.74 | flip 132  +72.29 cont  77   +9.36 | eligible share 41%
+
+=== 4. DESCRIPTIVE: continuation entries, ELIGIBLE (flip within 2h) vs NOT, no gate population ===
+  TRAIN: eligible                              n  101 wr 59.4% net   +56.45 PF 1.37 exp +0.559 maxDD  32.61 | flip   0   +0.00 cont 101  +56.45
+  TRAIN: NOT elig                              n   78 wr 48.7% net   -73.38 PF 0.74 exp -0.941 maxDD 114.68 | flip   0   +0.00 cont  78  -73.38
+    feature             elig median   not median   elig mean    not mean
+    range15                 192.350      234.635     223.614     273.203
+    range30                 246.840      306.340     302.584     356.788
+    range60                 371.850      383.685     439.383     457.632
+    atr14                    43.262       44.216      48.148      51.821
+    med_range60              36.605       31.432      39.462      37.449
+    stop_dist               156.740      257.295     202.475     344.543
+    stop_atr                  3.854        6.078       4.215       6.737
+    chochs_2h                 1.000        0.000       1.386       0.513
+    repairs_2h                0.000        1.000       0.366       0.795
+    flips_2h                  1.000        0.000       1.396       0.000
+    disturb_2h                2.000        1.000       1.752       1.308
+    se_60                     0.209        0.223       0.222       0.225
+    se_flip                   0.195        0.100       0.216       0.113
+    bars_since_flip          48.000      220.000      54.762     326.295
+    ordinal                   3.000        5.500       3.149       5.487
+    dist_from_flip_px       193.140      519.635     266.644     640.054
+    netmove30               168.730      224.035     218.652     269.647
+    netmove60               256.850      265.505     332.925     322.697
+    netmove120              320.520      340.700     349.820     462.494
+    travel30                670.210      687.850     765.501     779.644
+    travel60               1310.430     1264.915    1455.692    1431.894
+    travel120              2656.950     2414.360    2787.287    2736.611
+    hour-of-day (UTC) of continuation entries, eligible vs not, count | net:
+      00-04h  elig n  19 net  +23.59 | not n  13 net   +3.76
+      04-08h  elig n  19 net   +3.08 | not n  14 net   +1.20
+      08-12h  elig n  16 net   +3.98 | not n  11 net   +4.67
+      12-16h  elig n  33 net  +30.48 | not n  17 net  -25.44
+      16-20h  elig n   7 net   +1.15 | not n  14 net  -54.05
+      20-24h  elig n   7 net   -5.82 | not n   9 net   -3.52
+  TEST : eligible                              n   92 wr 63.0% net   +76.95 PF 1.46 exp +0.836 maxDD  70.89 | flip   0   +0.00 cont  92  +76.95
+  TEST : NOT elig                              n   62 wr 58.1% net    -9.43 PF 0.96 exp -0.152 maxDD  55.68 | flip   0   +0.00 cont  62   -9.43
+    feature             elig median   not median   elig mean    not mean
+    range15                 249.250      318.865     276.513     379.565
+    range30                 331.100      402.160     377.116     484.135
+    range60                 466.795      472.325     542.481     610.722
+    atr14                    50.458       61.001      56.839      74.417
+    med_range60              42.048       44.347      46.693      53.575
+    stop_dist               192.550      326.555     255.403     419.809
+    stop_atr                  4.044        5.597       4.608       6.349
+    chochs_2h                 2.000        0.000       1.652       0.516
+    repairs_2h                1.000        1.000       0.587       0.742
+    flips_2h                  1.000        0.000       1.337       0.000
+    disturb_2h                2.000        1.000       2.239       1.258
+    se_60                     0.203        0.238       0.208       0.237
+    se_flip                   0.194        0.126       0.210       0.124
+    bars_since_flip          49.500      203.000      53.783     329.032
+    ordinal                   3.000        6.000       2.989       5.742
+    dist_from_flip_px       246.715      719.890     320.232     966.821
+    netmove30               206.310      217.530     263.871     345.743
+    netmove60               319.065      371.025     389.022     465.475
+    netmove120              412.655      411.925     454.834     630.160
+    travel30                775.385      887.340     872.227    1087.918
+    travel60               1536.375     1655.435    1725.362    1963.993
+    travel120              3001.670     3209.775    3238.593    3577.942
+    hour-of-day (UTC) of continuation entries, eligible vs not, count | net:
+      00-04h  elig n  17 net  -14.69 | not n   4 net  -36.66
+      04-08h  elig n   7 net   -5.54 | not n   8 net  +52.76
+      08-12h  elig n  14 net  +25.50 | not n  13 net   +9.37
+      12-16h  elig n  29 net  +43.44 | not n  18 net  -15.34
+      16-20h  elig n  11 net  +23.06 | not n  12 net  +11.04
+      20-24h  elig n  14 net   +5.19 | not n   7 net  -30.60
+
+=== V1 (2026-09-08 07:12 -> 09-11, ALREADY CONSUMED, historical report only): 2h gate vs no gate ===
+  V1 2h gate:                              n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95 | flip  27   +4.40 cont  20  -30.00
+  V1 no gate:                              n   53 wr 52.8% net   -12.52 PF 0.90 exp -0.236 maxDD  41.93 | flip  26   +6.18 cont  27  -18.69
+
+done

@@ -1,0 +1,27 @@
+train median stop_dist of continuation entries: 197.1 pts
+
+TRAIN
+  age <120     narrow stop:                              n   63 wr 60.3% net   +10.96 PF 1.18 exp +0.174 maxDD  13.12 | flip   0   +0.00 cont  63  +10.96  avgW +1.89 avgL -2.43 mean stop 119
+  age <120     wide stop  :                              n   38 wr 57.9% net   +45.49 PF 1.50 exp +1.197 maxDD  31.90 | flip   0   +0.00 cont  38  +45.49  avgW +6.18 avgL -5.65 mean stop 341
+  age 120-240  narrow stop:                              n   16 wr 62.5% net    +5.56 PF 1.42 exp +0.347 maxDD   7.83 | flip   0   +0.00 cont  16   +5.56  avgW +1.89 avgL -2.22 mean stop 115
+  age 120-240  wide stop  :                              n   24 wr 37.5% net   -23.51 PF 0.75 exp -0.979 maxDD  46.65 | flip   0   +0.00 cont  24  -23.51  avgW +7.91 avgL -6.31 mean stop 381
+  age 240+     narrow stop:                              n   11 wr 45.5% net    -6.06 PF 0.68 exp -0.551 maxDD  14.50 | flip   0   +0.00 cont  11   -6.06  avgW +2.63 avgL -3.20 mean stop 161
+  age 240+     wide stop  :                              n   27 wr 51.9% net   -49.37 PF 0.68 exp -1.829 maxDD  81.98 | flip   0   +0.00 cont  27  -49.37  avgW +7.41 avgL -11.78 mean stop 523
+
+TEST 
+  age <120     narrow stop:                              n   47 wr 53.2% net    -7.79 PF 0.87 exp -0.166 maxDD  26.47 | flip   0   +0.00 cont  47   -7.79  avgW +2.00 avgL -2.62 mean stop 127
+  age <120     wide stop  :                              n   45 wr 73.3% net   +84.74 PF 1.78 exp +1.883 maxDD  53.60 | flip   0   +0.00 cont  45  +84.74  avgW +5.87 avgL -9.09 mean stop 389
+  age 120-240  narrow stop:                              n    8 wr 75.0% net    +4.79 PF 2.27 exp +0.599 maxDD   2.53 | flip   0   +0.00 cont   8   +4.79  avgW +1.43 avgL -1.88 mean stop 90
+  age 120-240  wide stop  :                              n   27 wr 66.7% net   +22.69 PF 1.23 exp +0.840 maxDD  48.75 | flip   0   +0.00 cont  27  +22.69  avgW +6.65 avgL -10.78 mean stop 456
+  age 240+     narrow stop:                              n    5 wr 20.0% net    -7.95 PF 0.18 exp -1.590 maxDD   7.95 | flip   0   +0.00 cont   5   -7.95  avgW +1.71 avgL -2.41 mean stop 117
+  age 240+     wide stop  :                              n   22 wr 50.0% net   -28.97 PF 0.77 exp -1.317 maxDD  45.03 | flip   0   +0.00 cont  22  -28.97  avgW +8.88 avgL -11.51 mean stop 564
+
+risk-normalised view (P&L in R = pnl / (stop_dist*0.02)) by age bucket:
+  TRAIN age 0-60    : n  60 mean R +0.135 wr 63% sum R +8.1
+  TRAIN age 60-120  : n  41 mean R -0.041 wr 54% sum R -1.7
+  TRAIN age 120-240 : n  40 mean R -0.151 wr 48% sum R -6.0
+  TRAIN age 240+    : n  38 mean R -0.103 wr 50% sum R -3.9
+  TEST  age 0-60    : n  55 mean R +0.174 wr 65% sum R +9.6
+  TEST  age 60-120  : n  37 mean R +0.065 wr 59% sum R +2.4
+  TEST  age 120-240 : n  35 mean R +0.231 wr 69% sum R +8.1
+  TEST  age 240+    : n  27 mean R -0.204 wr 44% sum R -5.5

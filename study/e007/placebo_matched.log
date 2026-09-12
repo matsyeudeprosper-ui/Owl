@@ -1,0 +1,21 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+REAL 2h gate: train +102.22 test +134.61 full +236.83 eligible share 0.610
+  100: train mean +16.53 test mean +82.62 full mean +99.15 share mean 0.611 W median 277 min  [207s]
+  200: train mean +10.46 test mean +75.76 full mean +86.22 share mean 0.611 W median 281 min  [413s]
+  300: train mean +10.13 test mean +77.18 full mean +87.31 share mean 0.611 W median 281 min  [614s]
+  400: train mean +7.65 test mean +77.69 full mean +85.34 share mean 0.611 W median 282 min  [817s]
+  500: train mean +7.30 test mean +78.50 full mean +85.80 share mean 0.611 W median 282 min  [1018s]
+  600: train mean +6.67 test mean +79.41 full mean +86.08 share mean 0.611 W median 281 min  [1216s]
+  700: train mean +5.31 test mean +79.05 full mean +84.37 share mean 0.610 W median 281 min  [1421s]
+  800: train mean +5.62 test mean +79.80 full mean +85.43 share mean 0.610 W median 281 min  [1639s]
+  900: train mean +5.29 test mean +80.66 full mean +85.96 share mean 0.610 W median 281 min  [1822s]
+  1000: train mean +5.41 test mean +82.16 full mean +87.57 share mean 0.610 W median 281 min  [1988s]
+TRAIN: real  +102.22 | matched placebo mean   +5.41 sd  48.73 p5  -79.68 p50   +7.40 p95  +80.48 max +131.14 | real beats 98.2% | z +1.99
+TEST: real  +134.61 | matched placebo mean  +82.16 sd  55.57 p5  -18.01 p50  +87.42 p95 +164.99 max +280.73 | real beats 84.3% | z +0.94
+FULL: real  +236.83 | matched placebo mean  +87.57 sd  77.20 p5  -43.02 p50  +88.34 p95 +212.02 max +311.45 | real beats 98.2% | z +1.93
+eligible share: real 0.610 | placebo mean 0.610 sd 0.001 | matched W: median 281 min, p5 244, p95 326
+done

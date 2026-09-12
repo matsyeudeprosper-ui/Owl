@@ -1,0 +1,15 @@
+REAL 2h gate: train +102.22 test +134.61 full +236.83 eligible share 0.610
+  100: train mean -2.62 test mean +84.95 full mean +82.33  [184s]
+  200: train mean -4.32 test mean +86.79 full mean +82.47  [368s]
+  300: train mean -4.72 test mean +88.29 full mean +83.57  [548s]
+  400: train mean -4.71 test mean +84.04 full mean +79.33  [730s]
+  500: train mean -4.85 test mean +84.91 full mean +80.06  [911s]
+  600: train mean -5.16 test mean +83.71 full mean +78.55  [1087s]
+  700: train mean -5.05 test mean +83.53 full mean +78.48  [1268s]
+  800: train mean -3.80 test mean +83.16 full mean +79.36  [1463s]
+  900: train mean -4.35 test mean +82.34 full mean +77.99  [1649s]
+  1000: train mean -4.14 test mean +82.86 full mean +78.72  [1804s]
+TRAIN: real  +102.22 | random-mask mean   -4.14 sd  42.91 p5  -75.54 p50   -4.03 p95  +66.92 max +132.05 | real beats 99.2% | z +2.48
+TEST: real  +134.61 | random-mask mean  +82.86 sd  50.73 p5   -3.31 p50  +84.10 p95 +163.90 max +270.89 | real beats 85.2% | z +1.02
+FULL: real  +236.83 | random-mask mean  +78.72 sd  66.78 p5  -38.62 p50  +81.03 p95 +185.42 max +264.73 | real beats 99.4% | z +2.37
+done
