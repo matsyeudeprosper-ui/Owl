@@ -12,6 +12,17 @@ Broker: Exness Pro accounts, symbol BTCUSD, fixed spread about $7 per BTC
 **2026-09-11 decision:** continuation entries moved from touch to candle
 close, see `DECISION_2026-09-11.md`; full audit in `study/audit/AUDIT.md`; regime/"clean gate" research pass in `study/regime/REGIME.md` (no gate survives).
 
+## Research workflow (from 2026-09-12)
+
+ChatGPT leads the research (reviews evidence, proposes the next hypothesis
+and its methodology, reviews results). Claude Code executes (implements,
+runs with tick execution and controls, reports every result including
+failures, commits scripts + raw outputs). Production is frozen; it changes
+only on the owner's explicit approval. Registry: `EXPERIMENTS.md`. Data
+eras and what is still untouched: `DATA_ERAS.md`. Forward evidence of the
+frozen config and its paper twin: `results/bos/bos_forward_ledger.csv`
+(refreshed on each snapshot push; the live file is `live/bos_forward_ledger.csv`).
+
 ## What is live right now
 
 | Bot | Account | Type | Since | Status |
