@@ -1,0 +1,88 @@
+ticks 7996959: 2026-07-01 00:00:00.744000 -> 2026-09-11 13:39:52.637000
+5-min slots 11383, scorable (price) 11383
+scoring starts 2026-08-04 12:55:00; raw triggers: downside 562 (robust 306), upside 554
+
+=== PRIMARY: 5-min return <= trailing-7-day p5 -> BUY at first ask >= slot end + 30 s; net points after spread + $5 ===
+
+  PRIMARY downside shock (p5): n 282
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -11.8(40%)  -1.9(49%) +15.2(57%) +19.2(54%) +39.5(60%)   n 282
+    discovery <08-25   -14.0(35%)  +7.5(49%) +30.0(61%) +44.0(59%) +74.1(61%)   n 171
+    internal check      -8.4(48%) -16.5(49%)  -7.6(52%) -19.5(46%) -14.2(58%)   n 111
+    15 m anti-outlier: without best-1 +13.1, best-2 +11.4, top-10% (29) -20.1; median +20.9; 10% trimmed mean +19.7; best +618 worst -554
+    path (60 min): MFE median 187 at 32 min (p25 12, p75 50); MAE median 158 at 23 min (p25 5, p75 48); ATR median 121
+    first passage ±0.5 ATR: favourable-first 124 (44%), adverse-first 158 (56%), neither 0
+    first passage ±1.0 ATR: favourable-first 138 (49%), adverse-first 134 (48%), neither 10
+    MAE before MFE (went lower first): 57%
+
+  ROBUSTNESS (p2.5): n 132
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -13.8(39%)  -3.3(51%)  +8.7(57%) +15.1(55%) +45.5(62%)   n 132
+    discovery <08-25   -13.2(36%)  +7.6(51%) +20.6(59%) +34.0(56%) +84.0(65%)   n 86
+    internal check     -14.8(46%) -23.7(50%) -13.7(52%) -21.2(53%) -28.2(56%)   n 46
+    15 m anti-outlier: without best-1 +5.1, best-2 +1.6, top-10% (14) -28.0; median +23.6; 10% trimmed mean +20.9; best +471 worst -554
+    path (60 min): MFE median 231 at 31 min (p25 12, p75 49); MAE median 165 at 18 min (p25 3, p75 43); ATR median 131
+    first passage ±0.5 ATR: favourable-first 56 (42%), adverse-first 76 (58%), neither 0
+    first passage ±1.0 ATR: favourable-first 68 (52%), adverse-first 59 (45%), neither 5
+    MAE before MFE (went lower first): 60%
+
+=== UPSIDE SHOCK (>= p95), descriptive ===
+
+  upside: continuation BUY: n 279
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -11.4(37%)  -6.0(42%)  -2.0(42%) +19.1(47%) +14.9(47%)   n 279
+    discovery <08-25   -11.9(34%) -10.2(45%)  +3.1(43%) +21.7(48%) +21.0(48%)   n 167
+    internal check     -10.7(41%)  +0.2(38%)  -9.7(41%) +15.2(45%)  +5.7(46%)   n 112
+
+  upside: reversal SELL: n 279
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -12.6(36%) -18.0(43%) -22.0(46%) -43.1(48%) -38.9(48%)   n 279
+    discovery <08-25   -12.1(35%) -13.8(40%) -27.1(44%) -45.7(46%) -45.0(48%)   n 167
+    internal check     -13.3(38%) -24.2(48%) -14.3(49%) -39.2(53%) -29.7(47%)   n 112
+
+=== SHOCK SEVERITY (primary, tertiles of r5) ===
+
+  MOST negative (largest crash): r5 median -0.29%: n 94
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -10.7(50%)  +2.4(54%)  +8.9(59%) +16.1(54%) +33.3(60%)   n 94
+    15 m without best-2 -2.7, median +36.7; 60 m without best-2 +4.7
+
+  MID: r5 median -0.19%: n 94
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -10.9(41%)  -0.8(48%) +34.8(59%) +22.0(51%) +48.2(61%)   n 94
+    15 m without best-2 +25.9, median +36.4; 60 m without best-2 +22.4
+
+  LEAST negative (mild): r5 median -0.12%: n 94
+    horizon                   1m        5m       15m       30m       60m
+    ALL                -13.9(28%)  -7.4(44%)  +2.0(55%) +19.3(57%) +36.9(60%)   n 94
+    15 m without best-2 -4.3, median +7.4; 60 m without best-2 +8.9
+
+=== CONTROL: matched random slot ends (same n, same hour-of-day, not within 60 min after any trigger), BUY, 1000 draws ===
+    horizon   real   random mean   sd    95th   99th   pctile     z
+       1 m   -11.8     -11.8     1.7    -9.0   -7.8    48.3%  -0.02
+       5 m    -1.9     -11.9     3.4    -6.2   -3.6    99.8%  +2.91
+      15 m   +15.2     -11.5     6.1    -2.0   +2.7   100.0%  +4.37
+      30 m   +19.2      -6.7     9.4    +8.5  +13.2    99.7%  +2.76
+      60 m   +39.5      +0.1    13.4   +24.1  +31.2    99.9%  +2.94
+    internal-check half only, 15 m: real -7.6 (n 111) vs random -13.1 ± 12.3, 95th +6.3, pctile 67.2%
+
+=== MARKET-STATE CONTEXT (primary events; descriptive, not gated) ===
+  spread at entry ($): median +7.000; below-median events 15 m +15.2 (n 282), 60 m +39.5 | above-median 15 m +nan (n 0), 60 m +nan
+  24 h median M1 range (pts): median +38.780; below-median events 15 m -5.0 (n 141), 60 m +9.6 | above-median 15 m +35.4 (n 141), 60 m +69.2
+  OI change of the slot: median -0.000; below-median events 15 m +14.5 (n 129), 60 m +49.7 | above-median 15 m +10.1 (n 128), 60 m +18.6
+  taker imbalance: median -0.011; below-median events 15 m -1.3 (n 141), 60 m +43.0 | above-median 15 m +31.8 (n 141), 60 m +36.0
+  liquidated BTC in slot: median +0.000; below-median events 15 m +21.3 (n 146), 60 m +51.8 | above-median 15 m +8.7 (n 136), 60 m +26.2
+  distance below 1 h high (ATR): median +2.434; below-median events 15 m +13.4 (n 141), 60 m +71.5 | above-median 15 m +17.1 (n 141), 60 m +7.7
+  distance above 1 h low (ATR): median +0.947; below-median events 15 m +27.3 (n 141), 60 m +33.2 | above-median 15 m +3.1 (n 141), 60 m +45.8
+  hour-of-day buckets (UTC), 15 m mean / n: 00-06h +22/67, 06-12h +26/53, 12-18h +7/101, 18-24h +12/61
+
+=== FREQUENCY (primary): 7.42/day, 51.9/week over 38 scored days; days with none 5%; median spacing 1.8 h; longest gap 49.3 h ===
+
+=== ECONOMICS (primary, all horizons, descriptive; $1 per point per 1.00 lot) ===
+    1 m: mean -11.8 pts, trades/month 222, maxDD 3633 pts, longest losing streak 10 | per trade / monthly / maxDD $ at 0.01: -0.12 / -26.28 / 36.33; 0.02: -0.24 / -52.55 / 72.67; 0.05: -0.59 / -131.38 / 181.67
+    5 m: mean -1.9 pts, trades/month 222, maxDD 2271 pts, longest losing streak 8 | per trade / monthly / maxDD $ at 0.01: -0.02 / -4.31 / 22.71; 0.02: -0.04 / -8.61 / 45.42; 0.05: -0.10 / -21.53 / 113.54
+   15 m: mean +15.2 pts, trades/month 222, maxDD 2298 pts, longest losing streak 7 | per trade / monthly / maxDD $ at 0.01: +0.15 / +33.87 / 22.98; 0.02: +0.30 / +67.74 / 45.95; 0.05: +0.76 / +169.34 / 114.88
+   30 m: mean +19.2 pts, trades/month 222, maxDD 4627 pts, longest losing streak 5 | per trade / monthly / maxDD $ at 0.01: +0.19 / +42.48 / 46.27; 0.02: +0.38 / +84.96 / 92.54; 0.05: +0.96 / +212.40 / 231.35
+   60 m: mean +39.5 pts, trades/month 222, maxDD 3857 pts, longest losing streak 5 | per trade / monthly / maxDD $ at 0.01: +0.40 / +87.59 / 38.57; 0.02: +0.79 / +175.18 / 77.15; 0.05: +1.98 / +437.95 / 192.87
+
+done
