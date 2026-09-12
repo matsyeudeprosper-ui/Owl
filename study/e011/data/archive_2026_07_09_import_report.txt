@@ -1,0 +1,5 @@
+Exness_BTCUSD_2026_07.zip: sha256 7003f8be87f39db8d572ec61022a24554370b8d42114bbd70a4e5db3acd1ee05 | member Exness_BTCUSD_2026_07.csv | rows 3090307 -> kept 3086393 (unparsable 0, bad price 0, exact dups 3914) | 2026-07-01 00:00:00.677000 -> 2026-07-31 23:59:59.167000 | spread median 7.00 p95 7.00 max 7.00 | downloaded 2026-09-12T06:32:43Z
+Exness_BTCUSD_2026_08.zip: sha256 684419608cf367e23806ec5339ff3d7643c3e8ec596a16cb07c188e2fe3bb1e2 | member Exness_BTCUSD_2026_08.csv | rows 3698481 -> kept 3687374 (unparsable 0, bad price 0, exact dups 11107) | 2026-08-01 00:00:00.220000 -> 2026-08-31 23:59:59.894000 | spread median 7.00 p95 7.00 max 7.00 | downloaded 2026-09-12T06:33:42Z
+Exness_BTCUSD_2026_09.zip: sha256 b3d42551160781a8742950a67b2c30cf915eadccbd3f3c8f60e1c26c3b176df8 | member Exness_BTCUSD_2026_09.csv | rows 1287285 -> kept 1285738 (unparsable 0, bad price 0, exact dups 1547) | 2026-09-01 00:00:00.897000 -> 2026-09-11 23:59:59.157000 | spread median 7.00 p95 7.00 max 7.00 | downloaded 2026-09-12T06:33:55Z
+combined: 8059505 ticks (cross-file dups removed 0), 2026-07-01 00:00:00.677000 -> 2026-09-11 23:59:59.157000
+M1: 105091 bars; gaps > 5 min: 0

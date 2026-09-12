@@ -1,0 +1,41 @@
+MT5 ticks: 7996961 2026-07-01 00:00:00.744000 -> 2026-09-11 13:39:53.093000
+archive : 8059505 2026-07-01 00:00:00.677000 -> 2026-09-11 23:59:59.157000
+overlap : 2026-07-01 00:00:00.744000 -> 2026-09-11 13:39:53.093000
+in overlap: MT5 7996961 ticks, archive 7988774 ticks (ratio 0.9990)
+exact timestamp (ms) matches: 28356 = 0.35% of MT5 ticks, 0.35% of archive ticks
+  on matched ticks: bid diff mean +0.1621 | abs median 5.7700 | abs p99 35.3390 | max 442.47 | share identical 0.07%
+  on matched ticks: ask diff mean +0.1621 | abs median 5.7700 | abs p99 35.3390 | max 442.47 | share identical 0.07%
+  archive ticks without exact MT5 match: 7960418 (99.65%); nearest MT5 tick median 70 ms, p95 81 ms, share within 1 s 99.9%
+  MT5 ticks without exact archive match: 7968605 (99.65%)
+  per-day tick-count ratio archive/MT5: median 0.9989 min 0.9958 max 1.0050; days with ratio < 0.95 or > 1.05: 0 of 73
+  MT5      spread: median 7.00 mean 7.000 p95 7.00 max 7.00 | share == 7.00: 100.0000%
+  archive  spread: median 7.00 mean 7.000 p95 7.00 max 7.00 | share == 7.00: 100.0000%
+
+--- M1 (bid OHLC) built from each tick stream, vs the MT5 M1 bars (pro_m1.npz)
+  MT5-M1 vs MT5-ticks-M1: minutes 99000 vs 104459; common 98959; only-MT5-M1 41; only-MT5-ticks-M1 5500
+     open : identical 91.01% | abs diff median 0.000 p99 0.420 max 17.07 | bars with diff > 1.0: 332
+     high : identical 89.04% | abs diff median 0.000 p99 0.570 max 27.58 | bars with diff > 1.0: 483
+     low  : identical 89.40% | abs diff median 0.000 p99 0.560 max 17.07 | bars with diff > 1.0: 472
+     close: identical 90.97% | abs diff median 0.000 p99 0.440 max 33.38 | bars with diff > 1.0: 372
+  MT5-M1 vs archive-M1: minutes 99000 vs 104471; common 98971; only-MT5-M1 29; only-archive-M1 5500
+     open : identical 32.90% | abs diff median 0.020 p99 5.973 max 56.33 | bars with diff > 1.0: 7695
+     high : identical 39.32% | abs diff median 0.020 p99 2.500 max 29.51 | bars with diff > 1.0: 3909
+     low  : identical 38.87% | abs diff median 0.020 p99 2.430 max 44.36 | bars with diff > 1.0: 3885
+     close: identical 37.28% | abs diff median 0.020 p99 4.610 max 215.79 | bars with diff > 1.0: 5167
+  MT5-ticks-M1 vs archive-M1: minutes 104459 vs 104471; common 104431; only-MT5-ticks-M1 28; only-archive-M1 40
+     open : identical 32.41% | abs diff median 0.020 p99 6.100 max 56.33 | bars with diff > 1.0: 8324
+     high : identical 38.67% | abs diff median 0.020 p99 2.540 max 29.51 | bars with diff > 1.0: 4255
+     low  : identical 38.16% | abs diff median 0.020 p99 2.460 max 44.36 | bars with diff > 1.0: 4236
+     close: identical 36.71% | abs diff median 0.020 p99 4.737 max 215.79 | bars with diff > 1.0: 5647
+  market statistics (M1 from ticks):
+     MT5     : M1 range median 30.59 mean 40.07 | ATR14 mean 40.06 | daily log-return sd 0.0193 | bars 104459
+     archive : M1 range median 30.57 mean 40.02 | ATR14 mean 40.01 | daily log-return sd 0.0193 | bars 104471
+
+--- FROZEN STRATEGY on both feeds (candle-close config, 2h gate, tick execution, min_dist 10, flat 0.02), window = R0 bars
+  MT5                               : n  524 wr 58.6% net  +238.14 avgW +3.53 avgL -3.89 PF 1.28 maxDD  83.14 exp/tr +0.454 | flip n 303 +84.4 | touch n 0 +0.0 | sum R +25.3
+  archive                           : n  538 wr 57.8% net  +206.75 avgW +3.51 avgL -3.89 PF 1.23 maxDD  86.69 exp/tr +0.384 | flip n 307 +89.3 | touch n 0 +0.0 | sum R +18.6
+  reference (MT5 M1 bars + MT5 ticks): n  524 wr 58.6% net  +236.83 avgW +3.52 avgL -3.89 PF 1.28 maxDD  83.27 exp/tr +0.452 | flip n 303 +83.1 | touch n 0 +0.0
+  trade alignment (same direction, entry within 120 s): matched 474 of MT5 524 / archive 538; same kind 469; same outcome 470; entry diff abs median 0.17 max 117.20; SL diff abs median 0.06 max 105.86; P&L diff mean -0.035 abs median 0.006
+  MT5-only trades: 50 (P&L +9.74); archive-only: 64 (P&L -5.09)
+
+done
