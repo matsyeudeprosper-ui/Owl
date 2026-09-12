@@ -1,0 +1,156 @@
+TRAIN current $ risk per trade (0.02 x stop): q25 1.96, median 2.99, q75 5.05, mean 3.86, max 13.89
+FROZEN targets: low 1.96 / medium 2.99 / high 5.05; lot cap 0.05; cost-aware adds 12 pt to the stop
+
+=== PART 1/2. FIXED LOT vs CONSTANT RISK on the live config (2h gate), TRAIN / TEST / V1, all + by entry type ===
+--- FIX 0.02
+  TRAIN all                      n  259 wr 58.3% net  +102.22 PF 1.26 exp$ +0.395 expR +0.043 maxDD  73.44 avgDD 14.69 avg$risk  3.86 w10  -34.37 w20  -54.49
+  TRAIN flip                     n  147 wr 57.8% net   +43.56 PF 1.19 exp$ +0.296 expR +0.034 maxDD  59.19 avgDD 14.91 avg$risk  3.78 w10  -53.59 w20  -55.46
+  TRAIN cont                     n  112 wr 58.9% net   +58.66 PF 1.35 exp$ +0.524 expR +0.054 maxDD  32.61 avgDD  7.80 avg$risk  3.96 w10  -25.21 w20  -13.79
+  TEST  all                      n  265 wr 58.9% net  +134.61 PF 1.30 exp$ +0.508 expR +0.054 maxDD  83.27 avgDD 26.83 avg$risk  4.48 w10  -33.41 w20  -49.69
+  TEST  flip                     n  156 wr 55.1% net   +39.53 PF 1.14 exp$ +0.253 expR -0.014 maxDD  45.28 avgDD 17.59 avg$risk  4.31 w10  -31.49 w20  -32.73
+  TEST  cont                     n  109 wr 64.2% net   +95.08 PF 1.54 exp$ +0.872 expR +0.151 maxDD  70.89 avgDD 20.44 avg$risk  4.73 w10  -38.81 w20  -60.42
+  V1    all                      n   47 wr 51.1% net   -25.61 PF 0.77 exp$ -0.545 expR -0.085 maxDD  52.95 avgDD 24.29 avg$risk  4.67 w10  -40.08 w20  -41.02
+  V1    flip                     n   27 wr 63.0% net    +4.40 PF 1.10 exp$ +0.163 expR +0.131 maxDD  17.06 avgDD  5.83 avg$risk  3.90 w10  -16.20 w20   -2.29
+  V1    cont                     n   20 wr 35.0% net   -30.00 PF 0.56 exp$ -1.500 expR -0.377 maxDD  47.32 avgDD 28.02 avg$risk  5.70 w10  -30.25 w20  -30.00
+  consistency: TRAIN/TEST net +102.22 / +134.61; exp$ +0.395 / +0.508; stale(>=4h) conts fixed-vs-this: see Part 3
+--- CR low 1.96
+  TRAIN all                      n  259 wr 58.3% net   +43.07 PF 1.19 exp$ +0.166 expR +0.043 maxDD  37.81 avgDD  9.54 avg$risk  2.19 w10  -16.75 w20  -27.07
+  TRAIN flip                     n  147 wr 57.8% net   +14.55 PF 1.11 exp$ +0.099 expR +0.034 maxDD  32.49 avgDD 10.79 avg$risk  2.19 w10  -27.77 w20  -29.97
+  TRAIN cont                     n  112 wr 58.9% net   +28.51 PF 1.30 exp$ +0.255 expR +0.054 maxDD  15.16 avgDD  3.80 avg$risk  2.19 w10  -12.60 w20   -5.21
+  TEST  all                      n  265 wr 58.9% net   +58.43 PF 1.22 exp$ +0.220 expR +0.054 maxDD  39.44 avgDD 15.03 avg$risk  2.51 w10  -16.70 w20  -24.09
+  TEST  flip                     n  156 wr 55.1% net    +9.87 PF 1.06 exp$ +0.063 expR -0.014 maxDD  28.70 avgDD 10.99 avg$risk  2.49 w10  -16.07 w20  -17.24
+  TEST  cont                     n  109 wr 64.2% net   +48.56 PF 1.51 exp$ +0.446 expR +0.151 maxDD  34.69 avgDD 10.31 avg$risk  2.53 w10  -19.41 w20  -30.21
+  V1    all                      n   47 wr 51.1% net   -13.76 PF 0.77 exp$ -0.293 expR -0.085 maxDD  27.56 avgDD 12.80 avg$risk  2.47 w10  -20.04 w20  -21.39
+  V1    flip                     n   27 wr 63.0% net    +3.03 PF 1.13 exp$ +0.112 expR +0.131 maxDD   8.53 avgDD  2.82 avg$risk  2.13 w10   -8.10 w20   -0.97
+  V1    cont                     n   20 wr 35.0% net   -16.79 PF 0.53 exp$ -0.839 expR -0.377 maxDD  25.45 avgDD 15.31 avg$risk  2.94 w10  -16.06 w20  -16.79
+  consistency: TRAIN/TEST net +43.07 / +58.43; exp$ +0.166 / +0.220; stale(>=4h) conts fixed-vs-this: see Part 3
+--- CR med 2.99
+  TRAIN all                      n  259 wr 58.3% net   +51.80 PF 1.18 exp$ +0.200 expR +0.043 maxDD  39.08 avgDD 10.49 avg$risk  2.71 w10  -18.22 w20  -27.71
+  TRAIN flip                     n  147 wr 57.8% net   +20.05 PF 1.12 exp$ +0.136 expR +0.034 maxDD  34.80 avgDD  9.31 avg$risk  2.71 w10  -30.25 w20  -31.61
+  TRAIN cont                     n  112 wr 58.9% net   +31.75 PF 1.27 exp$ +0.284 expR +0.054 maxDD  15.53 avgDD  4.39 avg$risk  2.72 w10  -13.21 w20   -8.00
+  TEST  all                      n  265 wr 58.9% net   +54.96 PF 1.17 exp$ +0.207 expR +0.054 maxDD  40.17 avgDD 18.56 avg$risk  3.02 w10  -15.82 w20  -22.20
+  TEST  flip                     n  156 wr 55.1% net    +5.84 PF 1.03 exp$ +0.037 expR -0.014 maxDD  40.71 avgDD 17.01 avg$risk  3.07 w10  -19.18 w20  -21.20
+  TEST  cont                     n  109 wr 64.2% net   +49.12 PF 1.42 exp$ +0.451 expR +0.151 maxDD  37.99 avgDD 11.58 avg$risk  2.94 w10  -22.29 w20  -34.27
+  V1    all                      n   47 wr 51.1% net   -10.76 PF 0.84 exp$ -0.229 expR -0.085 maxDD  31.38 avgDD 14.11 avg$risk  2.90 w10  -21.12 w20  -24.09
+  V1    flip                     n   27 wr 63.0% net    +7.95 PF 1.29 exp$ +0.295 expR +0.131 maxDD   8.53 avgDD  2.44 avg$risk  2.62 w10   -8.10 w20   +2.88
+  V1    cont                     n   20 wr 35.0% net   -18.71 PF 0.53 exp$ -0.936 expR -0.377 maxDD  29.55 avgDD 17.53 avg$risk  3.27 w10  -19.62 w20  -18.71
+  consistency: TRAIN/TEST net +51.80 / +54.96; exp$ +0.200 / +0.207; stale(>=4h) conts fixed-vs-this: see Part 3
+--- CR high 5.05
+  TRAIN all                      n  259 wr 58.3% net   +54.90 PF 1.13 exp$ +0.212 expR +0.043 maxDD  46.63 avgDD 16.38 avg$risk  4.01 w10  -20.08 w20  -30.47
+  TRAIN flip                     n  147 wr 57.8% net   +29.73 PF 1.12 exp$ +0.202 expR +0.034 maxDD  42.06 avgDD 12.29 avg$risk  3.93 w10  -33.71 w20  -35.28
+  TRAIN cont                     n  112 wr 58.9% net   +25.18 PF 1.13 exp$ +0.225 expR +0.054 maxDD  23.62 avgDD  9.03 avg$risk  4.11 w10  -21.55 w20  -15.27
+  TEST  all                      n  265 wr 58.9% net   +67.45 PF 1.15 exp$ +0.255 expR +0.054 maxDD  49.18 avgDD 21.92 avg$risk  4.18 w10  -28.41 w20  -36.21
+  TEST  flip                     n  156 wr 55.1% net    +6.85 PF 1.02 exp$ +0.044 expR -0.014 maxDD  57.30 avgDD 27.31 avg$risk  4.21 w10  -38.18 w20  -36.21
+  TEST  cont                     n  109 wr 64.2% net   +60.60 PF 1.36 exp$ +0.556 expR +0.151 maxDD  49.61 avgDD 13.94 avg$risk  4.13 w10  -24.36 w20  -45.88
+  V1    all                      n   47 wr 51.1% net   -22.30 PF 0.77 exp$ -0.475 expR -0.085 maxDD  45.51 avgDD 21.11 avg$risk  4.09 w10  -27.82 w20  -33.45
+  V1    flip                     n   27 wr 63.0% net   +10.29 PF 1.25 exp$ +0.381 expR +0.131 maxDD  13.08 avgDD  4.39 avg$risk  3.86 w10  -11.19 w20   +3.33
+  V1    cont                     n   20 wr 35.0% net   -32.60 PF 0.43 exp$ -1.630 expR -0.377 maxDD  45.54 avgDD 27.86 avg$risk  4.40 w10  -28.34 w20  -32.60
+  consistency: TRAIN/TEST net +54.90 / +67.45; exp$ +0.212 / +0.255; stale(>=4h) conts fixed-vs-this: see Part 3
+--- CA med 2.99
+  TRAIN all                      n  259 wr 58.3% net   +56.70 PF 1.22 exp$ +0.219 expR +0.043 maxDD  35.76 avgDD  8.96 avg$risk  2.51 w10  -16.75 w20  -25.23
+  TRAIN flip                     n  147 wr 57.8% net   +19.72 PF 1.13 exp$ +0.134 expR +0.034 maxDD  32.96 avgDD  8.94 avg$risk  2.52 w10  -27.77 w20  -30.24
+  TRAIN cont                     n  112 wr 58.9% net   +36.98 PF 1.35 exp$ +0.330 expR +0.054 maxDD  14.05 avgDD  3.59 avg$risk  2.49 w10  -11.74 w20   -6.43
+  TEST  all                      n  265 wr 58.9% net   +60.07 PF 1.20 exp$ +0.227 expR +0.054 maxDD  40.38 avgDD 16.69 avg$risk  2.82 w10  -15.79 w20  -23.25
+  TEST  flip                     n  156 wr 55.1% net   +12.36 PF 1.06 exp$ +0.079 expR -0.014 maxDD  33.88 avgDD 13.79 avg$risk  2.83 w10  -19.62 w20  -19.54
+  TEST  cont                     n  109 wr 64.2% net   +47.71 PF 1.44 exp$ +0.438 expR +0.151 maxDD  38.47 avgDD 11.41 avg$risk  2.80 w10  -20.82 w20  -33.99
+  V1    all                      n   47 wr 51.1% net    -8.88 PF 0.86 exp$ -0.189 expR -0.085 maxDD  29.97 avgDD 12.86 avg$risk  2.84 w10  -21.12 w20  -24.09
+  V1    flip                     n   27 wr 63.0% net    +9.83 PF 1.40 exp$ +0.364 expR +0.131 maxDD   8.53 avgDD  2.31 avg$risk  2.51 w10   -8.10 w20   +3.70
+  V1    cont                     n   20 wr 35.0% net   -18.71 PF 0.53 exp$ -0.936 expR -0.377 maxDD  29.55 avgDD 17.53 avg$risk  3.27 w10  -19.62 w20  -18.71
+  consistency: TRAIN/TEST net +56.70 / +60.07; exp$ +0.219 / +0.227; stale(>=4h) conts fixed-vs-this: see Part 3
+
+=== PART 3. AWAKE GATE x SIZING (TRAIN / TEST), plus stale-4h exclusion (descriptive) ===
+  FIX 0.02       nogate   TRAIN                          n  300 wr 55.7% net   +12.08 PF 1.02 exp$ +0.040 expR -0.004 maxDD  87.04 avgDD 39.58 avg$risk  4.61 w10  -49.66 w20  -70.49
+  FIX 0.02       nogate   TEST                           n  270 wr 59.6% net  +135.18 PF 1.22 exp$ +0.501 expR +0.068 maxDD  60.89 avgDD 22.61 avg$risk  5.71 w10  -38.84 w20  -44.63
+  FIX 0.02       gate2h   TRAIN                          n  259 wr 58.3% net  +102.22 PF 1.26 exp$ +0.395 expR +0.043 maxDD  73.44 avgDD 14.69 avg$risk  3.86 w10  -34.37 w20  -54.49
+  FIX 0.02       gate2h   TEST                           n  265 wr 58.9% net  +134.61 PF 1.30 exp$ +0.508 expR +0.054 maxDD  83.27 avgDD 26.83 avg$risk  4.48 w10  -33.41 w20  -49.69
+  FIX 0.02       stale4h  TRAIN                          n  288 wr 56.6% net   +68.60 PF 1.14 exp$ +0.238 expR +0.012 maxDD  73.44 avgDD 17.87 avg$risk  4.05 w10  -35.39 w20  -54.49
+  FIX 0.02       stale4h  TEST                           n  303 wr 60.7% net  +181.23 PF 1.33 exp$ +0.598 expR +0.087 maxDD  46.25 avgDD 15.05 avg$risk  4.78 w10  -34.20 w20  -34.23
+  FIX 0.02       gate value (2h minus no gate): TRAIN +90.14 TEST -0.57
+  CR low 1.96    nogate   TRAIN                          n  300 wr 55.7% net    -0.41 PF 1.00 exp$ -0.001 expR -0.004 maxDD  49.19 avgDD 23.78 avg$risk  2.51 w10  -24.59 w20  -35.07
+  CR low 1.96    nogate   TEST                           n  270 wr 59.6% net   +63.02 PF 1.19 exp$ +0.233 expR +0.068 maxDD  31.58 avgDD 11.84 avg$risk  3.04 w10  -20.12 w20  -23.02
+  CR low 1.96    gate2h   TRAIN                          n  259 wr 58.3% net   +43.07 PF 1.19 exp$ +0.166 expR +0.043 maxDD  37.81 avgDD  9.54 avg$risk  2.19 w10  -16.75 w20  -27.07
+  CR low 1.96    gate2h   TEST                           n  265 wr 58.9% net   +58.43 PF 1.22 exp$ +0.220 expR +0.054 maxDD  39.44 avgDD 15.03 avg$risk  2.51 w10  -16.70 w20  -24.09
+  CR low 1.96    stale4h  TRAIN                          n  288 wr 56.6% net   +25.24 PF 1.09 exp$ +0.088 expR +0.012 maxDD  37.81 avgDD 11.77 avg$risk  2.27 w10  -16.76 w20  -27.07
+  CR low 1.96    stale4h  TEST                           n  303 wr 60.7% net   +86.54 PF 1.28 exp$ +0.286 expR +0.087 maxDD  23.80 avgDD  8.02 avg$risk  2.63 w10  -16.34 w20  -17.76
+  CR low 1.96    gate value (2h minus no gate): TRAIN +43.48 TEST -4.59
+  CR med 2.99    nogate   TRAIN                          n  300 wr 55.7% net    +9.68 PF 1.02 exp$ +0.032 expR -0.004 maxDD  45.89 avgDD 22.27 avg$risk  2.94 w10  -23.72 w20  -35.71
+  CR med 2.99    nogate   TEST                           n  270 wr 59.6% net   +62.34 PF 1.16 exp$ +0.231 expR +0.068 maxDD  35.48 avgDD 13.98 avg$risk  3.44 w10  -23.34 w20  -26.24
+  CR med 2.99    gate2h   TRAIN                          n  259 wr 58.3% net   +51.80 PF 1.18 exp$ +0.200 expR +0.043 maxDD  39.08 avgDD 10.49 avg$risk  2.71 w10  -18.22 w20  -27.71
+  CR med 2.99    gate2h   TEST                           n  265 wr 58.9% net   +54.96 PF 1.17 exp$ +0.207 expR +0.054 maxDD  40.17 avgDD 18.56 avg$risk  3.02 w10  -15.82 w20  -22.20
+  CR med 2.99    stale4h  TRAIN                          n  288 wr 56.6% net   +36.56 PF 1.11 exp$ +0.127 expR +0.012 maxDD  39.08 avgDD 11.60 avg$risk  2.77 w10  -18.22 w20  -27.71
+  CR med 2.99    stale4h  TEST                           n  303 wr 60.7% net   +88.51 PF 1.24 exp$ +0.292 expR +0.087 maxDD  27.95 avgDD 10.30 avg$risk  3.11 w10  -17.62 w20  -21.39
+  CR med 2.99    gate value (2h minus no gate): TRAIN +42.12 TEST -7.38
+  CR high 5.05   nogate   TRAIN                          n  300 wr 55.7% net    +3.10 PF 1.01 exp$ +0.010 expR -0.004 maxDD  54.32 avgDD 27.72 avg$risk  4.20 w10  -29.03 w20  -39.73
+  CR high 5.05   nogate   TEST                           n  270 wr 59.6% net   +87.90 PF 1.18 exp$ +0.326 expR +0.068 maxDD  47.09 avgDD 15.29 avg$risk  4.44 w10  -24.91 w20  -32.20
+  CR high 5.05   gate2h   TRAIN                          n  259 wr 58.3% net   +54.90 PF 1.13 exp$ +0.212 expR +0.043 maxDD  46.63 avgDD 16.38 avg$risk  4.01 w10  -20.08 w20  -30.47
+  CR high 5.05   gate2h   TEST                           n  265 wr 58.9% net   +67.45 PF 1.15 exp$ +0.255 expR +0.054 maxDD  49.18 avgDD 21.92 avg$risk  4.18 w10  -28.41 w20  -36.21
+  CR high 5.05   stale4h  TRAIN                          n  288 wr 56.6% net   +37.23 PF 1.07 exp$ +0.129 expR +0.012 maxDD  46.63 avgDD 17.42 avg$risk  4.05 w10  -20.79 w20  -30.47
+  CR high 5.05   stale4h  TEST                           n  303 wr 60.7% net  +118.85 PF 1.23 exp$ +0.392 expR +0.087 maxDD  42.87 avgDD 13.43 avg$risk  4.23 w10  -34.11 w20  -34.69
+  CR high 5.05   gate value (2h minus no gate): TRAIN +51.81 TEST -20.44
+  CA med 2.99    nogate   TRAIN                          n  300 wr 55.7% net    +8.84 PF 1.02 exp$ +0.029 expR -0.004 maxDD  42.57 avgDD 19.02 avg$risk  2.77 w10  -22.75 w20  -33.23
+  CA med 2.99    nogate   TEST                           n  270 wr 59.6% net   +62.39 PF 1.17 exp$ +0.231 expR +0.068 maxDD  34.93 avgDD 13.12 avg$risk  3.28 w10  -21.18 w20  -24.07
+  CA med 2.99    gate2h   TRAIN                          n  259 wr 58.3% net   +56.70 PF 1.22 exp$ +0.219 expR +0.043 maxDD  35.76 avgDD  8.96 avg$risk  2.51 w10  -16.75 w20  -25.23
+  CA med 2.99    gate2h   TEST                           n  265 wr 58.9% net   +60.07 PF 1.20 exp$ +0.227 expR +0.054 maxDD  40.38 avgDD 16.69 avg$risk  2.82 w10  -15.79 w20  -23.25
+  CA med 2.99    stale4h  TRAIN                          n  288 wr 56.6% net   +39.16 PF 1.13 exp$ +0.136 expR +0.012 maxDD  35.76 avgDD  9.88 avg$risk  2.58 w10  -16.75 w20  -25.23
+  CA med 2.99    stale4h  TEST                           n  303 wr 60.7% net   +91.02 PF 1.26 exp$ +0.300 expR +0.087 maxDD  28.15 avgDD  9.38 avg$risk  2.93 w10  -17.62 w20  -22.39
+  CA med 2.99    gate value (2h minus no gate): TRAIN +47.86 TEST -2.32
+  stale (age>=4h) continuation damage in the UNGATED sequence by sizing:
+    FIX 0.02       TRAIN n 38 net  -55.44 avg$risk  8.36 | TEST  n 27 net  -36.92 avg$risk  9.63 |
+    CR low 1.96    TRAIN n 38 net  -27.72 avg$risk  4.18 | TEST  n 27 net  -19.73 avg$risk  4.86 |
+    CR med 2.99    TRAIN n 38 net  -27.69 avg$risk  4.25 | TEST  n 27 net  -21.96 avg$risk  5.01 |
+    CR high 5.05   TRAIN n 38 net  -30.55 avg$risk  5.19 | TEST  n 27 net  -30.53 avg$risk  5.47 |
+    CA med 2.99    TRAIN n 38 net  -28.83 avg$risk  4.21 | TEST  n 27 net  -21.96 avg$risk  5.01 |
+
+=== PART 4. DRAWDOWN DISTRIBUTION (live config, chronological; block bootstrap of 10-trade blocks, 2000 resamples) ===
+  FIX 0.02       TRAIN: maxDD  73.44 avgDD 14.69 underwater max   9.9 d | worst5  -38.24 worst10  -34.37 worst20  -54.49 | rolling-10 p5  -19.86 p1  -32.68 | largest loss -13.59 win +11.11 | bootstrap maxDD p50  41.01 p95  79.29
+  FIX 0.02       TEST : maxDD  83.27 avgDD 26.83 underwater max  14.1 d | worst5  -46.23 worst10  -33.41 worst20  -49.69 | rolling-10 p5  -16.53 p1  -22.59 | largest loss -29.29 win +18.78 | bootstrap maxDD p50  52.74 p95  88.60
+  FIX 0.02       FULL : maxDD  83.27 avgDD 21.36 underwater max  16.9 d | worst5  -46.23 worst10  -34.37 worst20  -54.49 | rolling-10 p5  -17.87 p1  -32.00 | largest loss -29.29 win +18.78 | bootstrap maxDD p50  65.29 p95 111.14
+  CR low 1.96    TRAIN: maxDD  37.81 avgDD  9.54 underwater max  10.2 d | worst5  -19.12 worst10  -16.75 worst20  -27.07 | rolling-10 p5  -11.02 p1  -16.09 | largest loss  -6.79 win  +5.56 | bootstrap maxDD p50  23.21 p95  45.19
+  CR low 1.96    TEST : maxDD  39.44 avgDD 15.03 underwater max  14.4 d | worst5  -23.12 worst10  -16.70 worst20  -24.09 | rolling-10 p5   -9.64 p1  -11.70 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  29.35 p95  50.47
+  CR low 1.96    FULL : maxDD  39.44 avgDD 12.74 underwater max  17.4 d | worst5  -23.12 worst10  -16.75 worst20  -27.07 | rolling-10 p5   -9.76 p1  -15.98 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  35.73 p95  60.86
+  CR med 2.99    TRAIN: maxDD  39.08 avgDD 10.49 underwater max  10.2 d | worst5  -19.12 worst10  -18.22 worst20  -27.71 | rolling-10 p5  -11.89 p1  -15.03 | largest loss  -6.79 win  +5.56 | bootstrap maxDD p50  27.09 p95  51.87
+  CR med 2.99    TEST : maxDD  40.17 avgDD 18.56 underwater max  15.0 d | worst5  -23.12 worst10  -15.82 worst20  -22.20 | rolling-10 p5  -12.11 p1  -14.63 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  35.92 p95  66.16
+  CR med 2.99    FULL : maxDD  40.17 avgDD 14.60 underwater max  15.0 d | worst5  -23.12 worst10  -18.22 worst20  -27.71 | rolling-10 p5  -12.11 p1  -15.07 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  41.73 p95  71.65
+  CR high 5.05   TRAIN: maxDD  46.63 avgDD 16.38 underwater max  13.7 d | worst5  -20.89 worst10  -20.08 worst20  -30.47 | rolling-10 p5  -14.09 p1  -16.98 | largest loss  -6.79 win  +5.56 | bootstrap maxDD p50  40.65 p95  78.49
+  CR high 5.05   TEST : maxDD  49.18 avgDD 21.92 underwater max  15.0 d | worst5  -21.37 worst10  -28.41 worst20  -36.21 | rolling-10 p5  -15.69 p1  -27.44 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  48.97 p95  97.36
+  CR high 5.05   FULL : maxDD  49.18 avgDD 19.22 underwater max  15.0 d | worst5  -21.37 worst10  -28.41 worst20  -36.21 | rolling-10 p5  -14.89 p1  -20.98 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  57.82 p95 105.92
+  CA med 2.99    TRAIN: maxDD  35.76 avgDD  8.96 underwater max   9.7 d | worst5  -19.12 worst10  -16.75 worst20  -25.23 | rolling-10 p5  -10.81 p1  -14.25 | largest loss  -6.79 win  +5.56 | bootstrap maxDD p50  23.39 p95  44.50
+  CA med 2.99    TEST : maxDD  40.38 avgDD 16.69 underwater max  14.9 d | worst5  -23.12 worst10  -15.79 worst20  -23.25 | rolling-10 p5  -10.67 p1  -14.40 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  32.12 p95  59.14
+  CA med 2.99    FULL : maxDD  40.38 avgDD 12.91 underwater max  14.9 d | worst5  -23.12 worst10  -16.75 worst20  -25.23 | rolling-10 p5  -10.68 p1  -14.29 | largest loss -14.64 win  +9.39 | bootstrap maxDD p50  36.83 p95  62.86
+
+=== PART 5. LOT CONCENTRATION (live config, FULL R0) ===
+  CR low 1.96    lots min 0.01 med 0.01 p75 0.02 p90 0.03 p95 0.04 max 0.05 | uncapped would reach 0.09 (14 trades above cap, 198 below 0.01) | top-10% lots: n 64 P&L -8.95 of +101.50 | $risk min 0.98 max 14.51
+      narrowest stops (<=83 pt, n 95): lots 0.031 avg, P&L -20.74, worst single -2.11
+  CR med 2.99    lots min 0.01 med 0.01 p75 0.03 p90 0.05 p95 0.05 max 0.05 | uncapped would reach 0.13 (54 trades above cap, 110 below 0.01) | top-10% lots: n 54 P&L -3.72 of +106.76 | $risk min 1.11 max 14.51
+      narrowest stops (<=83 pt, n 95): lots 0.044 avg, P&L -33.85, worst single -3.07
+  CR high 5.05   lots min 0.01 med 0.03 p75 0.05 p90 0.05 p95 0.05 max 0.05 | uncapped would reach 0.23 (144 trades above cap, 31 below 0.01) | top-10% lots: n 144 P&L -80.23 of +122.36 | $risk min 1.11 max 14.51
+      narrowest stops (<=83 pt, n 95): lots 0.050 avg, P&L -42.49, worst single -4.36
+  CA med 2.99    lots min 0.01 med 0.01 p75 0.02 p90 0.04 p95 0.05 max 0.05 | uncapped would reach 0.09 (29 trades above cap, 116 below 0.01) | top-10% lots: n 59 P&L -7.28 of +116.78 | $risk min 1.11 max 14.51
+      narrowest stops (<=83 pt, n 95): lots 0.039 avg, P&L -27.87, worst single -2.62
+
+=== PART 7. WAR-CHEST LAYER (COMPARISON MODEL from audit/warchest_layer.py, NOT the live 'hwm' bookkeeping) on fixed vs CR med ===
+  FIX 0.02       TRAIN: net  +170.94 maxDD  80.62 fights  37 adds  67 peak lot 0.05 share of trades in debt 75% max debt  70.61
+  FIX 0.02       TEST : net  +226.35 maxDD  83.99 fights  10 adds  28 peak lot 0.05 share of trades in debt 89% max debt  73.98
+  CR med 2.99    TRAIN: net   +87.02 maxDD  46.27 fights  21 adds  45 peak lot 0.08 share of trades in debt 82% max debt  36.26
+  CR med 2.99    TEST : net  +119.10 maxDD  41.99 fights  11 adds  29 peak lot 0.06 share of trades in debt 89% max debt  32.19
+  CA med 2.99    TRAIN: net  +100.25 maxDD  42.94 fights  24 adds  46 peak lot 0.08 share of trades in debt 78% max debt  32.94
+  CA med 2.99    TEST : net  +140.20 maxDD  41.09 fights  11 adds  29 peak lot 0.05 share of trades in debt 89% max debt  31.08
+
+=== PART 8. CONTROL: same lot multiset assigned at RANDOM across trades (1000 permutations), live config ===
+  CR low 1.96    TRAIN: structural net   +43.07 maxDD  37.81 | random-lot net mean  +72.11 sd 31.45 (beats 19.2%) | random maxDD mean  56.34 (structural lower than 92.8%)
+  CR low 1.96    TEST : structural net   +58.43 maxDD  39.44 | random-lot net mean  +99.20 sd 41.07 (beats 16.6%) | random maxDD mean  63.70 (structural lower than 86.1%)
+  CR med 2.99    TRAIN: structural net   +51.80 maxDD  39.08 | random-lot net mean +103.38 sd 43.95 (beats 13.3%) | random maxDD mean  77.64 (structural lower than 99.5%)
+  CR med 2.99    TEST : structural net   +54.96 maxDD  40.17 | random-lot net mean +138.05 sd 57.90 (beats 7.1%) | random maxDD mean  89.07 (structural lower than 98.9%)
+  CR high 5.05   TRAIN: structural net   +54.90 maxDD  46.63 | random-lot net mean +152.44 sd 52.07 (beats 2.5%) | random maxDD mean 115.66 (structural lower than 99.9%)
+  CR high 5.05   TEST : structural net   +67.45 maxDD  49.18 | random-lot net mean +196.45 sd 71.77 (beats 3.6%) | random maxDD mean 126.36 (structural lower than 99.5%)
+  CA med 2.99    TRAIN: structural net   +56.70 maxDD  35.76 | random-lot net mean  +92.08 sd 38.09 (beats 18.5%) | random maxDD mean  68.71 (structural lower than 98.8%)
+  CA med 2.99    TEST : structural net   +60.07 maxDD  40.38 | random-lot net mean +122.63 sd 51.57 (beats 11.8%) | random maxDD mean  80.92 (structural lower than 95.3%)
+
+=== PART 9. ACCOUNT IMPACT (R0 only; 69 days; monthly = x 30.44/68.8) ===
+  FIX 0.02       avg lot 0.020 | typical $risk 2.99 (max 29.02) | trades/month 232 | monthly net +104.82 | maxDD 83.27 | worst20 -54.49 | -60 kill = 20 typical risks; maxDD/60 = 1.39
+  CR low 1.96    avg lot 0.015 | typical $risk 1.79 (max 14.51) | trades/month 232 | monthly net +44.92 | maxDD 39.44 | worst20 -27.07 | -60 kill = 33 typical risks; maxDD/60 = 0.66
+  CR med 2.99    avg lot 0.020 | typical $risk 2.56 (max 14.51) | trades/month 232 | monthly net +47.25 | maxDD 40.17 | worst20 -27.71 | -60 kill = 23 typical risks; maxDD/60 = 0.67
+  CR high 5.05   avg lot 0.030 | typical $risk 4.14 (max 14.51) | trades/month 232 | monthly net +54.16 | maxDD 49.18 | worst20 -36.21 | -60 kill = 15 typical risks; maxDD/60 = 0.82
+  CA med 2.99    avg lot 0.018 | typical $risk 2.27 (max 14.51) | trades/month 232 | monthly net +51.69 | maxDD 40.38 | worst20 -25.23 | -60 kill = 26 typical risks; maxDD/60 = 0.67
+
+done
