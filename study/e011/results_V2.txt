@@ -61,4 +61,27 @@
      $: maxDD 623.49 / 253.13 (ratio 0.41) | roll-20 -139.57 / -77.97 | largest loss -46.00 / -21.13 (ratio 0.46)
      R: maxDD 70.00 / 55.02 (ratio 0.79) | roll-20 -12.89 / -12.97 | largest loss -1.19 / -1.33 (ratio 1.12)
 
+--- ARCHIVE CROSS-CHECK (archive_v2_ticks.npz) ---
+--- DATA V2 archive: 16829447 ticks 2026-01-01 00:00:07.529000 -> 2026-06-30 23:59:59.695000
+  2026-01: ticks   2332703 | spread median 12.60 p95 12.60 max 12.60 | M1 bars 44622 = 100.0% of minutes | median M1 range 40.4
+  2026-02: ticks   3960879 | spread median 12.60 p95 12.60 max 18.90 | M1 bars 40307 = 100.0% of minutes | median M1 range 63.2
+  2026-03: ticks   3272808 | spread median 12.60 p95 12.60 max 12.60 | M1 bars 44624 = 100.0% of minutes | median M1 range 53.1
+  2026-04: ticks   2190556 | spread median 9.80 p95 9.80 max 9.80 | M1 bars 43187 = 100.0% of minutes | median M1 range 39.7
+  2026-05: ticks   1768321 | spread median 9.80 p95 9.80 max 9.80 | M1 bars 44624 = 100.0% of minutes | median M1 range 33.8
+  2026-06: ticks   3304180 | spread median 7.00 p95 9.80 max 9.80 | M1 bars 43166 = 99.9% of minutes | median M1 range 44.4
+  gaps > 5 min: 1; largest: 06-14 06:01->26min
+  ask<bid or non-positive: 0; ticks with spread > 3x median: 0
+  archive 2h gate ALL                n 1053 (183.3/mo) wr 50.1% net   -837.12 PF 0.76 exp$ -0.795 expR -0.106 sumR -111.2 maxDD$ 986.12 maxDD_R 121.7 underwater max 1030 tr | largest +41.50/-46.13 | worst r20 -151.60 r40 -221.69
+  archive FLIP                       n  617 (107.4/mo) wr 48.9% net   -582.80 PF 0.73 exp$ -0.945 expR -0.128 sumR  -78.8 maxDD$ 616.31 maxDD_R  83.2 underwater max 617 tr | largest +41.50/-46.13 | worst r20 -160.09 r40 -192.77
+  archive CONT                       n  436 ( 76.0/mo) wr 51.8% net   -254.32 PF 0.82 exp$ -0.583 expR -0.074 sumR  -32.4 maxDD$ 397.66 maxDD_R  45.5 underwater max 429 tr | largest +23.68/-36.10 | worst r20 -110.96 r40 -170.65
+  archive no gate ALL                n 1142 (198.6/mo) wr 50.6% net   -584.69 PF 0.88 exp$ -0.512 expR -0.096 sumR -109.9 maxDD$ 822.36 maxDD_R 118.1 underwater max 1115 tr | largest +81.41/-56.22 | worst r20 -197.27 r40 -204.95
+  alignment: matched 934 of MT5 1136 / archive 1053 (82%); same kind 905; same outcome 926; net MT5 -605.99 vs archive -837.12; sumR -94.8 vs -111.2; maxDD 779.32 vs 986.12
+  monthly (archive 2h gate):
+    2026-01: n 203 wr 48.8% net  -255.72 PF 0.64 exp$ -1.260 sumR -26.6 maxDD 281.01 | flip n 122 $-192.2 cont n 81 $-63.5
+    2026-02: n 167 wr 45.5% net  -320.39 PF 0.65 exp$ -1.919 sumR -31.0 maxDD 348.53 | flip n 106 $-119.2 cont n 61 $-201.2
+    2026-03: n 167 wr 52.1% net  -146.11 PF 0.75 exp$ -0.875 sumR -12.3 maxDD 175.21 | flip n 93 $-112.7 cont n 74 $-33.4
+    2026-04: n 180 wr 50.0% net  -110.32 PF 0.78 exp$ -0.613 sumR -19.9 maxDD 123.17 | flip n 108 $-103.6 cont n 72 $-6.7
+    2026-05: n 164 wr 51.2% net  -119.64 PF 0.72 exp$ -0.730 sumR -14.3 maxDD 145.50 | flip n 94 $-68.5 cont n 70 $-51.1
+    2026-06: n 172 wr 53.5% net  +115.06 PF 1.27 exp$ +0.669 sumR  -7.2 maxDD  75.29 | flip n 94 $+13.4 cont n 78 $+101.7
+
 done
