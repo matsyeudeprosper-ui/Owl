@@ -41,6 +41,9 @@ def ym(t):
 
 
 def load(path):
+    if os.path.isdir(path):
+        from compact_ticks import load_dir
+        return load_dir(path)
     D = np.load(path)
     return D["t"].astype(np.int64), D["bid"].astype(float), D["ask"].astype(float)
 
