@@ -17,7 +17,8 @@ Every experiment gets a row BEFORE it is run. Data eras are defined in
 | E004 | 2026-09-11 22:30 | Higher win rate helps the war-chest recovery | R0 | R0 halves, V1 | 3 configs × 3 layers | full system: live +389, nearer-TP +245, old touch +348 | rejected | no |
 | E005 | 2026-09-11 23:00 | A pre-entry "CLEAN" gate (break quality, ordinal, structure efficiency, risk geometry) + shadow breaker | R0-TRAIN | R0-TEST, V1 | 16 rules + 4 breakers | all reversed/neutral; stop ≤ 98 pt weak survivor (+15/+11/+4, p ≈ 0.1); rolling-20 breaker neutral on TEST, saves 9 of 26 on V1, V1 loss inside train p5 tail | rejected as gate; 2 forward-watch variables | no |
 | E006 | 2026-09-12 00:30 | (infrastructure) Forward-observation ledger: narrow_stop flag + rolling-20 shadow state per L2/T2 trade, informational | – | L2, T2 accumulate | 0 | `live/bos_forward_observer.py` running | active | no |
-| E007 | pending | next hypothesis from ChatGPT | to be declared | to be declared | | | | |
+| E007 | 2026-09-12 05:10 | WHY does the AWAKE gate work: is the 2h flip-recency effect real, broad and structural, or a fitted threshold? Tests: time-since-flip buckets, predeclared windows {30,60,120,240,none}, placebo flip timelines (fixed shifts ±6/±12/+24h + 1000 circular shifts), descriptive eligible-vs-not comparison, component dependence (combined / flip-only / cont-only) | R0-TRAIN | R0-TEST (blind); V1 reported as historical only | windows 5, fixed shifts 5, random shifts 1000, 0 new thresholds selected | pending | pending | no |
+| E008 | pending | next hypothesis from ChatGPT | to be declared | to be declared | | | | |
 
 Rules of the registry:
 1. Row first, run second. Declare discovery and validation data in the row.
