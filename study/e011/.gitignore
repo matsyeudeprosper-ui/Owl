@@ -1,1 +1,1 @@
-data/archive_*_ticks.npz
+data/*_ticks.npz
