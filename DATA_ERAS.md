@@ -35,3 +35,6 @@ Not downloaded, not inspected. Reserved for a later blind confirmation of whatev
 ## Consumed-era note for E020
 2022, 2023, 2024 (V4), 2025 (V3) and 2026-01 -> 2026-09-11 (V2 + the July-September archive slice) are consumed data and are used by E020 for development only. E017's forward stream (FL1) is untouched.
 
+## E021 note (2026-09-12 23:15 UTC)
+E021 develops on the consumed 2022-2026 M1 eras only. B1 (2021) stays sealed unless the E021 consumed-data gate in `study/e021/PREREG_E021.md` passes; U0 (2017-2020) untouched regardless.
+
