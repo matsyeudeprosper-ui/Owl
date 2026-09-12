@@ -94,7 +94,16 @@ def main(out_dir, zips):
         if DELETE_ZIPS:
             os.remove(p)
             print(f"  removed {os.path.basename(p)} (re-downloadable; sha256 recorded)", flush=True)
-    json.dump(index, open(os.path.join(out_dir, "index.json"), "w"), indent=1)
+    ip = os.path.join(out_dir, "index.json")
+    if os.path.exists(ip):
+        try:
+            old = json.load(open(ip))
+            keys = {i["key"] for i in index}
+            index = [i for i in old if i["key"] not in keys] + index
+            index.sort(key=lambda i: i["key"])
+        except Exception:
+            pass
+    json.dump(index, open(ip, "w"), indent=1)
     T = np.concatenate([m[0] for m in M1])
     o = np.argsort(T, kind="stable")
     np.savez_compressed(os.path.join(out_dir, "m1.npz"), t=T[o],
