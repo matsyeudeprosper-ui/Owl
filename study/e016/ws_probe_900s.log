@@ -1,0 +1,2 @@
+connected in 0.59s; subscribe ack: {'event': 'subscribe', 'arg': {'channel': 'liquidation-orders', 'instType': 'SWAP'}, 'connId': 'e09223fb'}
+listened 900s: 29 messages, BTC-USDT-SWAP fills 0, other instruments' fills 28

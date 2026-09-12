@@ -67,6 +67,13 @@ if (-not (Get-CimInstance Win32_Process |
     Start-Process pythonw -ArgumentList "bos_forward_observer.py" `
         -WorkingDirectory "C:\Projects\KinoliveLines\live" -WindowStyle Hidden
 }
+# 2f) E016 liquidation shadow observer (OKX websocket latency logger, NO ORDERS, informational)
+if (-not (Get-CimInstance Win32_Process |
+        Where-Object { $_.CommandLine -like "*liq_shadow.py*" })) {
+    Say "starting liquidation shadow observer"
+    Start-Process pythonw -ArgumentList "liq_shadow.py" `
+        -WorkingDirectory "C:\Projects\KinoliveLines\live" -WindowStyle Hidden
+}
 # 2d) paper twin of the flip+TOUCH rule (2026-09-11 audit comparison)
 if (-not (Get-CimInstance Win32_Process |
         Where-Object { $_.CommandLine -like "*bos_paper_touch.py*" })) {
