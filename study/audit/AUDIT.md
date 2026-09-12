@@ -263,6 +263,24 @@ The nearer target wins a little more often but pays $0.64 less per win;
 net −$70 over 69 days and −$79 with slippage. Not worth it. Live keeps
 its own TP.
 
+## 14. Does the recovery system prefer the higher win rate? (`warchest_layer.py`, `results/warchest_layer.txt`)
+
+Full money management (fighter bullets while in debt + 50% adds +
+debt/chest booking, bt_full.py model) applied to the tick trade
+sequences. In-sample 69d / OOS 3.3d:
+
+| variant | flat 0.02 | + fighters | FULL system | OOS (FULL) |
+|---|---|---|---|---|
+| close entry, own TP (live) | +$237 | +$291 | **+$389** (43 fights, 87 adds) | −$29 |
+| close entry, touch-geometry TP (60% wr) | +$166 | +$195 | +$245 (28 fights, 57 adds) | −$28 |
+| flip + touch (previous rule) | +$206 | +$297 | +$348 | −$25 |
+
+No. The recovery layer multiplies whatever the base makes; the higher
+win rate does not clear debt faster in dollars because each win pays
+$0.64 less and the chest fills slower (28 vs 43 fighter trades). The
+live configuration is the best of the three with the full system on.
+OOS all three are red within $4 of each other.
+
 ## Files
 
 - `exec_audit.py` – engine (signal logic frozen; execution modes legacy / pess / opt / tick; random control).

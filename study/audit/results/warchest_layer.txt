@@ -1,0 +1,13 @@
+=== FULL SYSTEM (fighters + adds + debt/chest) on tick execution, 69d in-sample | halves | OOS 3.3d
+close entry, OWN TP (live)       flat 0.02: net  +236.83 n 524 wr 58.6% maxDD  83.27 fights   0 adds   0 | h1 +102.22 h2 +134.61 | OOS  -25.61 (n 47, debt end 31.12)
+close entry, OWN TP (live)       fighters : net  +291.06 n 524 wr 58.6% maxDD  85.17 fights  59 adds   0 | h1 +144.63 h2 +144.97 | OOS  -25.26 (n 47, debt end 25.49)
+close entry, OWN TP (live)       FULL     : net  +389.08 n 524 wr 58.6% maxDD  83.99 fights  43 adds  87 | h1 +170.94 h2 +226.35 | OOS  -29.47 (n 47, debt end 29.57)
+
+close entry, TOUCH-geometry TP   flat 0.02: net  +166.34 n 584 wr 60.1% maxDD  69.67 fights   0 adds   0 | h1  +54.85 h2 +111.49 | OOS  -25.39 (n 49, debt end 29.90)
+close entry, TOUCH-geometry TP   fighters : net  +195.31 n 584 wr 60.1% maxDD  78.38 fights  39 adds   0 | h1  +79.37 h2 +117.23 | OOS  -26.53 (n 49, debt end 26.66)
+close entry, TOUCH-geometry TP   FULL     : net  +245.13 n 584 wr 60.1% maxDD  78.53 fights  28 adds  57 | h1  +88.70 h2 +167.19 | OOS  -28.31 (n 49, debt end 28.35)
+
+flip+TOUCH (previous live rule)  flat 0.02: net  +205.65 n 609 wr 56.8% maxDD  61.00 fights   0 adds   0 | h1  +66.49 h2 +139.16 | OOS  -32.60 (n 52, debt end 37.54)
+flip+TOUCH (previous live rule)  fighters : net  +296.73 n 609 wr 56.8% maxDD  70.89 fights  51 adds   0 | h1  +97.35 h2 +199.96 | OOS  -33.53 (n 52, debt end 33.80)
+flip+TOUCH (previous live rule)  FULL     : net  +348.26 n 609 wr 56.8% maxDD  68.16 fights  45 adds  86 | h1 +116.75 h2 +242.08 | OOS  -24.92 (n 52, debt end 35.49)
+
