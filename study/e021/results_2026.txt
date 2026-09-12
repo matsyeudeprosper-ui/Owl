@@ -1,0 +1,30 @@
+2026: M1 bars 365621 2026-01-01 00:00:00 -> 2026-09-11 23:59:00; spread median 9.80
+windows 73148, scorable 73110, scoring from 2026-01-04 11:30:00; shocks first-of-cluster 1855 (robust 849), upside 1875
+
+=== 2026: net points after spread + $5 ===
+  set                                           5m         15m         30m         60m
+  PRIMARY: downside shock -> SELL       -13.5(39%)  -17.8(43%)  -18.2(44%)  -17.9(45%)  n 1855
+  robustness p2.5 -> SELL                -9.4(41%)  -14.4(41%)  -20.7(43%)  -30.9(45%)  n 849
+  control C: same events -> BUY         -15.7(47%)  -11.5(49%)  -11.0(51%)  -11.4(52%)  n 1855
+  control B: upside shock -> BUY        -11.8(39%)  -10.4(44%)   -9.3(47%)  -16.9(46%)  n 1875
+    primary SELL 30 m: median -29.9, trimmed10% -24.9, without best-1 -19.5, best-2 -20.6, top-10% (186) -81.6; best +2425 worst -1347; maxDD 35240 pts; longest losing streak 12
+    robust SELL 30 m: median -32.1, trimmed10% -29.4, without best-1 -23.1, best-2 -24.7, top-10% (85) -90.2; best +2078 worst -1234; maxDD 20004 pts; longest losing streak 8
+    upside BUY 30 m: median -17.6, trimmed10% -14.6, without best-1 -10.4, best-2 -11.2, top-10% (188) -73.2; best +2095 worst -1946; maxDD 25887 pts; longest losing streak 12
+    path (SELL, 60 min): MFE(down) median 200 at 22 min (p25 6, p75 46); MAE(up) median 216 at 27 min; ATR median 136; MAE-before-MFE 47%
+    first passage ±0.5 ATR (fav = down): favourable-first 40%, adverse-first 60%, neither 0%
+    first passage ±1.0 ATR (fav = down): favourable-first 45%, adverse-first 53%, neither 2%
+    severity largest shocks  r5 median -0.37%: 30 m -15.7 (wr 45%, median -32.2, without best-2 -23.1); 5 m -9.0; 60 m -22.5; n 618
+    severity medium          r5 median -0.24%: 30 m -22.8 (wr 43%, median -30.7, without best-2 -26.7); 5 m -18.0; 60 m -15.8; n 619
+    severity mild            r5 median -0.17%: 30 m -16.0 (wr 44%, median -27.6, without best-2 -19.6); 5 m -13.6; 60 m -15.2; n 618
+    context 24h vol (pts): median 44.89; <=median 30 m -19.0 (n 928) / >median -17.3 (n 927)
+    context spread: median 9.80; <=median 30 m -21.1 (n 932) / >median -15.2 (n 923)
+    context dist below 1h high (ATR): median 2.70; <=median 30 m -23.8 (n 928) / >median -12.5 (n 927)
+    context dist above 1h low (ATR): median 0.71; <=median 30 m -25.3 (n 928) / >median -11.0 (n 927)
+    context taker imbalance (2026-07/09 only): median -0.006; <=median 30 m -31.8 (n 142) / >median -59.3 (n 141)
+    context OI change (2026-07/09 only): median -0.0003; <=median 30 m -49.6 (n 131) / >median -41.5 (n 130)
+    context liquidated BTC (2026-07/09 only): median 0.00; <=median 30 m -48.5 (n 150) / >median -42.1 (n 133)
+    hour buckets 00-06h -12/416, 06-12h -9/326, 12-18h -22/662, 18-24h -24/451
+  control A matched random SHORT (1000 draws): 5 m real -13.5 vs -14.4 ± 1.8, 95th -11.5, pctile 67.3%; 15 m real -17.8 vs -13.6 ± 3.2, 95th -8.1, pctile 9.7%; 30 m real -18.2 vs -12.7 ± 4.6, 95th -5.4, pctile 11.4%; 60 m real -17.9 vs -9.5 ± 6.6, 95th +1.2, pctile 11.0%
+  frequency: 7.40/day = 51.8/week; days with none 3%; median spacing 1.8 h; longest gap 56.2 h
+  by month (SELL 30 m mean / n): 2026-01 -21/233, 2026-02 -5/195, 2026-03 -36/231, 2026-04 -20/215, 2026-05 -10/218, 2026-06 +17/252, 2026-07 -23/208, 2026-08 -58/219, 2026-09 +3/84
+done
