@@ -1,1 +1,3 @@
 2026-09-12T10:08:39Z pipeline start; waiting for V3 import
+2026-09-12T10:53:18Z STAGE v3-import DONE
+2026-09-12T10:57:14Z STAGE V3 era DONE:   2h gate (production) ALL           n 3499 (292.2/mo) wr 50.8% net  -1389.89 PF 0.88 exp$ -0.397 expR -0.094 sumR -328.0 maxDD$ 1418.48 maxDD_R 330.6 underwater max 3453 tr | largest +51.47/-83.93 | worst r20 -285.05 r40 -307.05
