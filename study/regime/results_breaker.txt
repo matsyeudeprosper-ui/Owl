@@ -1,0 +1,90 @@
+train: 259 trades, mean +0.395/trade, sd 4.126
+
+=== ROLLING-SUM BREAKER (thresholds = bootstrap of TRAIN trades) ===
+
+--- N=20: REDUCED below p10 -15.65, PAUSED below p5 -22.51, NORMAL again at/above p50 +8.14
+  TRAIN (in-sample, not blind): shadow  +102.22 -> real  +115.54 | trades 259: paused 22, reduced 18 | P&L not taken: paused -30.07, reduced-half +16.76
+      2026-07-08T01:28:00 NORMAL -> REDUCED (rolling -18.97)
+      2026-07-08T09:14:00 REDUCED -> PAUSED (rolling -26.47)
+      2026-07-13T07:23:00 PAUSED -> REDUCED (rolling -7.51)
+      2026-07-13T15:10:00 REDUCED -> NORMAL (rolling +8.56)
+      2026-07-23T07:11:00 NORMAL -> REDUCED (rolling -18.92)
+      2026-07-24T14:17:00 REDUCED -> NORMAL (rolling +10.58)
+  TEST  (blind): shadow  +134.61 -> real  +133.38 | trades 265: paused 21, reduced 65 | P&L not taken: paused +5.72, reduced-half -4.49
+      2026-08-07T06:14:00 NORMAL -> REDUCED (rolling -19.20)
+      2026-08-10T14:14:00 REDUCED -> PAUSED (rolling -31.72)
+      2026-08-10T21:40:00 PAUSED -> REDUCED (rolling -10.59)
+      2026-08-11T20:31:00 REDUCED -> NORMAL (rolling +13.97)
+      2026-08-28T05:22:00 NORMAL -> REDUCED (rolling -17.39)
+      2026-08-28T10:54:00 REDUCED -> PAUSED (rolling -41.13)
+      2026-08-28T12:11:00 PAUSED -> REDUCED (rolling -0.72)
+      2026-08-28T17:00:00 REDUCED -> PAUSED (rolling -26.40)
+      2026-08-29T00:21:00 PAUSED -> REDUCED (rolling -14.71)
+      2026-08-31T19:53:00 REDUCED -> NORMAL (rolling +8.54)
+      2026-09-07T14:05:00 NORMAL -> PAUSED (rolling -22.61)
+      2026-09-07T14:21:00 PAUSED -> REDUCED (rolling -10.43)
+  OOS   (blind): shadow   -25.61 -> real   -16.61 | trades 47: paused 18, reduced 7 | P&L not taken: paused -3.33, reduced-half -5.67
+      2026-09-08T09:33:00 REDUCED -> NORMAL (rolling +9.16)
+      2026-09-09T16:03:00 NORMAL -> REDUCED (rolling -18.24)
+      2026-09-09T21:05:00 REDUCED -> PAUSED (rolling -24.32)
+      2026-09-10T01:05:00 PAUSED -> REDUCED (rolling -15.49)
+      2026-09-10T03:04:00 REDUCED -> PAUSED (rolling -22.65)
+      2026-09-11T08:08:00 PAUSED -> REDUCED (rolling -12.81)
+
+--- N=30: REDUCED below p10 -17.16, PAUSED below p5 -25.43, NORMAL again at/above p50 +11.93
+  TRAIN (in-sample, not blind): shadow  +102.22 -> real   +89.36 | trades 259: paused 28, reduced 17 | P&L not taken: paused +7.88, reduced-half +4.99
+      2026-07-09T01:09:00 NORMAL -> REDUCED (rolling -19.31)
+      2026-07-09T02:35:00 REDUCED -> PAUSED (rolling -38.25)
+      2026-07-13T17:23:00 PAUSED -> REDUCED (rolling -14.69)
+      2026-07-13T19:50:00 REDUCED -> NORMAL (rolling +14.42)
+      2026-07-23T07:11:00 NORMAL -> REDUCED (rolling -22.77)
+      2026-07-27T00:04:00 REDUCED -> NORMAL (rolling +12.09)
+  TEST  (blind): shadow  +134.61 -> real  +122.55 | trades 265: paused 26, reduced 52 | P&L not taken: paused +16.45, reduced-half -4.39
+      2026-08-07T08:42:00 NORMAL -> REDUCED (rolling -20.04)
+      2026-08-10T14:14:00 REDUCED -> PAUSED (rolling -34.90)
+      2026-08-10T19:29:00 PAUSED -> REDUCED (rolling -16.24)
+      2026-08-11T08:40:00 REDUCED -> PAUSED (rolling -26.97)
+      2026-08-11T14:24:00 PAUSED -> REDUCED (rolling -15.16)
+      2026-08-12T14:34:00 REDUCED -> NORMAL (rolling +13.11)
+      2026-08-28T16:22:00 NORMAL -> PAUSED (rolling -34.45)
+      2026-08-28T18:47:00 PAUSED -> REDUCED (rolling -4.55)
+      2026-08-29T00:48:00 REDUCED -> PAUSED (rolling -35.24)
+      2026-08-30T10:02:00 PAUSED -> REDUCED (rolling -14.23)
+      2026-09-01T00:53:00 REDUCED -> NORMAL (rolling +13.48)
+  OOS   (blind): shadow   -25.61 -> real   -26.48 | trades 47: paused 19, reduced 2 | P&L not taken: paused +1.97, reduced-half -1.10
+      2026-09-09T22:07:00 NORMAL -> REDUCED (rolling -19.03)
+      2026-09-10T03:04:00 REDUCED -> PAUSED (rolling -27.04)
+
+--- N=40: REDUCED below p10 -17.52, PAUSED below p5 -27.01, NORMAL again at/above p50 +16.02
+  TRAIN (in-sample, not blind): shadow  +102.22 -> real   +85.64 | trades 259: paused 22, reduced 14 | P&L not taken: paused +12.93, reduced-half +3.65
+      2026-07-09T06:27:00 NORMAL -> REDUCED (rolling -21.41)
+      2026-07-09T07:46:00 REDUCED -> PAUSED (rolling -29.57)
+      2026-07-13T18:12:00 PAUSED -> REDUCED (rolling -16.22)
+      2026-07-14T12:30:00 REDUCED -> NORMAL (rolling +22.55)
+  TEST  (blind): shadow  +134.61 -> real  +106.66 | trades 265: paused 37, reduced 65 | P&L not taken: paused +15.52, reduced-half +12.43
+      2026-08-10T14:14:00 NORMAL -> PAUSED (rolling -28.19)
+      2026-08-11T11:55:00 PAUSED -> REDUCED (rolling -17.10)
+      2026-08-18T08:03:00 REDUCED -> NORMAL (rolling +16.74)
+      2026-08-28T19:43:00 NORMAL -> REDUCED (rolling -26.41)
+      2026-08-28T22:45:00 REDUCED -> PAUSED (rolling -32.41)
+      2026-08-30T01:12:00 PAUSED -> REDUCED (rolling -12.62)
+      2026-08-30T10:46:00 REDUCED -> PAUSED (rolling -34.08)
+      2026-08-31T19:53:00 PAUSED -> REDUCED (rolling -3.60)
+      2026-09-01T05:41:00 REDUCED -> NORMAL (rolling +17.96)
+  OOS   (blind): shadow   -25.61 -> real   -34.14 | trades 47: paused 16, reduced 3 | P&L not taken: paused +15.09, reduced-half -6.56
+      2026-09-10T03:04:00 NORMAL -> REDUCED (rolling -18.19)
+      2026-09-10T16:17:00 REDUCED -> PAUSED (rolling -30.11)
+
+=== CUSUM BREAKER (k = mu/2, h = p99 of the CUSUM peak over train bootstrap runs of 300 trades) ===
+mu +0.395 k +0.197 h 147.13 (p99 of train CUSUM peaks; p95 116.49)
+  TRAIN (in-sample, not blind): shadow  +102.22 -> real   +78.90 | trades 259: paused 0, reduced 32 | P&L not taken: paused +0.00, reduced-half +23.32
+      2026-07-09T13:44:00 NORMAL -> REDUCED (rolling +74.47)
+      2026-07-14T14:04:00 REDUCED -> NORMAL (rolling +34.15)
+  TEST  (blind): shadow  +134.61 -> real  +109.96 | trades 265: paused 0, reduced 51 | P&L not taken: paused +0.00, reduced-half +24.65
+      2026-08-28T22:45:00 NORMAL -> REDUCED (rolling +73.90)
+      2026-09-02T01:50:00 REDUCED -> NORMAL (rolling +34.67)
+  OOS   (blind): shadow   -25.61 -> real   -25.61 | trades 47: paused 0, reduced 0 | P&L not taken: paused +0.00, reduced-half +0.00
+
+(CUSUM resume rule: paused for 20 shadow trades then NORMAL; REDUCED while S > h/2, back when S <= h/4 - one preregistered variant, not tuned)
+
+choices tried: 3 windows x 1 threshold set (p5/p10/p50) + 1 CUSUM = 4 candidates

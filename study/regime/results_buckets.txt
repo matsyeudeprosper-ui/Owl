@@ -1,0 +1,278 @@
+baseline: train n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44 | test n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27 | OOS n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+(train = in-sample trades before 1785880410; test = after; OOS = untouched 2026-09-08 07:12+)
+
+=========== 1. BOS BREAK QUALITY ===========
+
+--- overshoot_ratio: train cuts q25=0.058 q75=0.240
+  TRAIN lowest25%  n   65 wr 72.3% net   +96.02 PF 2.32 exp +1.477 maxDD  21.22
+  TRAIN middle50%  n  129 wr 57.4% net    +3.91 PF 1.02 exp +0.030 maxDD  41.19
+  TRAIN highest25% n   65 wr 46.2% net    +2.29 PF 1.02 exp +0.035 maxDD  37.22
+  TEST  lowest25%  n   70 wr 61.4% net   +73.69 PF 1.55 exp +1.053 maxDD  32.35
+  TEST  middle50%  n  120 wr 60.0% net   +49.81 PF 1.27 exp +0.415 maxDD  23.68
+  TEST  highest25% n   75 wr 54.7% net   +11.10 PF 1.08 exp +0.148 maxDD  65.34
+  OOS   lowest25%  n   11 wr 36.4% net   -27.96 PF 0.25 exp -2.542 maxDD  35.59
+  OOS   middle50%  n   30 wr 50.0% net   -14.03 PF 0.81 exp -0.468 maxDD  34.70
+  OOS   highest25% n    6 wr 83.3% net   +16.39 PF 10.30 exp +2.731 maxDD   1.76
+
+  RULE block weakest 25% by overshoot_ratio (<= 0.058)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 53.6% net    +6.20 PF 1.02 exp +0.032 maxDD  61.88
+    TRAIN blocked  n   65 wr 72.3% net   +96.02 PF 2.32 exp +1.477 maxDD  21.22
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  195 wr 57.9% net   +60.92 PF 1.19 exp +0.312 maxDD  72.94
+    TEST  blocked  n   70 wr 61.4% net   +73.69 PF 1.55 exp +1.053 maxDD  32.35
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   36 wr 55.6% net    +2.35 PF 1.03 exp +0.065 maxDD  23.97
+    OOS   blocked  n   11 wr 36.4% net   -27.96 PF 0.25 exp -2.542 maxDD  35.59
+
+--- overshoot: train cuts q25=8.455 q75=38.050
+  TRAIN lowest25%  n   65 wr 72.3% net   +75.22 PF 2.76 exp +1.157 maxDD   9.05
+  TRAIN middle50%  n  129 wr 51.9% net    +6.94 PF 1.04 exp +0.054 maxDD  39.81
+  TRAIN highest25% n   65 wr 56.9% net   +20.06 PF 1.13 exp +0.309 maxDD  46.89
+  TEST  lowest25%  n   63 wr 57.1% net   +16.86 PF 1.25 exp +0.268 maxDD  12.70
+  TEST  middle50%  n  131 wr 57.3% net   +53.12 PF 1.25 exp +0.405 maxDD  31.53
+  TEST  highest25% n   71 wr 63.4% net   +64.63 PF 1.36 exp +0.910 maxDD  65.92
+  OOS   lowest25%  n   14 wr 42.9% net   -27.93 PF 0.29 exp -1.995 maxDD  37.40
+  OOS   middle50%  n   20 wr 45.0% net   -21.65 PF 0.55 exp -1.083 maxDD  28.10
+  OOS   highest25% n   13 wr 69.2% net   +23.97 PF 1.97 exp +1.844 maxDD  16.75
+
+  RULE block weakest 25% by overshoot (<= 8.455)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 53.6% net   +27.00 PF 1.08 exp +0.139 maxDD  65.93
+    TRAIN blocked  n   65 wr 72.3% net   +75.22 PF 2.76 exp +1.157 maxDD   9.05
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  202 wr 59.4% net  +117.75 PF 1.30 exp +0.583 maxDD  82.89
+    TEST  blocked  n   63 wr 57.1% net   +16.86 PF 1.25 exp +0.268 maxDD  12.70
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   33 wr 54.5% net    +2.32 PF 1.03 exp +0.070 maxDD  23.97
+    OOS   blocked  n   14 wr 42.9% net   -27.93 PF 0.29 exp -1.995 maxDD  37.40
+
+--- body_range: train cuts q25=0.609 q75=0.879
+  TRAIN lowest25%  n   65 wr 66.2% net   +68.48 PF 2.00 exp +1.054 maxDD  18.86
+  TRAIN middle50%  n  129 wr 56.6% net   +25.00 PF 1.12 exp +0.194 maxDD  44.00
+  TRAIN highest25% n   65 wr 53.8% net    +8.74 PF 1.08 exp +0.134 maxDD  30.53
+  TEST  lowest25%  n   81 wr 59.3% net   +53.20 PF 1.46 exp +0.657 maxDD  21.74
+  TEST  middle50%  n  134 wr 59.0% net   +26.86 PF 1.10 exp +0.200 maxDD  70.64
+  TEST  highest25% n   50 wr 58.0% net   +54.55 PF 1.72 exp +1.091 maxDD  18.27
+  OOS   lowest25%  n   13 wr 53.8% net   -13.78 PF 0.55 exp -1.060 maxDD  24.25
+  OOS   middle50%  n   17 wr 58.8% net    +0.65 PF 1.02 exp +0.038 maxDD  16.04
+  OOS   highest25% n   17 wr 41.2% net   -12.47 PF 0.73 exp -0.734 maxDD  26.73
+
+  RULE block weakest 25% by body_range (<= 0.609)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 55.7% net   +33.74 PF 1.11 exp +0.174 maxDD  66.51
+    TRAIN blocked  n   65 wr 66.2% net   +68.48 PF 2.00 exp +1.054 maxDD  18.86
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  184 wr 58.7% net   +81.41 PF 1.24 exp +0.442 maxDD  66.68
+    TEST  blocked  n   81 wr 59.3% net   +53.20 PF 1.46 exp +0.657 maxDD  21.74
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   34 wr 50.0% net   -11.83 PF 0.85 exp -0.348 maxDD  31.26
+    OOS   blocked  n   13 wr 53.8% net   -13.78 PF 0.55 exp -1.060 maxDD  24.25
+
+--- close_loc: train cuts q25=0.724 q75=0.963
+  TRAIN lowest25%  n   65 wr 73.8% net   +98.71 PF 2.76 exp +1.519 maxDD  15.34
+  TRAIN middle50%  n  129 wr 51.9% net   -40.52 PF 0.83 exp -0.314 maxDD  85.97
+  TRAIN highest25% n   65 wr 55.4% net   +44.03 PF 1.49 exp +0.677 maxDD  20.31
+  TEST  lowest25%  n   77 wr 59.7% net    +4.97 PF 1.03 exp +0.064 maxDD  75.42
+  TEST  middle50%  n  123 wr 60.2% net  +124.19 PF 1.63 exp +1.010 maxDD  37.76
+  TEST  highest25% n   65 wr 55.4% net    +5.45 PF 1.05 exp +0.084 maxDD  23.65
+  OOS   lowest25%  n   11 wr 54.5% net    -7.63 PF 0.76 exp -0.694 maxDD  20.28
+  OOS   middle50%  n   21 wr 52.4% net   -26.45 PF 0.52 exp -1.259 maxDD  37.07
+  OOS   highest25% n   15 wr 46.7% net    +8.47 PF 1.33 exp +0.565 maxDD  15.49
+
+  RULE block weakest 25% by close_loc (<= 0.724)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 53.1% net    +3.51 PF 1.01 exp +0.018 maxDD  82.06
+    TRAIN blocked  n   65 wr 73.8% net   +98.71 PF 2.76 exp +1.519 maxDD  15.34
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  188 wr 58.5% net  +129.65 PF 1.43 exp +0.690 maxDD  36.40
+    TEST  blocked  n   77 wr 59.7% net    +4.97 PF 1.03 exp +0.064 maxDD  75.42
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   36 wr 50.0% net   -17.98 PF 0.78 exp -0.499 maxDD  37.89
+    OOS   blocked  n   11 wr 54.5% net    -7.63 PF 0.76 exp -0.694 maxDD  20.28
+
+  'tiny close beyond structure with a huge stop' = overshoot_ratio lowest bucket above.
+  overshoot_ratio x stop_dist cross-check (train cuts):
+    TRAIN tiny-break & wide-stop: n   21 wr 76.2% net   +69.81 PF 2.92 exp +3.324 maxDD  18.84
+    TEST  tiny-break & wide-stop: n   29 wr 58.6% net   +44.92 PF 1.44 exp +1.549 maxDD  45.22
+    OOS   tiny-break & wide-stop: n    3 wr  0.0% net   -25.80 PF 0.00 exp -8.601 maxDD  25.80
+
+=========== 2. TRADE ORDINAL AFTER THE LAST FLIP ===========
+  TRAIN
+    1st (flip)  n  147 wr 57.8% net   +43.56 PF 1.19 exp +0.296 maxDD  59.19
+    2nd         n   41 wr 63.4% net   +43.31 PF 1.80 exp +1.056 maxDD  16.07
+    3rd         n   35 wr 68.6% net   +40.71 PF 2.03 exp +1.163 maxDD   9.86
+    4th+        n   36 wr 44.4% net   -25.36 PF 0.65 exp -0.704 maxDD  40.88
+    cont-only  n  112 wr 58.9% net   +58.66 PF 1.35 exp +0.524 maxDD  32.61
+    flip-only  n  147 wr 57.8% net   +43.56 PF 1.19 exp +0.296 maxDD  59.19
+  TEST 
+    1st (flip)  n  156 wr 55.1% net   +39.53 PF 1.14 exp +0.253 maxDD  45.28
+    2nd         n   54 wr 63.0% net   +32.69 PF 1.29 exp +0.605 maxDD  66.22
+    3rd         n   27 wr 81.5% net   +52.14 PF 3.36 exp +1.931 maxDD   8.78
+    4th+        n   28 wr 50.0% net   +10.25 PF 1.23 exp +0.366 maxDD  11.69
+    cont-only  n  109 wr 64.2% net   +95.08 PF 1.54 exp +0.872 maxDD  70.89
+    flip-only  n  156 wr 55.1% net   +39.53 PF 1.14 exp +0.253 maxDD  45.28
+  OOS  
+    1st (flip)  n   27 wr 63.0% net    +4.40 PF 1.10 exp +0.163 maxDD  17.06
+    2nd         n   10 wr 50.0% net    +1.59 PF 1.07 exp +0.159 maxDD  15.86
+    3rd         n    5 wr  0.0% net   -22.24 PF 0.00 exp -4.448 maxDD  22.24
+    4th+        n    5 wr 40.0% net    -9.35 PF 0.59 exp -1.871 maxDD  12.96
+    cont-only  n   20 wr 35.0% net   -30.00 PF 0.56 exp -1.500 maxDD  47.32
+    flip-only  n   27 wr 63.0% net    +4.40 PF 1.10 exp +0.163 maxDD  17.06
+  (no rule preregistered for ordinal - report only)
+
+=========== 3. STRUCTURE EFFICIENCY ===========
+
+--- se_flip (continuations only): train cuts q25=0.140 q75=0.290
+  TRAIN lowest25%  n   28 wr 57.1% net   +20.81 PF 1.46 exp +0.743 maxDD  12.52
+  TRAIN middle50%  n   56 wr 60.7% net   +16.75 PF 1.20 exp +0.299 maxDD  22.73
+  TRAIN highest25% n   28 wr 57.1% net   +21.11 PF 1.56 exp +0.754 maxDD  15.11
+  TEST  lowest25%  n   41 wr 75.6% net   +83.99 PF 3.05 exp +2.048 maxDD   9.09
+  TEST  middle50%  n   41 wr 56.1% net    -2.55 PF 0.97 exp -0.062 maxDD  49.02
+  TEST  highest25% n   27 wr 59.3% net   +13.64 PF 1.29 exp +0.505 maxDD  25.56
+  OOS   lowest25%  n    7 wr 57.1% net    -3.09 PF 0.89 exp -0.441 maxDD  18.37
+  OOS   middle50%  n    8 wr 12.5% net   -30.13 PF 0.07 exp -3.767 maxDD  30.13
+  OOS   highest25% n    5 wr 40.0% net    +3.22 PF 1.45 exp +0.644 maxDD   5.03
+
+  RULE block continuations with se_flip <= 0.140 (flips untouched)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  231 wr 58.4% net   +81.41 PF 1.24 exp +0.352 maxDD  69.62
+    TRAIN blocked  n   28 wr 57.1% net   +20.81 PF 1.46 exp +0.743 maxDD  12.52
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  224 wr 55.8% net   +50.62 PF 1.12 exp +0.226 maxDD  86.00
+    TEST  blocked  n   41 wr 75.6% net   +83.99 PF 3.05 exp +2.048 maxDD   9.09
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   40 wr 50.0% net   -22.52 PF 0.73 exp -0.563 maxDD  35.51
+    OOS   blocked  n    7 wr 57.1% net    -3.09 PF 0.89 exp -0.441 maxDD  18.37
+
+--- se_60: train cuts q25=0.086 q75=0.261
+  TRAIN lowest25%  n   65 wr 58.5% net   +23.97 PF 1.36 exp +0.369 maxDD  15.37
+  TRAIN middle50%  n  129 wr 62.0% net   +57.22 PF 1.28 exp +0.444 maxDD  32.64
+  TRAIN highest25% n   65 wr 50.8% net   +21.03 PF 1.18 exp +0.324 maxDD  47.04
+  TEST  lowest25%  n   65 wr 60.0% net   +12.87 PF 1.16 exp +0.198 maxDD  22.32
+  TEST  middle50%  n  142 wr 58.5% net   +98.33 PF 1.38 exp +0.692 maxDD  37.14
+  TEST  highest25% n   58 wr 58.6% net   +23.41 PF 1.20 exp +0.404 maxDD  51.59
+  OOS   lowest25%  n   16 wr 68.8% net   +16.49 PF 1.82 exp +1.031 maxDD  18.41
+  OOS   middle50%  n   23 wr 34.8% net   -50.60 PF 0.35 exp -2.200 maxDD  53.80
+  OOS   highest25% n    8 wr 62.5% net    +8.51 PF 1.59 exp +1.064 maxDD  10.91
+
+  RULE block se_60 <= 0.086
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 58.2% net   +78.26 PF 1.24 exp +0.403 maxDD  71.87
+    TRAIN blocked  n   65 wr 58.5% net   +23.97 PF 1.36 exp +0.369 maxDD  15.37
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  200 wr 58.5% net  +121.74 PF 1.32 exp +0.609 maxDD  73.56
+    TEST  blocked  n   65 wr 60.0% net   +12.87 PF 1.16 exp +0.198 maxDD  22.32
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   31 wr 41.9% net   -42.10 PF 0.54 exp -1.358 maxDD  55.55
+    OOS   blocked  n   16 wr 68.8% net   +16.49 PF 1.82 exp +1.031 maxDD  18.41
+
+--- disturb_2h: train cuts q25=1.000 q75=2.500
+  TRAIN lowest25%  n  122 wr 60.7% net   +55.03 PF 1.27 exp +0.451 maxDD  40.79
+  TRAIN middle50%  n   72 wr 54.2% net   +11.66 PF 1.12 exp +0.162 maxDD  24.64
+  TRAIN highest25% n   65 wr 58.5% net   +35.53 PF 1.42 exp +0.547 maxDD  23.72
+  TEST  lowest25%  n  124 wr 57.3% net   +34.02 PF 1.13 exp +0.274 maxDD  52.97
+  TEST  middle50%  n   64 wr 65.6% net   +79.55 PF 2.19 exp +1.243 maxDD  20.62
+  TEST  highest25% n   77 wr 55.8% net   +21.04 PF 1.18 exp +0.273 maxDD  27.81
+  OOS   lowest25%  n   16 wr 50.0% net    -8.84 PF 0.78 exp -0.552 maxDD  19.24
+  OOS   middle50%  n   13 wr 76.9% net   +20.94 PF 2.45 exp +1.610 maxDD  10.91
+  OOS   highest25% n   18 wr 33.3% net   -37.71 PF 0.34 exp -2.095 maxDD  40.36
+
+  RULE block disturb_2h >= 2 (chochs+repairs last 2h)
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 58.2% net   +66.70 PF 1.22 exp +0.344 maxDD  61.18
+    TRAIN blocked  n   65 wr 58.5% net   +35.53 PF 1.42 exp +0.547 maxDD  23.72
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  188 wr 60.1% net  +113.57 PF 1.34 exp +0.604 maxDD  60.61
+    TEST  blocked  n   77 wr 55.8% net   +21.04 PF 1.18 exp +0.273 maxDD  27.81
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   29 wr 62.1% net   +12.10 PF 1.22 exp +0.417 maxDD  22.49
+    OOS   blocked  n   18 wr 33.3% net   -37.71 PF 0.34 exp -2.095 maxDD  40.36
+
+--- prog_per_disturb (continuations only): train cuts q25=67.535 q75=296.752
+  TRAIN lowest25%  n   28 wr 71.4% net   +44.03 PF 2.72 exp +1.572 maxDD  14.51
+  TRAIN middle50%  n   56 wr 48.2% net   -32.90 PF 0.64 exp -0.588 maxDD  47.53
+  TRAIN highest25% n   28 wr 67.9% net   +47.54 PF 2.00 exp +1.698 maxDD  15.11
+  TEST  lowest25%  n   42 wr 76.2% net   +85.55 PF 4.11 exp +2.037 maxDD   9.09
+  TEST  middle50%  n   43 wr 58.1% net   +16.74 PF 1.26 exp +0.389 maxDD  23.96
+  TEST  highest25% n   24 wr 54.2% net    -7.21 PF 0.92 exp -0.300 maxDD  56.19
+  OOS   lowest25%  n    6 wr 33.3% net    -9.24 PF 0.59 exp -1.540 maxDD  22.34
+  OOS   middle50%  n   11 wr 27.3% net   -26.60 PF 0.35 exp -2.418 maxDD  30.95
+  OOS   highest25% n    3 wr 66.7% net    +5.83 PF 2.28 exp +1.944 maxDD   4.57
+
+  RULE block continuations with prog_per_disturb <= 67.5
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  231 wr 56.7% net   +58.19 PF 1.16 exp +0.252 maxDD  79.92
+    TRAIN blocked  n   28 wr 71.4% net   +44.03 PF 2.72 exp +1.572 maxDD  14.51
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  223 wr 55.6% net   +49.07 PF 1.11 exp +0.220 maxDD  87.35
+    TEST  blocked  n   42 wr 76.2% net   +85.55 PF 4.11 exp +2.037 maxDD   9.09
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   41 wr 53.7% net   -16.37 PF 0.82 exp -0.399 maxDD  35.28
+    OOS   blocked  n    6 wr 33.3% net    -9.24 PF 0.59 exp -1.540 maxDD  22.34
+
+=========== 4. RISK GEOMETRY ===========
+
+--- stop_atr: train cuts q25=2.489 q75=5.315
+  TRAIN lowest25%  n   65 wr 53.8% net    +2.77 PF 1.05 exp +0.043 maxDD  13.00
+  TRAIN middle50%  n  129 wr 58.9% net   +23.11 PF 1.12 exp +0.179 maxDD  30.25
+  TRAIN highest25% n   65 wr 61.5% net   +76.34 PF 1.53 exp +1.175 maxDD  46.93
+  TEST  lowest25%  n   51 wr 47.1% net   -20.76 PF 0.63 exp -0.407 maxDD  23.98
+  TEST  middle50%  n  138 wr 62.3% net   +94.44 PF 1.54 exp +0.684 maxDD  15.36
+  TEST  highest25% n   76 wr 60.5% net   +60.93 PF 1.27 exp +0.802 maxDD  79.32
+  OOS   lowest25%  n   11 wr 54.5% net    -1.22 PF 0.90 exp -0.111 maxDD   5.88
+  OOS   middle50%  n   23 wr 52.2% net   -11.41 PF 0.77 exp -0.496 maxDD  29.10
+  OOS   highest25% n   13 wr 46.2% net   -12.98 PF 0.74 exp -0.999 maxDD  33.91
+  train tails: low +2.77 high +76.34
+    no negative tail in train -> no rule
+
+--- stop_range60: train cuts q25=0.281 q75=0.727
+  TRAIN lowest25%  n   65 wr 55.4% net   +15.07 PF 1.33 exp +0.232 maxDD   9.70
+  TRAIN middle50%  n  129 wr 55.0% net   -12.95 PF 0.94 exp -0.100 maxDD  52.64
+  TRAIN highest25% n   65 wr 67.7% net  +100.10 PF 1.78 exp +1.540 maxDD  44.07
+  TEST  lowest25%  n   60 wr 50.0% net    +4.43 PF 1.07 exp +0.074 maxDD  15.25
+  TEST  middle50%  n  126 wr 56.3% net   +16.47 PF 1.08 exp +0.131 maxDD  44.95
+  TEST  highest25% n   79 wr 69.6% net  +113.71 PF 1.59 exp +1.439 maxDD  52.97
+  OOS   lowest25%  n   10 wr 50.0% net    -4.17 PF 0.69 exp -0.417 maxDD  11.60
+  OOS   middle50%  n   20 wr 55.0% net    -7.45 PF 0.81 exp -0.373 maxDD  24.46
+  OOS   highest25% n   17 wr 47.1% net   -13.98 PF 0.76 exp -0.822 maxDD  33.34
+  train tails: low +15.07 high +100.10
+    no negative tail in train -> no rule
+
+--- stop_med60: train cuts q25=2.913 q75=6.824
+  TRAIN lowest25%  n   65 wr 58.5% net    +9.64 PF 1.22 exp +0.148 maxDD   8.34
+  TRAIN middle50%  n  129 wr 54.3% net   -22.34 PF 0.89 exp -0.173 maxDD  52.44
+  TRAIN highest25% n   65 wr 66.2% net  +114.93 PF 1.86 exp +1.768 maxDD  38.35
+  TEST  lowest25%  n   52 wr 42.3% net   -32.11 PF 0.49 exp -0.618 maxDD  32.11
+  TEST  middle50%  n  146 wr 61.0% net   +70.65 PF 1.36 exp +0.484 maxDD  30.32
+  TEST  highest25% n   67 wr 67.2% net   +96.07 PF 1.50 exp +1.434 maxDD  52.97
+  OOS   lowest25%  n   12 wr 50.0% net    -5.92 PF 0.61 exp -0.493 maxDD  11.60
+  OOS   middle50%  n   23 wr 52.2% net   -21.30 PF 0.62 exp -0.926 maxDD  34.14
+  OOS   highest25% n   12 wr 50.0% net    +1.61 PF 1.04 exp +0.134 maxDD  19.32
+  train tails: low +9.64 high +114.93
+    no negative tail in train -> no rule
+
+--- stop_dist: train cuts q25=97.940 q75=252.700
+  TRAIN lowest25%  n   65 wr 47.7% net   -15.12 PF 0.69 exp -0.233 maxDD  18.84
+  TRAIN middle50%  n  129 wr 61.2% net   +27.63 PF 1.17 exp +0.214 maxDD  16.02
+  TRAIN highest25% n   65 wr 63.1% net   +89.71 PF 1.52 exp +1.380 maxDD  57.85
+  TEST  lowest25%  n   69 wr 49.3% net   -11.23 PF 0.76 exp -0.163 maxDD  12.58
+  TEST  middle50%  n  121 wr 60.3% net   +43.06 PF 1.29 exp +0.356 maxDD  21.76
+  TEST  highest25% n   75 wr 65.3% net  +102.78 PF 1.39 exp +1.370 maxDD  78.30
+  OOS   lowest25%  n    7 wr 42.9% net    -3.76 PF 0.46 exp -0.537 maxDD   4.23
+  OOS   middle50%  n   24 wr 54.2% net    -8.65 PF 0.79 exp -0.360 maxDD  18.04
+  OOS   highest25% n   16 wr 50.0% net   -13.20 PF 0.79 exp -0.825 maxDD  32.74
+  train tails: low -15.12 high +89.71
+
+  RULE block narrowest 25% by stop_dist
+    TRAIN baseline n  259 wr 58.3% net  +102.22 PF 1.26 exp +0.395 maxDD  73.44
+    TRAIN kept     n  194 wr 61.9% net  +117.34 PF 1.34 exp +0.605 maxDD  70.61
+    TRAIN blocked  n   65 wr 47.7% net   -15.12 PF 0.69 exp -0.233 maxDD  18.84
+    TEST  baseline n  265 wr 58.9% net  +134.61 PF 1.30 exp +0.508 maxDD  83.27
+    TEST  kept     n  196 wr 62.2% net  +145.84 PF 1.36 exp +0.744 maxDD  84.11
+    TEST  blocked  n   69 wr 49.3% net   -11.23 PF 0.76 exp -0.163 maxDD  12.58
+    OOS   baseline n   47 wr 51.1% net   -25.61 PF 0.77 exp -0.545 maxDD  52.95
+    OOS   kept     n   40 wr 52.5% net   -21.85 PF 0.79 exp -0.546 maxDD  50.78
+    OOS   blocked  n    7 wr 42.9% net    -3.76 PF 0.46 exp -0.537 maxDD   4.23
+
+choices/parameters tried in this file: 16 rules (each = one feature, one preregistered side, one train quantile)

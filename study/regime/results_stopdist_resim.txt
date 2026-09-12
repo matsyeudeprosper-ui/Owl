@@ -1,0 +1,26 @@
+=== in-engine re-simulation: min_dist 10 (baseline) vs min_dist 97.94 (block narrow stops), tick, gated, flat 0.02
+baseline             TRAIN        : n  259 wr 58.3% net  +102.22 avgW +3.25 avgL -3.60 PF 1.26 maxDD  73.44 exp/tr +0.395 | flip n 147 +43.6 | touch n 0 +0.0
+baseline             TEST         : n  265 wr 58.9% net  +134.61 avgW +3.78 avgL -4.17 PF 1.30 maxDD  83.27 exp/tr +0.508 | flip n 156 +39.5 | touch n 0 +0.0
+baseline             OOS          : n   47 wr 51.1% net   -25.61 avgW +3.60 avgL -4.87 PF 0.77 maxDD  52.95 exp/tr -0.545 | flip n 27 +4.4 | touch n 0 +0.0
+baseline             FULL         : n  524 wr 58.6% net  +236.83 avgW +3.52 avgL -3.89 PF 1.28 maxDD  83.27 exp/tr +0.452 | flip n 303 +83.1 | touch n 0 +0.0
+
+block narrow stops   TRAIN        : n  194 wr 61.9% net  +117.34 avgW +3.82 avgL -4.61 PF 1.34 maxDD  70.61 exp/tr +0.605 | flip n 104 +53.9 | touch n 0 +0.0
+block narrow stops   TEST         : n  198 wr 62.1% net  +145.50 avgW +4.51 avgL -5.46 PF 1.36 maxDD  82.42 exp/tr +0.735 | flip n 105 +54.4 | touch n 0 +0.0
+block narrow stops   OOS          : n   40 wr 52.5% net   -21.85 avgW +3.96 avgL -5.52 PF 0.79 maxDD  50.78 exp/tr -0.546 | flip n 22 +4.6 | touch n 0 +0.0
+block narrow stops   FULL         : n  392 wr 62.0% net  +262.84 avgW +4.17 avgL -5.03 PF 1.35 maxDD  82.42 exp/tr +0.671 | flip n 209 +108.3 | touch n 0 +0.0
+
+=== permutation control (list-based): P&L of the blocked set vs 10000 random subsets of the same size
+  TRAIN: blocked set n 65 P&L -15.12 | random same-size subsets mean +25.35 sd 29.06 | P(random <= real) = 0.081
+  TEST : blocked set n 69 P&L -11.23 | random same-size subsets mean +35.09 sd 38.30 | P(random <= real) = 0.115
+
+=== the mechanism check: win rate by stop distance bucket (fixed $7 spread = larger share of a narrow stop)
+  TRAIN stop    0-  60: n  25 wr 52.0% net   -0.82 spread/stop 0%-12%
+  TRAIN stop   60-  98: n  40 wr 45.0% net  -14.29 spread/stop 12%-7%
+  TRAIN stop   98- 150: n  67 wr 68.7% net  +38.01 spread/stop 7%-5%
+  TRAIN stop  150- 250: n  61 wr 54.1% net   -5.27 spread/stop 5%-3%
+  TRAIN stop  250-9999: n  66 wr 62.1% net  +84.60 spread/stop 3%-0%
+  TEST  stop    0-  60: n  29 wr 55.2% net   -0.67 spread/stop 0%-12%
+  TEST  stop   60-  98: n  40 wr 45.0% net  -10.56 spread/stop 12%-7%
+  TEST  stop   98- 150: n  63 wr 58.7% net  +12.10 spread/stop 7%-5%
+  TEST  stop  150- 250: n  58 wr 62.1% net  +30.96 spread/stop 5%-3%
+  TEST  stop  250-9999: n  75 wr 65.3% net +102.78 spread/stop 3%-0%
