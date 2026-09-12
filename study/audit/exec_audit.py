@@ -134,10 +134,21 @@ class Ticks:
 
 def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
              S=7.0, min_dist=None, slip_entry=0.0, slip_sl=0.0,
-             seed=None, ticks=None, poll_delay_ms=1000, lot=LOT):
-    """Returns the list of closed trades (dicts)."""
+             seed=None, ticks=None, poll_delay_ms=1000, lot=LOT,
+             cont_tp="own"):
+    """Returns the list of closed trades (dicts).
+    cont_tp: "own" = TP from the close entry (RR x its own risk);
+             "touch" = the TP the touch rule would have set (measured
+             from the level: level+S +/- RR x (level+S - SL))."""
     if min_dist is None:
         min_dist = S
+
+    def touch_tp(j, d, slp):
+        lvl = P.tb_lvl[j] if d == 1 else P.ts_lvl[j]
+        if np.isnan(lvl):
+            return None
+        e_t = lvl + S if d == 1 else lvl
+        return e_t + d * RR * abs(e_t - slp)
     O, H, L, C, T = P.O, P.H, P.L, P.C, P.T
     N = P.N
     rng = np.random.default_rng(seed) if seed is not None else None
@@ -294,6 +305,10 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                     e = (ticks.ask[i2] + slip_entry) if d == 1 else (ticks.bid[i2] - slip_entry)
                     if dist > min_dist:
                         p = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j, i2)
+                        if cont_tp == "touch" and not P.sig_flip[j] and d == d0:
+                            t2 = touch_tp(j, d, slp)
+                            if t2 is not None:
+                                p["tp"] = t2
                         if tick_exit(p):
                             pos = p
             elif pos is None:
@@ -303,6 +318,10 @@ def simulate(P, mode="legacy", entries=("flip", "touch"), gate=True,
                 e = (C[j] + S + slip_entry) if d == 1 else (C[j] - slip_entry)
                 if dist > min_dist:
                     pos = mk(d, e, dist, "flip" if P.sig_flip[j] else "cont", j)
+                    if cont_tp == "touch" and not P.sig_flip[j] and d == d0:
+                        t2 = touch_tp(j, d, slp)
+                        if t2 is not None:
+                            pos["tp"] = t2
     out.sort(key=lambda x: (x["j"], x["ti"] if x["ti"] is not None else 0))
     return out
 

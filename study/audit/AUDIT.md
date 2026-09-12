@@ -244,6 +244,25 @@ keeps trading the flip+touch rule virtually on the same Pro feed (flat
 compare the twin's trade list with the live bot's BASE trades normalised
 to 0.02. Demo variants (sniper, halfdebt) still use touch.
 
+## 13. Candle-close entry with the TOUCH rule's target (user question 2026-09-11 evening; `results/close_with_touch_tp.txt`)
+
+Same entry (candle close), same SL (dot), but TP where the touch rule
+would have put it (nearer, measured from the level). Tick, gated, 0.02:
+
+| | own TP (live) | touch-geometry TP |
+|---|---|---|
+| net | +$237 | +$166 |
+| trades / win rate | 524 / 58.6% | 584 / 60.1% |
+| avg win / avg loss | +3.52 / −3.89 | +2.88 / −3.62 |
+| PF / maxDD | 1.28 / $83 | 1.20 / $70 |
+| with slippage 2.5/2.5 | +$199 | +$120 |
+| OOS 3.3 days | −$26 | −$25 |
+| M1 random control | 99.3rd pct | 98.7th pct |
+
+The nearer target wins a little more often but pays $0.64 less per win;
+net −$70 over 69 days and −$79 with slippage. Not worth it. Live keeps
+its own TP.
+
 ## Files
 
 - `exec_audit.py` – engine (signal logic frozen; execution modes legacy / pess / opt / tick; random control).
