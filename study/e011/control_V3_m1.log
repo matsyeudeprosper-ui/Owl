@@ -1,0 +1,17 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+V3 [pess] net $: real -1204.62 | random mean -1119.73 sd  460.21 p95  -375.05 max  +347.63 | real beats 42.4% | z -0.18  (n seeds 1000, real trades 3503, 434s)
+V3 [pess] sum R: real  -281.00 | random mean  -252.50 sd   52.98 p95  -160.56 max  -101.60 | real beats 28.7% | z -0.54  (n seeds 1000, real trades 3503, 434s)

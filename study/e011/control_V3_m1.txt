@@ -1,0 +1,2 @@
+V3 [pess] net $: real -1204.62 | random mean -1119.73 sd  460.21 p95  -375.05 max  +347.63 | real beats 42.4% | z -0.18  (n seeds 1000, real trades 3503, 434s)
+V3 [pess] sum R: real  -281.00 | random mean  -252.50 sd   52.98 p95  -160.56 max  -101.60 | real beats 28.7% | z -0.54  (n seeds 1000, real trades 3503, 434s)
