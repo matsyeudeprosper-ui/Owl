@@ -1,0 +1,46 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+R0 M1 bars 99000; signal bars 1352; pass share: R1 69%, R2 69%, P1 31%
+
+=== ALL R0 (07-01 -> 09-07), tick execution, net $ at 0.02 ===
+  BASELINE (frozen live config)            n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27 | flips 303  +83.09 conts 221 +153.74
+  R1 H1 direction only                     n   391 net   +15.64 PF  1.02 wr  54% exp +0.040 maxDD 104.99 | flips 179   -3.77 conts 212  +19.41
+  R2 direction + beyond H1 close (OWNER)   n   387 net   +16.13 PF  1.02 wr  54% exp +0.042 maxDD 106.60 | flips 175   -3.28 conts 212  +19.41
+  P1 opposite direction (placebo)          n   251 net  +183.20 PF  1.66 wr  62% exp +0.730 maxDD  41.45 | flips 172  +89.17 conts 79  +94.04
+    R2: trades removed by the gate 213, their P&L +176.47
+    R1: trades removed by the gate 210, their P&L +173.38
+
+=== TRAIN (< 08-04), tick execution, net $ at 0.02 ===
+  BASELINE (frozen live config)            n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44 | flips 147  +43.56 conts 112  +58.66
+  R1 H1 direction only                     n   185 net   +72.74 PF  1.25 wr  57% exp +0.393 maxDD  51.87 | flips 83  +48.59 conts 102  +24.15
+  R2 direction + beyond H1 close (OWNER)   n   184 net   +73.53 PF  1.26 wr  58% exp +0.400 maxDD  51.87 | flips 82  +49.38 conts 102  +24.15
+  P1 opposite direction (placebo)          n   114 net   +32.85 PF  1.22 wr  60% exp +0.288 maxDD  41.45 | flips 79   +7.35 conts 35  +25.50
+    R2: trades removed by the gate 105, their P&L +34.85
+    R1: trades removed by the gate 104, their P&L +35.63
+
+=== TEST (08-04 -> 09-07), tick execution, net $ at 0.02 ===
+  BASELINE (frozen live config)            n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27 | flips 156  +39.53 conts 109  +95.08
+  R1 H1 direction only                     n   206 net   -57.10 PF  0.88 wr  51% exp -0.277 maxDD 104.99 | flips 96  -52.36 conts 110   -4.74
+  R2 direction + beyond H1 close (OWNER)   n   203 net   -57.40 PF  0.87 wr  51% exp -0.283 maxDD 106.60 | flips 93  -52.66 conts 110   -4.74
+  P1 opposite direction (placebo)          n   137 net  +150.35 PF  2.14 wr  64% exp +1.097 maxDD  21.70 | flips 93  +81.81 conts 44  +68.54
+    R2: trades removed by the gate 108, their P&L +141.62
+    R1: trades removed by the gate 106, their P&L +137.75
+
+=== V1 tail (09-07 -> 09-11), tick execution, net $ at 0.02 ===
+  BASELINE (frozen live config)            n 0
+  R1 H1 direction only                     n 0
+  R2 direction + beyond H1 close (OWNER)   n 0
+  P1 opposite direction (placebo)          n 0
+    R2: trades removed by the gate 0, their P&L +0.00
+    R1: trades removed by the gate 0, their P&L +0.00
+
+=== P2 random masks (same pass rate as R2 on signal bars), M1 pess mode, ALL R0 ===
+  baseline pess                            n   520 net  +206.85 PF  1.24 wr  57% exp +0.398 maxDD  85.46 | flips 300  +53.91 conts 220 +152.94
+  R1 pess                                  n   393 net    +9.39 PF  1.01 wr  53% exp +0.024 maxDD 101.23 | flips 179  -11.36 conts 214  +20.75
+  R2 pess                                  n   389 net   +10.05 PF  1.01 wr  53% exp +0.026 maxDD 102.56 | flips 175  -10.69 conts 214  +20.75
+  P1 pess                                  n   249 net  +175.97 PF  1.63 wr  61% exp +0.707 maxDD  37.23 | flips 171  +77.45 conts 78  +98.52
+  random masks: mean +127.03 sd 53.80 95th +209.80; R2 pess +10.05 at 2.5th pct; R1 pess +9.39 at 2.5th pct
+done

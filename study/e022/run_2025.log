@@ -1,0 +1,15 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+2025 M1 bars 520525, S 15.1; signal bars 8671; pass share: R1 68%, R2 67%, P1 32%
+
+=== 2025, M1 pess mode, net $ at 0.02 ===
+  BASELINE                                 n  3503 net -1198.36 PF  0.90 wr  51% exp -0.342 maxDD 1220.53 | flips 1963 -844.11 conts 1540 -354.25
+  R1 direction only                        n  2384 net  -851.74 PF  0.90 wr  51% exp -0.357 maxDD 978.13 | flips 984 -430.48 conts 1400 -421.27
+  R2 direction + beyond close (OWNER)      n  2323 net  -811.93 PF  0.90 wr  52% exp -0.350 maxDD 941.60 | flips 923 -395.38 conts 1400 -416.55
+  P1 opposite (placebo)                    n  1710 net  -816.55 PF  0.84 wr  50% exp -0.478 maxDD 879.46 | flips 1257 -660.08 conts 453 -156.47
+    R2: trades removed by the gate 1518, their P&L -630.08
+  halves (R2 / baseline / P1): H1 -522.29 / -515.42 / -269.54 | H2 -289.64 / -682.94 / -547.01
+done

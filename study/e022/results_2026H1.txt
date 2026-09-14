@@ -1,0 +1,10 @@
+2026H1 M1 bars 260530, S 9.8; signal bars 2830; pass share: R1 70%, R2 70%, P1 30%
+
+=== 2026H1, M1 pess mode, net $ at 0.02 ===
+  BASELINE                                 n  1057 net  -743.83 PF  0.79 wr  50% exp -0.704 maxDD 864.19 | flips 623 -519.39 conts 434 -224.43
+  R1 direction only                        n   788 net  -545.90 PF  0.80 wr  50% exp -0.693 maxDD 691.07 | flips 367 -403.45 conts 421 -142.45
+  R2 direction + beyond close (OWNER)      n   776 net  -533.01 PF  0.80 wr  51% exp -0.687 maxDD 681.64 | flips 355 -389.31 conts 421 -143.70
+  P1 opposite (placebo)                    n   524 net  -263.21 PF  0.81 wr  51% exp -0.502 maxDD 302.31 | flips 390 -217.49 conts 134  -45.72
+    R2: trades removed by the gate 418, their P&L -286.30
+  halves (R2 / baseline / P1): H1 -527.26 / -594.22 / -112.19 | H2 -5.75 / -149.61 / -151.02
+done

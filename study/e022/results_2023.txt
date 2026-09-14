@@ -1,0 +1,10 @@
+2023 M1 bars 525013, S 12.0; signal bars 4894; pass share: R1 67%, R2 67%, P1 33%
+
+=== 2023, M1 pess mode, net $ at 0.02 ===
+  BASELINE                                 n  1627 net  -498.80 PF  0.74 wr  42% exp -0.307 maxDD 500.52 | flips 965 -226.63 conts 662 -272.17
+  R1 direction only                        n  1199 net  -390.06 PF  0.74 wr  42% exp -0.325 maxDD 396.98 | flips 557 -163.38 conts 642 -226.68
+  R2 direction + beyond close (OWNER)      n  1182 net  -384.17 PF  0.74 wr  42% exp -0.325 maxDD 391.09 | flips 538 -154.93 conts 644 -229.24
+  P1 opposite (placebo)                    n   902 net  -220.61 PF  0.75 wr  41% exp -0.245 maxDD 220.61 | flips 662 -116.61 conts 240 -104.00
+    R2: trades removed by the gate 685, their P&L -173.27
+  halves (R2 / baseline / P1): H1 -141.61 / -208.88 / -127.09 | H2 -242.57 / -289.92 / -93.51
+done
