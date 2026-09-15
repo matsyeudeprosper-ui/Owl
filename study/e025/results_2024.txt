@@ -1,0 +1,8 @@
+2024: niveaux armes 7431, touches 2129 (29%)
+
+=== 2024, mode M1 pess, net $ a 0.02 ===
+  BASELINE live                          n  3005 net -1057.51 PF  0.88 wr  49% exp -0.352 maxDD 1292.23 dist med   239
+  DOT entree au point, SL point-1        n  2129 net  -782.25 PF  0.86 wr  46% exp -0.367 maxDD 789.88 dist med   178
+  DOT + porte 2h                         n  1895 net -2401.49 PF  0.60 wr  36% exp -1.267 maxDD 2401.49 dist med   173
+  DOT direction aleatoire                n  2163 net -1134.73 PF  0.81 wr  41% exp -0.525 maxDD 1219.05 dist med   174
+done

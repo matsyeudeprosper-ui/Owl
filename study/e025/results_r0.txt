@@ -1,0 +1,20 @@
+R0: niveaux de point armes 1319, touches 399 (30%)
+
+=== TOUT R0, execution tick, net $ a 0.02 ===
+  BASELINE live (BOS, SL au point)       n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27 dist med   150
+  DOT entree au point, SL point-1        n   393 net   +44.15 PF  1.06 wr  47% exp +0.112 maxDD 116.61 dist med   132
+  DOT + porte 2h                         n   353 net   -34.64 PF  0.94 wr  38% exp -0.098 maxDD 127.13 dist med   115
+  DOT direction aleatoire                n   380 net  -299.51 PF  0.64 wr  46% exp -0.788 maxDD 342.65 dist med   130
+
+=== TRAIN (< 08-04), execution tick, net $ a 0.02 ===
+  BASELINE live (BOS, SL au point)       n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44 dist med   150
+  DOT entree au point, SL point-1        n   181 net    -9.18 PF  0.97 wr  46% exp -0.051 maxDD  68.69 dist med   130
+  DOT + porte 2h                         n   154 net   -74.95 PF  0.72 wr  34% exp -0.487 maxDD 102.67 dist med   114
+  DOT direction aleatoire                n   182 net   -81.75 PF  0.77 wr  51% exp -0.449 maxDD 115.02 dist med   129
+
+=== TEST (08-04 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE live (BOS, SL au point)       n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27 dist med   151
+  DOT entree au point, SL point-1        n   212 net   +53.34 PF  1.14 wr  47% exp +0.252 maxDD 116.61 dist med   132
+  DOT + porte 2h                         n   199 net   +40.31 PF  1.13 wr  41% exp +0.203 maxDD  68.66 dist med   118
+  DOT direction aleatoire                n   198 net  -217.76 PF  0.55 wr  41% exp -1.100 maxDD 248.04 dist med   130
+done

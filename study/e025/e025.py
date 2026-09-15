@@ -53,12 +53,21 @@ def dot_series(P):
                 highs.append((float(sig[1]), nid))
             nid += 1
         trend[j] = st.trend
+        # "SL at the NEXT LOWER low": walk back to the most recent dot
+        # that actually sits below the entry dot (above it for sells).
+        # The previous dot in time is not always on the right side.
         if st.trend == 1 and len(lows) >= 2:
-            d_cur[j], d_id[j] = lows[-1][0], lows[-1][1]
-            d_prev[j] = lows[-2][0]
+            cur = lows[-1]
+            below = [v for v, _ in lows[:-1] if v < cur[0]]
+            if below:
+                d_cur[j], d_id[j] = cur
+                d_prev[j] = below[-1]
         elif st.trend == -1 and len(highs) >= 2:
-            d_cur[j], d_id[j] = highs[-1][0], highs[-1][1]
-            d_prev[j] = highs[-2][0]
+            cur = highs[-1]
+            above = [v for v, _ in highs[:-1] if v > cur[0]]
+            if above:
+                d_cur[j], d_id[j] = cur
+                d_prev[j] = above[-1]
     return trend, d_cur, d_prev, d_id
 
 
@@ -111,7 +120,11 @@ def simulate(P, trend, d_cur, d_prev, d_id, mode, tk=None, S=7.0,
             dist = abs(e - slp)
             if dist <= S_MIN:
                 continue
-            sl, tp = slp, e + dd * RR * dist
+            # mirror the geometry when the control flips the direction,
+            # otherwise the stop lands on the profit side and books a
+            # free +1R (exec_audit.mk does the same)
+            sl = slp if dd == d else e - dd * dist
+            tp = e + dd * RR * dist
             cond = ((lambda s: (tk.bid[s] <= sl) | (tk.bid[s] >= tp)) if dd == 1
                     else (lambda s: (tk.ask[s] >= sl) | (tk.ask[s] <= tp)))
             xi = tk.first_true(i2 + 1, cond)
@@ -137,7 +150,8 @@ def simulate(P, trend, d_cur, d_prev, d_id, mode, tk=None, S=7.0,
             dist = abs(e - slp)
             if dist <= S_MIN:
                 continue
-            sl, tp = slp, e + dd * RR * dist
+            sl = slp if dd == d else e - dd * dist
+            tp = e + dd * RR * dist
             k = j
             while k < N:
                 if dd == 1:
