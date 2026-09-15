@@ -1,0 +1,23 @@
+  signaux 1352, stop profond calculable 1352; il differe du point sur 50% des cas, median 0 pts plus loin (p90 20)
+
+=== TOUT R0, execution tick, net $ a 0.02 ===
+  BASELINE live (flip+cont, stop point) n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27 dist med   150
+  FLIP seul, stop point                n   349 net   +49.66 PF  1.09 wr  55% exp +0.142 maxDD  58.96 dist med   139
+  FLIP seul, stop profond (PRINCIPAL)  n   347 net   +34.47 PF  1.06 wr  55% exp +0.099 maxDD  68.61 dist med   142
+  flip+cont, stop profond              n   509 net  +225.12 PF  1.26 wr  58% exp +0.442 maxDD  91.41 dist med   160
+  PRINCIPAL direction aleatoire        n   337 net   +13.61 PF  1.02 wr  57% exp +0.040 maxDD  96.99 dist med   145
+
+=== TRAIN (< 08-04), execution tick, net $ a 0.02 ===
+  BASELINE live (flip+cont, stop point) n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44 dist med   150
+  FLIP seul, stop point                n   161 net   +47.85 PF  1.20 wr  58% exp +0.297 maxDD  54.73 dist med   144
+  FLIP seul, stop profond (PRINCIPAL)  n   159 net   +25.44 PF  1.10 wr  57% exp +0.160 maxDD  68.61 dist med   144
+  flip+cont, stop profond              n   248 net   +77.70 PF  1.19 wr  57% exp +0.313 maxDD  91.41 dist med   162
+  PRINCIPAL direction aleatoire        n   158 net   -10.77 PF  0.96 wr  54% exp -0.068 maxDD  69.59 dist med   145
+
+=== TEST (08-04 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE live (flip+cont, stop point) n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27 dist med   151
+  FLIP seul, stop point                n   188 net    +1.81 PF  1.01 wr  52% exp +0.010 maxDD  58.96 dist med   138
+  FLIP seul, stop profond (PRINCIPAL)  n   188 net    +9.02 PF  1.03 wr  53% exp +0.048 maxDD  56.38 dist med   141
+  flip+cont, stop profond              n   261 net  +147.42 PF  1.32 wr  60% exp +0.565 maxDD  76.76 dist med   159
+  PRINCIPAL direction aleatoire        n   179 net   +24.38 PF  1.07 wr  59% exp +0.136 maxDD  55.04 dist med   145
+done

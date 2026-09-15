@@ -1,0 +1,15 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+2026H1 bars 260530, S 9.8
+  signaux 2830, stop profond calculable 2830; il differe du point sur 47% des cas, median 0 pts plus loin (p90 31)
+
+=== 2026H1, M1 pess, net $ a 0.02 ===
+  BASELINE live (flip+cont, stop point) n  1057 net  -743.83 PF  0.79 wr  50% exp -0.704 maxDD 864.19 dist med   251
+  FLIP seul, stop point                n   682 net  -570.41 PF  0.75 wr  49% exp -0.836 maxDD 588.83 dist med   231
+  FLIP seul, stop profond (PRINCIPAL)  n   676 net  -621.52 PF  0.73 wr  49% exp -0.919 maxDD 641.14 dist med   243
+  flip+cont, stop profond              n  1023 net  -768.34 PF  0.78 wr  50% exp -0.751 maxDD 916.71 dist med   272
+  PRINCIPAL direction aleatoire        n   680 net   +68.09 PF  1.04 wr  57% exp +0.100 maxDD 173.85 dist med   238
+done
