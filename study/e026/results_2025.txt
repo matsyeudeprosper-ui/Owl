@@ -1,0 +1,15 @@
+2025: part des signaux passes NO-ASIA 51%, NO-TOKYO 62%, ASIA-ONLY 49%
+
+=== 2025, M1 pess, net $ a 0.02 ===
+  BASELINE (toutes heures)           n  3503 net -1198.36 PF  0.90 wr  51% exp -0.342 maxDD 1220.53
+  NO-ASIA (principal) 09-21h         n  1900 net  -855.88 PF  0.87 wr  51% exp -0.450 maxDD 868.06
+    NO-ASIA: 1703 trades ecartes, leur P&L -461.39 (moyenne -0.271)
+  NO-TOKYO 09-24h                    n  2291 net  -867.50 PF  0.89 wr  51% exp -0.379 maxDD 881.82
+  ASIA-ONLY (miroir)                 n  1836 net  -631.06 PF  0.88 wr  51% exp -0.344 maxDD 703.56
+
+  BASELINE 2025 par heure UTC (net $ / n):
+    00h*  -65.9/174  01h*  -81.2/170  02h*  -30.2/147  03h*  -81.2/142  04h*  -68.3/135  05h*  -72.7/135  06h*  -46.1/122  07h*  +51.1/136 
+    08h*  -50.9/138  09h   -62.9/141  10h   +14.6/116  11h   +29.7/132  12h   -81.4/147  13h   -27.2/212  14h    +7.4/212  15h   -44.7/155 
+    16h   -44.3/132  17h   +84.3/137  18h  -414.3/137  19h   -29.5/124  20h  -175.2/166  21h* -160.7/131  22h*  +90.2/140  23h*  +61.0/122 
+    (* = heure bloquee par le filtre principal)
+done

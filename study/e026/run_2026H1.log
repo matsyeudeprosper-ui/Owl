@@ -1,0 +1,20 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+2026H1: part des signaux passes NO-ASIA 55%, NO-TOKYO 66%, ASIA-ONLY 45%
+
+=== 2026H1, M1 pess, net $ a 0.02 ===
+  BASELINE (toutes heures)           n  1057 net  -743.83 PF  0.79 wr  50% exp -0.704 maxDD 864.19
+  NO-ASIA (principal) 09-21h         n   634 net  -501.89 PF  0.77 wr  50% exp -0.792 maxDD 616.80
+    NO-ASIA: 481 trades ecartes, leur P&L -215.96 (moyenne -0.449)
+  NO-TOKYO 09-24h                    n   748 net  -770.98 PF  0.71 wr  48% exp -1.031 maxDD 874.97
+  ASIA-ONLY (miroir)                 n   575 net  -290.53 PF  0.82 wr  51% exp -0.505 maxDD 354.42
+
+  BASELINE 2026H1 par heure UTC (net $ / n):
+    00h*  -36.5/42   01h*   +6.7/45   02h*   -3.0/35   03h*  +14.3/29   04h*  -73.7/37   05h*  +44.4/38   06h*  +66.4/51   07h*  -66.4/40  
+    08h* +108.0/46   09h   -23.6/43   10h   -64.3/49   11h    +2.7/42   12h   +59.2/56   13h   -24.7/65   14h   -78.4/73   15h   -33.2/62  
+    16h  -153.4/47   17h   -32.9/44   18h   -66.6/27   19h    +3.9/33   20h  -117.4/39   21h*  -35.2/30   22h* -146.9/46   23h*  -93.1/38  
+    (* = heure bloquee par le filtre principal)
+done

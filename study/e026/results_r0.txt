@@ -1,0 +1,32 @@
+part des signaux laisses passer: NO-ASIA 52%, NO-TOKYO 63%, ASIA-ONLY 48%
+
+=== TOUT R0, execution tick, net $ a 0.02 ===
+  BASELINE (toutes heures)           n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27
+  NO-ASIA (principal) 09-21h         n   301 net  +192.01 PF  1.40 wr  59% exp +0.638 maxDD  40.02
+  NO-TOKYO 09-24h                    n   351 net  +253.58 PF  1.48 wr  60% exp +0.722 maxDD  46.82
+  ASIA-ONLY (miroir)                 n   286 net   +50.16 PF  1.12 wr  59% exp +0.175 maxDD  63.40
+    NO-ASIA: 239 trades ecartes, leur P&L +59.12 (moyenne +0.247)
+
+=== TRAIN (< 08-04), execution tick, net $ a 0.02 ===
+  BASELINE (toutes heures)           n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44
+  NO-ASIA (principal) 09-21h         n   147 net   +70.51 PF  1.31 wr  59% exp +0.480 maxDD  38.43
+  NO-TOKYO 09-24h                    n   166 net   +75.80 PF  1.30 wr  58% exp +0.457 maxDD  46.82
+  ASIA-ONLY (miroir)                 n   133 net   +49.21 PF  1.28 wr  60% exp +0.370 maxDD  46.00
+    NO-ASIA: 118 trades ecartes, leur P&L +41.70 (moyenne +0.353)
+
+=== TEST (08-04 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE (toutes heures)           n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27
+  NO-ASIA (principal) 09-21h         n   154 net  +121.50 PF  1.47 wr  60% exp +0.789 maxDD  40.02
+  NO-TOKYO 09-24h                    n   185 net  +177.78 PF  1.64 wr  62% exp +0.961 maxDD  34.04
+  ASIA-ONLY (miroir)                 n   153 net    +0.95 PF  1.00 wr  58% exp +0.006 maxDD  63.26
+    NO-ASIA: 121 trades ecartes, leur P&L +17.43 (moyenne +0.144)
+
+  BASELINE R0 par heure UTC (net $ / n):
+    00h*   +5.2/25   01h*   +3.6/26   02h*  -28.2/22   03h*  -12.2/19   04h*   -8.1/15   05h*   +8.8/19   06h*   -2.0/18   07h*   -2.7/25  
+    08h*  +39.9/17   09h    -5.8/16   10h   +29.1/26   11h   +15.3/32   12h   +71.5/35   13h   +13.1/32   14h   +32.8/36   15h   +22.5/26  
+    16h   -10.7/21   17h   -18.1/14   18h   +10.0/12   19h   +16.7/17   20h    +1.4/18   21h*   +8.7/20   22h*  +29.7/18   23h*  +16.3/15  
+    (* = heure bloquee par le filtre principal)
+
+=== PLACEBO: 200 masques aleatoires au meme taux de passage, M1 pess ===
+  taux 52%: aleatoires moyenne +90.36 ecart-type 60.71 95e +190.37; NO-ASIA +174.50 au 91.0e centile
+done

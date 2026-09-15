@@ -1,0 +1,15 @@
+2023: part des signaux passes NO-ASIA 55%, NO-TOKYO 65%, ASIA-ONLY 45%
+
+=== 2023, M1 pess, net $ a 0.02 ===
+  BASELINE (toutes heures)           n  1627 net  -498.80 PF  0.74 wr  42% exp -0.307 maxDD 500.52
+  NO-ASIA (principal) 09-21h         n  1004 net  -172.37 PF  0.86 wr  45% exp -0.172 maxDD 176.07
+    NO-ASIA: 726 trades ecartes, leur P&L -360.11 (moyenne -0.496)
+  NO-TOKYO 09-24h                    n  1154 net  -228.66 PF  0.84 wr  44% exp -0.198 maxDD 231.93
+  ASIA-ONLY (miroir)                 n   864 net  -371.86 PF  0.62 wr  40% exp -0.430 maxDD 376.22
+
+  BASELINE 2023 par heure UTC (net $ / n):
+    00h*  -58.5/70   01h*  -68.5/67   02h*  -20.6/66   03h*  -33.7/49   04h*  -38.8/52   05h*  -33.6/51   06h*  +13.9/52   07h*   +1.4/63  
+    08h*  -35.0/62   09h    +5.2/58   10h   -55.4/63   11h    -1.6/78   12h   -17.8/105  13h   -64.4/96   14h   -28.9/102  15h   +48.2/76  
+    16h   -26.1/88   17h    -7.7/65   18h   -15.3/66   19h   -22.7/64   20h   +36.0/61   21h*  -55.4/51   22h*   +1.2/63   23h*  -20.7/59  
+    (* = heure bloquee par le filtre principal)
+done
