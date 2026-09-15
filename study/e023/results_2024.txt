@@ -1,0 +1,10 @@
+2024 bars 522776, S 21.0; part des signaux passes: A/all 86%, A/cont 93%, B/all 99%, B/cont 100%, porte actuelle 72%
+
+=== 2024, mode M1 pess, net $ a 0.02 ===
+  NOGATE aucune porte                      n  3204 net -1289.07 PF  0.89 wr  49% exp -0.402 maxDD 1647.95 | flips 1325 -523.00 conts 1879 -766.07
+  BASELINE porte 2h-flip                   n  3005 net -1057.51 PF  0.88 wr  49% exp -0.352 maxDD 1292.23 | flips 1698 -619.79 conts 1307 -437.72
+  A/all  touch -> fin d'heure (tous)       n  2940 net -1244.16 PF  0.88 wr  49% exp -0.423 maxDD 1648.79 | flips 1074 -409.24 conts 1866 -834.93
+  A/cont touch -> fin d'heure (PRIMAIRE)   n  3141 net -1355.17 PF  0.88 wr  49% exp -0.431 maxDD 1720.53 | flips 1349 -545.02 conts 1792 -810.15
+  B/all  touch -> 2 h (tous)               n  3195 net -1279.41 PF  0.89 wr  49% exp -0.400 maxDD 1638.29 | flips 1316 -526.70 conts 1879 -752.71
+  B/cont touch -> 2 h                      n  3203 net -1284.92 PF  0.89 wr  49% exp -0.401 maxDD 1643.80 | flips 1326 -520.27 conts 1877 -764.66
+done

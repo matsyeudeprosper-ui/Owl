@@ -1,0 +1,15 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+2026H1 bars 260530, S 9.8; part des signaux passes: A/all 88%, A/cont 94%, B/all 100%, B/cont 100%, porte actuelle 70%
+
+=== 2026H1, mode M1 pess, net $ a 0.02 ===
+  NOGATE aucune porte                      n  1107 net  -500.14 PF  0.89 wr  51% exp -0.452 maxDD 744.14 | flips  464 -388.73 conts  643 -111.41
+  BASELINE porte 2h-flip                   n  1057 net  -743.83 PF  0.79 wr  50% exp -0.704 maxDD 864.19 | flips  623 -519.39 conts  434 -224.43
+  A/all  touch -> fin d'heure (tous)       n  1024 net  -402.54 PF  0.91 wr  51% exp -0.393 maxDD 664.42 | flips  385 -329.95 conts  639  -72.59
+  A/cont touch -> fin d'heure (PRIMAIRE)   n  1090 net  -444.91 PF  0.90 wr  51% exp -0.408 maxDD 687.37 | flips  466 -380.01 conts  624  -64.90
+  B/all  touch -> 2 h (tous)               n  1107 net  -503.00 PF  0.89 wr  51% exp -0.454 maxDD 747.01 | flips  464 -388.73 conts  643 -114.27
+  B/cont touch -> 2 h                      n  1107 net  -503.00 PF  0.89 wr  51% exp -0.454 maxDD 747.01 | flips  464 -388.73 conts  643 -114.27
+done

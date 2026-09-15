@@ -1,0 +1,38 @@
+R0 bars 99000; barres qui touchent le haut/bas H1 precedent: 37%; armed fin-d'heure 63% des barres, armed 2h 99%
+part des SIGNAUX laisses passer: A/all 88%, A/cont 94%, B/all 100%, B/cont 100%, porte actuelle 2h-flip 73%
+
+=== TOUT R0 (07-01 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE porte 2h-flip (live)            n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27 | flips  303  +83.09 conts  221 +153.74
+  NOGATE aucune porte                      n   570 net  +147.26 PF  1.12 wr  58% exp +0.258 maxDD 116.01 | flips  237  +96.67 conts  333  +50.59
+  A/all  touch -> fin d'heure (tous)       n   549 net    +9.55 PF  1.01 wr  55% exp +0.017 maxDD 208.82 | flips  202  +48.30 conts  347  -38.75
+  A/cont touch -> fin d'heure (PRIMAIRE)   n   580 net   +18.64 PF  1.01 wr  55% exp +0.032 maxDD 202.91 | flips  249  +53.81 conts  331  -35.17
+  B/all  touch -> 2 h (tous)               n   569 net  +155.06 PF  1.13 wr  58% exp +0.273 maxDD 116.01 | flips  236 +104.47 conts  333  +50.59
+  B/cont touch -> 2 h                      n   570 net  +147.26 PF  1.12 wr  58% exp +0.258 maxDD 116.01 | flips  237  +96.67 conts  333  +50.59
+    PRIMAIRE: 22 trades ecartes vs NOGATE, leur P&L +67.88
+    baseline 2h: 143 trades ecartes vs NOGATE, leur P&L -80.04
+
+=== TRAIN (< 08-04), execution tick, net $ a 0.02 ===
+  BASELINE porte 2h-flip (live)            n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44 | flips  147  +43.56 conts  112  +58.66
+  NOGATE aucune porte                      n   300 net   +12.08 PF  1.02 wr  56% exp +0.040 maxDD  87.04 | flips  121  +29.01 conts  179  -16.93
+  A/all  touch -> fin d'heure (tous)       n   283 net    -2.28 PF  1.00 wr  55% exp -0.008 maxDD 100.02 | flips   99  +26.54 conts  184  -28.82
+  A/cont touch -> fin d'heure (PRIMAIRE)   n   294 net    +0.07 PF  1.00 wr  55% exp +0.000 maxDD  95.11 | flips  121  +29.01 conts  173  -28.94
+  B/all  touch -> 2 h (tous)               n   300 net   +12.08 PF  1.02 wr  56% exp +0.040 maxDD  87.04 | flips  121  +29.01 conts  179  -16.93
+  B/cont touch -> 2 h                      n   300 net   +12.08 PF  1.02 wr  56% exp +0.040 maxDD  87.04 | flips  121  +29.01 conts  179  -16.93
+    PRIMAIRE: 7 trades ecartes vs NOGATE, leur P&L +17.00
+    baseline 2h: 81 trades ecartes vs NOGATE, leur P&L -70.61
+
+=== TEST (08-04 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE porte 2h-flip (live)            n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27 | flips  156  +39.53 conts  109  +95.08
+  NOGATE aucune porte                      n   270 net  +135.18 PF  1.22 wr  60% exp +0.501 maxDD  60.89 | flips  116  +67.66 conts  154  +67.52
+  A/all  touch -> fin d'heure (tous)       n   266 net   +11.83 PF  1.02 wr  55% exp +0.044 maxDD 117.66 | flips  103  +21.76 conts  163   -9.93
+  A/cont touch -> fin d'heure (PRIMAIRE)   n   286 net   +18.57 PF  1.03 wr  56% exp +0.065 maxDD 116.65 | flips  128  +24.80 conts  158   -6.23
+  B/all  touch -> 2 h (tous)               n   269 net  +142.98 PF  1.24 wr  60% exp +0.532 maxDD  53.09 | flips  115  +75.46 conts  154  +67.52
+  B/cont touch -> 2 h                      n   270 net  +135.18 PF  1.22 wr  60% exp +0.501 maxDD  60.89 | flips  116  +67.66 conts  154  +67.52
+    PRIMAIRE: 15 trades ecartes vs NOGATE, leur P&L +50.88
+    baseline 2h: 62 trades ecartes vs NOGATE, leur P&L -9.43
+
+=== PLACEBO: 200 masques aleatoires au meme taux de passage que le primaire, mode M1 pess ===
+  BASELINE pess                            n   520 net  +206.85 PF  1.24 wr  57% exp +0.398 maxDD  85.46 | flips  300  +53.91 conts  220 +152.94
+  PRIMAIRE pess                            n   581 net   -35.44 PF  0.97 wr  53% exp -0.061 maxDD 219.05 | flips  250  +23.44 conts  331  -58.88
+  masques aleatoires: moyenne +48.08 ecart-type 33.06 95e +106.36; PRIMAIRE -35.44 au 0.5e centile
+done
