@@ -1,0 +1,9 @@
+2023 bars 525013, S 12.0; touchers 8062 = 22.1/jour; signaux normal 4894 -> reset 1389, premiers 851
+
+=== 2023, mode M1 pess, net $ a 0.02 ===
+  BASELINE live (porte 2h)                     n  1627 net  -498.80 PF  0.74 wr  42% exp -0.307 maxDD 500.52 | flips  965 -226.63 conts  662 -272.17
+  SANS la regle des 2h                         n  1450 net  -374.01 PF  0.84 wr  46% exp -0.258 maxDD 472.16 | flips  614 -183.73 conts  836 -190.28
+  RESET au toucher, tous les signaux           n  1164 net  -331.14 PF  0.58 wr  37% exp -0.284 maxDD 339.70 | flips 1006 -295.73 conts  158  -35.41
+  RESET au toucher, 1er signal seulement       n   825 net  -253.68 PF  0.54 wr  36% exp -0.307 maxDD 259.45 | flips  825 -253.68 conts    0   +0.00
+  RESET au toucher + porte 2h                  n   250 net   -58.26 PF  0.66 wr  38% exp -0.233 maxDD  75.05 | flips  220  -56.01 conts   30   -2.25
+done

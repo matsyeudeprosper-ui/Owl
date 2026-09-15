@@ -1,0 +1,27 @@
+R0 bars 99000 (69 jours); touchers H1 (evenements) 1521 = 22.1/jour
+signaux du moteur: normal 1352, avec RESET 268 (-80%), dont premiers-apres-reset 161
+
+=== TOUT R0 (07-01 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE live (porte 2h)                     n   524 net  +236.83 PF  1.28 wr  59% exp +0.452 maxDD  83.27 | flips  303  +83.09 conts  221 +153.74
+  SANS la regle des 2h                         n   570 net  +147.26 PF  1.12 wr  58% exp +0.258 maxDD 116.01 | flips  237  +96.67 conts  333  +50.59
+  RESET au toucher, tous les signaux           n   228 net   +18.14 PF  1.09 wr  55% exp +0.080 maxDD  18.03 | flips  198  +17.07 conts   30   +1.07
+  RESET au toucher, 1er signal seulement       n   160 net    +3.19 PF  1.02 wr  52% exp +0.020 maxDD  25.30 | flips  160   +3.19 conts    0   +0.00
+  RESET au toucher + porte 2h                  n    51 net   +14.64 PF  1.39 wr  57% exp +0.287 maxDD  10.41 | flips   46   +9.37 conts    5   +5.27
+
+=== TRAIN (< 08-04), execution tick, net $ a 0.02 ===
+  BASELINE live (porte 2h)                     n   259 net  +102.22 PF  1.26 wr  58% exp +0.395 maxDD  73.44 | flips  147  +43.56 conts  112  +58.66
+  SANS la regle des 2h                         n   300 net   +12.08 PF  1.02 wr  56% exp +0.040 maxDD  87.04 | flips  121  +29.01 conts  179  -16.93
+  RESET au toucher, tous les signaux           n   121 net    +9.44 PF  1.10 wr  55% exp +0.078 maxDD  18.03 | flips  103   -3.63 conts   18  +13.08
+  RESET au toucher, 1er signal seulement       n    86 net    -6.79 PF  0.91 wr  51% exp -0.079 maxDD  25.30 | flips   86   -6.79 conts    0   +0.00
+  RESET au toucher + porte 2h                  n    22 net    +4.20 PF  1.24 wr  55% exp +0.191 maxDD  10.41 | flips   20   -0.17 conts    2   +4.36
+
+=== TEST (08-04 -> 09-07), execution tick, net $ a 0.02 ===
+  BASELINE live (porte 2h)                     n   265 net  +134.61 PF  1.30 wr  59% exp +0.508 maxDD  83.27 | flips  156  +39.53 conts  109  +95.08
+  SANS la regle des 2h                         n   270 net  +135.18 PF  1.22 wr  60% exp +0.501 maxDD  60.89 | flips  116  +67.66 conts  154  +67.52
+  RESET au toucher, tous les signaux           n   107 net    +8.69 PF  1.09 wr  55% exp +0.081 maxDD  15.94 | flips   95  +20.71 conts   12  -12.01
+  RESET au toucher, 1er signal seulement       n    74 net    +9.98 PF  1.15 wr  53% exp +0.135 maxDD  11.75 | flips   74   +9.98 conts    0   +0.00
+  RESET au toucher + porte 2h                  n    29 net   +10.44 PF  1.52 wr  59% exp +0.360 maxDD   7.27 | flips   26   +9.53 conts    3   +0.91
+
+=== PLACEBO: 200 masques aleatoires au taux de passage du 1er-signal, mode M1 pess ===
+  masques aleatoires (taux 60%): moyenne -0.17 ecart-type 18.00 95e +27.37; RESET-1er -12.06 au 23.5e centile
+done

@@ -1,0 +1,14 @@
+99000 bars, 69 days, spread $7.0, lot 0.02, RR 0.8
+signal : n  589 (8.6/day) wr 54% net   +56.21 avgW +4.158 avgL -4.770 maxDD 156.73 busy-skips 762
+random : n  571 (8.3/day) wr 55% net   +33.92 avgW +4.210 avgL -4.976 maxDD 146.86 busy-skips 780
+random : n  577 (8.4/day) wr 57% net  +113.30 avgW +4.116 avgL -5.004 maxDD 133.51 busy-skips 774
+random : n  565 (8.2/day) wr 54% net   -91.54 avgW +4.100 avgL -5.197 maxDD 247.29 busy-skips 786
+2025 bars 520525, S 15.1; touchers 8152 = 22.3/jour; signaux normal 8671 -> reset 1692, premiers 1043
+
+=== 2025, mode M1 pess, net $ a 0.02 ===
+  BASELINE live (porte 2h)                     n  3503 net -1198.36 PF  0.90 wr  51% exp -0.342 maxDD 1220.53 | flips 1963 -844.11 conts 1540 -354.25
+  SANS la regle des 2h                         n  3737 net  -641.13 PF  0.96 wr  52% exp -0.172 maxDD 940.55 | flips 1539 -414.62 conts 2198 -226.51
+  RESET au toucher, tous les signaux           n  1458 net  -578.90 PF  0.81 wr  47% exp -0.397 maxDD 663.48 | flips 1254 -635.32 conts  204  +56.42
+  RESET au toucher, 1er signal seulement       n  1038 net  -536.43 PF  0.75 wr  46% exp -0.517 maxDD 552.81 | flips 1038 -536.43 conts    0   +0.00
+  RESET au toucher + porte 2h                  n   323 net   -90.52 PF  0.87 wr  50% exp -0.280 maxDD 193.30 | flips  254 -129.04 conts   69  +38.52
+done
