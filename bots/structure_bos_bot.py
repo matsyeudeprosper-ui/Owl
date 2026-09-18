@@ -38,6 +38,7 @@ picked on days 1-35 scored +116 blind on days 36-69 (scratchpad
 bt_chop*.py). Sleeping market = no fishing.
 """
 import json
+import math
 import os
 import time
 from datetime import datetime, timezone
@@ -61,15 +62,35 @@ RR = 0.8
 BASE_LOT = 0.02
 MAX_EXTRA = 3            # bullets that may ride along (0.01 each)
 CHEST_CAP = 10.0         # cap sweep 2026-09-09: $10 = sweet spot
+# --- RECOVERY JAR (owner 2026-09-16, switched on after review) ---------
+# The old chest only grew on a NEW EQUITY HIGH, so during a drawdown it
+# never filled - measured on the live account, 82 of 85 in-debt trades had
+# no ammunition at all. The jar now takes a slice of EVERY win.
+# Owner was shown the simulation (it loses more on the current record,
+# monotonically, because it multiplies a negative expectancy) and chose to
+# switch it on anyway. See live/review/DEBT_SYSTEM.md.
+JAR = True               # False = old behaviour (new-high overflow only)
+JAR_SKIM = 0.50          # owner 2026-09-16: half of each win. The skim is
+                         # a PERMISSION dial, not a savings account - it
+                         # decides how fast you earn the right to size up,
+                         # so higher = faster recovery AND more variance.
+JAR_STAKE = 0.50         # most of the jar stakeable on ONE attempt
+JAR_DEBT_MULT = 0.5      # jar may hold up to half the debt...
+JAR_FLOOR_CAP = 10.0     # ...but never less headroom than the old cap
 KILL_NET = -60.0
 MIN_BALANCE = 20.0
 SEED_BARS = 3000
 S_MIN_DIST = 10.0        # dot inside the spread zone = no trade
+# 2026-09-15 (owner, after a 1478-pt stop risked $31): one rule, no
+# single trade may risk more than this share of the account balance.
+MAX_RISK_PCT = 0.10
 AWAKE_WIN = 7200         # awake gate: >=1 flip within this window
 DEBT_MODE = "hwm"        # hwm (peak) | half (0.5x per loss)
 SNIPER = False           # only the 2nd trade of each trend
 ADDS_ON = True
 TOUCH_ENTRIES = True     # continuation on level TOUCH (False = candle close)
+DAY_CAP = None           # daily realised-profit stop (None = uncapped)
+WEEK_TARGET = None       # informational only, printed at startup
 _SFX = ""
 if VARIANT == "sniper":
     TERMINAL = r"C:\NestTerminals\u476989735\terminal64.exe"
@@ -91,6 +112,30 @@ elif VARIANT == "halfdebt":
     COMMENT = "KL-HALF"
     DEBT_MODE = "half"
     _SFX = "_half"
+elif VARIANT == "valere":
+    # 2026-09-14 (owner): Valere's real account runs its OWN instance of
+    # the frozen live config - identical rules, but its own debt ledger,
+    # its own war-chest and its own -$60 kill line, so his account never
+    # depends on Kino's. Credentials come from the nest record (that file
+    # is untracked); nothing here is shared with the live instance.
+    _vu = [x for x in json.load(open(os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "owl_nest_users.json"), encoding="utf-8"))
+        if x.get("id") == "u224016179"][0]
+    TERMINAL = _vu["terminal"]
+    LOGIN = int(_vu["mt5_login"])
+    SERVER = _vu["mt5_server"]
+    PASSWORD = _vu["mt5_password"]
+    MAGIC = 909401
+    COMMENT = "KL-BOS-V"
+    TOUCH_ENTRIES = False       # same candle-close rule as live
+    # owner 2026-09-14: objective ~$20/week. Once the day is +$3
+    # REALISED, stop opening (a running position is left alone) and
+    # resume next UTC day. Waived while the account is in debt -
+    # catching up must not be throttled.
+    DAY_CAP = 3.0
+    WEEK_TARGET = 20.0
+    _SFX = "_valere"
 else:
     TERMINAL = r"C:\NestTerminals\u223995441\terminal64.exe"
     LOGIN = 223995441
@@ -106,7 +151,46 @@ else:
 DIR = os.path.dirname(os.path.abspath(__file__))
 STATE_F = os.path.join(DIR, f"bos_state{_SFX}.json")
 LOG_F = os.path.join(DIR, f"bos_bot{_SFX}.log")
+# Two switches (owner 2026-09-16). The app writes a per-account file, and
+# the bot used to read only the global one - so the per-account pause
+# buttons did nothing and pausing "kino" silently stopped every variant.
+#   owl_trading_pause.json          = master switch, stops everything
+#   owl_trading_pause_<uid>.json    = this account only
+PAUSE_UID = {"valere": "u224016179", "sniper": "sniper",
+             "halfdebt": "half"}.get(VARIANT, "bos")
 PAUSE_F = os.path.join(DIR, "owl_trading_pause.json")
+PAUSE_OWN = os.path.join(DIR, f"owl_trading_pause_{PAUSE_UID}.json")
+
+# --- MONEY MANAGEMENT comes from the account's PACKAGE -----------------
+# Owner 2026-09-18: "Valere's difference should just be the daily cut off
+# profit... new accounts may have different money management, package kind
+# of thing... make things easy for codes to go that route."
+#
+# So the STRATEGY above is identical on every account, and only the dials
+# below may differ. They live in owl_packages.json: a new offer is a few
+# lines of JSON, and retuning one costs no code change and no restart.
+# review/package_parity.py proves this reproduces, value for value, what
+# the hardcoded variants did before.
+import owl_package as _PKG
+import owl_shadow as SHADOW
+_P = _PKG.for_account(PAUSE_UID)
+PACKAGE = _P["package"]
+BASE_LOT = _P["base_lot"]
+MAX_EXTRA = _P["max_extra"]
+ADDS_ON = _P["adds_on"]
+CHEST_CAP = _P["chest_cap"]
+JAR = _P["jar"]
+JAR_SKIM = _P["jar_skim"]
+JAR_STAKE = _P["jar_stake"]
+JAR_DEBT_MULT = _P["jar_debt_mult"]
+JAR_FLOOR_CAP = _P["jar_floor_cap"]
+KILL_NET = _P["kill_net"]
+MIN_BALANCE = _P["min_balance"]
+MAX_RISK_PCT = _P["max_risk_pct"]
+DEBT_MODE = _P["debt_mode"]
+DAY_CAP = _P["day_cap"]
+MAX_TRADES_DAY = _P["max_trades_day"]
+WEEK_TARGET = _P["week_target"]
 
 
 def say(msg):
@@ -222,10 +306,13 @@ class Struct:
 
 
 def paused():
-    try:
-        return bool(json.load(open(PAUSE_F)).get("paused"))
-    except Exception:
-        return False
+    for _f in (PAUSE_F, PAUSE_OWN):
+        try:
+            if json.load(open(_f)).get("paused"):
+                return True
+        except Exception:
+            pass
+    return False
 
 
 def load_state():
@@ -237,8 +324,113 @@ def load_state():
                 "open_lot": 0.0}
 
 
+CHART_F = os.path.join(DIR, "owl_chart_btc.json")
+
+
+def weather(max_age=180):
+    """The market-weather feed, or None when it is missing or stale."""
+    try:
+        st = os.stat(CHART_F)
+        if time.time() - st.st_mtime > max_age:
+            return None
+        with open(CHART_F, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def weather_gate(need_int=False, cj=None):
+    """Shared entry brakes. None allows, a string refuses.
+
+    Owner 2026-09-18: "every time we make a change in the main bot, update
+    the rest of the bots everywhere". These two rules lived only in the
+    manual desk, so account 441 obeyed them and Valere did not - Valere
+    entered at 05:01 in a 1.30x market that the desk refused at 05:31.
+    They are STRATEGY, so they belong here, shared by every account.
+
+    Both rules only ever STOP a trade; neither was shown to make money,
+    and they cut volume by roughly 90%. A missing or stale feed ALLOWS -
+    a brake that fires on its own silence would stop everything the moment
+    the feed hiccups.
+    """
+    cj = cj if cj is not None else weather()
+    if not cj:
+        return None
+    vn, vr = cj.get("vol_now"), cj.get("vol_ref")
+    if vn and vr:
+        nerv = vn / max(vr, 1)
+        if nerv > 1.0:
+            return f"trop nerveux ({nerv:.2f}x)"
+    if need_int:
+        if (cj.get("int_brk_1h") or 0) < 1:
+            return "aucun petit mouvement depuis 1 h"
+    else:
+        if (cj.get("moves_2h") or 0) < 1:
+            return "aucun grand mouvement depuis 2 h"
+    return None
+
+
+def day_key():
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def day_roll(st):
+    """Reset the daily counters when the UTC date changes."""
+    if st.get("day_key") != day_key():
+        st["day_key"] = day_key()
+        st["day_pnl"] = 0.0
+        st["day_n"] = 0
+        st["day_capped"] = False
+    return st.get("day_pnl", 0.0)
+
+
+def day_blocked(st):
+    """Why no new entry today, or None to allow.
+
+    Two different limits (owner 2026-09-18):
+      day_cap        a PROFIT target. Waived while the account owes money,
+                     because catching up must not be throttled.
+      max_trades_day a PACKAGE limit - how many trades this offer includes.
+                     Never waived: it is what the account signed up for.
+    """
+    pnl = day_roll(st)
+    cap = MAX_TRADES_DAY
+    if cap is not None and st.get("day_n", 0) >= cap:
+        return (f"{st.get('day_n', 0)}/{cap} trades du jour "
+                f"(forfait {PACKAGE})")
+    if DAY_CAP is None:
+        return None
+    if st.get("debt", 0.0) > 0.5:
+        return None
+    if pnl >= DAY_CAP:
+        return f"+{pnl:.2f} aujourd'hui (>= ${DAY_CAP:.2f}), sans dette"
+    return None
+
+
 def save_state(st):
-    json.dump(st, open(STATE_F, "w"))
+    # the app reads the recovery dials from here, so there is ONE source of
+    # truth for them instead of a copy in the server (owner 2026-09-16)
+    st["jar"] = JAR
+    st["jar_skim"] = JAR_SKIM
+    st["jar_stake"] = JAR_STAKE
+    st["jar_cap"] = round(max(JAR_FLOOR_CAP,
+                              JAR_DEBT_MULT * st.get("debt", 0.0)), 2)
+    st["base_lot"] = BASE_LOT
+    st["max_extra"] = MAX_EXTRA
+    st["rr"] = RR
+    tmp = STATE_F + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as fh:
+        json.dump(st, fh)
+    for _ in range(12):
+        try:
+            os.replace(tmp, STATE_F)
+            return
+        except PermissionError:
+            time.sleep(0.05)
+    try:
+        os.replace(tmp, STATE_F)
+    except Exception:
+        pass
 
 
 def ensure_algo():
@@ -307,6 +499,8 @@ def book_closes(st, t_from):
         pnl = d.profit + d.swap + d.commission
         lot = float(d.volume)
         st["banked"] = round(st.get("banked", 0.0) + pnl, 2)
+        day_roll(st)
+        st["day_pnl"] = round(st.get("day_pnl", 0.0) + pnl, 2)
         # HIGH-WATER-MARK ledger (user 2026-09-09, measured: same
         # net as the per-loss ledger, maxDD 72 vs 80): the debt IS
         # the drawdown from the equity peak; fighters hunt until
@@ -320,6 +514,8 @@ def book_closes(st, t_from):
                 extra_sh = pnl * (1.0 - BASE_LOT / lot)
                 st["chest"] = round(max(0.0,
                                         st["chest"] + extra_sh), 2)
+        if JAR and pnl > 0:
+            st["chest"] = round(st.get("chest", 0.0) + JAR_SKIM * pnl, 2)
         if DEBT_MODE == "half":
             # per-loss debt at 0.5x; wins pay it, overflow -> chest
             if pnl < 0:
@@ -338,6 +534,9 @@ def book_closes(st, t_from):
                 st["peak"] = st["banked"]
             st["debt"] = round(max(0.0, st.get("peak", 0.0)
                                    - st["banked"]), 2)
+        if JAR:
+            _cap = max(JAR_FLOOR_CAP, JAR_DEBT_MULT * st["debt"])
+            st["chest"] = round(min(st.get("chest", 0.0), _cap), 2)
         if not is_add:
             st["trades"] = st.get("trades", 0) + 1
         tag = "ADD" if is_add else ("WIN" if pnl > 0 else
@@ -356,7 +555,9 @@ def main():
     assert ai and ai.login == LOGIN, f"wrong account {ai}"
     mt5.symbol_select(SYMBOL, True)
     say(f"BOS-BOT starting on {ai.login} balance {ai.balance:.2f} "
-        f"base {BASE_LOT} RR {RR} kill {KILL_NET}")
+        f"base {BASE_LOT} RR {RR} kill {KILL_NET}"
+        + (f" | day cap +${DAY_CAP:.2f} (waived while in debt), "
+           f"target ${WEEK_TARGET:.0f}/week" if DAY_CAP else ""))
     ensure_algo()
 
     eng = Struct()
@@ -385,6 +586,34 @@ def main():
             return False
         if paused():
             return False
+        _wg = weather_gate()
+        if _wg:
+            say(f"{kind} refuse: {_wg}")
+            # Owner 2026-09-18: the nervosity brake could not be settled in
+            # 41.7 days, so every trade it refuses is written down and
+            # followed virtually. Only nervosity refusals, and only when the
+            # movement rule would have passed - that is the counterfactual.
+            if _wg.startswith("trop nerveux"):
+                _cjx = weather()
+                if _cjx and not weather_gate(
+                        cj=dict(_cjx, vol_now=0, vol_ref=1)):
+                    _tk = mt5.symbol_info_tick(SYMBOL)
+                    if _tk:
+                        _e = _tk.ask if d == 1 else _tk.bid
+                        _ds = abs(_e - slp)
+                        if _ds > S_MIN_DIST:
+                            SHADOW.open_trade(
+                                PAUSE_UID, d, _e, slp,
+                                _e + d * RR * _ds, _wg, BASE_LOT)
+            return False
+        _why = day_blocked(st)
+        if _why:
+            if not st.get("day_capped"):
+                st["day_capped"] = True
+                save_state(st)
+                say(f"LIMITE DU JOUR: {_why} - plus d'entree jusqu'au "
+                    f"prochain jour UTC")
+            return False
         ai2 = mt5.account_info()
         if ai2 is None or ai2.balance < MIN_BALANCE:
             return False
@@ -400,13 +629,32 @@ def main():
         lot = BASE_LOT
         if st["debt"] > 0.5:
             risk001 = dist * 0.01
-            extra = min(MAX_EXTRA,
-                        int(st["chest"] // max(risk001, 0.01)))
+            if JAR:
+                # stake only part of the jar, so one bad recovery cannot
+                # disarm the next one; and never buy more recovery than the
+                # debt needs - one extra 0.01 wins RR * dist * 0.01
+                budget = st["chest"] * JAR_STAKE
+                by_budget = int(budget // max(risk001, 0.01))
+                gain001 = RR * dist * 0.01
+                by_debt = (int(math.ceil(st["debt"] / gain001))
+                           if gain001 > 0 else 0)
+                extra = max(0, min(MAX_EXTRA, by_budget, by_debt))
+            else:
+                extra = min(MAX_EXTRA,
+                            int(st["chest"] // max(risk001, 0.01)))
             lot = round(BASE_LOT + extra * 0.01, 2)
             if extra > 0:
-                say(f"FIGHTER: {extra} bullet(s) ride along -> "
-                    f"lot {lot:.2f} (chest ${st['chest']:.2f} "
-                    f"covers {extra} x ${risk001:.2f})")
+                say(f"RECUP: {extra} lot(s) de +0.01 -> lot {lot:.2f} "
+                    f"(dette ${st['debt']:.2f}, bocal ${st['chest']:.2f}, "
+                    f"mise ${extra * risk001:.2f})")
+        # --- no single trade may risk more than 10% of the balance
+        risk = dist * lot
+        cap = MAX_RISK_PCT * ai2.balance
+        if risk > cap:
+            say(f"{kind} SKIPPED: risk ${risk:.2f} > "
+                f"{MAX_RISK_PCT:.0%} of the ${ai2.balance:.2f} balance "
+                f"(${cap:.2f})")
+            return False
         tp = e_ref + d * RR * dist
         req = {"action": mt5.TRADE_ACTION_DEAL, "symbol": SYMBOL,
                "volume": lot,
@@ -427,6 +675,10 @@ def main():
             f"~{e_ref:.2f} SL {slp:.2f} TP {tp:.2f} "
             f"(risk ${dist * lot:.2f}, "
             f"trend {'up' if d == 1 else 'down'})")
+        # a package's trades-per-day limit counts ENTRIES, so it is spent
+        # when the trade is taken, not when it closes (owner 2026-09-18)
+        day_roll(st)
+        st["day_n"] = st.get("day_n", 0) + 1
         # arm the 50%-pullback add (user 2026-09-09, measured:
         # +343/+422 vs +263 without; chest-funded bullets only)
         if ADDS_ON:
@@ -561,6 +813,10 @@ def main():
             if bt == st.get("last_bar"):
                 continue
             st["last_bar"] = bt
+            # settle the virtual trades the nervosity brake refused, on the
+            # raw bar - they must be judged on every minute, not only on the
+            # candles the silence filter keeps (owner 2026-09-18)
+            SHADOW.settle(PAUSE_UID, float(bar["high"]), float(bar["low"]))
             _pt = eng.trend
             _hv, _lv = eng.hi_v, eng.lo_v
             sig = eng.step(bt, float(bar["open"]),
